@@ -187,7 +187,7 @@ export default function RootLayout({
               "url": "https://royalexcasino.com.pk",
               "logo": "https://royalexcasino.com.pk/royal-x-casino-logo.webp",
               "description": "Royal X Casino is Pakistan's premier real money gaming platform, offering 200+ games including Teen Patti, Slots, Fishing, and more with instant withdrawals.",
-              "sameAs": []
+              "sameAs": ["https://www.facebook.com/share/18G2R3ztEx/"]
             })
           }}
         />
