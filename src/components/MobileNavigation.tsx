@@ -62,15 +62,15 @@ export default function MobileNavigation() {
             <Link href="/" className="flex items-center gap-3" onClick={() => setIsOpen(false)}>
               <div className="relative w-8 h-8 flex-shrink-0">
                 <Image
-                  src="/card-rummy.webp"
-                  alt="Card Rummy Logo"
+                  src="/royal-x-casino-logo.webp"
+                  alt="Royal X Casino Logo"
                   fill
                   sizes="(max-width: 768px) 32px, 40px"
                   className="object-contain"
                   priority={true}
                 />
               </div>
-              <span className="text-accent text-xl font-bold">Card Rummy</span>
+              <span className="text-accent text-xl font-bold" style={{ fontFamily: '"Times New Roman", Times, serif' }}>Royal X Casino</span>
             </Link>
             <button 
               onClick={() => setIsOpen(false)}
@@ -99,32 +99,25 @@ export default function MobileNavigation() {
               Home
             </Link>
             <Link 
-              href="/download-card-rummy" 
+              href="/download"
               className="text-white hover:text-accent py-2 text-lg font-medium transition-colors"
               onClick={() => setIsOpen(false)}
             >
               Download
             </Link>
             <Link 
-              href="/deposit-money-in-card-rummy" 
+              href="/deposit-guide" 
               className="text-white hover:text-accent py-2 text-lg font-medium transition-colors"
               onClick={() => setIsOpen(false)}
             >
               Deposit Guide
             </Link>
             <Link 
-              href="/withdraw-money-from-card-rummy" 
+              href="/withdraw-guide" 
               className="text-white hover:text-accent py-2 text-lg font-medium transition-colors"
               onClick={() => setIsOpen(false)}
             >
               Withdraw Guide
-            </Link>
-            <Link 
-              href="/card-rummy-for-pc" 
-              className="text-white hover:text-accent py-2 text-lg font-medium transition-colors"
-              onClick={() => setIsOpen(false)}
-            >
-              PC Version
             </Link>
             <Link 
               href="/about-us" 

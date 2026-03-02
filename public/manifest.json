@@ -1,28 +1,13 @@
 {
-  "name": "Card Rummy",
-  "short_name": "Card Rummy",
-  "description": "Pakistan's premier card gaming platform offering Teen Patti, Rummy, Dragon vs Tiger and more. Earn real cash rewards!",
+  "name": "Royal X Casino",
+  "short_name": "Royal X Casino",
+  "description": "Pakistan's premier real money gaming app. 200+ games, zero wagering, instant withdrawals via JazzCash & EasyPaisa.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#06091F",
   "theme_color": "#06091F",
   "icons": [
-    {
-      "src": "/favicon.ico",
-      "sizes": "16x16 32x32 48x48",
-      "type": "image/x-icon"
-    },
-    {
-      "src": "/card-rummy-logo.webp",
-      "sizes": "192x192 512x512",
-      "type": "image/webp",
-      "purpose": "any maskable"
-    },
-    {
-      "src": "/card-rummy.webp",
-      "sizes": "512x512",
-      "type": "image/webp",
-      "purpose": "any"
-    }
+    { "src": "/royal-x-casino-logo.webp", "sizes": "192x192 512x512", "type": "image/webp", "purpose": "any maskable" },
+    { "src": "/royal-x-casino.webp", "sizes": "512x512", "type": "image/webp", "purpose": "any" }
   ]
-} 
+}

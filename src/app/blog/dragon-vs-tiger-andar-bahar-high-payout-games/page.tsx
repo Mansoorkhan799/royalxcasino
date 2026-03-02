@@ -3,34 +3,34 @@ import Link from 'next/link';
 import BlogPostSchema from '@/components/BlogPostSchema';
 
 export const metadata: Metadata = {
-  title: 'Dragon vs Tiger, Andar Bahar & More: Best High-Payout Games in Card Rummy App 2026',
-  description: 'Discover the best high-payout games in Card Rummy: Dragon vs Tiger, Andar Bahar, Teen Patti & Rummy. Learn which games offer highest win rates & fastest earnings in Pakistan 2026!',
+  title: 'Dragon vs Tiger, Andar Bahar & More: Best High-Payout Games in Royal X Casino App 2026',
+  description: 'Discover the best high-payout games in Royal X Casino: Dragon vs Tiger, Andar Bahar, Teen Patti & Rummy. Learn which games offer highest win rates & fastest earnings in Pakistan 2026!',
   keywords: [
-    'Dragon vs Tiger Card Rummy',
-    'Andar Bahar Card Rummy',
+    'Dragon vs Tiger Royal X Casino',
+    'Andar Bahar Royal X Casino',
     'high payout games',
-    'best earning games Card Rummy',
+    'best earning games Royal X Casino',
     'Dragon Tiger game',
     'Andar Bahar game',
-    'Card Rummy high payout',
+    'Royal X Casino high payout',
     'fastest earning games',
-    'Card Rummy games Pakistan',
+    'Royal X Casino games Pakistan',
     'best games to win money'
   ],
   openGraph: {
-    title: 'Dragon vs Tiger, Andar Bahar & More: Best High-Payout Games in Card Rummy',
-    description: 'Complete guide to highest-paying games in Card Rummy app. Learn which games offer best win rates and fastest earnings!',
+    title: 'Dragon vs Tiger, Andar Bahar & More: Best High-Payout Games in Royal X Casino',
+    description: 'Complete guide to highest-paying games in Royal X Casino app. Learn which games offer best win rates and fastest earnings!',
     type: 'article',
   },
-  alternates: { canonical: "https://cardrummyapp.com.pk/blog/dragon-vs-tiger-andar-bahar-high-payout-games" },
+  alternates: { canonical: "https://royalexcasino.com.pk/blog/dragon-vs-tiger-andar-bahar-high-payout-games" },
 };
 
 export default function BlogHighPayoutGames() {
   return (
     <main className="min-h-screen bg-[#060A20]">
       <BlogPostSchema
-        title="Dragon vs Tiger, Andar Bahar & More: Best High-Payout Games in Card Rummy App 2026"
-        description="Discover the best high-payout games in Card Rummy: Dragon vs Tiger, Andar Bahar, Teen Patti & Rummy. Learn which games offer highest win rates & fastest earnings in Pakistan 2026!"
+        title="Dragon vs Tiger, Andar Bahar & More: Best High-Payout Games in Royal X Casino App 2026"
+        description="Discover the best high-payout games in Royal X Casino: Dragon vs Tiger, Andar Bahar, Teen Patti & Rummy. Learn which games offer highest win rates & fastest earnings in Pakistan 2026!"
         slug="dragon-vs-tiger-andar-bahar-high-payout-games"
         datePublished="2026-01-11"
       />
@@ -45,7 +45,7 @@ export default function BlogHighPayoutGames() {
 
         <header className="mb-12">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            Dragon vs Tiger, Andar Bahar & More: Best High-Payout Games in Card Rummy App
+            Dragon vs Tiger, Andar Bahar & More: Best High-Payout Games in Royal X Casino App
           </h1>
           <div className="flex items-center gap-4 text-gray-400 text-sm">
             <time dateTime="2026-01-11">January 11, 2026</time>
@@ -56,7 +56,7 @@ export default function BlogHighPayoutGames() {
 
         <div className="prose prose-invert prose-lg max-w-none">
           <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-            Looking to maximize your earnings in <Link href="/" className="text-[#FFA500] hover:underline font-semibold">Card Rummy</Link>? Not all games are created equal when it comes to payout potential. In this guide, we'll break down the best high-payout games in Card Rummy app, including <strong>Dragon vs Tiger</strong>, <strong>Andar Bahar</strong>, Teen Patti, and Rummy, to help you choose where to invest your time and money for maximum returns.
+            Looking to maximize your earnings in <Link href="/" className="text-[#FFA500] hover:underline font-semibold">Royal X Casino</Link>? Not all games are created equal when it comes to payout potential. In this guide, we'll break down the best high-payout games in Royal X Casino app, including <strong>Dragon vs Tiger</strong>, <strong>Andar Bahar</strong>, Teen Patti, and Rummy, to help you choose where to invest your time and money for maximum returns.
           </p>
 
           <h2 className="text-3xl font-bold text-white mt-12 mb-6">Game Payout Comparison Overview</h2>
@@ -107,7 +107,7 @@ export default function BlogHighPayoutGames() {
           <h2 className="text-3xl font-bold text-white mt-12 mb-6">1. Dragon vs Tiger - The Fastest Payout Game</h2>
           
           <p className="text-gray-300 mb-4">
-            <strong>Dragon vs Tiger</strong> is hands down the fastest-paying game in Card Rummy. With rounds lasting just 30 seconds, you can play 120 games per hour and potentially earn significantly more than slower games.
+            <strong>Dragon vs Tiger</strong> is hands down the fastest-paying game in Royal X Casino. With rounds lasting just 30 seconds, you can play 120 games per hour and potentially earn significantly more than slower games.
           </p>
 
           <h3 className="text-2xl font-semibold text-white mt-8 mb-4">Why Dragon vs Tiger Has High Payout Potential</h3>
@@ -322,7 +322,7 @@ export default function BlogHighPayoutGames() {
               <strong>Take advantage of VIP rebates:</strong> Higher VIP levels = higher daily rebates (5-15%) on all games, increasing your effective payouts.
             </li>
             <li>
-              <strong>Play during bonus events:</strong> Card Rummy often runs 2x VIP points or bonus cash events - maximize earnings during these times.
+              <strong>Play during bonus events:</strong> Royal X Casino often runs 2x VIP points or bonus cash events - maximize earnings during these times.
             </li>
           </ul>
 
@@ -367,7 +367,7 @@ export default function BlogHighPayoutGames() {
           </p>
 
           <p className="text-gray-300 mb-4">
-            <strong>Best strategy:</strong> Start with Dragon vs Tiger to build your bankroll, then gradually explore other games. Use Andar Bahar for steady income, and advance to Teen Patti/Rummy as you gain skill and confidence. New to Card Rummy? See our <Link href="/blog/how-to-use-card-rummy-app-pakistan-guide-2026" className="text-[#FFA500] hover:underline font-semibold">complete beginner's guide</Link>.
+            <strong>Best strategy:</strong> Start with Dragon vs Tiger to build your bankroll, then gradually explore other games. Use Andar Bahar for steady income, and advance to Teen Patti/Rummy as you gain skill and confidence. New to Royal X Casino? See our <Link href="/blog/how-to-use-card-rummy-app-pakistan-guide-2026" className="text-[#FFA500] hover:underline font-semibold">complete beginner's guide</Link>.
           </p>
 
           <p className="text-gray-300 mb-4">
@@ -376,10 +376,10 @@ export default function BlogHighPayoutGames() {
 
           <div className="mt-12 text-center">
             <Link 
-              href="/download-card-rummy"
+              href="/download"
               className="inline-block bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-bold py-4 px-8 rounded-lg text-lg transition-all transform hover:scale-105 shadow-lg"
             >
-              Download Card Rummy - Start Playing High-Payout Games
+              Download Royal X Casino - Start Playing High-Payout Games
             </Link>
           </div>
         </div>
@@ -388,12 +388,12 @@ export default function BlogHighPayoutGames() {
           <h3 className="text-2xl font-bold text-white mb-6">Related Articles</h3>
           <div className="grid md:grid-cols-2 gap-6">
             <Link href="/blog/tips-to-win-big-in-card-rummy" className="block p-6 bg-purple-800/30 rounded-lg hover:bg-purple-800/50 transition-colors">
-              <h4 className="text-xl font-semibold text-white mb-2">Tips to Win Big in Card Rummy</h4>
+              <h4 className="text-xl font-semibold text-white mb-2">Tips to Win Big in Royal X Casino</h4>
               <p className="text-gray-400">Advanced strategies for maximizing earnings</p>
             </Link>
             <Link href="/blog/how-to-use-card-rummy-app-pakistan-guide-2026" className="block p-6 bg-purple-800/30 rounded-lg hover:bg-purple-800/50 transition-colors">
               <h4 className="text-xl font-semibold text-white mb-2">Complete Beginner's Guide</h4>
-              <p className="text-gray-400">Learn how to use Card Rummy app</p>
+              <p className="text-gray-400">Learn how to use Royal X Casino app</p>
             </Link>
           </div>
         </aside>

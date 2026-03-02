@@ -18,45 +18,36 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://cardrummyapp.com.pk'),
+  metadataBase: new URL('https://royalexcasino.com.pk'),
   title: {
-    default: "Card Rummy Pakistan v1.225 Free Download Official APK",
-    template: "%s | Card Rummy"
+    default: "Royal X Casino APK Pakistan | Download Latest Version 2026 | Real Money Gaming",
+    template: "%s | Royal X Casino"
   },
-  description: "Card Rummy 2026 - Pakistan's #1 card game platform. Download Card Rummy APK, play Teen Patti, Rummy, Dragon vs Tiger & win real cash. Fast withdrawals via JazzCash & EasyPaisa. Join 500K+ players!",
+  description: "Royal X Casino 2026 - Pakistan's #1 real money gaming app. Download Royal X Casino APK, play Teen Patti, Slots, Fishing & 200+ games. Zero wagering, instant withdrawals via JazzCash & EasyPaisa.",
   keywords: [
-    "Card Rummy",
-    "card rummy game",
-    "card rummy download",
-    "card rummy app",
-    "card rummy apk",
-    "card rummy pakistan",
-    "card rummy online",
-    "download card rummy",
-    "card rummy real money",
-    "3 Patti Card Rummy",
-    "how to play card rummy",
-    "card rummy 2026",
-    "Pakistan card games",
-    "Teen Patti game",
-    "online rummy game",
-    "earn money playing cards",
-    "Android gaming app 2026",
+    "Royal X Casino",
+    "Royal X Casino APK",
+    "Royal X Casino download",
+    "Royal X Casino Pakistan",
+    "royal x casino app",
+    "royal x casino game",
+    "download royal x casino",
+    "royal x casino real money",
+    "Teen Patti",
+    "Andar Bahar",
+    "casino games Pakistan",
+    "earn money gaming Pakistan",
     "JazzCash gaming",
     "EasyPaisa gaming",
-    "mobile card games",
     "real money games Pakistan",
-    "card game earning app",
-    "Teen Patti online",
-    "Dragon vs Tiger",
+    "Royal X Casino 2026",
     "best earning app Pakistan",
-    "rummy card game",
-    "play rummy online",
-    "rummy game download"
+    "zero wagering casino",
+    "instant withdrawal casino Pakistan",
   ],
-  authors: [{ name: "Card Rummy Team" }],
-  creator: "Card Rummy",
-  publisher: "Card Rummy",
+  authors: [{ name: "Royal X Casino" }],
+  creator: "Royal X Casino",
+  publisher: "Royal X Casino",
   robots: {
     index: true,
     follow: true,
@@ -70,62 +61,52 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: '/favicon.ico', type: 'image/x-icon', sizes: 'any' },
-      { url: '/card-rummy-logo.webp', type: 'image/webp', sizes: '192x192' },
-      { url: '/card-rummy.webp', type: 'image/webp', sizes: '512x512' }
+      { url: '/royal-x-casino-logo.webp', type: 'image/webp', sizes: '192x192' },
+      { url: '/royal-x-casino-logo.webp', type: 'image/webp', sizes: '32x32 48x48' },
+      { url: '/royal-x-casino.webp', type: 'image/webp', sizes: '512x512' }
     ],
     apple: [
-      { url: '/card-rummy-logo.webp', sizes: '180x180' }
+      { url: '/royal-x-casino-logo.webp', sizes: '180x180' }
     ],
     shortcut: [
-      { url: '/favicon.ico', type: 'image/x-icon' }
+      { url: '/royal-x-casino-logo.webp', type: 'image/webp' }
     ]
   },
-  verification: {
-    google: "8a7c21f6e90a89ef",
-  },
   alternates: {
-    canonical: "https://cardrummyapp.com.pk",
+    canonical: "https://royalexcasino.com.pk",
   },
   openGraph: {
-    title: "Card Rummy Pakistan v1.225 Free Download Official APK",
-    description: "Card Rummy 2026 - Pakistan's #1 card game platform. Join 500K+ players. Play Teen Patti, Rummy & more. Earn real money with JazzCash & EasyPaisa. Download now!",
-    url: "https://cardrummyapp.com.pk",
-    siteName: "Card Rummy",
+    title: "Royal X Casino APK Pakistan | Download 2026 | Real Money Gaming App",
+    description: "Royal X Casino 2026 - 200+ games, zero wagering, instant withdrawals. Play Teen Patti, Slots, Fishing. Earn real money with JazzCash & EasyPaisa. Download now!",
+    url: "https://royalexcasino.com.pk",
+    siteName: "Royal X Casino",
     locale: "en_US",
     type: "website",
     images: [
       {
-        url: "https://cardrummyapp.com.pk/feature/og-image.webp",
+        url: "https://royalexcasino.com.pk/feature/og-image.webp",
         width: 1200,
         height: 630,
-        alt: "Card Rummy - Premier Card Gaming Platform",
+        alt: "Royal X Casino - Pakistan Real Money Gaming",
       },
-      {
-        url: "https://cardrummyapp.com.pk/feature/og-image-square.webp",
-        width: 800,
-        height: 800,
-        alt: "Card Rummy - Premier Card Gaming Platform",
-      }
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Card Rummy Pakistan v1.225 Free Download Official APK",
-    description: "Card Rummy 2026 - Pakistan's #1 card game platform. Join 500K+ players. Play Teen Patti, Rummy & more. Earn real money with JazzCash & EasyPaisa. Download now!",
-    creator: "@cardrummy",
+    title: "Royal X Casino APK Pakistan | Download 2026",
+    description: "Royal X Casino - 200+ games, zero wagering, instant withdrawals. Earn real money with JazzCash & EasyPaisa.",
     images: [
       {
-        url: "https://cardrummyapp.com.pk/feature/twitter-card.webp",
+        url: "https://royalexcasino.com.pk/feature/og-image.webp",
         width: 1200,
         height: 600,
-        alt: "Card Rummy - Premier Card Gaming Platform",
+        alt: "Royal X Casino - Pakistan Real Money Gaming",
       }
     ],
   },
-  applicationName: "Card Rummy",
+  applicationName: "Royal X Casino",
   category: "Gaming",
-  classification: "Card Gaming Platform",
+  classification: "Casino Gaming Platform",
 };
 
 export default function RootLayout({
@@ -138,12 +119,10 @@ export default function RootLayout({
       <head>
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-        <link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="16x16 32x32" />
-        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-        <link rel="icon" href="/card-rummy-logo.webp" type="image/webp" sizes="192x192" />
-        <link rel="icon" href="/card-rummy.webp" type="image/webp" sizes="512x512" />
-        <link rel="apple-touch-icon" href="/card-rummy-logo.webp" sizes="180x180" />
-        <meta property="og:image" content="https://cardrummyapp.com.pk/card-rummy-logo.webp" />
+        <link rel="icon" href="/royal-x-casino-logo.webp" type="image/webp" sizes="32x32 48x48 192x192" />
+        <link rel="shortcut icon" href="/royal-x-casino-logo.webp" type="image/webp" />
+        <link rel="apple-touch-icon" href="/royal-x-casino-logo.webp" sizes="180x180" />
+        <meta property="og:image" content="https://royalexcasino.com.pk/feature/og-image.webp" />
         
         {/* Preconnect to external domains for faster loading */}
         <link rel="preconnect" href="https://www.googletagmanager.com" crossOrigin="anonymous" />
@@ -204,14 +183,11 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Organization",
-              "name": "Card Rummy",
-              "url": "https://cardrummyapp.com.pk",
-              "logo": "https://cardrummyapp.com.pk/card-rummy-logo.webp",
-              "description": "Card Rummy is Pakistan's premier card gaming platform, offering Teen Patti, Rummy, and many other card games with real cash rewards.",
-              "sameAs": [
-                "https://facebook.com/cardrummy",
-                "https://twitter.com/cardrummy"
-              ]
+              "name": "Royal X Casino",
+              "url": "https://royalexcasino.com.pk",
+              "logo": "https://royalexcasino.com.pk/royal-x-casino-logo.webp",
+              "description": "Royal X Casino is Pakistan's premier real money gaming platform, offering 200+ games including Teen Patti, Slots, Fishing, and more with instant withdrawals.",
+              "sameAs": []
             })
           }}
         />
@@ -224,7 +200,7 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "SoftwareApplication",
-              "name": "Card Rummy",
+              "name": "Royal X Casino",
               "operatingSystem": "Android",
               "applicationCategory": "GameApplication",
               "offers": {

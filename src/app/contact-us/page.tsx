@@ -1,34 +1,21 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 
 export const metadata: Metadata = {
-  title: 'Contact Us - Card Rummy | Get Help & Support',
-  description: 'Contact Card Rummy support team for help with the app, content, privacy policy, and more. We are here to assist you.',
-  keywords: 'contact card rummy, card rummy support, card rummy email, customer support, help card rummy',
-  openGraph: {
-    title: 'Contact Us - Card Rummy',
-    description: 'Get in touch with Card Rummy support team for any queries or assistance.',
-    url: 'https://cardrummyapp.com.pk/contact-us',
-    siteName: 'Card Rummy',
-    type: 'website',
-  },
-  twitter: {
-    card: 'summary',
-    title: 'Contact Us - Card Rummy',
-    description: 'Get in touch with Card Rummy support team for any queries or assistance.',
-  },
-  alternates: {
-    canonical: 'https://cardrummyapp.com.pk/contact-us',
-  },
-  robots: {
-    index: true,
-    follow: true,
-  }
+  title: 'Contact Us - Royal X Casino | Support',
+  description: 'Contact Royal X Casino support for help with the app, deposits, withdrawals, and more.',
+  keywords: 'contact Royal X Casino, Royal X Casino support, customer support',
+  alternates: { canonical: 'https://royalexcasino.com.pk/contact-us' },
 };
 
 export default function Contact() {
   return (
     <div className="min-h-screen bg-primary py-12 px-4">
+      <BreadcrumbSchema items={[
+        { name: 'Home', url: '/' },
+        { name: 'Contact Us', url: '/contact-us' },
+      ]} />
       <div className="container mx-auto">
         <div className="max-w-4xl mx-auto">
           {/* Hero Section */}
@@ -41,7 +28,7 @@ export default function Contact() {
           <div className="bg-secondary rounded-2xl shadow-xl p-8 md:p-12 mb-8">
             <div className="prose prose-lg max-w-none">
               <p className="text-lg text-gray-300 leading-relaxed mb-8">
-                Welcome to the Contact Us page of this site. Here, we will share the source to contact us. Feel free to contact us if you are facing any problems regarding our site, such as <Link href="/" className="text-accent hover:underline font-semibold">Card Rummy</Link> APP related content or <Link href="/about-us" className="text-accent hover:text-accent font-semibold">About us</Link>, <Link href="/privacy" className="text-accent hover:text-accent font-semibold">privacy policy</Link>, etc.
+                Get in touch with Royal X Casino support. Contact us for help with the <Link href="/" className="text-accent hover:underline font-semibold">Royal X Casino</Link> app, <Link href="/about-us" className="text-accent hover:underline font-semibold">About us</Link>, <Link href="/privacy" className="text-accent hover:underline font-semibold">privacy policy</Link>, deposits, or withdrawals.
               </p>
 
               {/* Email Contact Section */}
@@ -55,7 +42,7 @@ export default function Contact() {
                 <p className="text-center mb-4 text-gray-400">Send us your questions or concerns via email</p>
                 <div className="text-center">
                   <a 
-                    href="mailto:support@cardrummyapp.com.pk" 
+                    href="mailto:support@royalexcasino.com.pk" 
                     className="inline-flex items-center justify-center bg-accent hover:bg-accent/90 text-primary font-bold py-4 px-8 rounded-full text-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
                   >
                     <svg className="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -77,7 +64,7 @@ export default function Contact() {
                 </svg>
               </div>
               <h3 className="text-xl font-bold mb-2 text-white">App Information</h3>
-              <p className="text-gray-400 mb-4">Need help with the Card Rummy app?</p>
+              <p className="text-gray-400 mb-4">Need help with the Royal X Casino app?</p>
               <Link href="/" className="text-accent hover:text-accent font-semibold">
                 Learn More →
               </Link>
@@ -121,7 +108,7 @@ export default function Contact() {
             "@type": "ContactPage",
             "mainEntity": {
               "@type": "Organization",
-              "name": "Card Rummy",
+              "name": "Royal X Casino",
               "url": "https://cardrummyapp.com.pk",
               "contactPoint": {
                 "@type": "ContactPoint",

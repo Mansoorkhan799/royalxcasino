@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
+import { DOWNLOAD_URL } from '@/lib/config';
 
 export const metadata: Metadata = {
   title: 'Card Rummy for PC Download Latest Version Free 2026',
@@ -44,7 +45,7 @@ export default function CardRummyForPCPage() {
     "@type": "TechArticle",
     "headline": "Card Rummy for PC Download Latest Version Free 2026",
     "description": "Complete guide to download and play Card Rummy on PC using Android emulator. Learn about system requirements, best emulators, and features.",
-    "image": "https://cardrummyapp.com.pk/card-rummy-logo.webp",
+    "image": "https://royalexcasino.com.pk/royal-x-casino-logo.webp",
     "author": {
       "@type": "Organization",
       "name": "Card Rummy",
@@ -55,7 +56,7 @@ export default function CardRummyForPCPage() {
       "name": "Card Rummy",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://cardrummyapp.com.pk/card-rummy-logo.webp"
+        "url": "https://royalexcasino.com.pk/royal-x-casino-logo.webp"
       }
     },
     "datePublished": "2026-01-03",
@@ -103,7 +104,7 @@ export default function CardRummyForPCPage() {
         <div className="flex justify-center mb-12">
           <div className="relative" style={{ width: '280px', height: '280px', maxWidth: '100%' }}>
             <Image
-              src="/card-rummy.webp"
+              src="/royal-x-casino-logo.webp"
               alt="Card Rummy for PC"
               width={280}
               height={280}
@@ -237,7 +238,7 @@ export default function CardRummyForPCPage() {
           {/* Download Button */}
           <div className="flex justify-center mt-10">
             <a 
-              href="https://pkcardrummy.com/?from_gameid=6052215&channelCode=5784509"
+              href={DOWNLOAD_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="bg-[#0ea5e9] hover:bg-[#0284c7] text-white font-bold py-4 px-12 rounded-full inline-flex items-center transition-all shadow-lg hover:shadow-xl"
@@ -452,7 +453,7 @@ export default function CardRummyForPCPage() {
             Download Card Rummy and install it using your favorite emulator!
           </p>
           <a 
-            href="https://pkcardrummy.com/?from_gameid=6052215&channelCode=5784509"
+            href={DOWNLOAD_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="bg-white text-[#0ea5e9] hover:bg-gray-100 font-bold py-4 px-12 rounded-full inline-flex items-center transition-all shadow-lg hover:shadow-xl"

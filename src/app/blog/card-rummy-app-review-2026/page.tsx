@@ -3,34 +3,34 @@ import Link from 'next/link';
 import BlogPostSchema from '@/components/BlogPostSchema';
 
 export const metadata: Metadata = {
-  title: 'Card Rummy App Review 2026: Features, Pros, Cons, and Payout Speed',
-  description: 'Complete Card Rummy app review 2026: Honest analysis of features, games, bonuses, withdrawal speed, pros & cons. Is Card Rummy worth it for Pakistan players?',
+  title: 'Royal X Casino App Review 2026: Features, Pros, Cons, and Payout Speed',
+  description: 'Complete Royal X Casino app review 2026: Honest analysis of features, games, bonuses, withdrawal speed, pros & cons. Is Royal X Casino worth it for Pakistan players?',
   keywords: [
-    'Card Rummy review',
-    'Card Rummy app review',
-    'Card Rummy review 2026',
-    'Card Rummy pros cons',
-    'Card Rummy features',
-    'Card Rummy payout speed',
-    'is Card Rummy good',
-    'Card Rummy worth it',
-    'Card Rummy honest review',
-    'Card Rummy Pakistan review'
+    'Royal X Casino review',
+    'Royal X Casino app review',
+    'Royal X Casino review 2026',
+    'Royal X Casino pros cons',
+    'Royal X Casino features',
+    'Royal X Casino payout speed',
+    'is Royal X Casino good',
+    'Royal X Casino worth it',
+    'Royal X Casino honest review',
+    'Royal X Casino Pakistan review'
   ],
   openGraph: {
-    title: 'Card Rummy App Review 2026: Features, Pros, Cons, and Payout Speed',
-    description: 'Honest, comprehensive review of Card Rummy app. Features, games, bonuses, withdrawal speed, and real user experience for 2026.',
+    title: 'Royal X Casino App Review 2026: Features, Pros, Cons, and Payout Speed',
+    description: 'Honest, comprehensive review of Royal X Casino app. Features, games, bonuses, withdrawal speed, and real user experience for 2026.',
     type: 'article',
   },
-  alternates: { canonical: "https://cardrummyapp.com.pk/blog/card-rummy-app-review-2026" },
+  alternates: { canonical: "https://royalexcasino.com.pk/blog/card-rummy-app-review-2026" },
 };
 
 export default function BlogCardRummyAppReview() {
   return (
     <main className="min-h-screen bg-[#060A20]">
       <BlogPostSchema
-        title="Card Rummy App Review 2026: Features, Pros, Cons, and Payout Speed"
-        description="Complete Card Rummy app review 2026: Honest analysis of features, games, bonuses, withdrawal speed, pros & cons. Is Card Rummy worth it for Pakistan players?"
+        title="Royal X Casino App Review 2026: Features, Pros, Cons, and Payout Speed"
+        description="Complete Royal X Casino app review 2026: Honest analysis of features, games, bonuses, withdrawal speed, pros & cons. Is Royal X Casino worth it for Pakistan players?"
         slug="card-rummy-app-review-2026"
         datePublished="2026-01-11"
       />
@@ -40,12 +40,12 @@ export default function BlogCardRummyAppReview() {
           <span className="mx-2">/</span>
           <Link href="/blog" className="hover:text-[#FFA500]">Blog</Link>
           <span className="mx-2">/</span>
-          <span className="text-white">Card Rummy App Review 2026</span>
+          <span className="text-white">Royal X Casino App Review 2026</span>
         </nav>
 
         <header className="mb-12">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            Card Rummy App Review 2026: Features, Pros, Cons, and Payout Speed
+            Royal X Casino App Review 2026: Features, Pros, Cons, and Payout Speed
           </h1>
           <div className="flex items-center gap-4 text-gray-400 text-sm">
             <time dateTime="2026-01-11">January 11, 2026</time>
@@ -56,13 +56,13 @@ export default function BlogCardRummyAppReview() {
 
         <div className="prose prose-invert prose-lg max-w-none">
           <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-            Is <Link href="/" className="text-[#FFA500] hover:underline font-semibold">Card Rummy</Link> worth your time and money? This comprehensive 2026 review covers everything: games, bonuses, withdrawal speed, user experience, and honest pros and cons. Whether you're a beginner or experienced player, this review will help you decide if Card Rummy is right for you.
+            Is <Link href="/" className="text-[#FFA500] hover:underline font-semibold">Royal X Casino</Link> worth your time and money? This comprehensive 2026 review covers everything: games, bonuses, withdrawal speed, user experience, and honest pros and cons. Whether you're a beginner or experienced player, this review will help you decide if Royal X Casino is right for you.
           </p>
 
           <div className="bg-gradient-to-r from-purple-800/50 to-orange-600/50 rounded-lg p-8 my-8">
             <p className="text-white text-2xl font-bold mb-4">Overall Rating: 4.5/5 ⭐</p>
             <p className="text-white text-lg">
-              Card Rummy is one of the best real money gaming apps in Pakistan, with fast withdrawals, generous bonuses, and multiple games. However, it operates in a legal gray area and requires responsible play.
+              Royal X Casino is one of the best real money gaming apps in Pakistan, with fast withdrawals, generous bonuses, and multiple games. However, it operates in a legal gray area and requires responsible play.
             </p>
           </div>
 
@@ -72,9 +72,10 @@ export default function BlogCardRummyAppReview() {
             <div className="bg-green-900/30 border border-green-600 rounded-lg p-6">
               <h3 className="text-xl font-semibold text-white mb-4">✅ Pros</h3>
               <ul className="list-disc pl-6 text-gray-300 space-y-2">
-                <li>Fast withdrawals (5-30 minutes)</li>
+                <li>Zero wagering – withdraw bonuses immediately</li>
+                <li>Fast withdrawals (10-30 minutes via JazzCash/EasyPaisa)</li>
                 <li>Generous bonuses (up to ₨5,000 first deposit)</li>
-                <li>Multiple games (4 different options)</li>
+                <li>200+ games (Teen Patti, Slots, Fishing & more)</li>
                 <li>24/7 customer support</li>
                 <li>Comprehensive VIP program (10 levels)</li>
                 <li>Low minimum withdrawal (₨300)</li>
@@ -100,13 +101,19 @@ export default function BlogCardRummyAppReview() {
           <h2 className="text-3xl font-bold text-white mt-12 mb-6">1. Games Available - Rating: 5/5</h2>
           
           <p className="text-gray-300 mb-4">
-            Card Rummy offers <strong>4 different games</strong>, which is more variety than most competitors:
+            Royal X Casino offers <strong>200+ games</strong>, including Teen Patti, Slots, Fishing, and more – far more variety than most competitors:
           </p>
 
           <h3 className="text-2xl font-semibold text-white mt-8 mb-4">Game Breakdown</h3>
           <ul className="list-disc pl-6 text-gray-300 mb-6 space-y-3">
             <li>
               <strong>Teen Patti (3 Patti):</strong> Multiple variations including Classic, AK47, Joker, Muflis. Great for strategy players. Rating: 5/5
+            </li>
+            <li>
+              <strong>Slots:</strong> Multiple slot games with various themes and jackpots. Easy to play, exciting payouts. Rating: 5/5
+            </li>
+            <li>
+              <strong>Fishing:</strong> Arcade-style fishing games. Fun and rewarding. Rating: 5/5
             </li>
             <li>
               <strong>Rummy:</strong> 13-card and 21-card versions. Skill-based game perfect for strategic players. Rating: 5/5
@@ -116,6 +123,9 @@ export default function BlogCardRummyAppReview() {
             </li>
             <li>
               <strong>Andar Bahar:</strong> Simple 50/50 game, easy to learn. Great for steady play. Rating: 4.5/5
+            </li>
+            <li>
+              <strong>200+ more games:</strong> Full casino experience beyond just card games. Rating: 5/5
             </li>
           </ul>
 
@@ -132,14 +142,14 @@ export default function BlogCardRummyAppReview() {
           <div className="bg-purple-800/30 border border-purple-600 rounded-lg p-6 my-8">
             <p className="text-white font-semibold mb-2">🎮 Game Variety Verdict</p>
             <p className="text-gray-300">
-              Excellent variety. Having 4 games means you can switch based on your mood, skill level, or which game is "hot" at the moment. Much better than apps that only offer 1-2 games.
+              Excellent variety. With 200+ games including Teen Patti, Slots, Fishing, and more, you can switch based on your mood, skill level, or which game is "hot" at the moment. Royal X Casino offers a full casino experience.
             </p>
           </div>
 
           <h2 className="text-3xl font-bold text-white mt-12 mb-6">2. Bonuses & Promotions - Rating: 5/5</h2>
           
           <p className="text-gray-300 mb-4">
-            Card Rummy has one of the <strong>most generous bonus systems</strong> in Pakistan:
+            Royal X Casino has one of the <strong>most generous bonus systems</strong> in Pakistan:
           </p>
 
           <h3 className="text-2xl font-semibold text-white mt-8 mb-4">Bonus Breakdown</h3>
@@ -163,7 +173,7 @@ export default function BlogCardRummyAppReview() {
           <h2 className="text-3xl font-bold text-white mt-12 mb-6">3. Withdrawal Speed - Rating: 5/5</h2>
           
           <p className="text-gray-300 mb-4">
-            <strong>This is Card Rummy's biggest strength.</strong> Withdrawal speed is unmatched:
+            <strong>This is Royal X Casino's biggest strength.</strong> Withdrawal speed is unmatched:
           </p>
 
           <h3 className="text-2xl font-semibold text-white mt-8 mb-4">Withdrawal Times</h3>
@@ -188,7 +198,7 @@ export default function BlogCardRummyAppReview() {
           <div className="bg-green-900/30 border border-green-600 rounded-lg p-6 my-8">
             <p className="text-white font-semibold mb-2">⚡ Withdrawal Verdict</p>
             <p className="text-gray-300">
-              Best-in-class. 5-30 minute withdrawals are 10-50x faster than competitors. This alone makes Card Rummy worth considering if fast payouts matter to you.
+              Best-in-class. 5-30 minute withdrawals are 10-50x faster than competitors. This alone makes Royal X Casino worth considering if fast payouts matter to you.
             </p>
           </div>
 
@@ -237,7 +247,7 @@ export default function BlogCardRummyAppReview() {
           <h2 className="text-3xl font-bold text-white mt-12 mb-6">6. VIP Program - Rating: 5/5</h2>
           
           <p className="text-gray-300 mb-4">
-            Card Rummy's VIP program is <strong>comprehensive and rewarding</strong>:
+            Royal X Casino's VIP program is <strong>comprehensive and rewarding</strong>:
           </p>
 
           <h3 className="text-2xl font-semibold text-white mt-8 mb-4">VIP Highlights</h3>
@@ -293,7 +303,7 @@ export default function BlogCardRummyAppReview() {
               <ul className="list-disc pl-6 text-gray-300 space-y-1">
                 <li>"Withdrawals are super fast - got my money in 15 minutes!"</li>
                 <li>"Best bonuses I've seen - got ₨5,000 free on first deposit"</li>
-                <li>"Love the game variety - can switch between 4 games"</li>
+                <li>"Love the game variety - 200+ games to choose from"</li>
                 <li>"VIP program is amazing - earning 15% rebate now"</li>
                 <li>"Customer support is responsive and helpful"</li>
               </ul>
@@ -311,7 +321,7 @@ export default function BlogCardRummyAppReview() {
             </div>
           </div>
 
-          <h2 className="text-3xl font-bold text-white mt-12 mb-6">10. Is Card Rummy Worth It?</h2>
+          <h2 className="text-3xl font-bold text-white mt-12 mb-6">10. Is Royal X Casino Worth It?</h2>
           
           <h3 className="text-2xl font-semibold text-white mt-8 mb-4">For Beginners</h3>
           <p className="text-gray-300 mb-4">
@@ -342,12 +352,12 @@ export default function BlogCardRummyAppReview() {
           <div className="bg-gradient-to-r from-purple-800 to-orange-600 rounded-lg p-8 my-8">
             <h3 className="text-2xl font-bold text-white mb-4">Overall Rating: 4.5/5 ⭐</h3>
             <p className="text-white text-lg mb-4">
-              <strong>Card Rummy is one of the best real money gaming apps in Pakistan.</strong> It excels in:
+              <strong>Royal X Casino is one of the best real money gaming apps in Pakistan.</strong> It excels in:
             </p>
             <ul className="list-disc pl-6 text-white space-y-2 mb-4">
               <li>Withdrawal speed (5-30 minutes - unmatched)</li>
               <li>Bonus generosity (100% first deposit up to ₨5,000)</li>
-              <li>Game variety (4 different games)</li>
+              <li>Game variety (200+ games: Teen Patti, Slots, Fishing & more)</li>
               <li>VIP program (10 levels, up to 15% rebate)</li>
               <li>Customer support (24/7 live chat)</li>
             </ul>
@@ -359,7 +369,7 @@ export default function BlogCardRummyAppReview() {
           <h2 className="text-3xl font-bold text-white mt-12 mb-6">Recommendation</h2>
           
           <p className="text-gray-300 mb-4">
-            <strong>Card Rummy is recommended IF:</strong>
+            <strong>Royal X Casino is recommended IF:</strong>
           </p>
           <ul className="list-disc pl-6 text-gray-300 mb-6 space-y-2">
             <li>You can afford to lose the money you play with</li>
@@ -370,7 +380,7 @@ export default function BlogCardRummyAppReview() {
           </ul>
 
           <p className="text-gray-300 mb-4">
-            <strong>Card Rummy is NOT recommended IF:</strong>
+            <strong>Royal X Casino is NOT recommended IF:</strong>
           </p>
           <ul className="list-disc pl-6 text-gray-300 mb-6 space-y-2">
             <li>You have gambling addiction issues</li>
@@ -383,14 +393,14 @@ export default function BlogCardRummyAppReview() {
           <div className="bg-orange-600/20 border border-orange-500 rounded-lg p-6 my-8">
             <p className="text-white font-semibold mb-2">⚠️ Final Warning</p>
             <p className="text-gray-300">
-              Card Rummy is a real money gaming app. You can lose money. The legal status is ambiguous. Only play with money you can afford to lose, set strict limits, and play responsibly. If you have addiction concerns, don't play.
+              Royal X Casino is a real money gaming app. You can lose money. The legal status is ambiguous. Only play with money you can afford to lose, set strict limits, and play responsibly. If you have addiction concerns, don't play.
             </p>
           </div>
 
           <h2 className="text-3xl font-bold text-white mt-12 mb-6">Conclusion</h2>
           
           <p className="text-gray-300 mb-4">
-            Card Rummy is a well-designed, feature-rich gaming app with excellent withdrawal speed, generous bonuses, and comprehensive VIP rewards. For players who can manage risk responsibly, it offers one of the best gaming experiences in Pakistan.
+            Royal X Casino is a well-designed, feature-rich gaming app with excellent withdrawal speed, generous bonuses, and comprehensive VIP rewards. For players who can manage risk responsibly, it offers one of the best gaming experiences in Pakistan.
           </p>
 
           <p className="text-gray-300 mb-4">
@@ -398,15 +408,15 @@ export default function BlogCardRummyAppReview() {
           </p>
 
           <p className="text-gray-300 mb-4">
-            <strong>Bottom line:</strong> If you're looking for fast payouts, good bonuses, and game variety, Card Rummy is an excellent choice - as long as you play responsibly.
+            <strong>Bottom line:</strong> If you're looking for fast payouts, good bonuses, and game variety, Royal X Casino is an excellent choice - as long as you play responsibly.
           </p>
 
           <div className="mt-12 text-center">
             <Link 
-              href="/download-card-rummy"
+              href="/download"
               className="inline-block bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-bold py-4 px-8 rounded-lg text-lg transition-all transform hover:scale-105 shadow-lg"
             >
-              Download Card Rummy APK v1.225
+              Download Royal X Casino APK v2.54.7
             </Link>
           </div>
         </div>
@@ -415,7 +425,7 @@ export default function BlogCardRummyAppReview() {
           <h3 className="text-2xl font-bold text-white mb-6">Related Reviews & Guides</h3>
           <div className="grid md:grid-cols-2 gap-6">
             <Link href="/blog/is-card-rummy-safe-legal-pakistan" className="block p-6 bg-purple-800/30 rounded-lg hover:bg-purple-800/50 transition-colors">
-              <h4 className="text-xl font-semibold text-white mb-2">Is Card Rummy Safe and Legal?</h4>
+              <h4 className="text-xl font-semibold text-white mb-2">Is Royal X Casino Safe and Legal?</h4>
               <p className="text-gray-400">Complete safety and legal analysis</p>
             </Link>
             <Link href="/blog/responsible-gaming-guide-card-rummy" className="block p-6 bg-purple-800/30 rounded-lg hover:bg-purple-800/50 transition-colors">

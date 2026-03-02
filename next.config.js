@@ -23,6 +23,16 @@ const nextConfig = {
     qualities: [75, 80, 90, 100], // Configure allowed image quality values
   },
 
+  // 301 redirects for old URLs (Card Rummy -> Royal X Casino)
+  async redirects() {
+    return [
+      { source: '/download-card-rummy', destination: '/download', permanent: true },
+      { source: '/deposit-money-in-card-rummy', destination: '/deposit-guide', permanent: true },
+      { source: '/withdraw-money-from-card-rummy', destination: '/withdraw-guide', permanent: true },
+      { source: '/card-rummy-for-pc', destination: '/download', permanent: true },
+    ];
+  },
+
   // Optimize static file serving
   async rewrites() {
     return [
@@ -30,10 +40,10 @@ const nextConfig = {
         source: '/.well-known/:path*',
         destination: '/public/.well-known/:path*',
       },
-      // Redirect old 3Patti Blue logo to Card Rummy logo
+      // Redirect old 3Patti Blue logo to Royal X Casino logo
       {
         source: '/3-patti-blue-logo.webp',
-        destination: '/card-rummy-logo.webp',
+        destination: '/royal-x-casino-logo.webp',
       },
     ];
   },

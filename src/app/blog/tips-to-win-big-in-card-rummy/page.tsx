@@ -2,11 +2,12 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import Script from 'next/script';
 import BlogPostSchema from '@/components/BlogPostSchema';
+import { DOWNLOAD_URL } from '@/lib/config';
 
 export const metadata: Metadata = {
-  title: 'Tips to Win Big in Card Rummy - Expert Strategies & Tricks 2026',
-  description: 'Discover expert strategies and proven tips to maximize your winnings in Card Rummy. Learn how to win big in Teen Patti, Rummy, and other card games.',
-  keywords: ['Card Rummy tips', 'win big Card Rummy', 'Teen Patti strategies', 'Rummy tricks', 'Card Rummy strategies', 'earn money Card Rummy'],
+  title: 'Tips to Win Big in Royal X Casino - Expert Strategies & Tricks 2026',
+  description: 'Discover expert strategies and proven tips to maximize your winnings in Royal X Casino. Learn how to win big in Teen Patti, Slots, Fishing, and 200+ games.',
+  keywords: ['Royal X Casino tips', 'win big Royal X Casino', 'Teen Patti strategies', 'Rummy tricks', 'Royal X Casino strategies', 'earn money Royal X Casino'],
   robots: {
     index: true,
     follow: true,
@@ -18,14 +19,14 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "https://cardrummyapp.com.pk/blog/tips-to-win-big-in-card-rummy",
+    canonical: "https://royalexcasino.com.pk/blog/tips-to-win-big-in-card-rummy",
   },
   openGraph: {
-    title: 'Tips to Win Big in Card Rummy - Expert Strategies',
-    description: 'Discover expert strategies and tips to maximize your winnings in Teen Patti, Rummy, and other card games.',
+    title: 'Tips to Win Big in Royal X Casino - Expert Strategies',
+    description: 'Discover expert strategies and tips to maximize your winnings in Teen Patti, Slots, Fishing, and 200+ games.',
     type: 'article',
     publishedTime: '2026-01-20T00:00:00Z',
-    authors: ['Card Rummy Team'],
+    authors: ['Royal X Casino Team'],
   }
 };
 
@@ -33,8 +34,8 @@ export default function TipsToWinBig() {
   return (
     <>
       <BlogPostSchema
-        title="Tips to Win Big in Card Rummy - Expert Strategies & Tricks 2026"
-        description="Discover expert strategies and proven tips to maximize your winnings in Card Rummy. Learn how to win big in Teen Patti, Rummy, and other card games."
+        title="Tips to Win Big in Royal X Casino - Expert Strategies & Tricks 2026"
+        description="Discover expert strategies and proven tips to maximize your winnings in Royal X Casino. Learn how to win big in Teen Patti, Slots, Fishing, and 200+ games."
         slug="tips-to-win-big-in-card-rummy"
         datePublished="2026-01-20"
       />
@@ -50,12 +51,12 @@ export default function TipsToWinBig() {
           </div>
 
           <div className="max-w-4xl mx-auto">
-            <h1 className="text-3xl md:text-5xl font-bold mb-6 text-white">Tips to Win Big in <Link href="/" className="text-accent hover:text-accent">Card Rummy</Link></h1>
+            <h1 className="text-3xl md:text-5xl font-bold mb-6 text-white">Tips to Win Big in <Link href="/" className="text-accent hover:text-accent">Royal X Casino</Link></h1>
             
             <div className="prose prose-lg max-w-none">
               <div className="bg-secondary rounded-2xl shadow-xl p-8 md:p-12 mb-8">
                 <p className="text-lg text-gray-300 leading-relaxed mb-0">
-                  Want to maximize your winnings in Card Rummy? If you haven't already, <Link href="/download-card-rummy" className="text-accent hover:underline font-semibold">download Card Rummy</Link> to get started. Whether you're playing Teen Patti, Rummy, Dragon vs Tiger, or other card games, these expert strategies and tips will help you play smarter and earn more real cash. Follow these proven techniques to boost your success rate and become a winning player.
+                  Want to maximize your winnings in Royal X Casino? If you haven't already, <Link href="/download" className="text-accent hover:underline font-semibold">download Royal X Casino</Link> to get started. Whether you're playing Teen Patti, Rummy, Dragon vs Tiger, or other card games, these expert strategies and tips will help you play smarter and earn more real cash. Follow these proven techniques to boost your success rate and become a winning player.
                 </p>
               </div>
 
@@ -74,7 +75,7 @@ export default function TipsToWinBig() {
                   <div className="bg-[#0A1029] rounded-xl p-6 border-l-4 border-accent">
                     <h3 className="text-2xl font-bold mb-3 text-white">2. Use Bonuses Wisely</h3>
                     <p className="text-gray-300 leading-relaxed">
-                      Card Rummy offers daily login bonuses, referral bonuses, and deposit rewards. Use these bonuses strategically to play more games without spending your own money. Take advantage of welcome bonuses, daily rewards, and special promotions to increase your balance and play more rounds.
+                      Royal X Casino offers daily login bonuses, referral bonuses, and deposit rewards. Use these bonuses strategically to play more games without spending your own money. Take advantage of welcome bonuses, daily rewards, and special promotions to increase your balance and play more rounds.
                     </p>
                   </div>
 
@@ -130,7 +131,7 @@ export default function TipsToWinBig() {
                   <div className="bg-[#0A1029] rounded-xl p-6 border-l-4 border-accent">
                     <h3 className="text-2xl font-bold mb-3 text-white">10. Avoid Fake Apps</h3>
                     <p className="text-gray-300 leading-relaxed">
-                      Always download the original Card Rummy app through official and trusted sources. Fake links or websites can steal your personal data and money. Verify the app's authenticity before installing.
+                      Always download the original Royal X Casino app through official and trusted sources. Fake links or websites can steal your personal data and money. Verify the app's authenticity before installing.
                     </p>
                   </div>
                 </div>
@@ -265,7 +266,7 @@ export default function TipsToWinBig() {
                   <div>
                     <h3 className="text-xl font-bold text-red-400 mb-2">Play Responsibly</h3>
                     <p className="text-red-300 mb-0">
-                      Remember that Card Rummy is for entertainment purposes. Only play with money you can afford to lose. If you feel you're developing a gambling problem, seek professional help immediately. Set limits and stick to them.
+                      Remember that Royal X Casino is for entertainment purposes. Only play with money you can afford to lose. If you feel you're developing a gambling problem, seek professional help immediately. Set limits and stick to them.
                     </p>
                   </div>
                 </div>
@@ -274,15 +275,15 @@ export default function TipsToWinBig() {
               {/* CTA */}
               <div className="bg-gradient-to-r from-orange-600 to-orange-500 rounded-2xl shadow-xl p-8 md:p-12 text-center">
                 <h2 className="text-3xl font-bold mb-4 text-white">Ready to Win Big?</h2>
-                <p className="text-white text-lg mb-8 max-w-2xl mx-auto">Apply these expert tips and strategies to maximize your winnings in Card Rummy. Download the app now and start playing smarter!</p>
+                <p className="text-white text-lg mb-8 max-w-2xl mx-auto">Apply these expert tips and strategies to maximize your winnings in Royal X Casino. Download the app now and start playing smarter!</p>
                 
                 <Link 
-                  href="https://pkcardrummy.com/?from_gameid=6052215&channelCode=5784509"
+                  href={DOWNLOAD_URL}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-block bg-white text-accent font-bold py-4 px-8 rounded-full hover:bg-[#0A1029] transition-all shadow-2xl hover:shadow-3xl transform hover:scale-105"
                 >
-                  DOWNLOAD CARD RUMMY NOW
+                  DOWNLOAD ROYAL X CASINO NOW
                 </Link>
               </div>
             </div>
@@ -297,26 +298,26 @@ export default function TipsToWinBig() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "BlogPosting",
-            "headline": "Tips to Win Big in Card Rummy - Expert Strategies",
-            "description": "Discover expert strategies and tips to maximize your winnings in Teen Patti, Rummy, and other card games.",
+            "headline": "Tips to Win Big in Royal X Casino - Expert Strategies",
+            "description": "Discover expert strategies and tips to maximize your winnings in Teen Patti, Slots, Fishing, and 200+ games.",
             "datePublished": "2026-01-20T00:00:00Z",
             "dateModified": new Date().toISOString(),
             "author": {
               "@type": "Organization",
-              "name": "Card Rummy Team",
-              "url": "https://cardrummyapp.com.pk"
+              "name": "Royal X Casino Team",
+              "url": "https://royalexcasino.com.pk"
             },
             "publisher": {
               "@type": "Organization",
-              "name": "Card Rummy",
+              "name": "Royal X Casino",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://cardrummyapp.com.pk/card-rummy.webp"
+                "url": "https://royalexcasino.com.pk/royal-x-casino.webp"
               }
             },
             "mainEntityOfPage": {
               "@type": "WebPage",
-              "@id": "https://cardrummyapp.com.pk/blog/tips-to-win-big-in-card-rummy"
+              "@id": "https://royalexcasino.com.pk/blog/tips-to-win-big-in-card-rummy"
             }
           })
         }}

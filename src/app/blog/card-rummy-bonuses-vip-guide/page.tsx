@@ -3,34 +3,34 @@ import Link from 'next/link';
 import BlogPostSchema from '@/components/BlogPostSchema';
 
 export const metadata: Metadata = {
-  title: 'Card Rummy Bonuses Explained: Welcome Bonus, Recharge Rebate, and VIP Rewards Guide 2026',
-  description: 'Complete Card Rummy bonuses guide 2026: Welcome bonus, recharge rebate, VIP levels, referral commission, daily tasks & step-by-step guide to maximize rewards in Pakistan!',
+  title: 'Royal X Casino Bonuses Explained: Welcome Bonus, Recharge Rebate, and VIP Rewards Guide 2026',
+  description: 'Complete Royal X Casino bonuses guide 2026: Welcome bonus, recharge rebate, VIP levels, referral commission, daily tasks & step-by-step guide to maximize rewards in Pakistan!',
   keywords: [
-    'Card Rummy bonuses',
-    'Card Rummy welcome bonus',
-    'Card Rummy VIP guide',
-    'Card Rummy recharge rebate',
-    'Card Rummy referral bonus',
-    'Card Rummy VIP levels',
-    'Card Rummy rewards',
-    'how to get Card Rummy bonus',
-    'Card Rummy bonus explained',
-    'Card Rummy VIP program'
+    'Royal X Casino bonuses',
+    'Royal X Casino welcome bonus',
+    'Royal X Casino VIP guide',
+    'Royal X Casino recharge rebate',
+    'Royal X Casino referral bonus',
+    'Royal X Casino VIP levels',
+    'Royal X Casino rewards',
+    'how to get Royal X Casino bonus',
+    'Royal X Casino bonus explained',
+    'Royal X Casino VIP program'
   ],
   openGraph: {
-    title: 'Card Rummy Bonuses Explained: Welcome Bonus, Recharge Rebate, and VIP Rewards Guide',
-    description: 'Complete guide to all Card Rummy bonuses and VIP rewards. Learn how to maximize welcome bonus, recharge rebates, and VIP level benefits!',
+    title: 'Royal X Casino Bonuses Explained: Welcome Bonus, Recharge Rebate, and VIP Rewards Guide',
+    description: 'Complete guide to all Royal X Casino bonuses and VIP rewards. Learn how to maximize welcome bonus, recharge rebates, and VIP level benefits!',
     type: 'article',
   },
-  alternates: { canonical: "https://cardrummyapp.com.pk/blog/card-rummy-bonuses-vip-guide" },
+  alternates: { canonical: "https://royalexcasino.com.pk/blog/card-rummy-bonuses-vip-guide" },
 };
 
 export default function BlogCardRummyBonusesVIPGuide() {
   return (
     <main className="min-h-screen bg-[#060A20]">
       <BlogPostSchema
-        title="Card Rummy Bonuses Explained: Welcome Bonus, Recharge Rebate, and VIP Rewards Guide 2026"
-        description="Complete Card Rummy bonuses guide 2026: Welcome bonus, recharge rebate, VIP levels, referral commission, daily tasks & step-by-step guide to maximize rewards in Pakistan!"
+        title="Royal X Casino Bonuses Explained: Welcome Bonus, Recharge Rebate, and VIP Rewards Guide 2026"
+        description="Complete Royal X Casino bonuses guide 2026: Welcome bonus, recharge rebate, VIP levels, referral commission, daily tasks & step-by-step guide to maximize rewards in Pakistan!"
         slug="card-rummy-bonuses-vip-guide"
         datePublished="2026-01-11"
       />
@@ -40,12 +40,12 @@ export default function BlogCardRummyBonusesVIPGuide() {
           <span className="mx-2">/</span>
           <Link href="/blog" className="hover:text-[#FFA500]">Blog</Link>
           <span className="mx-2">/</span>
-          <span className="text-white">Card Rummy Bonuses & VIP Guide</span>
+          <span className="text-white">Royal X Casino Bonuses & VIP Guide</span>
         </nav>
 
         <header className="mb-12">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            Card Rummy Bonuses Explained: Welcome Bonus, Recharge Rebate, and VIP Rewards Guide
+            Royal X Casino Bonuses Explained: Welcome Bonus, Recharge Rebate, and VIP Rewards Guide
           </h1>
           <div className="flex items-center gap-4 text-gray-400 text-sm">
             <time dateTime="2026-01-11">January 11, 2026</time>
@@ -56,7 +56,7 @@ export default function BlogCardRummyBonusesVIPGuide() {
 
         <div className="prose prose-invert prose-lg max-w-none">
           <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-            <Link href="/" className="text-[#FFA500] hover:underline font-semibold">Card Rummy</Link> offers one of the most generous bonus systems in Pakistan's online gaming market. From welcome bonuses to VIP rewards, this complete guide explains every bonus type, how to claim them, and strategies to maximize your rewards. Learn how to unlock the full earning potential of Card Rummy's bonus system.
+            <Link href="/" className="text-[#FFA500] hover:underline font-semibold">Royal X Casino</Link> offers one of the most generous bonus systems in Pakistan&apos;s online gaming market – with <strong>zero wagering requirements</strong>, meaning you can withdraw bonus winnings immediately. From welcome bonuses to VIP rewards, this complete guide explains every bonus type, how to claim them, and strategies to maximize your rewards.
           </p>
 
           <h2 className="text-3xl font-bold text-white mt-12 mb-6">Complete Bonus Overview</h2>
@@ -113,7 +113,7 @@ export default function BlogCardRummyBonusesVIPGuide() {
           
           <h3 className="text-2xl font-semibold text-white mt-8 mb-4">What Is the Welcome Bonus?</h3>
           <p className="text-gray-300 mb-4">
-            The welcome bonus is a one-time bonus given to new players when they make their first deposit. It's Card Rummy's way of saying "thank you" for joining.
+            The welcome bonus is a one-time bonus given to new players when they make their first deposit. It's Royal X Casino's way of saying "thank you" for joining.
           </p>
 
           <h3 className="text-2xl font-semibold text-white mt-8 mb-4">Welcome Bonus Details</h3>
@@ -127,7 +127,7 @@ export default function BlogCardRummyBonusesVIPGuide() {
 
           <h3 className="text-2xl font-semibold text-white mt-8 mb-4">How to Claim Welcome Bonus</h3>
           <ol className="list-decimal pl-6 text-gray-300 mb-6 space-y-3">
-            <li>Register your Card Rummy account (see our <Link href="/blog/create-card-rummy-account-and-login" className="text-[#FFA500] hover:underline font-semibold">account creation guide</Link>)</li>
+            <li>Register your Royal X Casino account (see our <Link href="/blog/create-card-rummy-account-and-login" className="text-[#FFA500] hover:underline font-semibold">account creation guide</Link>)</li>
             <li>Make your first deposit (minimum ₨300) - learn about <Link href="/deposit-money-in-card-rummy" className="text-[#FFA500] hover:underline font-semibold">depositing money</Link></li>
             <li>Bonus is automatically added to your account</li>
             <li>Check your balance - you should see the bonus amount</li>
@@ -145,7 +145,7 @@ export default function BlogCardRummyBonusesVIPGuide() {
           
           <h3 className="text-2xl font-semibold text-white mt-8 mb-4">First Deposit Bonus Explained</h3>
           <p className="text-gray-300 mb-4">
-            The first deposit bonus is Card Rummy's most generous offer - a <strong>100% match bonus</strong> on your first recharge, up to ₨5,000.
+            The first deposit bonus is Royal X Casino's most generous offer - a <strong>100% match bonus</strong> on your first recharge, up to ₨5,000.
           </p>
 
           <h3 className="text-2xl font-semibold text-white mt-8 mb-4">How It Works</h3>
@@ -246,7 +246,7 @@ export default function BlogCardRummyBonusesVIPGuide() {
           
           <h3 className="text-2xl font-semibold text-white mt-8 mb-4">What Is the VIP System?</h3>
           <p className="text-gray-300 mb-4">
-            Card Rummy's VIP system has <strong>10 levels</strong> that reward you for playing. As you play more and deposit more, you automatically level up and unlock better rewards.
+            Royal X Casino's VIP system has <strong>10 levels</strong> that reward you for playing. As you play more and deposit more, you automatically level up and unlock better rewards.
           </p>
 
           <h3 className="text-2xl font-semibold text-white mt-8 mb-4">Complete VIP Level Breakdown</h3>
@@ -346,7 +346,7 @@ export default function BlogCardRummyBonusesVIPGuide() {
           
           <h3 className="text-2xl font-semibold text-white mt-8 mb-4">How Referral Commission Works</h3>
           <p className="text-gray-300 mb-4">
-            When you refer friends to Card Rummy, you earn a <strong>lifetime commission</strong> on all their deposits. This is one of the best ways to build passive income.
+            When you refer friends to Royal X Casino, you earn a <strong>lifetime commission</strong> on all their deposits. This is one of the best ways to build passive income.
           </p>
 
           <h3 className="text-2xl font-semibold text-white mt-8 mb-4">Referral Commission Rates</h3>
@@ -414,7 +414,7 @@ export default function BlogCardRummyBonusesVIPGuide() {
           <h2 className="text-3xl font-bold text-white mt-12 mb-6">7. Special Promotions & Events</h2>
           
           <p className="text-gray-300 mb-4">
-            Card Rummy regularly runs special promotions:
+            Royal X Casino regularly runs special promotions:
           </p>
           <ul className="list-disc pl-6 text-gray-300 mb-6 space-y-2">
             <li><strong>2x VIP Points:</strong> Earn double VIP points during events</li>
@@ -428,7 +428,7 @@ export default function BlogCardRummyBonusesVIPGuide() {
           <ul className="list-disc pl-6 text-gray-300 mb-6 space-y-2">
             <li>Check "Promotions" tab daily</li>
             <li>Enable push notifications</li>
-            <li>Follow Card Rummy on social media</li>
+            <li>Follow Royal X Casino on social media</li>
             <li>Check email for special offers</li>
           </ul>
 
@@ -501,7 +501,7 @@ export default function BlogCardRummyBonusesVIPGuide() {
           <h2 className="text-3xl font-bold text-white mt-12 mb-6">Conclusion</h2>
           
           <p className="text-gray-300 mb-4">
-            Card Rummy's bonus system is one of the most generous in Pakistan. By understanding and maximizing all bonus types - welcome bonus, first deposit bonus, daily rebates, VIP rewards, referral commission, and daily tasks - you can significantly increase your earning potential.
+            Royal X Casino's bonus system is one of the most generous in Pakistan. By understanding and maximizing all bonus types - welcome bonus, first deposit bonus, daily rebates, VIP rewards, referral commission, and daily tasks - you can significantly increase your earning potential.
           </p>
 
           <p className="text-gray-300 mb-4">
@@ -521,10 +521,10 @@ export default function BlogCardRummyBonusesVIPGuide() {
 
           <div className="mt-12 text-center">
             <Link 
-              href="/download-card-rummy"
+              href="/download"
               className="inline-block bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-bold py-4 px-8 rounded-lg text-lg transition-all transform hover:scale-105 shadow-lg"
             >
-              Download Card Rummy - Claim Your Bonuses Now
+              Download Royal X Casino - Claim Your Bonuses Now
             </Link>
           </div>
         </div>
@@ -534,7 +534,7 @@ export default function BlogCardRummyBonusesVIPGuide() {
           <div className="grid md:grid-cols-2 gap-6">
             <Link href="/blog/how-to-use-card-rummy-app-pakistan-guide-2026" className="block p-6 bg-purple-800/30 rounded-lg hover:bg-purple-800/50 transition-colors">
               <h4 className="text-xl font-semibold text-white mb-2">Complete Beginner's Guide</h4>
-              <p className="text-gray-400">Learn how to use Card Rummy app</p>
+              <p className="text-gray-400">Learn how to use Royal X Casino app</p>
             </Link>
             <Link href="/blog/tips-to-win-big-in-card-rummy" className="block p-6 bg-purple-800/30 rounded-lg hover:bg-purple-800/50 transition-colors">
               <h4 className="text-xl font-semibold text-white mb-2">Tips to Win Big</h4>

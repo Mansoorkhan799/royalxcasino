@@ -3,34 +3,34 @@ import Link from 'next/link';
 import BlogPostSchema from '@/components/BlogPostSchema';
 
 export const metadata: Metadata = {
-  title: 'Is Card Rummy Safe and Legal in Pakistan? Risks, Rules, and Safe Play Tips 2026',
-  description: 'Is Card Rummy legal in Pakistan? Complete safety guide 2026: Legal status, risks, security measures, withdrawal safety, and tips for safe play. Know before you play!',
+  title: 'Is Royal X Casino Safe and Legal in Pakistan? Risks, Rules, and Safe Play Tips 2026',
+  description: 'Is Royal X Casino legal in Pakistan? Complete safety guide 2026: Legal status, risks, security measures, withdrawal safety, and tips for safe play. Know before you play!',
   keywords: [
-    'is Card Rummy legal Pakistan',
-    'Card Rummy safe',
-    'Card Rummy legal status',
-    'Card Rummy Pakistan legal',
+    'is Royal X Casino legal Pakistan',
+    'Royal X Casino safe',
+    'Royal X Casino legal status',
+    'Royal X Casino Pakistan legal',
     'online gambling Pakistan legal',
-    'Card Rummy security',
-    'Card Rummy withdrawal safe',
-    'Card Rummy risks',
-    'is Card Rummy trustworthy',
-    'Card Rummy safety guide'
+    'Royal X Casino security',
+    'Royal X Casino withdrawal safe',
+    'Royal X Casino risks',
+    'is Royal X Casino trustworthy',
+    'Royal X Casino safety guide'
   ],
   openGraph: {
-    title: 'Is Card Rummy Safe and Legal in Pakistan? Complete Safety Guide 2026',
-    description: 'Everything you need to know about Card Rummy safety and legal status in Pakistan. Risks, security, and safe play tips.',
+    title: 'Is Royal X Casino Safe and Legal in Pakistan? Complete Safety Guide 2026',
+    description: 'Everything you need to know about Royal X Casino safety and legal status in Pakistan. Risks, security, and safe play tips.',
     type: 'article',
   },
-  alternates: { canonical: "https://cardrummyapp.com.pk/blog/is-card-rummy-safe-legal-pakistan" },
+  alternates: { canonical: "https://royalexcasino.com.pk/blog/is-card-rummy-safe-legal-pakistan" },
 };
 
 export default function BlogIsCardRummySafeLegal() {
   return (
     <main className="min-h-screen bg-[#060A20]">
       <BlogPostSchema
-        title="Is Card Rummy Safe and Legal in Pakistan? Risks, Rules, and Safe Play Tips 2026"
-        description="Is Card Rummy legal in Pakistan? Complete safety guide 2026: Legal status, risks, security measures, withdrawal safety, and tips for safe play. Know before you play!"
+        title="Is Royal X Casino Safe and Legal in Pakistan? Risks, Rules, and Safe Play Tips 2026"
+        description="Is Royal X Casino legal in Pakistan? Complete safety guide 2026: Legal status, risks, security measures, withdrawal safety, and tips for safe play. Know before you play!"
         slug="is-card-rummy-safe-legal-pakistan"
         datePublished="2026-01-11"
       />
@@ -40,12 +40,12 @@ export default function BlogIsCardRummySafeLegal() {
           <span className="mx-2">/</span>
           <Link href="/blog" className="hover:text-[#FFA500]">Blog</Link>
           <span className="mx-2">/</span>
-          <span className="text-white">Is Card Rummy Safe and Legal?</span>
+          <span className="text-white">Is Royal X Casino Safe and Legal?</span>
         </nav>
 
         <header className="mb-12">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            Is Card Rummy Safe and Legal in Pakistan? Risks, Rules, and Safe Play Tips
+            Is Royal X Casino Safe and Legal in Pakistan? Risks, Rules, and Safe Play Tips
           </h1>
           <div className="flex items-center gap-4 text-gray-400 text-sm">
             <time dateTime="2026-01-11">January 11, 2026</time>
@@ -56,7 +56,7 @@ export default function BlogIsCardRummySafeLegal() {
 
         <div className="prose prose-invert prose-lg max-w-none">
           <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-            Before playing any real money game, it's crucial to understand the legal status, safety measures, and risks involved. This comprehensive guide answers the question: <strong>Is <Link href="/" className="text-[#FFA500] hover:underline font-semibold">Card Rummy</Link> safe and legal in Pakistan?</strong> We'll cover everything you need to know to make an informed decision.
+            Before playing any real money game, it's crucial to understand the legal status, safety measures, and risks involved. This comprehensive guide answers the question: <strong>Is <Link href="/" className="text-[#FFA500] hover:underline font-semibold">Royal X Casino</Link> safe and legal in Pakistan?</strong> We'll cover everything you need to know to make an informed decision.
           </p>
 
           <div className="bg-gradient-to-r from-orange-600/30 to-red-600/30 rounded-lg p-8 my-8 border border-orange-500">
@@ -66,11 +66,11 @@ export default function BlogIsCardRummySafeLegal() {
             </p>
           </div>
 
-          <h2 className="text-3xl font-bold text-white mt-12 mb-6">Legal Status of Card Rummy in Pakistan</h2>
+          <h2 className="text-3xl font-bold text-white mt-12 mb-6">Legal Status of Royal X Casino in Pakistan</h2>
           
           <h3 className="text-2xl font-semibold text-white mt-8 mb-4">Current Legal Framework</h3>
           <p className="text-gray-300 mb-4">
-            The legal status of online card games like Card Rummy in Pakistan is <strong>complex and somewhat ambiguous</strong>:
+            The legal status of online card games like Royal X Casino in Pakistan is <strong>complex and somewhat ambiguous</strong>:
           </p>
 
           <ul className="list-disc pl-6 text-gray-300 mb-6 space-y-3">
@@ -81,7 +81,7 @@ export default function BlogIsCardRummySafeLegal() {
               <strong>Skill vs Chance:</strong> Games of skill (like Rummy) are generally considered legal, while pure chance games may fall under gambling laws
             </li>
             <li>
-              <strong>No explicit ban:</strong> There's no specific law banning online card game apps like Card Rummy
+              <strong>No explicit ban:</strong> There's no specific law banning online card game apps like Royal X Casino
             </li>
             <li>
               <strong>Enforcement:</strong> Authorities rarely prosecute individual players for playing online card games
@@ -105,15 +105,15 @@ export default function BlogIsCardRummySafeLegal() {
           <div className="bg-orange-600/20 border border-orange-500 rounded-lg p-6 my-8">
             <p className="text-white font-semibold mb-2">⚖️ Legal Reality</p>
             <p className="text-gray-300">
-              While the legal status is ambiguous, <strong>thousands of Pakistanis play Card Rummy daily</strong> without legal issues. The app operates openly, processes withdrawals, and has been active for years. However, this doesn't guarantee future legal protection. Play at your own discretion.
+              While the legal status is ambiguous, <strong>thousands of Pakistanis play Royal X Casino daily</strong> without legal issues. The app operates openly, processes withdrawals, and has been active for years. However, this doesn't guarantee future legal protection. Play at your own discretion.
             </p>
           </div>
 
-          <h2 className="text-3xl font-bold text-white mt-12 mb-6">Is Card Rummy Safe? Security Analysis</h2>
+          <h2 className="text-3xl font-bold text-white mt-12 mb-6">Is Royal X Casino Safe? Security Analysis</h2>
           
           <h3 className="text-2xl font-semibold text-white mt-8 mb-4">Platform Security Measures</h3>
           <p className="text-gray-300 mb-4">
-            Card Rummy implements several security measures to protect users:
+            Royal X Casino implements several security measures to protect users:
           </p>
 
           <ul className="list-disc pl-6 text-gray-300 mb-6 space-y-3">
@@ -160,10 +160,10 @@ export default function BlogIsCardRummySafeLegal() {
               <strong>Account hacking:</strong> Use strong passwords and don't share OTP codes
             </li>
             <li>
-              <strong>Phishing:</strong> Only download from official website (cardrummyapp.com.pk)
+              <strong>Phishing:</strong> Only download from official website (royalexcasino.com.pk)
             </li>
             <li>
-              <strong>Fake apps:</strong> Many fake Card Rummy apps exist - always verify source
+              <strong>Fake apps:</strong> Many fake Royal X Casino apps exist - always verify source
             </li>
             <li>
               <strong>Payment fraud:</strong> Double-check account numbers before depositing
@@ -203,19 +203,19 @@ export default function BlogIsCardRummySafeLegal() {
           </p>
           <ul className="list-disc pl-6 text-gray-300 mb-6 space-y-2">
             <li>JazzCash/EasyPaisa act as intermediaries</li>
-            <li>Your bank account details aren't directly shared with Card Rummy</li>
+            <li>Your bank account details aren't directly shared with Royal X Casino</li>
             <li>Easier to track transactions</li>
             <li>Faster processing</li>
           </ul>
 
-          <h2 className="text-3xl font-bold text-white mt-12 mb-6">How to Play Card Rummy Safely</h2>
+          <h2 className="text-3xl font-bold text-white mt-12 mb-6">How to Play Royal X Casino Safely</h2>
           <p className="text-gray-300 mb-4">
             For a complete guide on using the app safely, see our <Link href="/blog/how-to-use-card-rummy-app-pakistan-guide-2026" className="text-[#FFA500] hover:underline font-semibold">beginner's guide</Link> and <Link href="/blog/responsible-gaming-guide-card-rummy" className="text-[#FFA500] hover:underline font-semibold">responsible gaming guide</Link>.
           </p>
           
           <h3 className="text-2xl font-semibold text-white mt-8 mb-4">1. Download Safety</h3>
           <ul className="list-disc pl-6 text-gray-300 mb-6 space-y-2">
-            <li><strong>Only download from official website:</strong> cardrummyapp.com.pk</li>
+            <li><strong>Only download from official website:</strong> royalexcasino.com.pk</li>
             <li><strong>Never download from:</strong> Third-party sites, Play Store clones, random links, WhatsApp forwards</li>
             <li><strong>Check file size:</strong> Official APK is 50-80MB - if it's much smaller/larger, it's fake</li>
             <li><strong>Verify before installing:</strong> Check reviews and user feedback</li>
@@ -224,7 +224,7 @@ export default function BlogIsCardRummySafeLegal() {
           <h3 className="text-2xl font-semibold text-white mt-8 mb-4">2. Account Security</h3>
           <ul className="list-disc pl-6 text-gray-300 mb-6 space-y-2">
             <li><strong>Use strong password:</strong> Mix of letters, numbers, symbols (8+ characters)</li>
-            <li><strong>Never share OTP:</strong> Card Rummy staff will NEVER ask for your OTP</li>
+            <li><strong>Never share OTP:</strong> Royal X Casino staff will NEVER ask for your OTP</li>
             <li><strong>Enable 2FA if available:</strong> Extra security layer</li>
             <li><strong>Log out on shared devices:</strong> Don't stay logged in on public computers</li>
             <li><strong>Monitor account activity:</strong> Check transaction history regularly</li>
@@ -266,7 +266,7 @@ export default function BlogIsCardRummySafeLegal() {
             </ul>
           </div>
 
-          <h2 className="text-3xl font-bold text-white mt-12 mb-6">Is Card Rummy Trustworthy?</h2>
+          <h2 className="text-3xl font-bold text-white mt-12 mb-6">Is Royal X Casino Trustworthy?</h2>
           
           <h3 className="text-2xl font-semibold text-white mt-8 mb-4">Positive Indicators</h3>
           <ul className="list-disc pl-6 text-gray-300 mb-6 space-y-2">
@@ -327,11 +327,11 @@ export default function BlogIsCardRummySafeLegal() {
           <h2 className="text-3xl font-bold text-white mt-12 mb-6">Conclusion</h2>
           
           <p className="text-gray-300 mb-4">
-            <strong>Is Card Rummy safe?</strong> From a technical and operational perspective, Card Rummy appears to be relatively safe. It has fast withdrawals, active support, and a track record of processing payments. However, it operates in a legal gray area in Pakistan.
+            <strong>Is Royal X Casino safe?</strong> From a technical and operational perspective, Royal X Casino appears to be relatively safe. It has fast withdrawals, active support, and a track record of processing payments. However, it operates in a legal gray area in Pakistan.
           </p>
 
           <p className="text-gray-300 mb-4">
-            <strong>Is Card Rummy legal?</strong> The legal status is ambiguous. While not explicitly illegal, it's not clearly legal either. Thousands play without issues, but there's no guarantee of future legal protection.
+            <strong>Is Royal X Casino legal?</strong> The legal status is ambiguous. While not explicitly illegal, it's not clearly legal either. Thousands play without issues, but there's no guarantee of future legal protection.
           </p>
 
           <p className="text-gray-300 mb-4">
@@ -348,7 +348,7 @@ export default function BlogIsCardRummySafeLegal() {
           <div className="bg-orange-600/20 border border-orange-500 rounded-lg p-6 my-8">
             <p className="text-white font-semibold mb-2">⚠️ Final Warning</p>
             <p className="text-gray-300">
-              Card Rummy involves real money risk. You can lose money. The legal status is uncertain. Play at your own risk and discretion. If you have concerns about legality or safety, consult with a legal professional before playing.
+              Royal X Casino involves real money risk. You can lose money. The legal status is uncertain. Play at your own risk and discretion. If you have concerns about legality or safety, consult with a legal professional before playing.
             </p>
           </div>
 

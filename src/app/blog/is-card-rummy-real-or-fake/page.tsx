@@ -2,18 +2,19 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 import BlogPostSchema from '@/components/BlogPostSchema';
+import { DOWNLOAD_URL } from '@/lib/config';
 
 export const metadata: Metadata = {
-  title: 'Is Card Rummy Real or Fake to Earn Money? - Complete Guide 2026',
-  description: 'Discover if Card Rummy app is real or fake. Learn about legitimacy, payment methods, safety tips, and how to identify fake apps. Complete guide for Pakistani players.',
+  title: 'Is Royal X Casino Real or Fake to Earn Money? - Complete Guide 2026',
+  description: 'Discover if Royal X Casino app is real or fake. Learn about legitimacy, payment methods, safety tips, and how to identify fake apps. Complete guide for Pakistani players.',
   keywords: [
-    'Card Rummy real or fake',
-    'Card Rummy legit',
-    'Card Rummy Pakistan',
-    'Is Card Rummy safe',
-    'Card Rummy earning',
-    'Card Rummy withdrawal',
-    'Card Rummy scam'
+    'Royal X Casino real or fake',
+    'Royal X Casino legit',
+    'Royal X Casino Pakistan',
+    'Is Royal X Casino safe',
+    'Royal X Casino earning',
+    'Royal X Casino withdrawal',
+    'Royal X Casino scam'
   ],
   robots: {
     index: true,
@@ -26,13 +27,13 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "https://cardrummyapp.com.pk/blog/is-card-rummy-real-or-fake",
+    canonical: "https://royalexcasino.com.pk/blog/is-card-rummy-real-or-fake",
   },
   openGraph: {
-    title: 'Is Card Rummy Real or Fake to Earn Money?',
-    description: 'Complete guide about Card Rummy legitimacy, payment methods, and safety tips for Pakistani players.',
-    url: "https://cardrummyapp.com.pk/blog/is-card-rummy-real-or-fake",
-    siteName: "Card Rummy",
+    title: 'Is Royal X Casino Real or Fake to Earn Money?',
+    description: 'Complete guide about Royal X Casino legitimacy, payment methods, and safety tips for Pakistani players.',
+    url: "https://royalexcasino.com.pk/blog/is-card-rummy-real-or-fake",
+    siteName: "Royal X Casino",
     locale: "en_US",
     type: "article",
   },
@@ -43,43 +44,43 @@ export default function CardRummyRealOrFakePage() {
   const schemaData = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    "headline": "Is Card Rummy Real or Fake to Earn Money? - Complete Guide 2026",
-    "description": "Discover if Card Rummy app is real or fake. Learn about legitimacy, payment methods, safety tips, and how to identify fake apps.",
-    "image": "https://cardrummyapp.com.pk/card-rummy-logo.webp",
+    "headline": "Is Royal X Casino Real or Fake to Earn Money? - Complete Guide 2026",
+    "description": "Discover if Royal X Casino app is real or fake. Learn about legitimacy, payment methods, safety tips, and how to identify fake apps.",
+    "image": "https://royalexcasino.com.pk/royal-x-casino-logo.webp",
     "author": {
       "@type": "Organization",
-      "name": "Card Rummy",
-      "url": "https://cardrummyapp.com.pk"
+      "name": "Royal X Casino",
+      "url": "https://royalexcasino.com.pk"
     },
     "publisher": {
       "@type": "Organization",
-      "name": "Card Rummy",
+      "name": "Royal X Casino",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://cardrummyapp.com.pk/card-rummy-logo.webp"
+        "url": "https://royalexcasino.com.pk/royal-x-casino-logo.webp"
       }
     },
     "datePublished": "2026-01-03",
     "dateModified": "2026-01-03",
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://cardrummyapp.com.pk/blog/is-card-rummy-real-or-fake"
+      "@id": "https://royalexcasino.com.pk/blog/is-card-rummy-real-or-fake"
     },
     "articleSection": "Gaming",
-    "keywords": "Card Rummy real or fake, Card Rummy legit, Card Rummy Pakistan, Card Rummy safety",
-    "articleBody": "Complete guide about Card Rummy legitimacy, payment methods like JazzCash and EasyPaisa, and safety tips for Pakistani players.",
+    "keywords": "Royal X Casino real or fake, Royal X Casino legit, Royal X Casino Pakistan, Royal X Casino safety",
+    "articleBody": "Complete guide about Royal X Casino legitimacy, payment methods like JazzCash and EasyPaisa, and safety tips for Pakistani players.",
     "inLanguage": "en-US",
     "about": {
       "@type": "Thing",
-      "name": "Card Rummy App Legitimacy"
+      "name": "Royal X Casino App Legitimacy"
     }
   };
 
   return (
     <main className="min-h-screen bg-[#060A20]">
       <BlogPostSchema
-        title="Is Card Rummy Real or Fake to Earn Money? - Complete Guide 2026"
-        description="Discover if Card Rummy app is real or fake. Learn about legitimacy, payment methods, safety tips, and how to identify fake apps."
+        title="Is Royal X Casino Real or Fake to Earn Money? - Complete Guide 2026"
+        description="Discover if Royal X Casino app is real or fake. Learn about legitimacy, payment methods, safety tips, and how to identify fake apps."
         slug="is-card-rummy-real-or-fake"
         datePublished="2026-01-03"
         breadcrumbOnly
@@ -100,13 +101,13 @@ export default function CardRummyRealOrFakePage() {
         <span className="text-gray-500 mx-2">/</span>
         <Link href="/blog" className="text-[#0ea5e9] hover:underline">Blog</Link>
         <span className="text-gray-500 mx-2">/</span>
-        <span className="text-gray-400">Is Card Rummy Real or Fake?</span>
+        <span className="text-gray-400">Is Royal X Casino Real or Fake?</span>
       </nav>
 
       {/* Hero Section */}
       <header className="mb-12">
         <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">
-          Is Card Rummy Real or Fake to Earn Money?
+          Is Royal X Casino Real or Fake to Earn Money?
         </h1>
         <div className="flex items-center gap-4 text-gray-400 text-sm mb-6">
           <time>January 2026</time>
@@ -117,8 +118,8 @@ export default function CardRummyRealOrFakePage() {
         {/* Featured Image */}
         <div className="relative w-full h-64 md:h-96 rounded-xl overflow-hidden mb-8">
           <Image
-            src="/card-rummy.webp"
-            alt="Card Rummy Real or Fake"
+            src="/royal-x-casino-logo.webp"
+            alt="Royal X Casino Real or Fake"
             fill
             className="object-cover"
             priority
@@ -130,10 +131,10 @@ export default function CardRummyRealOrFakePage() {
       <div className="prose prose-lg max-w-none">
         <div className="bg-secondary rounded-xl p-6 md:p-8 mb-8">
           <p className="text-gray-300 leading-relaxed mb-4">
-            <Link href="/" className="text-accent hover:underline font-semibold">Card Rummy</Link> App is a popular online gaming platform where you can play card games for entertainment and earn real money. The app is very popular in Pakistan and has a large community where you can play classic 3Patti card games, Andar Bahar, Dragon Tiger, and 7 Up Down games, all worth trying. The Card Rummy app offers extra earning opportunities through rewards and bonuses, tournaments, and promotional events, depending on gameplay.
+            <Link href="/" className="text-accent hover:underline font-semibold">Royal X Casino</Link> is Pakistan&apos;s #1 real money gaming app with 200+ games including Teen Patti, Slots, Fishing, Andar Bahar, Dragon Tiger, and more. The app offers zero wagering, instant withdrawals via JazzCash & EasyPaisa, and extra earning opportunities through rewards, bonuses, tournaments, and promotional events.
           </p>
           <p className="text-gray-300 leading-relaxed">
-            If you are confused and looking for side income opportunities that require little effort, a question keeps popping up: <strong className="text-white">Is Card Rummy real or fake for earning money?</strong> Whether it is safe to download and whether your personal information is secure, this guide will provide clarity on your questions.
+            If you are confused and looking for side income opportunities that require little effort, a question keeps popping up: <strong className="text-white">Is Royal X Casino real or fake for earning money?</strong> Whether it is safe to download and whether your personal information is secure, this guide will provide clarity on your questions.
           </p>
         </div>
 
@@ -142,16 +143,16 @@ export default function CardRummyRealOrFakePage() {
           <h2 className="text-2xl font-bold mb-4 text-[#FFA500]">Table of Contents</h2>
           <ul className="space-y-2 text-gray-300">
             <li className="hover:text-[#FFA500] transition-colors">
-              <a href="#is-real-or-fake">Is Card Rummy Real or Fake to Earn Money?</a>
+              <a href="#is-real-or-fake">Is Royal X Casino Real or Fake to Earn Money?</a>
             </li>
             <li className="hover:text-[#FFA500] transition-colors">
-              <a href="#legit-pakistan">Is Card Rummy legit in Pakistan?</a>
+              <a href="#legit-pakistan">Is Royal X Casino legit in Pakistan?</a>
             </li>
             <li className="hover:text-[#FFA500] transition-colors">
               <a href="#payment-methods">Supported Payment Methods for Withdrawal</a>
             </li>
             <li className="hover:text-[#FFA500] transition-colors">
-              <a href="#find-fake-apps">Ways to find fake Card Rummy apps</a>
+              <a href="#find-fake-apps">Ways to find fake Royal X Casino apps</a>
             </li>
             <li className="hover:text-[#FFA500] transition-colors">
               <a href="#final-thought">Final Thought</a>
@@ -165,10 +166,10 @@ export default function CardRummyRealOrFakePage() {
         {/* Main Content */}
         <section id="is-real-or-fake" className="mb-12">
           <div className="bg-secondary rounded-xl p-6 md:p-8">
-            <h2 className="text-3xl font-bold mb-6 text-[#FFA500]">Is Card Rummy Real or Fake to Earn Money?</h2>
+            <h2 className="text-3xl font-bold mb-6 text-[#FFA500]">Is Royal X Casino Real or Fake to Earn Money?</h2>
             <div className="bg-gradient-to-r from-[#0ea5e9]/20 to-[#6366f1]/20 border-l-4 border-[#0ea5e9] rounded-lg p-6 mb-6">
               <p className="text-white text-lg font-semibold">
-                ✅ Card Rummy is a REAL earning app that allows Pakistani users to play card games and earn real money through legitimate payment methods.
+                ✅ Royal X Casino is a REAL earning app that allows Pakistani users to play 200+ games (Teen Patti, Slots, Fishing & more) and earn real money through JazzCash & EasyPaisa. Zero wagering, instant withdrawals.
               </p>
             </div>
             <p className="text-gray-300 leading-relaxed">
@@ -179,9 +180,9 @@ export default function CardRummyRealOrFakePage() {
 
         <section id="legit-pakistan" className="mb-12">
           <div className="bg-secondary rounded-xl p-6 md:p-8">
-            <h2 className="text-3xl font-bold mb-6 text-[#FFA500]">Is Card Rummy legit in Pakistan?</h2>
+            <h2 className="text-3xl font-bold mb-6 text-[#FFA500]">Is Royal X Casino legit in Pakistan?</h2>
             <p className="text-gray-300 leading-relaxed mb-4">
-              Yes, the Card Rummy app is legit and widely used by many players. The platform has a massive community and has gained popularity for its smooth gameplay, faster, easier withdrawal processes, and multiple earning options.
+              Yes, the Royal X Casino app is legit and widely used by many players. The platform has a massive community and has gained popularity for its smooth gameplay, faster, easier withdrawal processes, and multiple earning options.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
               <div className="bg-[#0A1029] p-4 rounded-lg text-center">
@@ -204,7 +205,7 @@ export default function CardRummyRealOrFakePage() {
           <div className="bg-secondary rounded-xl p-6 md:p-8">
             <h2 className="text-3xl font-bold mb-6 text-[#FFA500]">Supported Payment Methods for the Withdrawal Process</h2>
             <p className="text-gray-300 leading-relaxed mb-6">
-              The Card Rummy App claims to encourage withdrawals via different payment options, including Easy Paisa, Jazz Cash, and local bank transfer. 3Patti Card Rummy offers smooth withdrawals, so you cannot face any issues. The withdrawals typically have:
+              The Royal X Casino App claims to encourage withdrawals via different payment options, including Easy Paisa, Jazz Cash, and local bank transfer. Royal X Casino offers smooth withdrawals (10-30 minutes), so you cannot face any issues. The withdrawals typically have:
             </p>
             
             <div className="space-y-4">
@@ -221,7 +222,7 @@ export default function CardRummyRealOrFakePage() {
                 <h3 className="text-white font-semibold mb-2">📊 Withdrawal Details:</h3>
                 <ul className="list-disc list-inside text-gray-300 space-y-1">
                   <li>Minimum withdrawal limit: PKR 500 to PKR 10,000</li>
-                  <li>Processing time: Few hours to several days (due to security checks)</li>
+                  <li>Processing time: 10-30 minutes via JazzCash/EasyPaisa (instant)</li>
                   <li>Verification steps may be required</li>
                 </ul>
               </div>
@@ -231,9 +232,9 @@ export default function CardRummyRealOrFakePage() {
 
         <section id="find-fake-apps" className="mb-12">
           <div className="bg-secondary rounded-xl p-6 md:p-8">
-            <h2 className="text-3xl font-bold mb-6 text-[#FFA500]">Ways to find fake Card Rummy apps</h2>
+            <h2 className="text-3xl font-bold mb-6 text-[#FFA500]">Ways to find fake Royal X Casino apps</h2>
             <p className="text-gray-300 leading-relaxed mb-6">
-              Because the Card Rummy app is not available on the official Play Store, fake and harmful copies are prevalent. Here are the techniques that will help you identify harmful copies and fake versions:
+              Because the Royal X Casino app is not available on the official Play Store, fake and harmful copies are prevalent. Here are the techniques that will help you identify harmful copies and fake versions:
             </p>
 
             <div className="space-y-6">
@@ -244,7 +245,7 @@ export default function CardRummyRealOrFakePage() {
                   <div>
                     <h3 className="text-xl font-bold text-[#f87171] mb-2">Fake Websites</h3>
                     <p className="text-gray-300">
-                      If the Card Rummy app is not designed correctly, has a poor user interface, and does not provide regular updates or improvements, there is a high chance it is a fake app.
+                      If the Royal X Casino app is not designed correctly, has a poor user interface, and does not provide regular updates or improvements, there is a high chance it is a fake app.
                     </p>
                   </div>
                 </div>
@@ -257,7 +258,7 @@ export default function CardRummyRealOrFakePage() {
                   <div>
                     <h3 className="text-xl font-bold text-[#f87171] mb-2">Unrealistic Earning Offers</h3>
                     <p className="text-gray-300">
-                      The Card Rummy App offers daily bonuses and rewards, but if it guarantees income and promises high daily earnings, it may be a scam.
+                      The Royal X Casino App offers daily bonuses and rewards, but if it guarantees income and promises high daily earnings, it may be a scam.
                     </p>
                   </div>
                 </div>
@@ -309,21 +310,21 @@ export default function CardRummyRealOrFakePage() {
           <div className="bg-gradient-to-r from-[#0ea5e9]/20 to-[#6366f1]/20 rounded-xl p-6 md:p-8 border-2 border-[#0ea5e9]">
             <h2 className="text-3xl font-bold mb-6 text-[#FFA500]">Final Thought</h2>
             <p className="text-gray-300 leading-relaxed mb-4">
-              Card Rummy is one of the most famous online earning game apps that claim you can use it and withdraw money using local payment methods. The app is easy to use, and you can also earn with referral bonuses of PKR 1000 per referral, welcome bonuses, and registration bonuses.
+              Royal X Casino is one of the most famous online earning game apps that claim you can use it and withdraw money using local payment methods. The app is easy to use, and you can also earn with referral bonuses of PKR 1000 per referral, welcome bonuses, and registration bonuses.
             </p>
             <p className="text-white font-semibold text-lg">
-              So, if you want to earn real money, you can use the 3Patti Card Rummy app hassle-free. ✅
+              So, if you want to earn real money with 200+ games and zero wagering, Royal X Casino is hassle-free. ✅
             </p>
             
             {/* CTA Button */}
             <div className="mt-6 text-center">
               <a 
-                href="https://pkcardrummy.com/?from_gameid=6052215&channelCode=5784509"
+                href={DOWNLOAD_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center bg-[#0ea5e9] hover:bg-[#0284c7] text-white font-bold py-3 px-8 rounded-full transition-all shadow-lg hover:shadow-xl"
               >
-                <span>Download Official Card Rummy</span>
+                <span>Download Official Royal X Casino</span>
                 <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
                 </svg>
@@ -339,7 +340,7 @@ export default function CardRummyRealOrFakePage() {
             <div className="space-y-4">
               <details className="group bg-[#0a1029]/50 rounded-xl">
                 <summary className="flex items-center justify-between p-4 cursor-pointer text-white font-medium">
-                  Does the Card Rummy app actually pay real money?
+                  Does the Royal X Casino app actually pay real money?
                   <span className="transition group-open:rotate-180">
                     <svg fill="none" height="24" shapeRendering="geometricPrecision" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24" width="24">
                       <path d="M6 9l6 6 6-6"></path>
@@ -347,13 +348,13 @@ export default function CardRummyRealOrFakePage() {
                   </span>
                 </summary>
                 <div className="p-4 pt-0 text-gray-300">
-                  Yes, the Card Rummy app pays real money, so you can easily withdraw your earnings to your account through JazzCash, EasyPaisa, or bank transfer.
+                  Yes, the Royal X Casino app pays real money, so you can easily withdraw your earnings to your account through JazzCash, EasyPaisa, or bank transfer.
                 </div>
               </details>
 
               <details className="group bg-[#0a1029]/50 rounded-xl">
                 <summary className="flex items-center justify-between p-4 cursor-pointer text-white font-medium">
-                  What are the tips for using Card Rummy safely?
+                  What are the tips for using Royal X Casino safely?
                   <span className="transition group-open:rotate-180">
                     <svg fill="none" height="24" shapeRendering="geometricPrecision" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24" width="24">
                       <path d="M6 9l6 6 6-6"></path>
@@ -361,13 +362,13 @@ export default function CardRummyRealOrFakePage() {
                   </span>
                 </summary>
                 <div className="p-4 pt-0 text-gray-300">
-                  Make sure you have downloaded the Card Rummy app from the official site (cardrummyapp.com.pk) to earn real money and use strong passwords to protect your account from hackers. Never share your login credentials with anyone.
+                  Make sure you have downloaded the Royal X Casino app from the official site (royalexcasino.com.pk) to earn real money and use strong passwords to protect your account from hackers. Never share your login credentials with anyone.
                 </div>
               </details>
 
               <details className="group bg-[#0a1029]/50 rounded-xl">
                 <summary className="flex items-center justify-between p-4 cursor-pointer text-white font-medium">
-                  What are the signs that Card Rummy is not fake?
+                  What are the signs that Royal X Casino is not fake?
                   <span className="transition group-open:rotate-180">
                     <svg fill="none" height="24" shapeRendering="geometricPrecision" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24" width="24">
                       <path d="M6 9l6 6 6-6"></path>
@@ -375,7 +376,7 @@ export default function CardRummyRealOrFakePage() {
                   </span>
                 </summary>
                 <div className="p-4 pt-0 text-gray-300">
-                  If your app doesn't have customer support, a poor-quality UI, no updates, or withdrawal options that aren't clear, it's fake. The real Card Rummy has 24/7 customer support, regular updates, clear withdrawal process, and positive user reviews. Always verify by reading reviews and downloading from the official website.
+                  If your app doesn't have customer support, a poor-quality UI, no updates, or withdrawal options that aren't clear, it's fake. The real Royal X Casino has 24/7 customer support, regular updates, clear withdrawal process, and positive user reviews. Always verify by reading reviews and downloading from the official website.
                 </div>
               </details>
             </div>
@@ -387,9 +388,9 @@ export default function CardRummyRealOrFakePage() {
           <div className="bg-secondary rounded-xl p-6 md:p-8">
             <h3 className="text-2xl font-bold mb-6 text-[#FFA500]">Related Articles</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <Link href="/download-card-rummy" className="bg-[#0A1029] p-4 rounded-lg hover:bg-[#0A1029]/70 transition-colors">
-                <h4 className="text-white font-semibold mb-2">📥 Download Card Rummy APK</h4>
-                <p className="text-gray-400 text-sm">Get the latest version of Card Rummy for Android</p>
+              <Link href="/download" className="bg-[#0A1029] p-4 rounded-lg hover:bg-[#0A1029]/70 transition-colors block">
+                <h4 className="text-white font-semibold mb-2">📥 Download Royal X Casino APK</h4>
+                <p className="text-gray-400 text-sm">Get the latest version of Royal X Casino for Android</p>
               </Link>
               <Link href="/blog/create-card-rummy-account-and-login" className="bg-[#0A1029] p-4 rounded-lg hover:bg-[#0A1029]/70 transition-colors">
                 <h4 className="text-white font-semibold mb-2">🔐 Account & Login Guide</h4>

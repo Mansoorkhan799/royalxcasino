@@ -3,34 +3,34 @@ import Link from 'next/link';
 import BlogPostSchema from '@/components/BlogPostSchema';
 
 export const metadata: Metadata = {
-  title: '3Patti Gold vs Card Rummy: Which Game Is Better for Earning Real Cash? 2026',
-  description: 'Detailed comparison: 3Patti Gold vs Card Rummy. Bonuses, games, withdrawal speed & earning analysis. Discover which app is better for Pakistan players in 2026!',
+  title: '3Patti Gold vs Royal X Casino: Which Game Is Better for Earning Real Cash? 2026',
+  description: 'Detailed comparison: 3Patti Gold vs Royal X Casino. Bonuses, games, withdrawal speed & earning analysis. Discover which app is better for Pakistan players in 2026!',
   keywords: [
-    '3Patti Gold vs Card Rummy',
+    '3Patti Gold vs Royal X Casino',
     '3Patti Gold comparison',
-    'Card Rummy vs 3Patti Gold',
+    'Royal X Casino vs 3Patti Gold',
     'best earning app Pakistan',
     '3Patti Gold review',
-    'Card Rummy comparison',
+    'Royal X Casino comparison',
     'real money games Pakistan',
     '3Patti Gold withdrawal',
-    'Card Rummy vs 3Patti',
+    'Royal X Casino vs 3Patti',
     'best gaming app 2026'
   ],
   openGraph: {
-    title: '3Patti Gold vs Card Rummy: Which Game Is Better for Earning Real Cash?',
-    description: 'Complete comparison of 3Patti Gold and Card Rummy. Find out which app offers better bonuses, faster withdrawals, and more earning potential!',
+    title: '3Patti Gold vs Royal X Casino: Which Game Is Better for Earning Real Cash?',
+    description: 'Complete comparison of 3Patti Gold and Royal X Casino. Find out which app offers better bonuses, faster withdrawals, and more earning potential!',
     type: 'article',
   },
-  alternates: { canonical: "https://cardrummyapp.com.pk/blog/3patti-gold-vs-card-rummy" },
+  alternates: { canonical: "https://royalexcasino.com.pk/blog/3patti-gold-vs-card-rummy" },
 };
 
 export default function Blog3PattiGoldVsCardRummy() {
   return (
     <main className="min-h-screen bg-[#060A20]">
       <BlogPostSchema
-        title="3Patti Gold vs Card Rummy: Which Game Is Better for Earning Real Cash? 2026"
-        description="Detailed comparison: 3Patti Gold vs Card Rummy. Bonuses, games, withdrawal speed & earning analysis. Discover which app is better for Pakistan players in 2026!"
+        title="3Patti Gold vs Royal X Casino: Which Game Is Better for Earning Real Cash? 2026"
+        description="Detailed comparison: 3Patti Gold vs Royal X Casino. Bonuses, games, withdrawal speed & earning analysis. Discover which app is better for Pakistan players in 2026!"
         slug="3patti-gold-vs-card-rummy"
         datePublished="2026-01-11"
       />
@@ -40,12 +40,12 @@ export default function Blog3PattiGoldVsCardRummy() {
           <span className="mx-2">/</span>
           <Link href="/blog" className="hover:text-[#FFA500]">Blog</Link>
           <span className="mx-2">/</span>
-          <span className="text-white">3Patti Gold vs Card Rummy</span>
+          <span className="text-white">3Patti Gold vs Royal X Casino</span>
         </nav>
 
         <header className="mb-12">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            3Patti Gold vs Card Rummy: Which Game Is Better for Earning Real Cash?
+            3Patti Gold vs Royal X Casino: Which Game Is Better for Earning Real Cash?
           </h1>
           <div className="flex items-center gap-4 text-gray-400 text-sm">
             <time dateTime="2026-01-11">January 11, 2026</time>
@@ -56,17 +56,17 @@ export default function Blog3PattiGoldVsCardRummy() {
 
         <div className="prose prose-invert prose-lg max-w-none">
           <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-            Comparing <strong>3Patti Gold</strong> and <Link href="/" className="text-[#FFA500] hover:underline font-semibold">Card Rummy</Link> for real money gaming in Pakistan? Both apps offer Teen Patti and card games, but they differ significantly in bonuses, withdrawal speed, game variety, and earning potential. This detailed comparison will help you decide which app is better for your needs in 2026.
+            Comparing <strong>3Patti Gold</strong> and <Link href="/" className="text-[#FFA500] hover:underline font-semibold">Royal X Casino</Link> for real money gaming in Pakistan? Both apps offer Teen Patti and card games, but they differ significantly in bonuses, withdrawal speed, game variety, and earning potential. This detailed comparison will help you decide which app is better for your needs in 2026.
           </p>
 
           <div className="bg-gradient-to-r from-purple-800/50 to-orange-600/50 rounded-lg p-8 my-8">
             <p className="text-white text-2xl font-bold mb-4">Quick Verdict</p>
             <p className="text-white text-lg mb-4">
-              <strong>Card Rummy wins overall</strong> due to faster withdrawals (5-30 minutes vs 1-24 hours), better game variety (4 games vs 1-2), more generous bonuses (up to ₨5,000 first deposit), and superior VIP program. However, 3Patti Gold may appeal to players who prefer a gold-themed interface or different bonus structure.
+              <strong>Royal X Casino wins overall</strong> due to faster withdrawals (5-30 minutes vs 1-24 hours), better game variety (4 games vs 1-2), more generous bonuses (up to ₨5,000 first deposit), and superior VIP program. However, 3Patti Gold may appeal to players who prefer a gold-themed interface or different bonus structure.
             </p>
           </div>
 
-          <h2 className="text-3xl font-bold text-white mt-12 mb-6">Comparison Table: 3Patti Gold vs Card Rummy</h2>
+          <h2 className="text-3xl font-bold text-white mt-12 mb-6">Comparison Table: 3Patti Gold vs Royal X Casino</h2>
           
           <div className="overflow-x-auto mb-8">
             <table className="w-full border-collapse border border-gray-700">
@@ -74,7 +74,7 @@ export default function Blog3PattiGoldVsCardRummy() {
                 <tr className="bg-purple-900">
                   <th className="border border-gray-700 p-4 text-left text-white">Feature</th>
                   <th className="border border-gray-700 p-4 text-left text-white">3Patti Gold</th>
-                  <th className="border border-gray-700 p-4 text-left text-white">Card Rummy</th>
+                  <th className="border border-gray-700 p-4 text-left text-white">Royal X Casino</th>
                   <th className="border border-gray-700 p-4 text-left text-white">Winner</th>
                 </tr>
               </thead>
@@ -83,37 +83,37 @@ export default function Blog3PattiGoldVsCardRummy() {
                   <td className="border border-gray-700 p-4 font-semibold">Games Available</td>
                   <td className="border border-gray-700 p-4">Teen Patti (1-2 variations)</td>
                   <td className="border border-gray-700 p-4">Teen Patti, Rummy, Dragon vs Tiger, Andar Bahar (4 games)</td>
-                  <td className="border border-gray-700 p-4 text-green-400 font-semibold">Card Rummy</td>
+                  <td className="border border-gray-700 p-4 text-green-400 font-semibold">Royal X Casino</td>
                 </tr>
                 <tr>
                   <td className="border border-gray-700 p-4 font-semibold">Welcome Bonus</td>
                   <td className="border border-gray-700 p-4">Varies (typically ₨100-400)</td>
                   <td className="border border-gray-700 p-4">Up to ₨500 + 100% first deposit up to ₨5,000</td>
-                  <td className="border border-gray-700 p-4 text-green-400 font-semibold">Card Rummy</td>
+                  <td className="border border-gray-700 p-4 text-green-400 font-semibold">Royal X Casino</td>
                 </tr>
                 <tr>
                   <td className="border border-gray-700 p-4 font-semibold">Withdrawal Speed</td>
                   <td className="border border-gray-700 p-4">1-24 hours (varies)</td>
                   <td className="border border-gray-700 p-4">5-30 minutes (JazzCash/EasyPaisa)</td>
-                  <td className="border border-gray-700 p-4 text-green-400 font-semibold">Card Rummy</td>
+                  <td className="border border-gray-700 p-4 text-green-400 font-semibold">Royal X Casino</td>
                 </tr>
                 <tr>
                   <td className="border border-gray-700 p-4 font-semibold">Minimum Withdrawal</td>
                   <td className="border border-gray-700 p-4">₨500-1,000 (varies)</td>
                   <td className="border border-gray-700 p-4">₨300</td>
-                  <td className="border border-gray-700 p-4 text-green-400 font-semibold">Card Rummy</td>
+                  <td className="border border-gray-700 p-4 text-green-400 font-semibold">Royal X Casino</td>
                 </tr>
                 <tr>
                   <td className="border border-gray-700 p-4 font-semibold">VIP Program</td>
                   <td className="border border-gray-700 p-4">Basic (3-5 levels)</td>
                   <td className="border border-gray-700 p-4">Comprehensive (10 levels, up to 15% rebate)</td>
-                  <td className="border border-gray-700 p-4 text-green-400 font-semibold">Card Rummy</td>
+                  <td className="border border-gray-700 p-4 text-green-400 font-semibold">Royal X Casino</td>
                 </tr>
                 <tr>
                   <td className="border border-gray-700 p-4 font-semibold">Customer Support</td>
                   <td className="border border-gray-700 p-4">Email, WhatsApp (limited hours)</td>
                   <td className="border border-gray-700 p-4">24/7 live chat, WhatsApp, Email</td>
-                  <td className="border border-gray-700 p-4 text-green-400 font-semibold">Card Rummy</td>
+                  <td className="border border-gray-700 p-4 text-green-400 font-semibold">Royal X Casino</td>
                 </tr>
                 <tr>
                   <td className="border border-gray-700 p-4 font-semibold">Payment Methods</td>
@@ -143,9 +143,9 @@ export default function Blog3PattiGoldVsCardRummy() {
             <li>Limited game selection overall</li>
           </ul>
 
-          <h3 className="text-2xl font-semibold text-white mt-8 mb-4">Card Rummy Games</h3>
+          <h3 className="text-2xl font-semibold text-white mt-8 mb-4">Royal X Casino Games</h3>
           <p className="text-gray-300 mb-4">
-            <Link href="/" className="text-[#FFA500] hover:underline font-semibold">Card Rummy</Link> offers significantly more variety:
+            <Link href="/" className="text-[#FFA500] hover:underline font-semibold">Royal X Casino</Link> offers significantly more variety:
           </p>
           <ul className="list-disc pl-6 text-gray-300 mb-6 space-y-2">
             <li><strong>Teen Patti:</strong> Multiple variations (Classic, AK47, Joker, Muflis)</li>
@@ -155,9 +155,9 @@ export default function Blog3PattiGoldVsCardRummy() {
           </ul>
 
           <div className="bg-green-900/30 border border-green-600 rounded-lg p-6 my-8">
-            <p className="text-white font-semibold mb-2">🎮 Game Variety Winner: Card Rummy</p>
+            <p className="text-white font-semibold mb-2">🎮 Game Variety Winner: Royal X Casino</p>
             <p className="text-gray-300">
-              Card Rummy clearly wins with 4 different games vs 3Patti Gold's 1-2 games. More variety means you can switch games based on your mood, skill level, or which game is performing better. This is especially valuable for players who want options.
+              Royal X Casino clearly wins with 4 different games vs 3Patti Gold's 1-2 games. More variety means you can switch games based on your mood, skill level, or which game is performing better. This is especially valuable for players who want options.
             </p>
           </div>
 
@@ -172,7 +172,7 @@ export default function Blog3PattiGoldVsCardRummy() {
             <li>Referral program: Standard commission rates</li>
           </ul>
 
-          <h3 className="text-2xl font-semibold text-white mt-8 mb-4">Card Rummy Bonuses</h3>
+          <h3 className="text-2xl font-semibold text-white mt-8 mb-4">Royal X Casino Bonuses</h3>
           <ul className="list-disc pl-6 text-gray-300 mb-6 space-y-2">
             <li><strong>Welcome Bonus:</strong> Up to ₨500</li>
             <li><strong>First Deposit Bonus:</strong> 100% up to ₨5,000 (excellent)</li>
@@ -183,9 +183,9 @@ export default function Blog3PattiGoldVsCardRummy() {
           </ul>
 
           <div className="bg-green-900/30 border border-green-600 rounded-lg p-6 my-8">
-            <p className="text-white font-semibold mb-2">💰 Bonus Winner: Card Rummy</p>
+            <p className="text-white font-semibold mb-2">💰 Bonus Winner: Royal X Casino</p>
             <p className="text-gray-300">
-              Card Rummy offers more generous bonuses, especially the first deposit bonus (100% up to ₨5,000 vs typically lower amounts in 3Patti Gold). The comprehensive 10-level VIP program with up to 15% daily rebate is also superior to 3Patti Gold's basic system.
+              Royal X Casino offers more generous bonuses, especially the first deposit bonus (100% up to ₨5,000 vs typically lower amounts in 3Patti Gold). The comprehensive 10-level VIP program with up to 15% daily rebate is also superior to 3Patti Gold's basic system.
             </p>
           </div>
 
@@ -199,7 +199,7 @@ export default function Blog3PattiGoldVsCardRummy() {
             <li><strong>Processing:</strong> Manual review may cause delays</li>
           </ul>
 
-          <h3 className="text-2xl font-semibold text-white mt-8 mb-4">Card Rummy Withdrawals</h3>
+          <h3 className="text-2xl font-semibold text-white mt-8 mb-4">Royal X Casino Withdrawals</h3>
           <ul className="list-disc pl-6 text-gray-300 mb-6 space-y-2">
             <li><strong>Withdrawal Time:</strong> 5-30 minutes (JazzCash/EasyPaisa), 1-3 hours (Bank)</li>
             <li><strong>Minimum Withdrawal:</strong> ₨300 (very low)</li>
@@ -208,9 +208,9 @@ export default function Blog3PattiGoldVsCardRummy() {
           </ul>
 
           <div className="bg-green-900/30 border border-green-600 rounded-lg p-6 my-8">
-            <p className="text-white font-semibold mb-2">⚡ Withdrawal Winner: Card Rummy</p>
+            <p className="text-white font-semibold mb-2">⚡ Withdrawal Winner: Royal X Casino</p>
             <p className="text-gray-300">
-              Card Rummy's 5-30 minute withdrawals are significantly faster than 3Patti Gold's 1-24 hour processing time. The lower minimum withdrawal (₨300 vs ₨500-1,000) also makes Card Rummy more accessible. This is Card Rummy's biggest advantage.
+              Royal X Casino's 5-30 minute withdrawals are significantly faster than 3Patti Gold's 1-24 hour processing time. The lower minimum withdrawal (₨300 vs ₨500-1,000) also makes Royal X Casino more accessible. This is Royal X Casino's biggest advantage.
             </p>
           </div>
 
@@ -224,7 +224,7 @@ export default function Blog3PattiGoldVsCardRummy() {
             <li>Basic VIP benefits</li>
           </ul>
 
-          <h3 className="text-2xl font-semibold text-white mt-8 mb-4">Card Rummy VIP</h3>
+          <h3 className="text-2xl font-semibold text-white mt-8 mb-4">Royal X Casino VIP</h3>
           <ul className="list-disc pl-6 text-gray-300 mb-6 space-y-2">
             <li><strong>10 VIP levels</strong> (comprehensive system)</li>
             <li><strong>Daily rebates:</strong> 5-15% based on level</li>
@@ -235,9 +235,9 @@ export default function Blog3PattiGoldVsCardRummy() {
           </ul>
 
           <div className="bg-green-900/30 border border-green-600 rounded-lg p-6 my-8">
-            <p className="text-white font-semibold mb-2">💎 VIP Winner: Card Rummy</p>
+            <p className="text-white font-semibold mb-2">💎 VIP Winner: Royal X Casino</p>
             <p className="text-gray-300">
-              Card Rummy's 10-level VIP program with up to 15% daily rebate is far superior to 3Patti Gold's basic system. Serious players can earn significantly more through Card Rummy's VIP rewards.
+              Royal X Casino's 10-level VIP program with up to 15% daily rebate is far superior to 3Patti Gold's basic system. Serious players can earn significantly more through Royal X Casino's VIP rewards.
             </p>
           </div>
 
@@ -250,7 +250,7 @@ export default function Blog3PattiGoldVsCardRummy() {
             <li>Basic support channels</li>
           </ul>
 
-          <h3 className="text-2xl font-semibold text-white mt-8 mb-4">Card Rummy Support</h3>
+          <h3 className="text-2xl font-semibold text-white mt-8 mb-4">Royal X Casino Support</h3>
           <ul className="list-disc pl-6 text-gray-300 mb-6 space-y-2">
             <li><strong>24/7 live chat</strong> (in-app)</li>
             <li><strong>WhatsApp support</strong> (24/7)</li>
@@ -260,18 +260,18 @@ export default function Blog3PattiGoldVsCardRummy() {
           </ul>
 
           <div className="bg-green-900/30 border border-green-600 rounded-lg p-6 my-8">
-            <p className="text-white font-semibold mb-2">💬 Support Winner: Card Rummy</p>
+            <p className="text-white font-semibold mb-2">💬 Support Winner: Royal X Casino</p>
             <p className="text-gray-300">
-              Card Rummy's 24/7 live chat with 1-5 minute response times is superior to 3Patti Gold's limited support hours. This is especially important for urgent issues like withdrawal problems.
+              Royal X Casino's 24/7 live chat with 1-5 minute response times is superior to 3Patti Gold's limited support hours. This is especially important for urgent issues like withdrawal problems.
             </p>
           </div>
 
           <h2 className="text-3xl font-bold text-white mt-12 mb-6">Final Verdict: Which App Is Better?</h2>
           
           <div className="bg-gradient-to-r from-purple-800 to-orange-600 rounded-lg p-8 my-8">
-            <h3 className="text-2xl font-bold text-white mb-4">Overall Winner: Card Rummy ⭐</h3>
+            <h3 className="text-2xl font-bold text-white mb-4">Overall Winner: Royal X Casino ⭐</h3>
             <p className="text-white text-lg mb-4">
-              <strong>Card Rummy wins in all major categories:</strong>
+              <strong>Royal X Casino wins in all major categories:</strong>
             </p>
             <ul className="list-disc pl-6 text-white space-y-2 mb-4">
               <li>✅ Game Variety (4 games vs 1-2)</li>
@@ -288,7 +288,7 @@ export default function Blog3PattiGoldVsCardRummy() {
 
           <h2 className="text-3xl font-bold text-white mt-12 mb-6">Who Should Choose Which App?</h2>
           
-          <h3 className="text-2xl font-semibold text-white mt-8 mb-4">Choose Card Rummy If:</h3>
+          <h3 className="text-2xl font-semibold text-white mt-8 mb-4">Choose Royal X Casino If:</h3>
           <ul className="list-disc pl-6 text-gray-300 mb-6 space-y-2">
             <li>You want fast withdrawals (5-30 minutes)</li>
             <li>You want game variety (4 different games)</li>
@@ -309,7 +309,7 @@ export default function Blog3PattiGoldVsCardRummy() {
           <h2 className="text-3xl font-bold text-white mt-12 mb-6">Conclusion</h2>
           
           <p className="text-gray-300 mb-4">
-            <strong>Card Rummy is the better choice for most players</strong> due to faster withdrawals, better bonuses, more games, and superior VIP rewards. The 5-30 minute withdrawal speed alone makes it worth choosing over 3Patti Gold for players who value quick access to their winnings.
+            <strong>Royal X Casino is the better choice for most players</strong> due to faster withdrawals, better bonuses, more games, and superior VIP rewards. The 5-30 minute withdrawal speed alone makes it worth choosing over 3Patti Gold for players who value quick access to their winnings.
           </p>
 
           <p className="text-gray-300 mb-4">
@@ -318,10 +318,10 @@ export default function Blog3PattiGoldVsCardRummy() {
 
           <div className="mt-12 text-center">
             <Link 
-              href="/download-card-rummy"
+              href="/download"
               className="inline-block bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-bold py-4 px-8 rounded-lg text-lg transition-all transform hover:scale-105 shadow-lg"
             >
-              Download Card Rummy APK v1.225
+              Download Royal X Casino APK v1.225
             </Link>
           </div>
         </div>
@@ -330,12 +330,12 @@ export default function Blog3PattiGoldVsCardRummy() {
           <h3 className="text-2xl font-bold text-white mb-6">Related Comparisons & Guides</h3>
           <div className="grid md:grid-cols-2 gap-6">
             <Link href="/blog/3patti-lucky-vs-card-rummy" className="block p-6 bg-purple-800/30 rounded-lg hover:bg-purple-800/50 transition-colors">
-              <h4 className="text-xl font-semibold text-white mb-2">3Patti Lucky vs Card Rummy</h4>
-              <p className="text-gray-400">Complete comparison of 3Patti Lucky and Card Rummy</p>
+              <h4 className="text-xl font-semibold text-white mb-2">3Patti Lucky vs Royal X Casino</h4>
+              <p className="text-gray-400">Complete comparison of 3Patti Lucky and Royal X Casino</p>
             </Link>
             <Link href="/blog/card-rummy-app-review-2026" className="block p-6 bg-purple-800/30 rounded-lg hover:bg-purple-800/50 transition-colors">
-              <h4 className="text-xl font-semibold text-white mb-2">Card Rummy App Review 2026</h4>
-              <p className="text-gray-400">Complete honest review of Card Rummy app</p>
+              <h4 className="text-xl font-semibold text-white mb-2">Royal X Casino App Review 2026</h4>
+              <p className="text-gray-400">Complete honest review of Royal X Casino app</p>
             </Link>
           </div>
         </aside>

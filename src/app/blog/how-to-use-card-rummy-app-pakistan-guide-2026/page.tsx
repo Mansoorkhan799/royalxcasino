@@ -3,34 +3,34 @@ import Link from 'next/link';
 import BlogPostSchema from '@/components/BlogPostSchema';
 
 export const metadata: Metadata = {
-  title: 'How to Use Card Rummy App in Pakistan: Complete Beginner\'s Guide 2026',
-  description: 'Complete Card Rummy app guide 2026 for Pakistan: Download, registration, deposit, withdrawal, gameplay & earning tips. Step-by-step tutorial for beginners!',
+  title: 'How to Use Royal X Casino App in Pakistan: Complete Beginner\'s Guide 2026',
+  description: 'Complete Royal X Casino app guide 2026 for Pakistan: Download, registration, deposit, withdrawal, gameplay & earning tips. Step-by-step tutorial for beginners!',
   keywords: [
-    'how to use Card Rummy',
-    'Card Rummy guide Pakistan',
-    'Card Rummy tutorial',
-    'Card Rummy for beginners',
-    'how to play Card Rummy',
-    'Card Rummy download guide',
-    'Card Rummy deposit withdrawal',
-    'Card Rummy earning guide',
-    'Card Rummy Pakistan 2026',
-    'Card Rummy complete guide'
+    'how to use Royal X Casino',
+    'Royal X Casino guide Pakistan',
+    'Royal X Casino tutorial',
+    'Royal X Casino for beginners',
+    'how to play Royal X Casino',
+    'Royal X Casino download guide',
+    'Royal X Casino deposit withdrawal',
+    'Royal X Casino earning guide',
+    'Royal X Casino Pakistan 2026',
+    'Royal X Casino complete guide'
   ],
   openGraph: {
-    title: 'How to Use Card Rummy App in Pakistan: Complete Beginner\'s Guide 2026',
-    description: 'Step-by-step guide to download, register, deposit, play & earn from Card Rummy app in Pakistan. Perfect for beginners!',
+    title: 'How to Use Royal X Casino App in Pakistan: Complete Beginner\'s Guide 2026',
+    description: 'Step-by-step guide to download, register, deposit, play & earn from Royal X Casino app in Pakistan. Perfect for beginners!',
     type: 'article',
   },
-  alternates: { canonical: "https://cardrummyapp.com.pk/blog/how-to-use-card-rummy-app-pakistan-guide-2026" },
+  alternates: { canonical: "https://royalexcasino.com.pk/blog/how-to-use-card-rummy-app-pakistan-guide-2026" },
 };
 
 export default function BlogHowToUseCardRummyGuide() {
   return (
     <main className="min-h-screen bg-[#060A20]">
       <BlogPostSchema
-        title="How to Use Card Rummy App in Pakistan: Complete Beginner's Guide 2026"
-        description="Complete Card Rummy app guide 2026 for Pakistan: Download, registration, deposit, withdrawal, gameplay & earning tips. Step-by-step tutorial for beginners!"
+        title="How to Use Royal X Casino App in Pakistan: Complete Beginner's Guide 2026"
+        description="Complete Royal X Casino app guide 2026 for Pakistan: Download, registration, deposit, withdrawal, gameplay & earning tips. Step-by-step tutorial for beginners!"
         slug="how-to-use-card-rummy-app-pakistan-guide-2026"
         datePublished="2026-01-11"
       />
@@ -40,12 +40,12 @@ export default function BlogHowToUseCardRummyGuide() {
           <span className="mx-2">/</span>
           <Link href="/blog" className="hover:text-[#FFA500]">Blog</Link>
           <span className="mx-2">/</span>
-          <span className="text-white">How to Use Card Rummy App Guide 2026</span>
+          <span className="text-white">How to Use Royal X Casino App Guide 2026</span>
         </nav>
 
         <header className="mb-12">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            How to Use Card Rummy App in Pakistan: Complete Beginner's Guide 2026
+            How to Use Royal X Casino App in Pakistan: Complete Beginner's Guide 2026
           </h1>
           <div className="flex items-center gap-4 text-gray-400 text-sm">
             <time dateTime="2026-01-11">January 11, 2026</time>
@@ -56,7 +56,7 @@ export default function BlogHowToUseCardRummyGuide() {
 
         <div className="prose prose-invert prose-lg max-w-none">
           <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-            New to <Link href="/" className="text-[#FFA500] hover:underline font-semibold">Card Rummy</Link>? This complete beginner's guide will walk you through everything from downloading the app to making your first withdrawal. By the end of this guide, you'll know exactly how to use Card Rummy to start earning real cash in Pakistan.
+            New to <Link href="/" className="text-[#FFA500] hover:underline font-semibold">Royal X Casino</Link>? This complete beginner's guide will walk you through everything from downloading the app to making your first withdrawal. By the end of this guide, you'll know exactly how to use Royal X Casino to start earning real cash in Pakistan.
           </p>
 
           <div className="bg-gradient-to-r from-purple-800/50 to-orange-600/50 rounded-lg p-8 my-8">
@@ -64,7 +64,7 @@ export default function BlogHowToUseCardRummyGuide() {
               <strong>📚 What This Guide Covers:</strong>
             </p>
             <ul className="list-disc pl-6 text-white space-y-2">
-              <li>Downloading & installing Card Rummy APK</li>
+              <li>Downloading & installing Royal X Casino APK</li>
               <li>Creating your account step-by-step</li>
               <li>Making your first deposit</li>
               <li>Understanding all game modes</li>
@@ -76,7 +76,7 @@ export default function BlogHowToUseCardRummyGuide() {
             </ul>
           </div>
 
-          <h2 className="text-3xl font-bold text-white mt-12 mb-6">Step 1: Download & Install Card Rummy APK</h2>
+          <h2 className="text-3xl font-bold text-white mt-12 mb-6">Step 1: Download & Install Royal X Casino APK</h2>
           
           <h3 className="text-2xl font-semibold text-white mt-8 mb-4">Requirements</h3>
           <ul className="list-disc pl-6 text-gray-300 mb-6 space-y-2">
@@ -88,8 +88,8 @@ export default function BlogHowToUseCardRummyGuide() {
 
           <h3 className="text-2xl font-semibold text-white mt-8 mb-4">Download Process</h3>
           <ol className="list-decimal pl-6 text-gray-300 mb-6 space-y-3">
-            <li>Visit the official <Link href="/" className="text-[#FFA500] hover:underline font-semibold">Card Rummy</Link> website: cardrummyapp.com.pk</li>
-            <li>Click the big "Download APK" button (usually orange or green) - or visit our <Link href="/download-card-rummy" className="text-[#FFA500] hover:underline font-semibold">download page</Link></li>
+            <li>Visit the official <Link href="/" className="text-[#FFA500] hover:underline font-semibold">Royal X Casino</Link> website: royalexcasino.com.pk</li>
+            <li>Click the big "Download APK" button (usually orange or green) - or visit our <Link href="/download" className="text-[#FFA500] hover:underline font-semibold">download page</Link></li>
             <li>Your browser will warn you about downloading from unknown sources - click "OK" or "Download anyway"</li>
             <li>Wait for the APK file to download (typically 50-80MB, takes 30 seconds to 2 minutes)</li>
           </ol>
@@ -97,7 +97,7 @@ export default function BlogHowToUseCardRummyGuide() {
           <h3 className="text-2xl font-semibold text-white mt-8 mb-4">Installation Process</h3>
           <ol className="list-decimal pl-6 text-gray-300 mb-6 space-y-3">
             <li>Open your "Downloads" folder or notification bar</li>
-            <li>Tap the downloaded APK file (named something like "CardRummy_v1.225.apk")</li>
+            <li>Tap the downloaded APK file (named something like "RoyalXCasino_v2.54.7.apk")</li>
             <li>If prompted, go to Settings → Security → Enable "Install from Unknown Sources"</li>
             <li>Go back and tap the APK again</li>
             <li>Click "Install" and wait 10-30 seconds</li>
@@ -107,7 +107,7 @@ export default function BlogHowToUseCardRummyGuide() {
           <div className="bg-orange-600/20 border border-orange-500 rounded-lg p-6 my-8">
             <p className="text-white font-semibold mb-2">⚠️ Important Security Note</p>
             <p className="text-gray-300">
-              ONLY download from the official website (cardrummyapp.com.pk). Never download from third-party sites, Play Store clones, or random links. Fake versions can steal your money!
+              ONLY download from the official website (royalexcasino.com.pk). Never download from third-party sites, Play Store clones, or random links. Fake versions can steal your money!
             </p>
           </div>
 
@@ -157,7 +157,7 @@ export default function BlogHowToUseCardRummyGuide() {
           <ul className="list-disc pl-6 text-gray-300 mb-6 space-y-3">
             <li><strong>Top Bar:</strong> Shows your current balance, wallet icon, and notification bell</li>
             <li><strong>Banner Section:</strong> Displays current promotions, bonuses, and special offers</li>
-            <li><strong>Game Cards:</strong> Four main games - Teen Patti, Rummy, Dragon vs Tiger, Andar Bahar</li>
+            <li><strong>Game Cards:</strong> 200+ games - Teen Patti, Slots, Fishing, Rummy, Dragon vs Tiger, Andar Bahar & more</li>
             <li><strong>Bottom Navigation:</strong>
               <ul className="list-disc pl-6 mt-2 space-y-1">
                 <li>Home - Main screen</li>
@@ -176,7 +176,7 @@ export default function BlogHowToUseCardRummyGuide() {
 
           <h3 className="text-2xl font-semibold text-white mt-8 mb-4">Deposit Methods Available</h3>
           <p className="text-gray-300 mb-4">
-            Card Rummy supports multiple payment methods. For detailed instructions, check our <Link href="/deposit-money-in-card-rummy" className="text-[#FFA500] hover:underline font-semibold">deposit money guide</Link>.
+            Royal X Casino supports multiple payment methods. For detailed instructions, check our <Link href="/deposit-guide" className="text-[#FFA500] hover:underline font-semibold">deposit money guide</Link>.
           </p>
           <ul className="list-disc pl-6 text-gray-300 mb-6 space-y-2">
             <li><strong>JazzCash:</strong> Most popular, instant processing</li>
@@ -200,7 +200,7 @@ export default function BlogHowToUseCardRummyGuide() {
             <li>Open your JazzCash/EasyPaisa app or go to your bank</li>
             <li>Send the EXACT amount to the provided account</li>
             <li>Take a screenshot of the transaction confirmation</li>
-            <li>Return to Card Rummy app</li>
+            <li>Return to Royal X Casino app</li>
             <li>Upload the screenshot or enter transaction ID</li>
             <li>Click "Submit"</li>
             <li>Wait 1-5 minutes for processing (usually instant for JazzCash/EasyPaisa)</li>
@@ -309,7 +309,7 @@ export default function BlogHowToUseCardRummyGuide() {
           <h2 className="text-3xl font-bold text-white mt-12 mb-6">Step 7: Claim Your Bonuses</h2>
           
           <p className="text-gray-300 mb-4">
-            Card Rummy offers multiple bonus opportunities. Here's how to claim them all:
+            Royal X Casino offers multiple bonus opportunities. Here's how to claim them all:
           </p>
 
           <h3 className="text-2xl font-semibold text-white mt-8 mb-4">Daily Tasks</h3>
@@ -353,7 +353,7 @@ export default function BlogHowToUseCardRummyGuide() {
           <h2 className="text-3xl font-bold text-white mt-12 mb-6">Step 8: Withdraw Your Winnings</h2>
           
           <p className="text-gray-300 mb-4">
-            This is the most important part - getting your money out! Card Rummy has one of the fastest withdrawal systems in Pakistan.
+            This is the most important part - getting your money out! Royal X Casino has one of the fastest withdrawal systems in Pakistan.
           </p>
 
           <h3 className="text-2xl font-semibold text-white mt-8 mb-4">Withdrawal Requirements</h3>
@@ -366,7 +366,7 @@ export default function BlogHowToUseCardRummyGuide() {
 
           <h3 className="text-2xl font-semibold text-white mt-8 mb-4">How to Withdraw (Step-by-Step)</h3>
           <p className="text-gray-300 mb-4">
-            For a complete guide with screenshots, see our <Link href="/withdraw-money-from-card-rummy" className="text-[#FFA500] hover:underline font-semibold">withdraw money guide</Link>.
+            For a complete guide with screenshots, see our <Link href="/withdraw-guide" className="text-[#FFA500] hover:underline font-semibold">withdraw money guide</Link>.
           </p>
           <ol className="list-decimal pl-6 text-gray-300 mb-6 space-y-3">
             <li>Tap "Wallet" icon at top of screen</li>
@@ -397,12 +397,12 @@ export default function BlogHowToUseCardRummyGuide() {
           <h2 className="text-3xl font-bold text-white mt-12 mb-6">Step 9: Understanding the VIP System</h2>
           
           <p className="text-gray-300 mb-4">
-            Card Rummy has a 10-level VIP system that rewards active players. As you play more, you automatically level up and unlock better rewards.
+            Royal X Casino has a 10-level VIP system that rewards active players. As you play more, you automatically level up and unlock better rewards.
           </p>
 
           <h3 className="text-2xl font-semibold text-white mt-8 mb-4">VIP Level Benefits</h3>
           <p className="text-gray-300 mb-4">
-            For a complete guide to all VIP benefits and bonuses, see our <Link href="/blog/card-rummy-bonuses-vip-guide" className="text-[#FFA500] hover:underline font-semibold">Card Rummy Bonuses & VIP Guide</Link>.
+            For a complete guide to all VIP benefits and bonuses, see our <Link href="/blog/card-rummy-bonuses-vip-guide" className="text-[#FFA500] hover:underline font-semibold">Royal X Casino Bonuses & VIP Guide</Link>.
           </p>
           <div className="overflow-x-auto mb-8">
             <table className="w-full border-collapse border border-gray-700">
@@ -501,7 +501,7 @@ export default function BlogHowToUseCardRummyGuide() {
 
           <h3 className="text-2xl font-semibold text-white mt-8 mb-4">App Crashing or Laggy?</h3>
           <ul className="list-disc pl-6 text-gray-300 mb-6 space-y-2">
-            <li>Clear app cache: Settings → Apps → Card Rummy → Clear Cache</li>
+            <li>Clear app cache: Settings → Apps → Royal X Casino → Clear Cache</li>
             <li>Update to latest version</li>
             <li>Restart your phone</li>
             <li>Ensure stable internet connection</li>
@@ -519,12 +519,12 @@ export default function BlogHowToUseCardRummyGuide() {
           <h2 className="text-3xl font-bold text-white mt-12 mb-6">Getting Help & Support</h2>
           
           <p className="text-gray-300 mb-4">
-            Card Rummy offers multiple support options:
+            Royal X Casino offers multiple support options:
           </p>
           <ul className="list-disc pl-6 text-gray-300 mb-8 space-y-3">
             <li><strong>24/7 Live Chat:</strong> Tap the chat icon (usually bottom right). Instant responses from support team</li>
             <li><strong>WhatsApp:</strong> Available in "Contact Us" section</li>
-            <li><strong>Email:</strong> support@cardrummyapp.com.pk (response within 24 hours)</li>
+            <li><strong>Email:</strong> support@royalexcasino.com.pk (response within 24 hours)</li>
             <li><strong>FAQ Section:</strong> In-app under "Help" - answers to common questions</li>
             <li><strong>Video Tutorials:</strong> Step-by-step guides for each game</li>
           </ul>
@@ -573,14 +573,14 @@ export default function BlogHowToUseCardRummyGuide() {
           <div className="bg-orange-600/20 border border-orange-500 rounded-lg p-6 my-8">
             <p className="text-white font-semibold mb-2">⚠️ Responsible Gaming Reminder</p>
             <p className="text-gray-300">
-              Card Rummy is entertainment with earning potential, but it involves real money risk. Only play with money you can afford to lose. Set daily limits. If you feel you're playing too much or it's affecting your life negatively, take a break or seek help.
+              Royal X Casino is entertainment with earning potential, but it involves real money risk. Only play with money you can afford to lose. Set daily limits. If you feel you're playing too much or it's affecting your life negatively, take a break or seek help.
             </p>
           </div>
 
           <h2 className="text-3xl font-bold text-white mt-12 mb-6">Conclusion</h2>
           
           <p className="text-gray-300 mb-4">
-            Congratulations! You now know everything you need to start using Card Rummy app in Pakistan. From downloading the APK to making your first withdrawal, you have a complete roadmap.
+            Congratulations! You now know everything you need to start using Royal X Casino app in Pakistan. From downloading the APK to making your first withdrawal, you have a complete roadmap.
           </p>
 
           <p className="text-gray-300 mb-4">
@@ -598,15 +598,15 @@ export default function BlogHowToUseCardRummyGuide() {
           </ol>
 
           <p className="text-gray-300 mb-4">
-            Most importantly: start small, learn the games, and gradually increase your stakes as you gain confidence. Many successful Card Rummy players started exactly where you are now!
+            Most importantly: start small, learn the games, and gradually increase your stakes as you gain confidence. Many successful Royal X Casino players started exactly where you are now!
           </p>
 
           <div className="mt-12 text-center">
             <Link 
-              href="/download-card-rummy"
+              href="/download"
               className="inline-block bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-bold py-4 px-8 rounded-lg text-lg transition-all transform hover:scale-105 shadow-lg"
             >
-              Download Card Rummy APK v1.225 - Start Your Journey
+              Download Royal X Casino APK v2.54.7 - Start Your Journey
             </Link>
           </div>
         </div>

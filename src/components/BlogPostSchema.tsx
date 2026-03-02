@@ -1,4 +1,4 @@
-const BASE = "https://cardrummyapp.com.pk";
+const BASE = "https://royalexcasino.com.pk";
 
 function safeJsonLd(obj: object): string {
   return JSON.stringify(obj).replace(/</g, "\\u003c");
@@ -20,7 +20,7 @@ export default function BlogPostSchema({
   slug,
   datePublished,
   dateModified,
-  image = `${BASE}/card-rummy-logo.webp`,
+  image = `${BASE}/royal-x-casino-logo.webp`,
   breadcrumbOnly = false,
 }: BlogPostSchemaProps) {
   const url = `${BASE}/blog/${slug}`;
@@ -39,11 +39,11 @@ export default function BlogPostSchema({
     headline: title,
     description,
     image,
-    author: { "@type": "Organization", name: "Card Rummy", url: BASE },
+    author: { "@type": "Organization", name: "Royal X Casino", url: BASE },
     publisher: {
       "@type": "Organization",
-      name: "Card Rummy",
-      logo: { "@type": "ImageObject", url: `${BASE}/card-rummy-logo.webp` },
+      name: "Royal X Casino",
+      logo: { "@type": "ImageObject", url: `${BASE}/royal-x-casino-logo.webp` },
     },
     datePublished,
     dateModified: dateModified || datePublished,

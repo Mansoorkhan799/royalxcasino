@@ -3,34 +3,34 @@ import Link from 'next/link';
 import BlogPostSchema from '@/components/BlogPostSchema';
 
 export const metadata: Metadata = {
-  title: 'Responsible Gaming Guide: How to Enjoy Card Rummy Without Addiction or Big Losses 2026',
-  description: 'Complete responsible gaming guide for Card Rummy 2026: How to play safely, avoid addiction, set limits, recognize warning signs, and enjoy gaming without financial harm in Pakistan.',
+  title: 'Responsible Gaming Guide: How to Enjoy Royal X Casino Without Addiction or Big Losses 2026',
+  description: 'Complete responsible gaming guide for Royal X Casino 2026: How to play safely, avoid addiction, set limits, recognize warning signs, and enjoy gaming without financial harm in Pakistan.',
   keywords: [
-    'responsible gaming Card Rummy',
-    'Card Rummy addiction',
+    'responsible gaming Royal X Casino',
+    'Royal X Casino addiction',
     'gambling addiction help',
-    'safe gaming Card Rummy',
-    'Card Rummy limits',
+    'safe gaming Royal X Casino',
+    'Royal X Casino limits',
     'gaming addiction prevention',
     'responsible gambling',
-    'Card Rummy self control',
+    'Royal X Casino self control',
     'gaming addiction Pakistan',
     'how to play safely'
   ],
   openGraph: {
-    title: 'Responsible Gaming Guide: How to Enjoy Card Rummy Without Addiction or Big Losses',
-    description: 'Essential guide to playing Card Rummy responsibly. Learn to set limits, recognize addiction signs, and enjoy gaming safely.',
+    title: 'Responsible Gaming Guide: How to Enjoy Royal X Casino Without Addiction or Big Losses',
+    description: 'Essential guide to playing Royal X Casino responsibly. Learn to set limits, recognize addiction signs, and enjoy gaming safely.',
     type: 'article',
   },
-  alternates: { canonical: "https://cardrummyapp.com.pk/blog/responsible-gaming-guide-card-rummy" },
+  alternates: { canonical: "https://royalexcasino.com.pk/blog/responsible-gaming-guide-card-rummy" },
 };
 
 export default function BlogResponsibleGamingGuide() {
   return (
     <main className="min-h-screen bg-[#060A20]">
       <BlogPostSchema
-        title="Responsible Gaming Guide: How to Enjoy Card Rummy Without Addiction or Big Losses 2026"
-        description="Complete responsible gaming guide for Card Rummy 2026: How to play safely, avoid addiction, set limits, recognize warning signs, and enjoy gaming without financial harm in Pakistan."
+        title="Responsible Gaming Guide: How to Enjoy Royal X Casino Without Addiction or Big Losses 2026"
+        description="Complete responsible gaming guide for Royal X Casino 2026: How to play safely, avoid addiction, set limits, recognize warning signs, and enjoy gaming without financial harm in Pakistan."
         slug="responsible-gaming-guide-card-rummy"
         datePublished="2026-01-11"
       />
@@ -45,7 +45,7 @@ export default function BlogResponsibleGamingGuide() {
 
         <header className="mb-12">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            Responsible Gaming Guide: How to Enjoy Card Rummy Without Addiction or Big Losses
+            Responsible Gaming Guide: How to Enjoy Royal X Casino Without Addiction or Big Losses
           </h1>
           <div className="flex items-center gap-4 text-gray-400 text-sm">
             <time dateTime="2026-01-11">January 11, 2026</time>
@@ -56,13 +56,13 @@ export default function BlogResponsibleGamingGuide() {
 
         <div className="prose prose-invert prose-lg max-w-none">
           <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-            <Link href="/" className="text-[#FFA500] hover:underline font-semibold">Card Rummy</Link> can be entertaining and potentially profitable, but it's crucial to play responsibly. This comprehensive guide will help you enjoy Card Rummy safely, recognize warning signs of problem gaming, and maintain healthy gaming habits. <strong>Your financial and mental well-being are more important than any game.</strong>
+            <Link href="/" className="text-[#FFA500] hover:underline font-semibold">Royal X Casino</Link> can be entertaining and potentially profitable, but it's crucial to play responsibly. This comprehensive guide will help you enjoy Royal X Casino safely, recognize warning signs of problem gaming, and maintain healthy gaming habits. <strong>Your financial and mental well-being are more important than any game.</strong>
           </p>
 
           <div className="bg-red-900/30 border border-red-600 rounded-lg p-8 my-8">
             <p className="text-white text-lg font-semibold mb-2">⚠️ Important Warning</p>
             <p className="text-gray-300">
-              Card Rummy involves real money risk. You can lose money. If you have a gambling addiction or are at risk, please seek professional help. This guide is for informational purposes only and does not replace professional treatment.
+              Royal X Casino involves real money risk. You can lose money. If you have a gambling addiction or are at risk, please seek professional help. This guide is for informational purposes only and does not replace professional treatment.
             </p>
           </div>
 
@@ -263,7 +263,7 @@ export default function BlogResponsibleGamingGuide() {
           
           <h3 className="text-2xl font-semibold text-white mt-8 mb-4">Setting Permanent Limits</h3>
           <p className="text-gray-300 mb-4">
-            Card Rummy allows you to set permanent limits:
+            Royal X Casino allows you to set permanent limits:
           </p>
           <ul className="list-disc pl-6 text-gray-300 mb-6 space-y-2">
             <li><strong>Deposit limits:</strong> Maximum you can deposit per day/week/month</li>
@@ -295,7 +295,7 @@ export default function BlogResponsibleGamingGuide() {
           
           <h3 className="text-2xl font-semibold text-white mt-8 mb-4">Treat It as Entertainment</h3>
           <ul className="list-disc pl-6 text-gray-300 mb-6 space-y-2">
-            <li>View Card Rummy like going to a movie or restaurant - entertainment expense</li>
+            <li>View Royal X Casino like going to a movie or restaurant - entertainment expense</li>
             <li>Don't expect to make money - any winnings are a bonus</li>
             <li>Set entertainment budget (like you would for movies)</li>
             <li>Enjoy the games, not just the money</li>
@@ -376,7 +376,7 @@ export default function BlogResponsibleGamingGuide() {
           <h2 className="text-3xl font-bold text-white mt-12 mb-6">Conclusion</h2>
           
           <p className="text-gray-300 mb-4">
-            Card Rummy can be enjoyable entertainment when played responsibly. The key is to:
+            Royal X Casino can be enjoyable entertainment when played responsibly. The key is to:
           </p>
           <ul className="list-disc pl-6 text-gray-300 mb-6 space-y-2">
             <li>Set and stick to limits</li>
@@ -387,11 +387,11 @@ export default function BlogResponsibleGamingGuide() {
           </ul>
 
           <p className="text-gray-300 mb-4">
-            <strong>Remember:</strong> Your financial security, relationships, and mental health are more important than any game. If Card Rummy is causing problems in your life, it's time to take a break or stop completely.
+            <strong>Remember:</strong> Your financial security, relationships, and mental health are more important than any game. If Royal X Casino is causing problems in your life, it's time to take a break or stop completely.
           </p>
 
           <p className="text-gray-300 mb-4">
-            Play for fun, play within your means, and play responsibly. That's the only way to enjoy Card Rummy long-term.
+            Play for fun, play within your means, and play responsibly. That's the only way to enjoy Royal X Casino long-term.
           </p>
 
           <div className="bg-orange-600/20 border border-orange-500 rounded-lg p-6 my-8">
@@ -406,7 +406,7 @@ export default function BlogResponsibleGamingGuide() {
           <h3 className="text-2xl font-bold text-white mb-6">Related Safety Guides</h3>
           <div className="grid md:grid-cols-2 gap-6">
             <Link href="/blog/is-card-rummy-safe-legal-pakistan" className="block p-6 bg-purple-800/30 rounded-lg hover:bg-purple-800/50 transition-colors">
-              <h4 className="text-xl font-semibold text-white mb-2">Is Card Rummy Safe and Legal?</h4>
+              <h4 className="text-xl font-semibold text-white mb-2">Is Royal X Casino Safe and Legal?</h4>
               <p className="text-gray-400">Complete safety and legal guide</p>
             </Link>
             <Link href="/blog/card-rummy-tips-10-smart-tricks" className="block p-6 bg-purple-800/30 rounded-lg hover:bg-purple-800/50 transition-colors">

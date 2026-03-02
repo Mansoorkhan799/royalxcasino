@@ -2,51 +2,22 @@ import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import Script from 'next/script';
+import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 
 export const metadata: Metadata = {
-  title: 'About Card Rummy - Pakistan\'s Premier Card Gaming Platform',
-  description: 'Learn about Card Rummy, our history, mission, and vision for creating the best card gaming platform in Pakistan with Teen Patti, Rummy and more.',
-  keywords: ['Card Rummy about', 'about us', 'gaming company Pakistan', 'Card Rummy history', 'card gaming platform', 'Teen Patti', '3 Patti'],
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
-    },
-  },
-  alternates: {
-    canonical: "https://cardrummyapp.com.pk/about-us",
-  },
-  openGraph: {
-    title: 'About Card Rummy - Pakistan\'s Premier Card Gaming Platform',
-    description: 'Learn about Card Rummy, our history, mission, and vision for creating the best card gaming platform in Pakistan with real cash rewards.',
-    url: "https://cardrummyapp.com.pk/about-us",
-    siteName: "Card Rummy",
-    locale: "en_US",
-    type: "website",
-    images: [
-      {
-        url: "https://cardrummyapp.com.pk/card-rummy-logo.webp",
-        width: 1200,
-        height: 630,
-        alt: "About Card Rummy - Premier Card Gaming Platform",
-      }
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: 'About Card Rummy - Pakistan\'s Premier Card Gaming Platform',
-    description: 'Learn about Card Rummy, our history, mission, and vision for creating the best card gaming platform in Pakistan with real cash rewards.',
-    images: ["https://cardrummyapp.com.pk/card-rummy-logo.webp"],
-  },
+  title: 'About Royal X Casino - Pakistan Real Money Gaming',
+  description: 'About Royal X Casino: 200+ games, zero wagering, instant withdrawals. Pakistan\'s premier real money gaming platform.',
+  keywords: ['About Royal X Casino', 'Royal X Casino Pakistan', 'real money gaming', 'casino app Pakistan'],
+  alternates: { canonical: 'https://royalexcasino.com.pk/about-us' },
 };
 
 export default function AboutPage() {
   return (
     <div className="min-h-screen bg-primary py-12 px-4">
+      <BreadcrumbSchema items={[
+        { name: 'Home', url: '/' },
+        { name: 'About Us', url: '/about-us' },
+      ]} />
       <div className="container mx-auto">
         <div className="max-w-4xl mx-auto">
           {/* Hero Section */}
@@ -56,26 +27,26 @@ export default function AboutPage() {
           
           {/* Main Content */}
           <div className="bg-secondary rounded-2xl shadow-xl p-8 md:p-12 mb-12">
-            <div className="flex flex-col md:flex-row items-center gap-8 mb-8">
-              <div className="w-full md:w-1/3 flex-shrink-0 flex justify-center md:justify-start">
-                <Link href="/" className="block">
-                  <div className="relative w-[280px] h-[280px] md:w-[320px] md:h-[320px] mx-auto md:mx-0 rounded-lg overflow-hidden bg-[#0A1029]">
+            <div className="grid grid-cols-1 md:grid-cols-[280px_1fr] gap-8 md:gap-12 items-start">
+              <div className="flex justify-center md:justify-start order-2 md:order-1">
+                <Link href="/" className="block shrink-0">
+                  <div className="relative w-[200px] h-[200px] md:w-[280px] md:h-[280px] rounded-lg overflow-hidden bg-[#0A1029] border border-gray-700">
                     <Image 
-                      src="/card-rummy.webp" 
-                      alt="Card Rummy Logo" 
-                      width={320}
-                      height={320}
-                      sizes="(max-width: 768px) 280px, 320px"
+                      src="/royal-x-casino-logo.webp" 
+                      alt="Royal X Casino Logo" 
+                      width={280}
+                      height={280}
+                      sizes="(max-width: 768px) 200px, 280px"
                       className="object-contain p-4 w-full h-full"
                       priority
                     />
                   </div>
                 </Link>
               </div>
-              <div className="md:w-2/3">
+              <div className="order-1 md:order-2 min-w-0">
                 <div className="prose prose-lg max-w-none">
                   <p className="text-lg text-gray-300 leading-relaxed mb-6">
-                    Welcome to <a href="https://www.cardrummyapp.com.pk/" className="text-accent hover:text-accent font-semibold" target="_blank" rel="noopener noreferrer">www.cardrummyapp.com.pk</a>, a trusted platform to provide the latest information about 3patti <Link href="/" className="text-accent hover:underline font-semibold">Card Rummy</Link>. This is one of the most popular online casino games in Pakistan, having <span className="font-bold text-accent">500K+ users</span>. <Link href="/download-card-rummy" className="text-accent hover:underline font-semibold">Download Card Rummy</Link> now to join thousands of players earning real cash rewards.
+                    Welcome to <Link href="/" className="text-accent hover:underline font-semibold">royalexcasino.com.pk</Link>, the official source for <Link href="/" className="text-accent hover:underline font-semibold">Royal X Casino</Link>. Royal X Casino is one of Pakistan&apos;s leading real money gaming platforms, with 200+ games, zero wagering, and instant withdrawals. <Link href="/download" className="text-accent hover:underline font-semibold">Download Royal X Casino</Link> to play Teen Patti, Slots, Fishing and more with JazzCash & EasyPaisa.
                   </p>
                   <p className="text-lg text-gray-300 leading-relaxed">
                     Hundreds of people are playing these wonderful games and earning a handsome amount on a daily or weekly basis.
@@ -89,7 +60,7 @@ export default function AboutPage() {
           <div className="bg-gradient-to-r from-orange-600 to-orange-500 rounded-2xl shadow-xl p-8 md:p-12 mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white text-center">Our Aim!</h2>
             <p className="text-lg md:text-xl text-white leading-relaxed text-center">
-              Our aim is to provide the users with the latest and updated information and earning tips about Card Rummy. For any type of information or query, you can visit our <Link href="/contact-us" className="underline hover:text-orange-100 font-semibold">contact us page</Link>.
+              Our aim is to provide the latest information and earning tips about Royal X Casino. For any type of information or query, you can visit our <Link href="/contact-us" className="underline hover:text-orange-100 font-semibold">contact us page</Link>.
             </p>
           </div>
           
@@ -97,7 +68,7 @@ export default function AboutPage() {
           <div className="bg-secondary rounded-2xl shadow-xl p-8 text-center">
             <h2 className="text-2xl font-bold mb-4 text-white">Have Questions?</h2>
             <p className="text-gray-300 mb-6 text-lg">
-              We're here to help! Contact our team for any information or queries about Card Rummy.
+              We're here to help! Contact our team for any information or queries about Royal X Casino.
             </p>
             <Link 
               href="/contact-us" 
@@ -118,34 +89,18 @@ export default function AboutPage() {
             "@type": "AboutPage",
             "mainEntity": {
               "@type": "Organization",
-              "name": "Card Rummy",
-              "alternateName": "3 Patti Card Rummy",
-              "url": "https://cardrummyapp.com.pk",
-              "logo": "https://cardrummyapp.com.pk/card-rummy-logo.webp",
-              "description": "Card Rummy is Pakistan's premier card gaming platform, offering Teen Patti, Rummy, Dragon vs Tiger and more with real cash rewards.",
-              "foundingDate": "2024",
-              "foundingLocation": {
-                "@type": "Country",
-                "name": "Pakistan"
-              },
-              "sameAs": [
-                "https://facebook.com/cardrummy",
-                "https://twitter.com/cardrummy"
-              ],
-              "founder": {
-                "@type": "Person",
-                "name": "Erio Card Rummy Dev"
-              }
+              "name": "Royal X Casino",
+              "url": "https://royalexcasino.com.pk",
+              "logo": "https://royalexcasino.com.pk/royal-x-casino-logo.webp",
+              "description": "Royal X Casino is Pakistan's premier real money gaming platform with 200+ games, zero wagering, and instant withdrawals.",
+              "foundingLocation": { "@type": "Country", "name": "Pakistan" }
             },
             "about": {
               "@type": "Thing",
-              "name": "Card Gaming Platform",
-              "description": "Online card gaming platform with real cash rewards serving Pakistani users"
+              "name": "Casino Gaming Platform",
+              "description": "Real money gaming platform with 200+ games, zero wagering, serving Pakistan"
             },
-            "mainEntityOfPage": {
-              "@type": "WebPage",
-              "@id": "https://cardrummyapp.com.pk/about"
-            }
+            "mainEntityOfPage": { "@type": "WebPage", "@id": "https://royalexcasino.com.pk/about-us" }
           })
         }}
       />

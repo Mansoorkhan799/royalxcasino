@@ -1,4 +1,4 @@
-# robots.txt for cardrummyapp.com.pk
+# robots.txt for royalexcasino.com.pk
 
 # ============================================
 # AI CONTENT USAGE POLICY
@@ -31,12 +31,12 @@ Disallow: /api/
 Disallow: /admin/
 
 # Priority pages
-Allow: /download-card-rummy
-Allow: /deposit-money-in-card-rummy
-Allow: /withdraw-money-from-card-rummy
-Allow: /card-rummy-for-pc
+Allow: /download
+Allow: /deposit-guide
+Allow: /withdraw-guide
 Allow: /about-us
 Allow: /blog
+Allow: /blog/card-rummy-app-review-2026
 Allow: /blog/is-card-rummy-real-or-fake
 Allow: /blog/create-card-rummy-account-and-login
 Allow: /blog/tips-to-win-big-in-card-rummy
@@ -122,9 +122,9 @@ Allow: /
 # SITEMAPS
 # ============================================
 
-Sitemap: https://cardrummyapp.com.pk/sitemap-index.xml
-Sitemap: https://cardrummyapp.com.pk/sitemap.xml
-Sitemap: https://cardrummyapp.com.pk/image-sitemap.xml
+Sitemap: https://royalexcasino.com.pk/sitemap-index.xml
+Sitemap: https://royalexcasino.com.pk/sitemap.xml
+Sitemap: https://royalexcasino.com.pk/image-sitemap.xml
 
 # ============================================
 # IMPORTANT: DO NOT ADD Host DIRECTIVE

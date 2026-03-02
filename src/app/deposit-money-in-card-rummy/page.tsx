@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import { DOWNLOAD_URL } from '@/lib/config';
 
 export const metadata: Metadata = {
   title: 'How to Deposit Money in Card Rummy? | Quick & Safe Payment Guide 2026',
@@ -36,7 +37,7 @@ export default function DepositMoneyPage() {
               Quick, Safe & Easy Payment Methods with JazzCash and EasyPaisa
             </p>
             <Link
-              href="https://pkcardrummy.com/?from_gameid=6052215&channelCode=5784509"
+              href={DOWNLOAD_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-accent text-primary px-8 py-4 rounded-full text-lg font-bold hover:bg-accent/90 transition-all duration-300 shadow-2xl hover:shadow-3xl transform hover:scale-105"
@@ -293,7 +294,7 @@ export default function DepositMoneyPage() {
               Download Card Rummy now and deposit money to start earning real cash!
             </p>
             <Link
-              href="https://pkcardrummy.com/?from_gameid=6052215&channelCode=5784509"
+              href={DOWNLOAD_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-accent text-primary px-8 py-4 rounded-full text-lg font-bold hover:bg-accent/90 transition-all duration-300 shadow-2xl hover:shadow-3xl transform hover:scale-105"

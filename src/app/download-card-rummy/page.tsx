@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
+import { DOWNLOAD_URL } from '@/lib/config';
 
 export const metadata: Metadata = {
   title: 'Download Card Rummy Game Free APK For Android | Latest Version 2026',
@@ -36,7 +37,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://cardrummyapp.com.pk/card-rummy-logo.webp",
+        url: "https://royalexcasino.com.pk/royal-x-casino-logo.webp",
         width: 1200,
         height: 630,
         alt: "Download Card Rummy APK",
@@ -47,7 +48,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: 'Download Card Rummy Game Free APK For Android',
     description: 'Download Card Rummy APK free. Play Teen Patti, Rummy & more. Earn real cash with secure payments. 500K+ downloads!',
-    images: ["https://cardrummyapp.com.pk/card-rummy-logo.webp"],
+    images: ["https://royalexcasino.com.pk/royal-x-casino-logo.webp"],
   },
 };
 
@@ -71,17 +72,17 @@ export default function DownloadPage() {
       "ratingCount": "600000",
       "bestRating": "5"
     },
-    "downloadUrl": "https://pkcardrummy.com/?from_gameid=6052215&channelCode=5784509",
+    "downloadUrl": "https://royalxcasino55.com/?refer_id=101141302616",
     "softwareVersion": "V1.225",
     "fileSize": "49MB",
     "datePublished": "2026-01-03",
     "description": "Download Card Rummy APK free for Android. Play Teen Patti, Rummy, Dragon Tiger & more. Earn real cash with JazzCash & EasyPaisa.",
     "screenshot": [
-      "https://cardrummyapp.com.pk/card-rummy-screenshot1.webp",
-      "https://cardrummyapp.com.pk/card-rummy-screenshot2.webp",
-      "https://cardrummyapp.com.pk/card-rummy-screenshot3.webp"
+      "https://royalexcasino.com.pk/royal-x-casino-game-pakistan.webp",
+      "https://royalexcasino.com.pk/royal-x-casino-games.webp",
+      "https://royalexcasino.com.pk/royal-x-casino-deposit-money-interface.webp"
     ],
-    "image": "https://cardrummyapp.com.pk/card-rummy-logo.webp",
+    "image": "https://royalexcasino.com.pk/royal-x-casino-logo.webp",
     "author": {
       "@type": "Organization",
       "name": "Card Rummy",
@@ -118,7 +119,7 @@ export default function DownloadPage() {
         {/* Download Button - Prominent */}
         <div className="flex justify-center my-12">
           <a 
-            href="https://pkcardrummy.com/?from_gameid=6052215&channelCode=5784509"
+            href={DOWNLOAD_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="relative flex items-center px-12 py-6 text-white font-bold text-xl rounded-full border-2 border-[#0ea5e9] hover:bg-[#0ea5e9]/10 transition-all group shadow-2xl"
@@ -142,7 +143,7 @@ export default function DownloadPage() {
         <div className="flex justify-center mb-12">
           <div className="relative" style={{ width: '320px', height: '320px', maxWidth: '100%' }}>
             <Image
-              src="/card-rummy.webp"
+              src="/royal-x-casino-logo.webp"
               alt="Card Rummy Logo"
               width={320}
               height={320}
@@ -194,7 +195,7 @@ export default function DownloadPage() {
         {/* Download Button After Table */}
         <div className="flex justify-center mt-8">
           <a 
-            href="https://pkcardrummy.com/?from_gameid=6052215&channelCode=5784509"
+            href={DOWNLOAD_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="download-btn bg-transparent hover:bg-[#0ea5e9]/10 text-white font-bold py-4 px-8 rounded-full inline-flex items-center transition-all shadow-lg hover:shadow-xl border-2 border-[#0ea5e9]"
