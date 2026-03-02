@@ -112,4 +112,16 @@ section {
 /* Prevent layout shift by ensuring content takes up space */
 .stars-bg {
   pointer-events: none;
+}
+
+/* Accessibility: Links distinguishable without relying on color alone (WCAG 2.1) */
+.prose a:not([class*="rounded"]):not([class*="py-4"]),
+.prose-invert a:not([class*="rounded"]):not([class*="py-4"]),
+p.text-gray-300 a,
+p.text-gray-400 a,
+li a.text-accent,
+li a[class*="text-[#FFA500]"],
+li a[class*="text-[#0ea5e9]"] {
+  text-decoration: underline;
+  text-underline-offset: 2px;
 } 

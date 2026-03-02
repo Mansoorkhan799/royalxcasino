@@ -123,16 +123,16 @@ export default function Home() {
                 <li>• Smooth Internet Connection (3G/4G/WiFi)</li>
               </ul>
             </div>
-            <p className="text-gray-400 text-sm italic">*Available for Android. Download from <Link href="/" className="text-accent hover:underline">royalexcasino.com.pk</Link></p>
+            <p className="text-gray-400 text-sm italic">*Available for Android. Download from <Link href="/" className="text-[#0ea5e9] underline hover:text-[#38bdf8] underline-offset-2">royalexcasino.com.pk</Link></p>
           </div>
           <div className="hidden md:block md:w-1/2 md:mt-8">
             <div className="relative ml-auto" style={{ width: "320px", height: "320px" }}>
-              <Image src="/royal-x-casino-logo.webp" alt="Royal X Casino" width={320} height={320} className="object-contain drop-shadow-2xl" priority sizes="320px" />
+              <Image src="/royal-x-casino-logo.webp" alt="Royal X Casino" width={320} height={320} className="object-contain drop-shadow-2xl" priority fetchPriority="high" sizes="320px" />
             </div>
           </div>
           <div className="mt-8 md:hidden">
             <div className="relative mx-auto" style={{ width: "280px", height: "280px" }}>
-              <Image src="/royal-x-casino-logo.webp" alt="Royal X Casino" width={280} height={280} className="object-contain drop-shadow-2xl" priority sizes="280px" />
+              <Image src="/royal-x-casino-logo.webp" alt="Royal X Casino" width={280} height={280} className="object-contain drop-shadow-2xl" priority fetchPriority="high" sizes="280px" />
             </div>
           </div>
         </div>
