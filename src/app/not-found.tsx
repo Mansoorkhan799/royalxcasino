@@ -2,8 +2,8 @@ import Link from 'next/link';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Page Not Found - Card Rummy',
-  description: 'The page you are looking for does not exist. Return to Card Rummy homepage.',
+  title: 'Page Not Found - Royal X Casino',
+  description: 'The page you are looking for does not exist. Return to Royal X Casino homepage.',
   robots: {
     index: false,
     follow: true,
@@ -22,7 +22,7 @@ export default function NotFound() {
         href="/"
         className="bg-accent hover:bg-accent-hover text-[#06091F] font-bold py-3 px-8 rounded-full inline-flex items-center transition-all shadow-lg hover:shadow-xl"
       >
-        Return to Homepage
+        Return to Royal X Casino Homepage
       </Link>
     </div>
   );

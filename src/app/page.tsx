@@ -430,7 +430,7 @@ export default function Home() {
               <li><strong>Storage Error:</strong> Free up at least 600 MB</li>
             </ul>
           </div>
-          <p className="mt-4"><Link href="/download" className="text-accent hover:underline font-semibold">Full download guide →</Link></p>
+          <p className="mt-4"><Link href="/royal-x-casino-download" className="text-accent hover:underline font-semibold">Full download guide →</Link></p>
         </div>
       </section>
 
@@ -489,7 +489,7 @@ export default function Home() {
               <li>✓ Multiple payment options, no hidden fees</li>
             </ul>
           </div>
-          <p className="mt-4"><Link href="/deposit-guide" className="text-accent hover:underline mr-4">Deposit guide</Link><Link href="/withdraw-guide" className="text-accent hover:underline">Withdraw guide</Link></p>
+          <p className="mt-4"><Link href="/royal-x-casino-deposit-guide" className="text-accent hover:underline mr-4">Deposit guide</Link><Link href="/royal-x-casino-withdraw-guide" className="text-accent hover:underline">Withdraw guide</Link></p>
         </div>
       </section>
 

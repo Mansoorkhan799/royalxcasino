@@ -74,7 +74,7 @@ export default function BlogRecoverLosses() {
           </div>
 
           <div className="mt-12 text-center">
-            <Link href="/blog/responsible-gaming-guide-card-rummy" className="inline-block text-[#FFA500] hover:underline font-semibold">
+            <Link href="/blog/responsible-gaming-guide-royal-x-casino" className="inline-block text-[#FFA500] hover:underline font-semibold">
               Read our Responsible Gaming Guide →
             </Link>
           </div>

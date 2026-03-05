@@ -69,7 +69,7 @@ export default function BlogDailyFirstDepositBonus() {
           </div>
 
           <div className="mt-12 text-center">
-            <Link href="/deposit-guide" className="inline-block bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-bold py-4 px-8 rounded-lg text-lg transition-all">
+            <Link href="/royal-x-casino-deposit-guide" className="inline-block bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-bold py-4 px-8 rounded-lg text-lg transition-all">
               Deposit Guide
             </Link>
           </div>

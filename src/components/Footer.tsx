@@ -41,13 +41,13 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/about-us" className="text-gray-300 hover:text-accent transition-colors">
-                  About Us
+                <Link href="/royal-x-casino-about-us" className="text-gray-300 hover:text-accent transition-colors">
+                  About Royal X Casino
                 </Link>
               </li>
               <li>
-                <Link href="/contact-us" className="text-gray-300 hover:text-accent transition-colors">
-                  Contact Us
+                <Link href="/royal-x-casino-contact-us" className="text-gray-300 hover:text-accent transition-colors">
+                  Contact Royal X Casino
                 </Link>
               </li>
             </ul>
@@ -58,13 +58,43 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-4 text-accent">Resources</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="/deposit-guide" className="text-gray-300 hover:text-accent transition-colors">
-                  Deposit Guide
+                <Link href="/royal-x-casino-download" className="text-gray-300 hover:text-accent transition-colors">
+                  Royal X Casino Download
                 </Link>
               </li>
               <li>
-                <Link href="/withdraw-guide" className="text-gray-300 hover:text-accent transition-colors">
-                  Withdraw Guide
+                <Link href="/royal-x-casino-for-pc" className="text-gray-300 hover:text-accent transition-colors">
+                  Royal X Casino for PC
+                </Link>
+              </li>
+              <li>
+                <Link href="/royal-x-casino-for-ios" className="text-gray-300 hover:text-accent transition-colors">
+                  Royal X Casino for iOS
+                </Link>
+              </li>
+              <li>
+                <Link href="/royal-x-casino-old-versions" className="text-gray-300 hover:text-accent transition-colors">
+                  Royal X Casino Old Versions
+                </Link>
+              </li>
+              <li>
+                <Link href="/how-to-register-royal-x-casino" className="text-gray-300 hover:text-accent transition-colors">
+                  How to Register
+                </Link>
+              </li>
+              <li>
+                <Link href="/how-to-login-royal-x-casino" className="text-gray-300 hover:text-accent transition-colors">
+                  How to Login
+                </Link>
+              </li>
+              <li>
+                <Link href="/royal-x-casino-deposit-guide" className="text-gray-300 hover:text-accent transition-colors">
+                  Royal X Casino Deposit Guide
+                </Link>
+              </li>
+              <li>
+                <Link href="/royal-x-casino-withdraw-guide" className="text-gray-300 hover:text-accent transition-colors">
+                  Royal X Casino Withdraw Guide
                 </Link>
               </li>
               <li>

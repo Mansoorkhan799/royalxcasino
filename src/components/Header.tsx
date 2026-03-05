@@ -27,26 +27,38 @@ export default function Header() {
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex space-x-8">
+        <nav className="hidden md:flex flex-wrap items-center gap-x-6">
           <Link href="/" className="text-white hover:text-accent font-medium transition-colors">
             Home
           </Link>
-          <Link href="/download" className="text-white hover:text-accent font-medium transition-colors">
+          <Link href="/royal-x-casino-download" className="text-white hover:text-accent font-medium transition-colors">
             Download
           </Link>
-          <Link href="/deposit-guide" className="text-white hover:text-accent font-medium transition-colors">
+          <Link href="/royal-x-casino-for-pc" className="text-white hover:text-accent font-medium transition-colors">
+            PC
+          </Link>
+          <Link href="/royal-x-casino-for-ios" className="text-white hover:text-accent font-medium transition-colors">
+            iOS
+          </Link>
+          <Link href="/how-to-register-royal-x-casino" className="text-white hover:text-accent font-medium transition-colors">
+            Register
+          </Link>
+          <Link href="/how-to-login-royal-x-casino" className="text-white hover:text-accent font-medium transition-colors">
+            Login
+          </Link>
+          <Link href="/royal-x-casino-deposit-guide" className="text-white hover:text-accent font-medium transition-colors">
             Deposit
           </Link>
-          <Link href="/withdraw-guide" className="text-white hover:text-accent font-medium transition-colors">
+          <Link href="/royal-x-casino-withdraw-guide" className="text-white hover:text-accent font-medium transition-colors">
             Withdraw
           </Link>
-          <Link href="/about-us" className="text-white hover:text-accent font-medium transition-colors">
+          <Link href="/royal-x-casino-about-us" className="text-white hover:text-accent font-medium transition-colors">
             About Us
           </Link>
           <Link href="/blog" className="text-white hover:text-accent font-medium transition-colors">
             Blog
           </Link>
-          <Link href="/contact-us" className="text-white hover:text-accent font-medium transition-colors">
+          <Link href="/royal-x-casino-contact-us" className="text-white hover:text-accent font-medium transition-colors">
             Contact Us
           </Link>
         </nav>

@@ -76,7 +76,7 @@ export default function BlogFatherKimSlot() {
           </ul>
 
           <div className="mt-12 text-center">
-            <Link href="/download" className="inline-block bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-bold py-4 px-8 rounded-lg text-lg transition-all">
+            <Link href="/royal-x-casino-download" className="inline-block bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-bold py-4 px-8 rounded-lg text-lg transition-all">
               Play Father Kim on Royal X Casino
             </Link>
           </div>

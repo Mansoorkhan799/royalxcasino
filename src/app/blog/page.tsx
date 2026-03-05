@@ -32,7 +32,7 @@ export default function Blog() {
             <span>•</span>
             <span>18 min read</span>
           </div>
-          <Link href="/blog/card-rummy-app-review-2026" className="text-accent hover:underline font-semibold">
+          <Link href="/blog/royal-x-casino-app-review-2026" className="text-accent hover:underline font-semibold">
             Read More →
           </Link>
         </div>
@@ -46,7 +46,7 @@ export default function Blog() {
             <span>•</span>
             <span>7 min read</span>
           </div>
-          <Link href="/blog/is-card-rummy-real-or-fake" className="text-accent hover:underline font-semibold">
+          <Link href="/blog/is-royal-x-casino-real-or-fake" className="text-accent hover:underline font-semibold">
             Read More →
           </Link>
         </div>
@@ -60,7 +60,7 @@ export default function Blog() {
             <span>•</span>
             <span>15 min read</span>
           </div>
-          <Link href="/blog/how-to-use-card-rummy-app-pakistan-guide-2026" className="text-accent hover:underline font-semibold">
+          <Link href="/blog/how-to-use-royal-x-casino-app-pakistan-guide-2026" className="text-accent hover:underline font-semibold">
             Read More →
           </Link>
         </div>
@@ -74,7 +74,7 @@ export default function Blog() {
             <span>•</span>
             <span>5 min read</span>
           </div>
-          <Link href="/blog/create-card-rummy-account-and-login" className="text-accent hover:underline font-semibold">
+          <Link href="/blog/royal-x-casino-create-account-and-login" className="text-accent hover:underline font-semibold">
             Read More →
           </Link>
         </div>
@@ -88,7 +88,7 @@ export default function Blog() {
             <span>•</span>
             <span>6 min read</span>
           </div>
-          <Link href="/blog/tips-to-win-big-in-card-rummy" className="text-accent hover:underline font-semibold">
+          <Link href="/blog/tips-to-win-big-in-royal-x-casino" className="text-accent hover:underline font-semibold">
             Read More →
           </Link>
         </div>
@@ -102,7 +102,7 @@ export default function Blog() {
             <span>•</span>
             <span>13 min read</span>
           </div>
-          <Link href="/blog/card-rummy-tips-10-smart-tricks" className="text-accent hover:underline font-semibold">
+          <Link href="/blog/royal-x-casino-tips-10-smart-tricks" className="text-accent hover:underline font-semibold">
             Read More →
           </Link>
         </div>
@@ -116,7 +116,7 @@ export default function Blog() {
             <span>•</span>
             <span>12 min read</span>
           </div>
-          <Link href="/blog/dragon-vs-tiger-andar-bahar-high-payout-games" className="text-accent hover:underline font-semibold">
+          <Link href="/blog/royal-x-casino-dragon-vs-tiger-andar-bahar-high-payout-games" className="text-accent hover:underline font-semibold">
             Read More →
           </Link>
         </div>
@@ -130,7 +130,7 @@ export default function Blog() {
             <span>•</span>
             <span>16 min read</span>
           </div>
-          <Link href="/blog/card-rummy-bonuses-vip-guide" className="text-accent hover:underline font-semibold">
+          <Link href="/blog/royal-x-casino-bonuses-vip-guide" className="text-accent hover:underline font-semibold">
             Read More →
           </Link>
         </div>
@@ -144,7 +144,7 @@ export default function Blog() {
             <span>•</span>
             <span>14 min read</span>
           </div>
-          <Link href="/blog/is-card-rummy-safe-legal-pakistan" className="text-accent hover:underline font-semibold">
+          <Link href="/blog/is-royal-x-casino-safe-legal-pakistan" className="text-accent hover:underline font-semibold">
             Read More →
           </Link>
         </div>
@@ -158,7 +158,7 @@ export default function Blog() {
             <span>•</span>
             <span>15 min read</span>
           </div>
-          <Link href="/blog/responsible-gaming-guide-card-rummy" className="text-accent hover:underline font-semibold">
+          <Link href="/blog/responsible-gaming-guide-royal-x-casino" className="text-accent hover:underline font-semibold">
             Read More →
           </Link>
         </div>
@@ -172,7 +172,7 @@ export default function Blog() {
             <span>•</span>
             <span>8 min read</span>
           </div>
-          <Link href="/blog/3patti-blue-vs-card-rummy" className="text-accent hover:underline font-semibold">
+          <Link href="/blog/3patti-blue-vs-royal-x-casino" className="text-accent hover:underline font-semibold">
             Read More →
           </Link>
         </div>
@@ -186,7 +186,7 @@ export default function Blog() {
             <span>•</span>
             <span>9 min read</span>
           </div>
-          <Link href="/blog/3patti-gold-vs-card-rummy" className="text-accent hover:underline font-semibold">
+          <Link href="/blog/3patti-gold-vs-royal-x-casino" className="text-accent hover:underline font-semibold">
             Read More →
           </Link>
         </div>
@@ -200,7 +200,7 @@ export default function Blog() {
             <span>•</span>
             <span>10 min read</span>
           </div>
-          <Link href="/blog/3patti-lucky-vs-card-rummy" className="text-accent hover:underline font-semibold">
+          <Link href="/blog/3patti-lucky-vs-royal-x-casino" className="text-accent hover:underline font-semibold">
             Read More →
           </Link>
         </div>
@@ -214,7 +214,7 @@ export default function Blog() {
             <span>•</span>
             <span>11 min read</span>
           </div>
-          <Link href="/blog/3patti-room-vs-card-rummy" className="text-accent hover:underline font-semibold">
+          <Link href="/blog/3patti-room-vs-royal-x-casino" className="text-accent hover:underline font-semibold">
             Read More →
           </Link>
         </div>
@@ -228,7 +228,7 @@ export default function Blog() {
             <span>•</span>
             <span>6 min read</span>
           </div>
-          <Link href="/blog/royal-x-casino-old-versions-download-2026" className="text-accent hover:underline font-semibold">
+          <Link href="/royal-x-casino-old-versions" className="text-accent hover:underline font-semibold">
             Read More →
           </Link>
         </div>
@@ -242,35 +242,35 @@ export default function Blog() {
             <span>•</span>
             <span>8 min read</span>
           </div>
-          <Link href="/blog/royal-x-casino-for-ios-download-2026" className="text-accent hover:underline font-semibold">
+          <Link href="/royal-x-casino-for-ios" className="text-accent hover:underline font-semibold">
             Read More →
           </Link>
         </div>
 
         {/* How to Register */}
         <div className="bg-secondary px-8 py-8 rounded-lg hover:shadow-lg transition-all border-2 border-gray-700 hover:border-accent">
-          <h2 className="text-2xl font-bold mb-4 text-white">How to Register an Account on Royal X Casino? [2026]</h2>
+          <h2 className="text-2xl font-bold mb-4 text-white">How to Get Registered on Royal X Casino [2026]</h2>
           <p className="text-gray-300 mb-4">Create your Royal X Casino account in minutes. Step-by-step registration guide for 2026.</p>
           <div className="flex items-center gap-2 text-sm text-gray-400 mb-4">
             <span>📅 March 2026</span>
             <span>•</span>
             <span>5 min read</span>
           </div>
-          <Link href="/blog/how-to-register-royal-x-casino-2026" className="text-accent hover:underline font-semibold">
+          <Link href="/how-to-register-royal-x-casino" className="text-accent hover:underline font-semibold">
             Read More →
           </Link>
         </div>
 
         {/* How to Login */}
         <div className="bg-secondary px-8 py-8 rounded-lg hover:shadow-lg transition-all border-2 border-gray-700 hover:border-accent">
-          <h2 className="text-2xl font-bold mb-4 text-white">How to Log in to an Account on Royal X Casino? [2026]</h2>
+          <h2 className="text-2xl font-bold mb-4 text-white">How to Login to Royal X Casino [2026]</h2>
           <p className="text-gray-300 mb-4">Log in with mobile number and password. Quick guide for accessing your Royal X Casino account.</p>
           <div className="flex items-center gap-2 text-sm text-gray-400 mb-4">
             <span>📅 March 2026</span>
             <span>•</span>
             <span>4 min read</span>
           </div>
-          <Link href="/blog/how-to-login-royal-x-casino-2026" className="text-accent hover:underline font-semibold">
+          <Link href="/how-to-login-royal-x-casino" className="text-accent hover:underline font-semibold">
             Read More →
           </Link>
         </div>
@@ -355,6 +355,20 @@ export default function Blog() {
             <span>6 min read</span>
           </div>
           <Link href="/blog/father-kim-slot-game-royal-x-casino-guide" className="text-accent hover:underline font-semibold">
+            Read More →
+          </Link>
+        </div>
+
+        {/* Fishing Games Tutorial */}
+        <div className="bg-secondary px-8 py-8 rounded-lg hover:shadow-lg transition-all border-2 border-gray-700 hover:border-accent">
+          <h2 className="text-2xl font-bold mb-4 text-white">Fishing Games of Royal X Casino – A Complete Tutorial 2026</h2>
+          <p className="text-gray-300 mb-4">Complete tutorial for fishing games on Royal X Casino. Learn how to play, win strategies, and earn real money.</p>
+          <div className="flex items-center gap-2 text-sm text-gray-400 mb-4">
+            <span>📅 March 2026</span>
+            <span>•</span>
+            <span>7 min read</span>
+          </div>
+          <Link href="/blog/fishing-games-royal-x-casino-tutorial-2026" className="text-accent hover:underline font-semibold">
             Read More →
           </Link>
         </div>

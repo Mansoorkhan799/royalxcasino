@@ -60,12 +60,12 @@ export default function BlogLoginProblems() {
 
           <h2 className="text-3xl font-bold text-white mt-12 mb-6">3. App Crashes on Login</h2>
           <p className="text-gray-300 mb-4">
-            <strong>Solution:</strong> Clear app cache (Settings → Apps → Royal X Casino → Clear Cache). Restart your phone. Update to the latest version from <Link href="/download" className="text-[#FFA500] hover:underline">royalexcasino.com.pk</Link>.
+            <strong>Solution:</strong> Clear app cache (Settings → Apps → Royal X Casino → Clear Cache). Restart your phone. Update to the latest version from <Link href="/royal-x-casino-download" className="text-[#FFA500] hover:underline">royalexcasino.com.pk</Link>.
           </p>
 
           <h2 className="text-3xl font-bold text-white mt-12 mb-6">4. Account Locked</h2>
           <p className="text-gray-300 mb-4">
-            <strong>Solution:</strong> Too many failed login attempts can lock your account. Wait 30 minutes or contact 24/7 customer support via the app or <Link href="/contact-us" className="text-[#FFA500] hover:underline">Contact Us</Link>.
+            <strong>Solution:</strong> Too many failed login attempts can lock your account. Wait 30 minutes or contact 24/7 customer support via the app or <Link href="/royal-x-casino-contact-us" className="text-[#FFA500] hover:underline">Contact Us</Link>.
           </p>
 
           <h2 className="text-3xl font-bold text-white mt-12 mb-6">5. &quot;Network Error&quot;</h2>
@@ -74,7 +74,7 @@ export default function BlogLoginProblems() {
           </p>
 
           <div className="mt-12 text-center">
-            <Link href="/contact-us" className="inline-block bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-bold py-4 px-8 rounded-lg text-lg transition-all">
+            <Link href="/royal-x-casino-contact-us" className="inline-block bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-bold py-4 px-8 rounded-lg text-lg transition-all">
               Contact Support
             </Link>
           </div>

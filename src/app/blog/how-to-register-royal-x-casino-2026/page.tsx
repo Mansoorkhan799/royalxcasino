@@ -54,7 +54,7 @@ export default function BlogHowToRegister() {
               <div className="flex-shrink-0 w-10 h-10 bg-[#FFA500] text-[#06091F] rounded-full flex items-center justify-center font-bold">1</div>
               <div>
                 <h3 className="text-xl font-semibold text-white mb-2">Download the App</h3>
-                <p className="text-gray-300"><Link href="/download" className="text-[#FFA500] hover:underline">Download Royal X Casino</Link> from royalexcasino.com.pk and install it on your Android device.</p>
+                <p className="text-gray-300"><Link href="/royal-x-casino-download" className="text-[#FFA500] hover:underline">Download Royal X Casino</Link> from royalexcasino.com.pk and install it on your Android device.</p>
               </div>
             </div>
             <div className="flex gap-4">
@@ -86,7 +86,7 @@ export default function BlogHowToRegister() {
           </div>
 
           <div className="mt-12 text-center">
-            <Link href="/download" className="inline-block bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-bold py-4 px-8 rounded-lg text-lg transition-all">
+            <Link href="/royal-x-casino-download" className="inline-block bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-bold py-4 px-8 rounded-lg text-lg transition-all">
               Download Royal X Casino
             </Link>
           </div>

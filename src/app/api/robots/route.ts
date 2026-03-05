@@ -36,17 +36,22 @@ Disallow: /api/
 Disallow: /admin/
 
 # Priority pages
-Allow: /download
-Allow: /deposit-guide
-Allow: /withdraw-guide
-Allow: /about-us
+Allow: /royal-x-casino-download
+Allow: /royal-x-casino-deposit-guide
+Allow: /royal-x-casino-withdraw-guide
+Allow: /royal-x-casino-for-pc
+Allow: /royal-x-casino-for-ios
+Allow: /royal-x-casino-old-versions
+Allow: /how-to-register-royal-x-casino
+Allow: /how-to-login-royal-x-casino
+Allow: /royal-x-casino-about-us
+Allow: /royal-x-casino-contact-us
 Allow: /blog
-Allow: /blog/card-rummy-app-review-2026
-Allow: /blog/create-card-rummy-account-and-login
-Allow: /blog/tips-to-win-big-in-card-rummy
+Allow: /blog/royal-x-casino-app-review-2026
+Allow: /blog/royal-x-casino-create-account-and-login
+Allow: /blog/tips-to-win-big-in-royal-x-casino
 
 # Standard pages
-Allow: /contact-us
 Allow: /privacy
 Allow: /disclaimer
 

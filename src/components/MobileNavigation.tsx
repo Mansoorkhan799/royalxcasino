@@ -99,28 +99,56 @@ export default function MobileNavigation() {
               Home
             </Link>
             <Link 
-              href="/download"
+              href="/royal-x-casino-download"
               className="text-white hover:text-accent py-2 text-lg font-medium transition-colors"
               onClick={() => setIsOpen(false)}
             >
               Download
             </Link>
             <Link 
-              href="/deposit-guide" 
+              href="/royal-x-casino-for-pc"
+              className="text-white hover:text-accent py-2 text-lg font-medium transition-colors"
+              onClick={() => setIsOpen(false)}
+            >
+              PC
+            </Link>
+            <Link 
+              href="/royal-x-casino-for-ios"
+              className="text-white hover:text-accent py-2 text-lg font-medium transition-colors"
+              onClick={() => setIsOpen(false)}
+            >
+              iOS
+            </Link>
+            <Link 
+              href="/how-to-register-royal-x-casino"
+              className="text-white hover:text-accent py-2 text-lg font-medium transition-colors"
+              onClick={() => setIsOpen(false)}
+            >
+              Register
+            </Link>
+            <Link 
+              href="/how-to-login-royal-x-casino"
+              className="text-white hover:text-accent py-2 text-lg font-medium transition-colors"
+              onClick={() => setIsOpen(false)}
+            >
+              Login
+            </Link>
+            <Link 
+              href="/royal-x-casino-deposit-guide" 
               className="text-white hover:text-accent py-2 text-lg font-medium transition-colors"
               onClick={() => setIsOpen(false)}
             >
               Deposit Guide
             </Link>
             <Link 
-              href="/withdraw-guide" 
+              href="/royal-x-casino-withdraw-guide" 
               className="text-white hover:text-accent py-2 text-lg font-medium transition-colors"
               onClick={() => setIsOpen(false)}
             >
               Withdraw Guide
             </Link>
             <Link 
-              href="/about-us" 
+              href="/royal-x-casino-about-us" 
               className="text-white hover:text-accent py-2 text-lg font-medium transition-colors"
               onClick={() => setIsOpen(false)}
             >
@@ -134,7 +162,7 @@ export default function MobileNavigation() {
               Blog
             </Link>
             <Link 
-              href="/contact-us" 
+              href="/royal-x-casino-contact-us" 
               className="text-white hover:text-accent py-2 text-lg font-medium transition-colors"
               onClick={() => setIsOpen(false)}
             >
