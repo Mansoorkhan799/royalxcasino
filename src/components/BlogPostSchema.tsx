@@ -4,6 +4,8 @@ function safeJsonLd(obj: object): string {
   return JSON.stringify(obj).replace(/</g, "\\u003c");
 }
 
+export type HowToStep = { name: string; text: string };
+
 type BlogPostSchemaProps = {
   title: string;
   description: string;
@@ -12,6 +14,8 @@ type BlogPostSchemaProps = {
   dateModified?: string;
   image?: string;
   breadcrumbOnly?: boolean;
+  /** Optional: Add HowTo schema for step-by-step guides. AI assistants (Google AI, ChatGPT, Perplexity) parse this. */
+  howToSteps?: HowToStep[];
 };
 
 export default function BlogPostSchema({
@@ -22,6 +26,7 @@ export default function BlogPostSchema({
   dateModified,
   image = `${BASE}/royal-x-casino-logo.webp`,
   breadcrumbOnly = false,
+  howToSteps,
 }: BlogPostSchemaProps) {
   const url = `${BASE}/blog/${slug}`;
   const breadcrumb = {
@@ -50,6 +55,26 @@ export default function BlogPostSchema({
     mainEntityOfPage: { "@type": "WebPage", "@id": url },
     inLanguage: "en-US",
   };
+
+  const howTo =
+    howToSteps && howToSteps.length > 0
+      ? {
+          "@context": "https://schema.org" as const,
+          "@type": "HowTo" as const,
+          name: title,
+          description,
+          url,
+          image,
+          totalTime: "PT5M",
+          step: howToSteps.map((s, i) => ({
+            "@type": "HowToStep" as const,
+            position: i + 1,
+            name: s.name,
+            text: s.text,
+          })),
+        }
+      : null;
+
   return (
     <div suppressHydrationWarning style={{ display: "contents" }}>
       <script
@@ -60,6 +85,12 @@ export default function BlogPostSchema({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: safeJsonLd(article) }}
+        />
+      )}
+      {howTo && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: safeJsonLd(howTo) }}
         />
       )}
     </div>

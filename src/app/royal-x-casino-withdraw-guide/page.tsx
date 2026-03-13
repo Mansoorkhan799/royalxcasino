@@ -1,12 +1,30 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
+import HowToSchema from "@/components/HowToSchema";
+import ArticleSchema from "@/components/ArticleSchema";
 
 export const metadata: Metadata = {
   title: "Royal X Casino Withdraw Guide | EasyPaisa & JazzCash 2026",
   description: "Withdraw winnings from Royal X Casino in 10-30 minutes. Zero wagering. EasyPaisa, JazzCash, USDT. Min Rs. 600.",
   alternates: { canonical: "https://royalexcasino.com.pk/royal-x-casino-withdraw-guide" },
+  openGraph: {
+    title: "Royal X Casino Withdraw Guide | EasyPaisa & JazzCash 2026",
+    description: "Withdraw winnings from Royal X Casino in 10-30 minutes. Zero wagering. EasyPaisa, JazzCash, USDT. Min Rs. 600.",
+    url: "https://royalexcasino.com.pk/royal-x-casino-withdraw-guide",
+    type: "article",
+  },
 };
+
+const WITHDRAW_STEPS = [
+  { name: "Open app and check balance", text: "Open the app and log in. Check your available balance in the Wallet." },
+  { name: "Tap Withdraw", text: "Tap Withdraw (next to the Deposit button)." },
+  { name: "Choose withdrawal method", text: "Choose EasyPaisa, JazzCash, USDT, or Bank Transfer." },
+  { name: "Enter amount", text: "Enter the amount (min Rs. 600 for EasyPaisa/JazzCash; min Rs. 50,000 for USDT)." },
+  { name: "Enter account details", text: "Enter your account number or wallet details. Double-check for accuracy." },
+  { name: "Confirm withdrawal", text: "Tap Withdraw and confirm. Money processed within 10-30 minutes." },
+  { name: "Track status", text: "Track the status in the History section." },
+];
 
 export default function RoyalXCasinoWithdrawGuidePage() {
   return (
@@ -15,8 +33,21 @@ export default function RoyalXCasinoWithdrawGuidePage() {
         { name: "Home", url: "/" },
         { name: "Royal X Casino Withdraw Guide", url: "/royal-x-casino-withdraw-guide" },
       ]} />
-      <section className="py-8 md:py-16 px-4 md:px-8 max-w-7xl mx-auto">
-        <h1 className="text-4xl md:text-5xl font-bold mb-6 text-center">
+      <HowToSchema
+        name="Royal X Casino Withdraw Guide"
+        description="Withdraw winnings from Royal X Casino in 10-30 minutes. Zero wagering. Use EasyPaisa, JazzCash, USDT, or bank. Min Rs. 600."
+        url="/royal-x-casino-withdraw-guide"
+        steps={WITHDRAW_STEPS}
+      />
+      <ArticleSchema
+        headline="Royal X Casino Withdraw Guide | EasyPaisa & JazzCash 2026"
+        description="Withdraw winnings from Royal X Casino in 10-30 minutes. Zero wagering. EasyPaisa, JazzCash, USDT. Min Rs. 600."
+        url="/royal-x-casino-withdraw-guide"
+        datePublished="2026-01-01"
+      />
+      <article>
+      <section className="py-8 md:py-16 px-4 md:px-8 max-w-7xl mx-auto" aria-labelledby="withdraw-heading">
+        <h1 id="withdraw-heading" className="text-4xl md:text-5xl font-bold mb-6 text-center">
           <span className="text-white">Royal X Casino </span>
           <span className="text-[#FFA500]">Withdraw Guide</span>
         </h1>
@@ -56,6 +87,7 @@ export default function RoyalXCasinoWithdrawGuidePage() {
         <span className="mx-2 text-gray-500">|</span>
         <Link href="/royal-x-casino-deposit-guide" className="text-accent hover:underline font-semibold">Deposit Guide →</Link>
       </section>
+      </article>
     </>
   );
 }

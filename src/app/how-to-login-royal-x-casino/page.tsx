@@ -2,12 +2,21 @@ import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
+import HowToSchema from "@/components/HowToSchema";
 
 export const metadata: Metadata = {
   title: "How to Login to Royal X Casino | Sign In Guide 2026",
   description: "Learn how to log in to your Royal X Casino account. Use mobile number and password. Quick login guide for 2026.",
   keywords: ["Royal X Casino login", "Royal X Casino sign in", "how to login to Royal X Casino"],
   alternates: { canonical: "https://royalexcasino.com.pk/how-to-login-royal-x-casino" },
+  openGraph: {
+    title: "How to Login to Royal X Casino | Sign In Guide 2026",
+    description: "Step-by-step guide to log in to Royal X Casino. Use your mobile number and password to access your account instantly.",
+    url: "https://royalexcasino.com.pk/how-to-login-royal-x-casino",
+    type: "article",
+    publishedTime: "2026-01-01",
+    authors: ["Royal X Casino"],
+  },
 };
 
 export default function HowToLoginRoyalXCasinoPage() {
@@ -17,7 +26,20 @@ export default function HowToLoginRoyalXCasinoPage() {
         { name: "Home", url: "/" },
         { name: "How to Login to Royal X Casino", url: "/how-to-login-royal-x-casino" },
       ]} />
-      <section className="py-8 md:py-16 px-4 md:px-8 max-w-7xl mx-auto">
+      <HowToSchema
+        name="How to Login to Royal X Casino"
+        description="Step-by-step guide to log in to your Royal X Casino account using your registered mobile number and password."
+        url="/how-to-login-royal-x-casino"
+        steps={[
+          { name: "Open the Royal X Casino app", text: "Open the Royal X Casino app on your device." },
+          { name: "Tap Log In or Sign In", text: 'Tap "Log In" or "Sign In" on the welcome screen.' },
+          { name: "Enter your mobile number", text: "Enter your mobile number (the one you used to register)." },
+          { name: "Enter your password", text: "Enter your password." },
+          { name: "Tap Log In", text: "Tap Log In to access your account." },
+        ]}
+      />
+      <article className="py-8 md:py-16 px-4 md:px-8 max-w-7xl mx-auto" aria-labelledby="login-heading">
+        <header className="text-center mb-12" id="login-heading">
         <div className="text-center mb-12">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
             <span className="text-white">How to </span>
@@ -34,11 +56,11 @@ export default function HowToLoginRoyalXCasinoPage() {
             <Image src="/royal-x-casino-logo.webp" alt="Royal X Casino Login" width={192} height={192} className="object-contain" />
           </div>
         </div>
-      </section>
+        </header>
 
-      <section className="py-12 px-4 md:px-8 max-w-7xl mx-auto">
+      <section className="py-12 px-4 md:px-8 max-w-7xl mx-auto" aria-labelledby="login-steps">
         <div className="bg-secondary rounded-xl p-8 max-w-3xl mx-auto">
-          <h2 className="text-2xl font-bold mb-6 text-[#FFA500]">Login Steps</h2>
+          <h2 id="login-steps" className="text-2xl font-bold mb-6 text-[#FFA500]">Login Steps</h2>
           <ol className="list-decimal pl-5 space-y-3 text-gray-300">
             <li>Open the Royal X Casino app on your device.</li>
             <li>Tap <strong>Log In</strong> (or &quot;Sign In&quot;) on the welcome screen.</li>
@@ -79,6 +101,7 @@ export default function HowToLoginRoyalXCasinoPage() {
         <span className="mx-2 text-gray-500">|</span>
         <Link href="/how-to-register-royal-x-casino" className="text-accent hover:underline font-semibold">How to Register</Link>
       </section>
+      </article>
     </>
   );
 }

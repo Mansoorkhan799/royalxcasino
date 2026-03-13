@@ -22,6 +22,13 @@ export default function BlogHowToLogin() {
         description="Learn how to log in to your Royal X Casino account with mobile number and password."
         slug="how-to-login-royal-x-casino-2026"
         datePublished="2026-03-03"
+        howToSteps={[
+          { name: "Open the Royal X Casino app", text: "Open the Royal X Casino app on your device." },
+          { name: "Tap Log In or Sign In", text: 'Tap "Log In" or "Sign In" on the welcome screen.' },
+          { name: "Enter your mobile number", text: "Enter your mobile number (the one you used to register)." },
+          { name: "Enter your password", text: "Enter your password." },
+          { name: "Tap Log In", text: "Tap Log In to access your account." },
+        ]}
       />
       <article className="container mx-auto px-4 py-12 max-w-4xl">
         <nav className="mb-8 text-sm text-gray-400">

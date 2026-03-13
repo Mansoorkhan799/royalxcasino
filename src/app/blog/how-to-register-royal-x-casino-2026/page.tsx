@@ -22,6 +22,12 @@ export default function BlogHowToRegister() {
         description="Step-by-step guide to register a Royal X Casino account in 2026."
         slug="how-to-register-royal-x-casino-2026"
         datePublished="2026-03-03"
+        howToSteps={[
+          { name: "Download the App", text: "Download Royal X Casino from royalexcasino.com.pk and install it on your Android device." },
+          { name: "Tap Register or Sign Up", text: 'Open the app and tap "Register" or "Sign Up" on the welcome screen.' },
+          { name: "Enter Your Details", text: "Provide your mobile number, create a password (min 6 characters), and enter the OTP sent via SMS." },
+          { name: "Complete Registration", text: 'Tap "Complete" or "Register". Your account is ready. You can deposit and start playing!' },
+        ]}
       />
       <article className="container mx-auto px-4 py-12 max-w-4xl">
         <nav className="mb-8 text-sm text-gray-400">
