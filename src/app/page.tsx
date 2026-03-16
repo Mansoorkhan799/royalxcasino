@@ -14,6 +14,20 @@ export const metadata: Metadata = {
     url: "https://royalexcasino.com.pk",
     siteName: "Royal X Casino",
     type: "website",
+    images: [
+      {
+        url: "https://royalexcasino.com.pk/royal-x-casino.webp",
+        width: 1200,
+        height: 1200,
+        alt: "Royal X Casino - Pakistan's Premier Real Money Gaming App",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Royal X Casino APK Pakistan | Download 2026",
+    description: "Royal X Casino - 200+ games, zero wagering, instant withdrawals. Earn real money with JazzCash & EasyPaisa.",
+    images: ["https://royalexcasino.com.pk/royal-x-casino.webp"],
   },
   alternates: { canonical: "https://royalexcasino.com.pk" },
 };
@@ -52,14 +66,22 @@ export default function Home() {
         "@id": "https://royalexcasino.com.pk/#organization",
         name: "Royal X Casino",
         url: "https://royalexcasino.com.pk/",
-        logo: { "@type": "ImageObject", url: "https://royalexcasino.com.pk/royal-x-casino-logo.webp", width: 512, height: 512 },
+        logo: { "@type": "ImageObject", url: "https://royalexcasino.com.pk/royal-x-casino.webp", width: 512, height: 512 },
+      },
+      {
+        "@type": "ImageObject",
+        "@id": "https://royalexcasino.com.pk/#royal-x-casino-image",
+        contentUrl: "https://royalexcasino.com.pk/royal-x-casino.webp",
+        url: "https://royalexcasino.com.pk/",
+        name: "Royal X Casino",
+        description: "Royal X Casino - Pakistan's Premier Real Money Gaming App",
       },
       {
         "@type": "SoftwareApplication",
         name: "Royal X Casino",
         operatingSystem: "Android 5.0+",
         applicationCategory: "GameApplication",
-        image: "https://royalexcasino.com.pk/royal-x-casino-logo.webp",
+        image: "https://royalexcasino.com.pk/royal-x-casino.webp",
         aggregateRating: { "@type": "AggregateRating", ratingValue: "4.5", ratingCount: "500000" },
         offers: { "@type": "Offer", price: "0", priceCurrency: "PKR" },
         downloadUrl: "https://royalxcasino55.com/?refer_id=101141302616",
@@ -126,14 +148,14 @@ export default function Home() {
             <p className="text-gray-400 text-sm italic">*Available for Android. Download from <Link href="/" className="text-[#0ea5e9] underline hover:text-[#38bdf8] underline-offset-2">royalexcasino.com.pk</Link></p>
           </div>
           <div className="hidden md:block md:w-1/2 md:mt-8">
-            <div className="relative ml-auto" style={{ width: "320px", height: "320px" }}>
-              <Image src="/royal-x-casino-logo.webp" alt="Royal X Casino" width={320} height={320} className="object-contain drop-shadow-2xl" priority fetchPriority="high" sizes="320px" />
-            </div>
+            <Link href="/" className="block relative ml-auto" style={{ width: "320px", height: "320px" }} aria-label="Royal X Casino - Official Home">
+              <Image src="/royal-x-casino.webp" alt="Royal X Casino - Pakistan's Premier Real Money Gaming App" width={320} height={320} className="object-contain drop-shadow-2xl" priority fetchPriority="high" sizes="320px" />
+            </Link>
           </div>
           <div className="mt-8 md:hidden">
-            <div className="relative mx-auto" style={{ width: "280px", height: "280px" }}>
-              <Image src="/royal-x-casino-logo.webp" alt="Royal X Casino" width={280} height={280} className="object-contain drop-shadow-2xl" priority fetchPriority="high" sizes="280px" />
-            </div>
+            <Link href="/" className="block relative mx-auto" style={{ width: "280px", height: "280px" }} aria-label="Royal X Casino - Official Home">
+              <Image src="/royal-x-casino.webp" alt="Royal X Casino - Pakistan's Premier Real Money Gaming App" width={280} height={280} className="object-contain drop-shadow-2xl" priority fetchPriority="high" sizes="280px" />
+            </Link>
           </div>
         </div>
       </section>

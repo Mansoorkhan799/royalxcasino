@@ -84,10 +84,10 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://royalexcasino.com.pk/feature/og-image.webp",
+        url: "https://royalexcasino.com.pk/royal-x-casino.webp",
         width: 1200,
-        height: 630,
-        alt: "Royal X Casino - Pakistan Real Money Gaming",
+        height: 1200,
+        alt: "Royal X Casino - Pakistan's Premier Real Money Gaming App",
       },
     ],
   },
@@ -97,10 +97,10 @@ export const metadata: Metadata = {
     description: "Royal X Casino - 200+ games, zero wagering, instant withdrawals. Earn real money with JazzCash & EasyPaisa.",
     images: [
       {
-        url: "https://royalexcasino.com.pk/feature/og-image.webp",
+        url: "https://royalexcasino.com.pk/royal-x-casino.webp",
         width: 1200,
-        height: 600,
-        alt: "Royal X Casino - Pakistan Real Money Gaming",
+        height: 1200,
+        alt: "Royal X Casino - Pakistan's Premier Real Money Gaming App",
       }
     ],
   },
@@ -122,7 +122,7 @@ export default function RootLayout({
         <link rel="icon" href="/royal-x-casino-logo.webp" type="image/webp" sizes="32x32 48x48 192x192" />
         <link rel="shortcut icon" href="/royal-x-casino-logo.webp" type="image/webp" />
         <link rel="apple-touch-icon" href="/royal-x-casino-logo.webp" sizes="180x180" />
-        <meta property="og:image" content="https://royalexcasino.com.pk/feature/og-image.webp" />
+        <meta property="og:image" content="https://royalexcasino.com.pk/royal-x-casino.webp" />
         
         {/* Preconnect to external domains for faster loading */}
         <link rel="preconnect" href="https://www.googletagmanager.com" crossOrigin="anonymous" />
