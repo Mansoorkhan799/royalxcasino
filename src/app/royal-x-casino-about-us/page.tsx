@@ -9,6 +9,20 @@ export const metadata: Metadata = {
   description: 'About Royal X Casino: 200+ games, zero wagering, instant withdrawals. Pakistan\'s premier real money gaming platform.',
   keywords: ['About Royal X Casino', 'Royal X Casino Pakistan', 'real money gaming', 'casino app Pakistan'],
   alternates: { canonical: 'https://royalexcasino.com.pk/royal-x-casino-about-us' },
+  openGraph: {
+    title: 'About Royal X Casino - Pakistan Real Money Gaming',
+    description: "About Royal X Casino: Pakistan's premier real money gaming platform with 200+ games, zero wagering, and instant withdrawals via JazzCash & EasyPaisa.",
+    url: 'https://royalexcasino.com.pk/royal-x-casino-about-us',
+    siteName: 'Royal X Casino',
+    type: 'website',
+    images: [{ url: 'https://royalexcasino.com.pk/royal-x-casino.webp', width: 1200, height: 1200, alt: 'About Royal X Casino' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'About Royal X Casino - Pakistan Real Money Gaming',
+    description: "Pakistan's premier real money gaming platform. 200+ games, zero wagering, instant withdrawals.",
+    images: ['https://royalexcasino.com.pk/royal-x-casino.webp'],
+  },
 };
 
 export default function AboutPage() {

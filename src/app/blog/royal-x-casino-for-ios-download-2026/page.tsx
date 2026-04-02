@@ -10,13 +10,21 @@ export const metadata: Metadata = {
     title: 'Royal X Casino for iOS Download Latest Version For Free 2026',
     description: 'Download and install Royal X Casino on iPhone and iPad. Free iOS guide for 2026.',
     type: 'article',
+    url: 'https://royalexcasino.com.pk/blog/royal-x-casino-for-ios-download-2026',
+    siteName: 'Royal X Casino',
   },
   alternates: { canonical: 'https://royalexcasino.com.pk/blog/royal-x-casino-for-ios-download-2026' },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Royal X Casino for iOS Download Latest Version For Free 2026',
+    description: 'Download and install Royal X Casino on iPhone and iPad. Free iOS guide for 2026.',
+    images: ['https://royalexcasino.com.pk/royal-x-casino.webp'],
+  },
 };
 
 export default function BlogRoyalXCasinoForIOS() {
   return (
-    <main className="min-h-screen bg-[#060A20]">
+    <div className="min-h-screen bg-[#060A20]">
       <BlogPostSchema
         title="Royal X Casino for iOS Download Latest Version For Free 2026"
         description="Download Royal X Casino for iOS (iPhone & iPad). Step-by-step guide to install on iOS using configuration profile."
@@ -95,6 +103,6 @@ export default function BlogRoyalXCasinoForIOS() {
           </div>
         </div>
       </article>
-    </main>
+    </div>
   );
 }

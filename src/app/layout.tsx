@@ -122,8 +122,6 @@ export default function RootLayout({
         <link rel="icon" href="/royal-x-casino-logo.webp" type="image/webp" sizes="32x32 48x48 192x192" />
         <link rel="shortcut icon" href="/royal-x-casino-logo.webp" type="image/webp" />
         <link rel="apple-touch-icon" href="/royal-x-casino-logo.webp" sizes="180x180" />
-        <meta property="og:image" content="https://royalexcasino.com.pk/royal-x-casino.webp" />
-        
         {/* Preconnect to external domains for faster loading */}
         <link rel="preconnect" href="https://www.googletagmanager.com" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
@@ -175,43 +173,23 @@ export default function RootLayout({
         <ScrollToTopWrapper />
         <WebVitalsTracker />
         
-        {/* Structured data for Organization */}
+        {/* Structured data for WebSite (sitelinks searchbox signal) */}
         <Script
-          id="organization-schema"
+          id="website-schema"
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "Organization",
+              "@type": "WebSite",
               "name": "Royal X Casino",
               "url": "https://royalexcasino.com.pk",
-              "logo": "https://royalexcasino.com.pk/royal-x-casino-logo.webp",
-              "description": "Royal X Casino is Pakistan's premier real money gaming platform, offering 200+ games including Teen Patti, Slots, Fishing, and more with instant withdrawals.",
-              "sameAs": ["https://www.facebook.com/share/18G2R3ztEx/"]
-            })
-          }}
-        />
-        
-        {/* Structured data for SoftwareApplication */}
-        <Script
-          id="app-schema"
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "SoftwareApplication",
-              "name": "Royal X Casino",
-              "operatingSystem": "Android",
-              "applicationCategory": "GameApplication",
-              "offers": {
-                "@type": "Offer",
-                "price": "0",
-                "priceCurrency": "PKR"
-              },
-              "aggregateRating": {
-                "@type": "AggregateRating",
-                "ratingValue": "4.5",
-                "ratingCount": "500000"
+              "potentialAction": {
+                "@type": "SearchAction",
+                "target": {
+                  "@type": "EntryPoint",
+                  "urlTemplate": "https://royalexcasino.com.pk/?s={search_term_string}"
+                },
+                "query-input": "required name=search_term_string"
               }
             })
           }}

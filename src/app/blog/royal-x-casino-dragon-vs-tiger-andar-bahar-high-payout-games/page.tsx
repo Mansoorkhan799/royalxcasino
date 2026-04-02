@@ -21,13 +21,21 @@ export const metadata: Metadata = {
     title: 'Dragon vs Tiger, Andar Bahar & More: Best High-Payout Games in Royal X Casino',
     description: 'Complete guide to highest-paying games in Royal X Casino app. Learn which games offer best win rates and fastest earnings!',
     type: 'article',
+    url: 'https://royalexcasino.com.pk/blog/royal-x-casino-dragon-vs-tiger-andar-bahar-high-payout-games',
+    siteName: 'Royal X Casino',
   },
   alternates: { canonical: "https://royalexcasino.com.pk/blog/royal-x-casino-dragon-vs-tiger-andar-bahar-high-payout-games" },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Dragon vs Tiger, Andar Bahar & More: Best High-Payout Games in Royal X',
+    description: 'Complete guide to highest-paying games in Royal X Casino app. Learn which games offer best win rates and fastest earnings!',
+    images: ['https://royalexcasino.com.pk/royal-x-casino.webp'],
+  },
 };
 
 export default function BlogHighPayoutGames() {
   return (
-    <main className="min-h-screen bg-[#060A20]">
+    <div className="min-h-screen bg-[#060A20]">
       <BlogPostSchema
         title="Dragon vs Tiger, Andar Bahar & More: Best High-Payout Games in Royal X Casino App 2026"
         description="Discover the best high-payout games in Royal X Casino: Dragon vs Tiger, Andar Bahar, Teen Patti & Rummy. Learn which games offer highest win rates & fastest earnings in Pakistan 2026!"
@@ -398,6 +406,6 @@ export default function BlogHighPayoutGames() {
           </div>
         </aside>
       </article>
-    </main>
+    </div>
   );
 }

@@ -21,13 +21,21 @@ export const metadata: Metadata = {
     title: '3Patti Lucky vs Royal X Casino: Which Game Is Better for Earning Real Cash?',
     description: 'Complete comparison of 3Patti Lucky and Royal X Casino. Find out which app offers better bonuses, faster withdrawals, and more earning potential!',
     type: 'article',
+    url: 'https://royalexcasino.com.pk/blog/3patti-lucky-vs-royal-x-casino',
+    siteName: 'Royal X Casino',
   },
   alternates: { canonical: "https://royalexcasino.com.pk/blog/3patti-lucky-vs-royal-x-casino" },
+  twitter: {
+    card: 'summary_large_image',
+    title: '3Patti Lucky vs Royal X Casino: Which Game Is Better for Earning Real ',
+    description: 'Complete comparison of 3Patti Lucky and Royal X Casino. Find out which app offers better bonuses, faster withdrawals, and more earning potential!',
+    images: ['https://royalexcasino.com.pk/royal-x-casino.webp'],
+  },
 };
 
 export default function Blog3PattiLuckyVsCardRummy() {
   return (
-    <main className="min-h-screen bg-[#060A20]">
+    <div className="min-h-screen bg-[#060A20]">
       <BlogPostSchema
         title="3Patti Lucky vs Royal X Casino: Which Game Is Better for Earning Real Cash? 2026"
         description="Detailed comparison: 3Patti Lucky vs Royal X Casino. Games, bonuses, payout speed & earning analysis. Find the best real money app for Pakistan players in 2026!"
@@ -438,6 +446,6 @@ export default function Blog3PattiLuckyVsCardRummy() {
           </div>
         </aside>
       </article>
-    </main>
+    </div>
   );
 }

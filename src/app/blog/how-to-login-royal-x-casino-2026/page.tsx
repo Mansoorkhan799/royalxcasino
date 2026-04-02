@@ -10,13 +10,21 @@ export const metadata: Metadata = {
     title: 'How to Log in to an Account on Royal X Casino? [2026]',
     description: 'Log in to Royal X Casino with mobile number and password. Full guide 2026.',
     type: 'article',
+    url: 'https://royalexcasino.com.pk/blog/how-to-login-royal-x-casino-2026',
+    siteName: 'Royal X Casino',
   },
   alternates: { canonical: 'https://royalexcasino.com.pk/blog/how-to-login-royal-x-casino-2026' },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'How to Log in to an Account on Royal X Casino? [2026]',
+    description: 'Log in to Royal X Casino with mobile number and password. Full guide 2026.',
+    images: ['https://royalexcasino.com.pk/royal-x-casino.webp'],
+  },
 };
 
 export default function BlogHowToLogin() {
   return (
-    <main className="min-h-screen bg-[#060A20]">
+    <div className="min-h-screen bg-[#060A20]">
       <BlogPostSchema
         title="How to Log in to an Account on Royal X Casino? [2026]"
         description="Learn how to log in to your Royal X Casino account with mobile number and password."
@@ -86,6 +94,6 @@ export default function BlogHowToLogin() {
           </div>
         </div>
       </article>
-    </main>
+    </div>
   );
 }

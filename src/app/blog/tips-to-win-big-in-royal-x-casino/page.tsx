@@ -25,9 +25,18 @@ export const metadata: Metadata = {
     title: 'Tips to Win Big in Royal X Casino - Expert Strategies',
     description: 'Discover expert strategies and tips to maximize your winnings in Teen Patti, Slots, Fishing, and 200+ games.',
     type: 'article',
+    url: 'https://royalexcasino.com.pk/blog/tips-to-win-big-in-royal-x-casino',
+    siteName: 'Royal X Casino',
     publishedTime: '2026-01-20T00:00:00Z',
     authors: ['Royal X Casino Team'],
-  }
+    images: [{ url: 'https://royalexcasino.com.pk/royal-x-casino.webp', width: 1200, height: 1200, alt: 'Tips to Win Big in Royal X Casino' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Tips to Win Big in Royal X Casino - Expert Strategies 2026',
+    description: 'Expert strategies to maximize winnings in Teen Patti, Slots, Fishing and 200+ games on Royal X Casino.',
+    images: ['https://royalexcasino.com.pk/royal-x-casino.webp'],
+  },
 };
 
 export default function TipsToWinBig() {

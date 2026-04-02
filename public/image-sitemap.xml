@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- ===================== HOME PAGE ===================== -->
   <url>
     <loc>https://royalexcasino.com.pk/</loc>
     <image:image>
@@ -10,43 +12,169 @@
     </image:image>
     <image:image>
       <image:loc>https://royalexcasino.com.pk/royal-x-casino-logo.webp</image:loc>
-      <image:title>Royal X Casino Logo</image:title>
-      <image:caption>Royal X Casino site icon and favicon</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://royalexcasino.com.pk/royal-x-casino-logo.webp</image:loc>
       <image:title>Royal X Casino Official Logo</image:title>
-      <image:caption>Official Royal X Casino logo for social media and branding</image:caption>
+      <image:caption>Official Royal X Casino logo – Pakistan's premier real money gaming platform.</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://royalexcasino.com.pk/royal-x-casino-game-pakistan.webp</image:loc>
-      <image:title>Royal X Casino Game Interface</image:title>
-      <image:caption>Royal X Casino mobile app game interface and loading screen</image:caption>
+      <image:title>Royal X Casino Game Interface Pakistan</image:title>
+      <image:caption>Royal X Casino mobile app game interface and loading screen for Pakistan players.</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://royalexcasino.com.pk/royal-x-casino-games.webp</image:loc>
       <image:title>Royal X Casino Games Collection</image:title>
-      <image:caption>Royal X Casino games collection showing Teen Patti, Slots, Fishing and more</image:caption>
-    </image:image>
-    <image:image>
-      <image:loc>https://royalexcasino.com.pk/royal-x-casino-refer-and-earn.webp</image:loc>
-      <image:title>Royal X Casino Bonuses &amp; Rewards</image:title>
-      <image:caption>Royal X Casino bonuses, rewards, and referral program interface</image:caption>
+      <image:caption>Royal X Casino 200+ games collection: Teen Patti, Slots, Fishing, Andar Bahar and more.</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://royalexcasino.com.pk/royal-x-casino-deposit-money-interface.webp</image:loc>
-      <image:title>Royal X Casino Deposit Money</image:title>
-      <image:caption>Royal X Casino deposit money interface with JazzCash and EasyPaisa payment methods</image:caption>
+      <image:title>Royal X Casino Deposit Money Interface</image:title>
+      <image:caption>Royal X Casino deposit money interface with JazzCash and EasyPaisa payment methods.</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://royalexcasino.com.pk/royal-x-casino-withdraw-money-interface.webp</image:loc>
-      <image:title>Royal X Casino Withdraw Money</image:title>
-      <image:caption>Royal X Casino withdraw money interface for fast withdrawals via JazzCash and EasyPaisa</image:caption>
+      <image:title>Royal X Casino Withdraw Money Interface</image:title>
+      <image:caption>Royal X Casino instant withdrawal interface – JazzCash and EasyPaisa in 10–30 minutes.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://royalexcasino.com.pk/royal-x-casino-refer-and-earn.webp</image:loc>
+      <image:title>Royal X Casino Refer and Earn</image:title>
+      <image:caption>Royal X Casino referral program – earn up to Rs. 1,000 per referred friend.</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://royalexcasino.com.pk/royal-x-casino-share-and-earn.webp</image:loc>
-      <image:title>Royal X Casino Refer and Earn</image:title>
-      <image:caption>Royal X Casino referral program to earn money by inviting friends</image:caption>
+      <image:title>Royal X Casino Share and Earn</image:title>
+      <image:caption>Royal X Casino share and earn bonus program for Pakistan players.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://royalexcasino.com.pk/royal-x-casino-leaderboard.webp</image:loc>
+      <image:title>Royal X Casino Leaderboard</image:title>
+      <image:caption>Royal X Casino leaderboard showing top players and rankings.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://royalexcasino.com.pk/royal-casino-daily-bonus.webp</image:loc>
+      <image:title>Royal X Casino Daily Bonus</image:title>
+      <image:caption>Royal X Casino daily login bonus and rewards for active players.</image:caption>
     </image:image>
   </url>
+
+  <!-- ===================== DOWNLOAD PAGE ===================== -->
+  <url>
+    <loc>https://royalexcasino.com.pk/royal-x-casino-download</loc>
+    <image:image>
+      <image:loc>https://royalexcasino.com.pk/royal-x-casino.webp</image:loc>
+      <image:title>Royal X Casino APK Download</image:title>
+      <image:caption>Download Royal X Casino APK free for Android – latest version 2026.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://royalexcasino.com.pk/how-to-download-step-01.webp</image:loc>
+      <image:title>Royal X Casino Download Step 1</image:title>
+      <image:caption>Step 1 to download Royal X Casino: Click the download button on royalexcasino.com.pk.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://royalexcasino.com.pk/how-to-download-step-02.webp</image:loc>
+      <image:title>Royal X Casino Download Step 2</image:title>
+      <image:caption>Step 2: Enable Install from Unknown Sources in Android settings.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://royalexcasino.com.pk/how-to-download-step-03.webp</image:loc>
+      <image:title>Royal X Casino Download Step 3</image:title>
+      <image:caption>Step 3: Tap Install on the Royal X Casino APK file.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- ===================== DEPOSIT GUIDE ===================== -->
+  <url>
+    <loc>https://royalexcasino.com.pk/royal-x-casino-deposit-guide</loc>
+    <image:image>
+      <image:loc>https://royalexcasino.com.pk/royal-x-casino-deposit-money-interface.webp</image:loc>
+      <image:title>Royal X Casino Deposit Guide</image:title>
+      <image:caption>How to deposit money in Royal X Casino using JazzCash and EasyPaisa.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- ===================== WITHDRAW GUIDE ===================== -->
+  <url>
+    <loc>https://royalexcasino.com.pk/royal-x-casino-withdraw-guide</loc>
+    <image:image>
+      <image:loc>https://royalexcasino.com.pk/royal-x-casino-withdraw-money-interface.webp</image:loc>
+      <image:title>Royal X Casino Withdrawal Guide</image:title>
+      <image:caption>How to withdraw money from Royal X Casino via JazzCash and EasyPaisa in 10–30 minutes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- ===================== BLOG: APP REVIEW ===================== -->
+  <url>
+    <loc>https://royalexcasino.com.pk/blog/royal-x-casino-app-review-2026</loc>
+    <image:image>
+      <image:loc>https://royalexcasino.com.pk/royal-x-casino.webp</image:loc>
+      <image:title>Royal X Casino App Review 2026</image:title>
+      <image:caption>Honest review of Royal X Casino app 2026: features, games, bonuses, and payout speed for Pakistan players.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- ===================== BLOG: REAL OR FAKE ===================== -->
+  <url>
+    <loc>https://royalexcasino.com.pk/blog/is-royal-x-casino-real-or-fake</loc>
+    <image:image>
+      <image:loc>https://royalexcasino.com.pk/royal-x-casino.webp</image:loc>
+      <image:title>Is Royal X Casino Real or Fake?</image:title>
+      <image:caption>Complete guide on Royal X Casino legitimacy, payment proofs, and safety tips for Pakistan players.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- ===================== BLOG: HOW TO USE ===================== -->
+  <url>
+    <loc>https://royalexcasino.com.pk/blog/how-to-use-royal-x-casino-app-pakistan-guide-2026</loc>
+    <image:image>
+      <image:loc>https://royalexcasino.com.pk/royal-x-casino-app-landing-page.webp</image:loc>
+      <image:title>How to Use Royal X Casino App Pakistan 2026</image:title>
+      <image:caption>Step-by-step guide for beginners: download, register, deposit, and earn on Royal X Casino Pakistan.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- ===================== BLOG: SAFE AND LEGAL ===================== -->
+  <url>
+    <loc>https://royalexcasino.com.pk/blog/is-royal-x-casino-safe-legal-pakistan</loc>
+    <image:image>
+      <image:loc>https://royalexcasino.com.pk/royal-x-casino.webp</image:loc>
+      <image:title>Is Royal X Casino Safe and Legal in Pakistan?</image:title>
+      <image:caption>Safety guide: Royal X Casino legal status, security measures, and safe play tips for Pakistan.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- ===================== BLOG: BONUSES VIP ===================== -->
+  <url>
+    <loc>https://royalexcasino.com.pk/blog/royal-x-casino-bonuses-vip-guide</loc>
+    <image:image>
+      <image:loc>https://royalexcasino.com.pk/royal-x-casino-refer-and-earn.webp</image:loc>
+      <image:title>Royal X Casino Bonuses and VIP Rewards Guide</image:title>
+      <image:caption>Royal X Casino welcome bonus, recharge rebate, and VIP rewards guide for Pakistan players.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://royalexcasino.com.pk/royal-casino-daily-bonus.webp</image:loc>
+      <image:title>Royal X Casino Daily Bonus</image:title>
+      <image:caption>Royal X Casino daily first deposit bonus and loyalty rewards.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- ===================== BLOG: TIPS TO WIN ===================== -->
+  <url>
+    <loc>https://royalexcasino.com.pk/blog/tips-to-win-big-in-royal-x-casino</loc>
+    <image:image>
+      <image:loc>https://royalexcasino.com.pk/royal-x-casino-games.webp</image:loc>
+      <image:title>Tips to Win Big in Royal X Casino</image:title>
+      <image:caption>Expert tips and strategies to maximize winnings in Royal X Casino games.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- ===================== REGISTRATION PAGE ===================== -->
+  <url>
+    <loc>https://royalexcasino.com.pk/how-to-register-royal-x-casino</loc>
+    <image:image>
+      <image:loc>https://royalexcasino.com.pk/royal-x-casino-registration-page.webp</image:loc>
+      <image:title>Royal X Casino Registration Page</image:title>
+      <image:caption>How to register on Royal X Casino – create your account in under 2 minutes.</image:caption>
+    </image:image>
+  </url>
+
 </urlset>

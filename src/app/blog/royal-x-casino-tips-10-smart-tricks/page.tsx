@@ -21,13 +21,21 @@ export const metadata: Metadata = {
     title: 'Royal X Casino Tips: 10 Smart Tricks to Play Safely and Win More',
     description: 'Proven tips and tricks to maximize your Royal X Casino earnings. Learn bankroll management, game strategies, and safe play techniques!',
     type: 'article',
+    url: 'https://royalexcasino.com.pk/blog/royal-x-casino-tips-10-smart-tricks',
+    siteName: 'Royal X Casino',
   },
   alternates: { canonical: "https://royalexcasino.com.pk/blog/royal-x-casino-tips-10-smart-tricks" },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Royal X Casino Tips: 10 Smart Tricks to Play Safely and Win More',
+    description: 'Proven tips and tricks to maximize your Royal X Casino earnings. Learn bankroll management, game strategies, and safe play techniques!',
+    images: ['https://royalexcasino.com.pk/royal-x-casino.webp'],
+  },
 };
 
 export default function BlogCardRummyTips() {
   return (
-    <main className="min-h-screen bg-[#060A20]">
+    <div className="min-h-screen bg-[#060A20]">
       <BlogPostSchema
         title="Royal X Casino Tips: 10 Smart Tricks to Play Safely and Win More 2026"
         description="10 proven Royal X Casino tips and tricks 2026: Bankroll management, game selection, bonus maximization, withdrawal strategies & safe play tips to increase winnings in Pakistan!"
@@ -454,6 +462,6 @@ export default function BlogCardRummyTips() {
           </div>
         </aside>
       </article>
-    </main>
+    </div>
   );
 }

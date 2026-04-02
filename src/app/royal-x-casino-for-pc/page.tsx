@@ -9,6 +9,20 @@ export const metadata: Metadata = {
   description: "Download Royal X Casino for PC using Android Emulator. Play Teen Patti, Slots, Fishing on bigger screen. BlueStacks, LD Player guide.",
   keywords: ["Royal X Casino for PC", "Royal X Casino PC download", "Royal X Casino Windows", "Teen Patti PC", "Royal X Casino emulator"],
   alternates: { canonical: "https://royalexcasino.com.pk/royal-x-casino-for-pc" },
+  openGraph: {
+    title: "Royal X Casino for PC | Download & Play on Windows 2026",
+    description: "Download Royal X Casino for PC using Android Emulator. Play Teen Patti, Slots, Fishing on bigger screen. BlueStacks, LD Player guide.",
+    url: "https://royalexcasino.com.pk/royal-x-casino-for-pc",
+    siteName: "Royal X Casino",
+    type: "website",
+    images: [{ url: "https://royalexcasino.com.pk/royal-x-casino.webp", width: 1200, height: 1200, alt: "Royal X Casino for PC" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Royal X Casino for PC | Download & Play on Windows 2026",
+    description: "Play Royal X Casino on PC with Android Emulator. Teen Patti, Slots, Fishing on a bigger screen.",
+    images: ["https://royalexcasino.com.pk/royal-x-casino.webp"],
+  },
 };
 
 export default function RoyalXCasinoForPCPage() {

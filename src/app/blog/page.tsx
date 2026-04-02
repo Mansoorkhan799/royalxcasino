@@ -7,6 +7,20 @@ export const metadata: Metadata = {
   description: 'Royal X Casino blog: App guides, tips to win, deposit & withdraw tutorials, bonuses, safety, and responsible gaming. Pakistan real money gaming.',
   keywords: ['Royal X Casino blog', 'Royal X Casino guide', 'Royal X Casino tips', 'casino Pakistan blog', 'Teen Patti guide', 'Royal X Casino 2026'],
   alternates: { canonical: 'https://royalexcasino.com.pk/blog' },
+  openGraph: {
+    title: 'Royal X Casino Blog - Guides, Tips & Tutorials 2026',
+    description: 'Royal X Casino blog: App guides, tips to win, deposit & withdraw tutorials, bonuses, safety, and responsible gaming. Pakistan real money gaming.',
+    url: 'https://royalexcasino.com.pk/blog',
+    siteName: 'Royal X Casino',
+    type: 'website',
+    images: [{ url: 'https://royalexcasino.com.pk/royal-x-casino.webp', width: 1200, height: 1200, alt: 'Royal X Casino Blog' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Royal X Casino Blog - Guides, Tips & Tutorials 2026',
+    description: 'Royal X Casino blog: App guides, tips to win, deposit & withdraw tutorials, bonuses, safety, and responsible gaming.',
+    images: ['https://royalexcasino.com.pk/royal-x-casino.webp'],
+  },
 };
 
 export default function Blog() {

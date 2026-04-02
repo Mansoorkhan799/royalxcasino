@@ -9,6 +9,20 @@ export const metadata: Metadata = {
   description: "Download Royal X Casino APK free for Android. 200+ games, zero wagering, instant withdrawals. JazzCash & EasyPaisa. v2.54.7 – 8.9 MB.",
   keywords: ["Royal X Casino download", "Royal X Casino APK", "Royal X Casino Android", "Teen Patti download", "casino APK Pakistan"],
   alternates: { canonical: "https://royalexcasino.com.pk/royal-x-casino-download" },
+  openGraph: {
+    title: "Royal X Casino Download | APK Latest Version 2026 | Android",
+    description: "Download Royal X Casino APK free for Android. 200+ games, zero wagering, instant withdrawals. JazzCash & EasyPaisa. v2.54.7 – 8.9 MB.",
+    url: "https://royalexcasino.com.pk/royal-x-casino-download",
+    siteName: "Royal X Casino",
+    type: "website",
+    images: [{ url: "https://royalexcasino.com.pk/royal-x-casino.webp", width: 1200, height: 1200, alt: "Royal X Casino Download APK" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Royal X Casino Download | APK Latest Version 2026",
+    description: "Download Royal X Casino APK free. 200+ games, zero wagering, instant withdrawals via JazzCash & EasyPaisa.",
+    images: ["https://royalexcasino.com.pk/royal-x-casino.webp"],
+  },
 };
 
 export default function RoyalXCasinoDownloadPage() {

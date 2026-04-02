@@ -29,6 +29,12 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://royalexcasino.com.pk/blog/is-royal-x-casino-real-or-fake",
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Is Royal X Casino Real or Fake to Earn Money?',
+    description: 'Complete guide about Royal X Casino legitimacy, payment methods, and safety tips for Pakistani players.',
+    images: ['https://royalexcasino.com.pk/royal-x-casino.webp'],
+  },
   openGraph: {
     title: 'Is Royal X Casino Real or Fake to Earn Money?',
     description: 'Complete guide about Royal X Casino legitimacy, payment methods, and safety tips for Pakistani players.',
@@ -76,8 +82,43 @@ export default function CardRummyRealOrFakePage() {
     }
   };
 
+  const faqSchemaData = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Does the Royal X Casino app actually pay real money?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, the Royal X Casino app pays real money. You can easily withdraw your earnings to your account through JazzCash, EasyPaisa, or bank transfer."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What are the tips for using Royal X Casino safely?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Make sure you have downloaded the Royal X Casino app from the official site (royalexcasino.com.pk). Use strong passwords to protect your account from hackers and never share your login credentials with anyone."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What are the signs that Royal X Casino is not fake?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The real Royal X Casino has 24/7 customer support, regular updates, a clear withdrawal process, and positive user reviews. If an app has no customer support, a poor-quality UI, no updates, or unclear withdrawal options, it may be fake. Always verify by reading reviews and downloading from the official website."
+        }
+      }
+    ]
+  };
+
   return (
-    <main className="min-h-screen bg-[#060A20]">
+    <div className="min-h-screen bg-[#060A20]">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchemaData).replace(/</g, '\\u003c') }}
+      />
       <BlogPostSchema
         title="Is Royal X Casino Real or Fake to Earn Money? - Complete Guide 2026"
         description="Discover if Royal X Casino app is real or fake. Learn about legitimacy, payment methods, safety tips, and how to identify fake apps."
@@ -408,7 +449,7 @@ export default function CardRummyRealOrFakePage() {
         </div>
       </div>
     </article>
-    </main>
+    </div>
   );
 }
 

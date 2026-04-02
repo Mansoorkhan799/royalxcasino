@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: 'How to Deposit Money in Card Rummy? | Quick & Safe Payment Guide 2026',
   description: 'Learn how to deposit money in Card Rummy using JazzCash and EasyPaisa. Follow our step-by-step guide for quick, safe, and secure deposits.',
   keywords: 'deposit money card rummy, card rummy payment methods, jazzcash deposit, easypaisa deposit, add funds card rummy, card rummy recharge',
+  robots: { index: false, follow: false },
   openGraph: {
     title: 'How to Deposit Money in Card Rummy? | Quick & Safe Payment Guide',
     description: 'Step-by-step guide to deposit money in Card Rummy using JazzCash and EasyPaisa. Quick, safe, and secure payment methods.',

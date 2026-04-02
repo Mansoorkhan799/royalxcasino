@@ -10,13 +10,21 @@ export const metadata: Metadata = {
     title: 'Trump IT Slot Game on Royal X Casino – A Complete Review 2026',
     description: 'Complete review of Trump IT slot on Royal X Casino. Gameplay and tips for 2026.',
     type: 'article',
+    url: 'https://royalexcasino.com.pk/blog/trump-it-slot-game-royal-x-casino-2026',
+    siteName: 'Royal X Casino',
   },
   alternates: { canonical: 'https://royalexcasino.com.pk/blog/trump-it-slot-game-royal-x-casino-2026' },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Trump IT Slot Game on Royal X Casino – A Complete Review 2026',
+    description: 'Complete review of Trump IT slot on Royal X Casino. Gameplay and tips for 2026.',
+    images: ['https://royalexcasino.com.pk/royal-x-casino.webp'],
+  },
 };
 
 export default function BlogTrumpITSlot() {
   return (
-    <main className="min-h-screen bg-[#060A20]">
+    <div className="min-h-screen bg-[#060A20]">
       <BlogPostSchema
         title="Trump IT Slot Game on Royal X Casino – A Complete Review 2026"
         description="Trump IT slot game on Royal X Casino: gameplay, features, and how to play."
@@ -79,6 +87,6 @@ export default function BlogTrumpITSlot() {
           </div>
         </div>
       </article>
-    </main>
+    </div>
   );
 }

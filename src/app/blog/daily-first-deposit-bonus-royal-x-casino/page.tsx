@@ -10,13 +10,21 @@ export const metadata: Metadata = {
     title: 'Daily First Deposit Bonus Of The Royal X Casino',
     description: 'Learn about Royal X Casino first deposit and daily bonuses. Zero wagering.',
     type: 'article',
+    url: 'https://royalexcasino.com.pk/blog/daily-first-deposit-bonus-royal-x-casino',
+    siteName: 'Royal X Casino',
   },
   alternates: { canonical: 'https://royalexcasino.com.pk/blog/daily-first-deposit-bonus-royal-x-casino' },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Daily First Deposit Bonus Of The Royal X Casino',
+    description: 'Learn about Royal X Casino first deposit and daily bonuses. Zero wagering.',
+    images: ['https://royalexcasino.com.pk/royal-x-casino.webp'],
+  },
 };
 
 export default function BlogDailyFirstDepositBonus() {
   return (
-    <main className="min-h-screen bg-[#060A20]">
+    <div className="min-h-screen bg-[#060A20]">
       <BlogPostSchema
         title="Daily First Deposit Bonus Of The Royal X Casino"
         description="Royal X Casino first deposit bonus, daily rebate, and recharge offers. Zero wagering."
@@ -75,6 +83,6 @@ export default function BlogDailyFirstDepositBonus() {
           </div>
         </div>
       </article>
-    </main>
+    </div>
   );
 }

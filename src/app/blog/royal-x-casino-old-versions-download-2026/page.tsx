@@ -10,13 +10,21 @@ export const metadata: Metadata = {
     title: 'Royal X Casino Old Versions Download for Free 2026',
     description: 'Download old versions of Royal X Casino APK. Get previous versions for Android from official source.',
     type: 'article',
+    url: 'https://royalexcasino.com.pk/blog/royal-x-casino-old-versions-download-2026',
+    siteName: 'Royal X Casino',
   },
   alternates: { canonical: 'https://royalexcasino.com.pk/blog/royal-x-casino-old-versions-download-2026' },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Royal X Casino Old Versions Download for Free 2026',
+    description: 'Download old versions of Royal X Casino APK. Get previous versions for Android from official source.',
+    images: ['https://royalexcasino.com.pk/royal-x-casino.webp'],
+  },
 };
 
 export default function BlogOldVersions() {
   return (
-    <main className="min-h-screen bg-[#060A20]">
+    <div className="min-h-screen bg-[#060A20]">
       <BlogPostSchema
         title="Royal X Casino Old Versions Download for Free 2026"
         description="Download old versions of Royal X Casino APK for free. Get previous versions for Android from official source."
@@ -99,6 +107,6 @@ export default function BlogOldVersions() {
           </div>
         </div>
       </article>
-    </main>
+    </div>
   );
 }

@@ -10,13 +10,21 @@ export const metadata: Metadata = {
     title: 'How Can We Recover Losses in the Royal X Casino Game?',
     description: 'Responsible strategies to manage losses in Royal X Casino.',
     type: 'article',
+    url: 'https://royalexcasino.com.pk/blog/how-to-recover-losses-royal-x-casino',
+    siteName: 'Royal X Casino',
   },
   alternates: { canonical: 'https://royalexcasino.com.pk/blog/how-to-recover-losses-royal-x-casino' },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'How Can We Recover Losses in the Royal X Casino Game?',
+    description: 'Responsible strategies to manage losses in Royal X Casino.',
+    images: ['https://royalexcasino.com.pk/royal-x-casino.webp'],
+  },
 };
 
 export default function BlogRecoverLosses() {
   return (
-    <main className="min-h-screen bg-[#060A20]">
+    <div className="min-h-screen bg-[#060A20]">
       <BlogPostSchema
         title="How Can We Recover Losses in the Royal X Casino Game?"
         description="Responsible strategies to manage losses in Royal X Casino. Bankroll management and limits."
@@ -80,6 +88,6 @@ export default function BlogRecoverLosses() {
           </div>
         </div>
       </article>
-    </main>
+    </div>
   );
 }

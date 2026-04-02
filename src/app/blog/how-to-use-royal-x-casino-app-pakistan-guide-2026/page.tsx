@@ -21,13 +21,21 @@ export const metadata: Metadata = {
     title: 'How to Use Royal X Casino App in Pakistan: Complete Beginner\'s Guide 2026',
     description: 'Step-by-step guide to download, register, deposit, play & earn from Royal X Casino app in Pakistan. Perfect for beginners!',
     type: 'article',
+    url: 'https://royalexcasino.com.pk/blog/how-to-use-royal-x-casino-app-pakistan-guide-2026',
+    siteName: 'Royal X Casino',
   },
   alternates: { canonical: "https://royalexcasino.com.pk/blog/how-to-use-royal-x-casino-app-pakistan-guide-2026" },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'How to Use Royal X Casino App in Pakistan: Complete Beginner\',
+    description: 'Step-by-step guide to download, register, deposit, play & earn from Royal X Casino app in Pakistan. Perfect for beginners!',
+    images: ['https://royalexcasino.com.pk/royal-x-casino.webp'],
+  },
 };
 
 export default function BlogHowToUseCardRummyGuide() {
   return (
-    <main className="min-h-screen bg-[#060A20]">
+    <div className="min-h-screen bg-[#060A20]">
       <BlogPostSchema
         title="How to Use Royal X Casino App in Pakistan: Complete Beginner's Guide 2026"
         description="Complete Royal X Casino app guide 2026 for Pakistan: Download, registration, deposit, withdrawal, gameplay & earning tips. Step-by-step tutorial for beginners!"
@@ -633,6 +641,6 @@ export default function BlogHowToUseCardRummyGuide() {
           </div>
         </aside>
       </article>
-    </main>
+    </div>
   );
 }

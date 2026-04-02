@@ -10,13 +10,21 @@ export const metadata: Metadata = {
     title: 'A Detailed Guide to Father Kim Slot Game on Royal X Casino',
     description: 'Complete guide to Father Kim slot on Royal X Casino. Gameplay and tips 2026.',
     type: 'article',
+    url: 'https://royalexcasino.com.pk/blog/father-kim-slot-game-royal-x-casino-guide',
+    siteName: 'Royal X Casino',
   },
   alternates: { canonical: 'https://royalexcasino.com.pk/blog/father-kim-slot-game-royal-x-casino-guide' },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'A Detailed Guide to Father Kim Slot Game on Royal X Casino',
+    description: 'Complete guide to Father Kim slot on Royal X Casino. Gameplay and tips 2026.',
+    images: ['https://royalexcasino.com.pk/royal-x-casino.webp'],
+  },
 };
 
 export default function BlogFatherKimSlot() {
   return (
-    <main className="min-h-screen bg-[#060A20]">
+    <div className="min-h-screen bg-[#060A20]">
       <BlogPostSchema
         title="A Detailed Guide to Father Kim Slot Game on Royal X Casino"
         description="Father Kim slot game on Royal X Casino: gameplay, features, and tips."
@@ -82,6 +90,6 @@ export default function BlogFatherKimSlot() {
           </div>
         </div>
       </article>
-    </main>
+    </div>
   );
 }

@@ -3,10 +3,24 @@ import Link from 'next/link';
 import BreadcrumbSchema from '@/components/BreadcrumbSchema';
 
 export const metadata: Metadata = {
-  title: 'Royal X Casino Contact Us | Support',
-  description: 'Contact Royal X Casino support for help with the app, deposits, withdrawals, and more.',
-  keywords: 'contact Royal X Casino, Royal X Casino support, customer support',
+  title: 'Royal X Casino Contact Us | 24/7 Customer Support',
+  description: 'Contact Royal X Casino support 24/7. Get help with app download, deposits, withdrawals, account issues, and more. Email us or reach out via WhatsApp for instant assistance.',
+  keywords: 'contact Royal X Casino, Royal X Casino support, customer support, Royal X Casino help',
   alternates: { canonical: 'https://royalexcasino.com.pk/royal-x-casino-contact-us' },
+  openGraph: {
+    title: 'Royal X Casino Contact Us | 24/7 Customer Support',
+    description: 'Get help with Royal X Casino app, deposits, withdrawals, and account issues. Our 24/7 support team is ready to assist you via email and WhatsApp.',
+    url: 'https://royalexcasino.com.pk/royal-x-casino-contact-us',
+    siteName: 'Royal X Casino',
+    type: 'website',
+    images: [{ url: 'https://royalexcasino.com.pk/royal-x-casino.webp', width: 1200, height: 1200, alt: 'Royal X Casino Contact Support' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Royal X Casino Contact Us | 24/7 Support',
+    description: 'Contact Royal X Casino 24/7 support for help with deposits, withdrawals, and app issues.',
+    images: ['https://royalexcasino.com.pk/royal-x-casino.webp'],
+  },
 };
 
 export default function Contact() {

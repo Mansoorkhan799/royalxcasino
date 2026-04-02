@@ -21,10 +21,18 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://royalexcasino.com.pk/blog/royal-x-casino-create-account-and-login",
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'How to Create Account and Login? - Royal X Casino',
+    description: 'Learn how to create an account and login to Royal X Casino. Step by step guide for registration and accessing your account.',
+    images: ['https://royalexcasino.com.pk/royal-x-casino.webp'],
+  },
   openGraph: {
     title: 'How to Create Account and Login? - Royal X Casino',
     description: 'Learn how to create an account and login to Royal X Casino. Step by step guide for registration and accessing your account.',
     type: 'article',
+    url: 'https://royalexcasino.com.pk/blog/royal-x-casino-create-account-and-login',
+    siteName: 'Royal X Casino',
     publishedTime: '2026-01-20T00:00:00Z',
     authors: ['Royal X Casino Team'],
   }

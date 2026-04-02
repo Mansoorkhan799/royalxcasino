@@ -10,13 +10,21 @@ export const metadata: Metadata = {
     title: 'Royal X Casino Login Problems and Their Solutions',
     description: 'Solve Royal X Casino login issues. Fix password, OTP, and account problems.',
     type: 'article',
+    url: 'https://royalexcasino.com.pk/blog/royal-x-casino-login-problems-solutions',
+    siteName: 'Royal X Casino',
   },
   alternates: { canonical: 'https://royalexcasino.com.pk/blog/royal-x-casino-login-problems-solutions' },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Royal X Casino Login Problems and Their Solutions',
+    description: 'Solve Royal X Casino login issues. Fix password, OTP, and account problems.',
+    images: ['https://royalexcasino.com.pk/royal-x-casino.webp'],
+  },
 };
 
 export default function BlogLoginProblems() {
   return (
-    <main className="min-h-screen bg-[#060A20]">
+    <div className="min-h-screen bg-[#060A20]">
       <BlogPostSchema
         title="Royal X Casino Login Problems and Their Solutions"
         description="Fix Royal X Casino login issues: wrong password, OTP, account locked. Full solutions guide."
@@ -80,6 +88,6 @@ export default function BlogLoginProblems() {
           </div>
         </div>
       </article>
-    </main>
+    </div>
   );
 }

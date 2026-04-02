@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: 'How to Withdraw Money from Card Rummy? | Fast & Secure Withdrawal Guide 2026',
   description: 'Learn how to withdraw money from Card Rummy using JazzCash, EasyPaisa, and Bank Transfer. Follow our step-by-step guide for quick and secure withdrawals.',
   keywords: 'withdraw money card rummy, card rummy withdrawal, jazzcash withdrawal, easypaisa withdrawal, cash out card rummy, card rummy payout',
+  robots: { index: false, follow: false },
   openGraph: {
     title: 'How to Withdraw Money from Card Rummy? | Fast & Secure Withdrawal Guide',
     description: 'Step-by-step guide to withdraw money from Card Rummy using JazzCash, EasyPaisa, and Bank Transfer. Quick and secure withdrawals.',

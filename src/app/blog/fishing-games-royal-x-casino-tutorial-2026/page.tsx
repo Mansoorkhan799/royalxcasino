@@ -10,13 +10,21 @@ export const metadata: Metadata = {
     title: 'Fishing Games of Royal X Casino – A Complete Tutorial 2026',
     description: 'Complete tutorial for fishing games on Royal X Casino. How to play and win.',
     type: 'article',
+    url: 'https://royalexcasino.com.pk/blog/fishing-games-royal-x-casino-tutorial-2026',
+    siteName: 'Royal X Casino',
   },
   alternates: { canonical: 'https://royalexcasino.com.pk/blog/fishing-games-royal-x-casino-tutorial-2026' },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Fishing Games of Royal X Casino – A Complete Tutorial 2026',
+    description: 'Complete tutorial for fishing games on Royal X Casino. How to play and win.',
+    images: ['https://royalexcasino.com.pk/royal-x-casino.webp'],
+  },
 };
 
 export default function BlogFishingGamesRoyalXCasino() {
   return (
-    <main className="min-h-screen bg-[#060A20]">
+    <div className="min-h-screen bg-[#060A20]">
       <BlogPostSchema
         title="Fishing Games of Royal X Casino – A Complete Tutorial 2026"
         description="Complete tutorial for fishing games on Royal X Casino. Learn how to play and win."
@@ -94,6 +102,6 @@ export default function BlogFishingGamesRoyalXCasino() {
           </div>
         </div>
       </article>
-    </main>
+    </div>
   );
 }

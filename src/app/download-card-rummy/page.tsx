@@ -16,11 +16,11 @@ export const metadata: Metadata = {
     'Download 3 Patti Card Rummy'
   ],
   robots: {
-    index: true,
-    follow: true,
+    index: false,
+    follow: false,
     googleBot: {
-      index: true,
-      follow: true,
+      index: false,
+      follow: false,
       'max-image-preview': 'large',
       'max-snippet': -1,
     },

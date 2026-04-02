@@ -21,13 +21,21 @@ export const metadata: Metadata = {
     title: 'Royal X Casino Bonuses Explained: Welcome Bonus, Recharge Rebate, and VIP Rewards Guide',
     description: 'Complete guide to all Royal X Casino bonuses and VIP rewards. Learn how to maximize welcome bonus, recharge rebates, and VIP level benefits!',
     type: 'article',
+    url: 'https://royalexcasino.com.pk/blog/royal-x-casino-bonuses-vip-guide',
+    siteName: 'Royal X Casino',
   },
   alternates: { canonical: "https://royalexcasino.com.pk/blog/royal-x-casino-bonuses-vip-guide" },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Royal X Casino Bonuses Explained: Welcome Bonus, Recharge Rebate, and ',
+    description: 'Complete guide to all Royal X Casino bonuses and VIP rewards. Learn how to maximize welcome bonus, recharge rebates, and VIP level benefits!',
+    images: ['https://royalexcasino.com.pk/royal-x-casino.webp'],
+  },
 };
 
 export default function BlogCardRummyBonusesVIPGuide() {
   return (
-    <main className="min-h-screen bg-[#060A20]">
+    <div className="min-h-screen bg-[#060A20]">
       <BlogPostSchema
         title="Royal X Casino Bonuses Explained: Welcome Bonus, Recharge Rebate, and VIP Rewards Guide 2026"
         description="Complete Royal X Casino bonuses guide 2026: Welcome bonus, recharge rebate, VIP levels, referral commission, daily tasks & step-by-step guide to maximize rewards in Pakistan!"
@@ -543,6 +551,6 @@ export default function BlogCardRummyBonusesVIPGuide() {
           </div>
         </aside>
       </article>
-    </main>
+    </div>
   );
 }

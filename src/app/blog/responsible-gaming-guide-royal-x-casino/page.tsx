@@ -21,13 +21,21 @@ export const metadata: Metadata = {
     title: 'Responsible Gaming Guide: How to Enjoy Royal X Casino Without Addiction or Big Losses',
     description: 'Essential guide to playing Royal X Casino responsibly. Learn to set limits, recognize addiction signs, and enjoy gaming safely.',
     type: 'article',
+    url: 'https://royalexcasino.com.pk/blog/responsible-gaming-guide-royal-x-casino',
+    siteName: 'Royal X Casino',
   },
   alternates: { canonical: "https://royalexcasino.com.pk/blog/responsible-gaming-guide-royal-x-casino" },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Responsible Gaming Guide: How to Enjoy Royal X Casino Without Addictio',
+    description: 'Essential guide to playing Royal X Casino responsibly. Learn to set limits, recognize addiction signs, and enjoy gaming safely.',
+    images: ['https://royalexcasino.com.pk/royal-x-casino.webp'],
+  },
 };
 
 export default function BlogResponsibleGamingGuide() {
   return (
-    <main className="min-h-screen bg-[#060A20]">
+    <div className="min-h-screen bg-[#060A20]">
       <BlogPostSchema
         title="Responsible Gaming Guide: How to Enjoy Royal X Casino Without Addiction or Big Losses 2026"
         description="Complete responsible gaming guide for Royal X Casino 2026: How to play safely, avoid addiction, set limits, recognize warning signs, and enjoy gaming without financial harm in Pakistan."
@@ -416,6 +424,6 @@ export default function BlogResponsibleGamingGuide() {
           </div>
         </aside>
       </article>
-    </main>
+    </div>
   );
 }

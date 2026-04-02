@@ -5,7 +5,7 @@ import { Metadata } from "next";
 import { DOWNLOAD_URL } from "@/lib/config";
 
 export const metadata: Metadata = {
-  title: "Royal X Casino APK Pakistan | Download Latest Version 2026 | Real Money Gaming App",
+  title: "Royal X Casino APK Pakistan | Download 2026 | Real Money",
   description: "Royal X Casino 2026 - Pakistan's #1 real money gaming app. 200+ games, zero wagering, instant withdrawals. Play Teen Patti, Slots, Fishing. JazzCash & EasyPaisa.",
   keywords: ["Royal X Casino", "Royal X Casino APK", "Royal X Casino Pakistan", "download royal x casino", "real money games Pakistan", "Teen Patti", "JazzCash", "EasyPaisa"],
   openGraph: {

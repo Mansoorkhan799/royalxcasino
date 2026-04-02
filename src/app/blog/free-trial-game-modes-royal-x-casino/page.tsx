@@ -10,13 +10,21 @@ export const metadata: Metadata = {
     title: 'Free Trial Game Modes on the New Official Website of Royal X Casino',
     description: 'Royal X Casino free trial and practice modes. Try before you play real money.',
     type: 'article',
+    url: 'https://royalexcasino.com.pk/blog/free-trial-game-modes-royal-x-casino',
+    siteName: 'Royal X Casino',
   },
   alternates: { canonical: 'https://royalexcasino.com.pk/blog/free-trial-game-modes-royal-x-casino' },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Free Trial Game Modes on the New Official Website of Royal X Casino',
+    description: 'Royal X Casino free trial and practice modes. Try before you play real money.',
+    images: ['https://royalexcasino.com.pk/royal-x-casino.webp'],
+  },
 };
 
 export default function BlogFreeTrialGameModes() {
   return (
-    <main className="min-h-screen bg-[#060A20]">
+    <div className="min-h-screen bg-[#060A20]">
       <BlogPostSchema
         title="Free Trial Game Modes on the New Official Website of Royal X Casino"
         description="Royal X Casino free trial and practice modes. Try games before playing with real money."
@@ -73,6 +81,6 @@ export default function BlogFreeTrialGameModes() {
           </div>
         </div>
       </article>
-    </main>
+    </div>
   );
 }

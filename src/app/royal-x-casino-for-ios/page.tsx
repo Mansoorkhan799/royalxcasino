@@ -8,6 +8,20 @@ export const metadata: Metadata = {
   description: "Download Royal X Casino for iOS (iPhone & iPad). Step-by-step guide to install on iOS 12+ using configuration profile. Free download 2026.",
   keywords: ["Royal X Casino iOS", "Royal X Casino iPhone", "Royal X Casino iPad", "Royal X Casino download iOS"],
   alternates: { canonical: "https://royalexcasino.com.pk/royal-x-casino-for-ios" },
+  openGraph: {
+    title: "Royal X Casino for iOS | Download for iPhone & iPad 2026",
+    description: "Download Royal X Casino for iOS (iPhone & iPad). Step-by-step guide to install on iOS 12+ using configuration profile. Free download 2026.",
+    url: "https://royalexcasino.com.pk/royal-x-casino-for-ios",
+    siteName: "Royal X Casino",
+    type: "website",
+    images: [{ url: "https://royalexcasino.com.pk/royal-x-casino.webp", width: 1200, height: 1200, alt: "Royal X Casino for iOS iPhone iPad" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Royal X Casino for iOS | Download for iPhone & iPad 2026",
+    description: "Install Royal X Casino on iPhone & iPad via configuration profile. Free guide for iOS 12+.",
+    images: ["https://royalexcasino.com.pk/royal-x-casino.webp"],
+  },
 };
 
 export default function RoyalXCasinoForIOSPage() {

@@ -21,13 +21,22 @@ export const metadata: Metadata = {
     title: 'Royal X Casino App Review 2026: Features, Pros, Cons, and Payout Speed',
     description: 'Honest, comprehensive review of Royal X Casino app. Features, games, bonuses, withdrawal speed, and real user experience for 2026.',
     type: 'article',
+    url: 'https://royalexcasino.com.pk/blog/royal-x-casino-app-review-2026',
+    siteName: 'Royal X Casino',
+    images: [{ url: 'https://royalexcasino.com.pk/royal-x-casino.webp', width: 1200, height: 1200, alt: 'Royal X Casino App Review 2026' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Royal X Casino App Review 2026: Features, Pros, Cons & Payout Speed',
+    description: 'Honest review of Royal X Casino: features, games, bonuses, and withdrawal speed for Pakistan players.',
+    images: ['https://royalexcasino.com.pk/royal-x-casino.webp'],
   },
   alternates: { canonical: "https://royalexcasino.com.pk/blog/royal-x-casino-app-review-2026" },
 };
 
 export default function BlogCardRummyAppReview() {
   return (
-    <main className="min-h-screen bg-[#060A20]">
+    <div className="min-h-screen bg-[#060A20]">
       <BlogPostSchema
         title="Royal X Casino App Review 2026: Features, Pros, Cons, and Payout Speed"
         description="Complete Royal X Casino app review 2026: Honest analysis of features, games, bonuses, withdrawal speed, pros & cons. Is Royal X Casino worth it for Pakistan players?"
@@ -435,6 +444,6 @@ export default function BlogCardRummyAppReview() {
           </div>
         </aside>
       </article>
-    </main>
+    </div>
   );
 }

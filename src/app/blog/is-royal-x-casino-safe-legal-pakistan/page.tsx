@@ -21,13 +21,22 @@ export const metadata: Metadata = {
     title: 'Is Royal X Casino Safe and Legal in Pakistan? Complete Safety Guide 2026',
     description: 'Everything you need to know about Royal X Casino safety and legal status in Pakistan. Risks, security, and safe play tips.',
     type: 'article',
+    url: 'https://royalexcasino.com.pk/blog/is-royal-x-casino-safe-legal-pakistan',
+    siteName: 'Royal X Casino',
+    images: [{ url: 'https://royalexcasino.com.pk/royal-x-casino.webp', width: 1200, height: 1200, alt: 'Is Royal X Casino Safe and Legal in Pakistan?' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Is Royal X Casino Safe and Legal in Pakistan? 2026',
+    description: 'Complete guide on Royal X Casino safety, legal status, and safe play tips for Pakistani players.',
+    images: ['https://royalexcasino.com.pk/royal-x-casino.webp'],
   },
   alternates: { canonical: "https://royalexcasino.com.pk/blog/is-royal-x-casino-safe-legal-pakistan" },
 };
 
 export default function BlogIsCardRummySafeLegal() {
   return (
-    <main className="min-h-screen bg-[#060A20]">
+    <div className="min-h-screen bg-[#060A20]">
       <BlogPostSchema
         title="Is Royal X Casino Safe and Legal in Pakistan? Risks, Rules, and Safe Play Tips 2026"
         description="Is Royal X Casino legal in Pakistan? Complete safety guide 2026: Legal status, risks, security measures, withdrawal safety, and tips for safe play. Know before you play!"
@@ -376,6 +385,6 @@ export default function BlogIsCardRummySafeLegal() {
           </div>
         </aside>
       </article>
-    </main>
+    </div>
   );
 }
