@@ -132,38 +132,32 @@ export default function Home() {
             </div>
             <p className="text-gray-400 text-sm italic">*Available for Android. Download from <Link href="/" className="text-[#0ea5e9] underline hover:text-[#38bdf8] underline-offset-2">royalexcasino.com.pk</Link></p>
           </div>
-          {/* Hero image – desktop */}
-          <div className="hidden md:flex md:w-1/2 md:mt-4 items-center justify-center">
-            <Link href="/" aria-label="Royal X Casino - Official Home" className="block relative">
-              <div className="relative rounded-2xl overflow-hidden shadow-[0_0_60px_rgba(255,165,0,0.25)] border border-[#FFA500]/20">
-                <Image
-                  src="/royal-x-casino.webp"
-                  alt="Royal X Casino - Pakistan's Premier Real Money Gaming App"
-                  width={460}
-                  height={460}
-                  className="object-contain w-full h-auto"
-                  priority
-                  fetchPriority="high"
-                  sizes="(max-width: 1280px) 380px, 460px"
-                />
-              </div>
+          <div className="hidden md:block md:w-1/2 md:mt-8">
+            <Link href="/" className="block relative ml-auto" style={{ width: "260px", height: "260px" }} aria-label="Royal X Casino - Official Home">
+              <Image
+                src="/royal-x-casino.webp"
+                alt="Royal X Casino - Pakistan's Premier Real Money Gaming App"
+                width={260}
+                height={260}
+                className="object-contain"
+                priority
+                fetchPriority="high"
+                sizes="260px"
+              />
             </Link>
           </div>
-          {/* Hero image – mobile */}
-          <div className="mt-8 md:hidden flex justify-center">
-            <Link href="/" aria-label="Royal X Casino - Official Home" className="block">
-              <div className="relative rounded-2xl overflow-hidden shadow-[0_0_40px_rgba(255,165,0,0.2)] border border-[#FFA500]/20">
-                <Image
-                  src="/royal-x-casino.webp"
-                  alt="Royal X Casino - Pakistan's Premier Real Money Gaming App"
-                  width={320}
-                  height={320}
-                  className="object-contain w-full h-auto"
-                  priority
-                  fetchPriority="high"
-                  sizes="320px"
-                />
-              </div>
+          <div className="mt-8 md:hidden">
+            <Link href="/" className="block relative mx-auto" style={{ width: "220px", height: "220px" }} aria-label="Royal X Casino - Official Home">
+              <Image
+                src="/royal-x-casino.webp"
+                alt="Royal X Casino - Pakistan's Premier Real Money Gaming App"
+                width={220}
+                height={220}
+                className="object-contain"
+                priority
+                fetchPriority="high"
+                sizes="220px"
+              />
             </Link>
           </div>
         </div>
