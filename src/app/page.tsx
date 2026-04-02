@@ -132,32 +132,16 @@ export default function Home() {
             </div>
             <p className="text-gray-400 text-sm italic">*Available for Android. Download from <Link href="/" className="text-[#0ea5e9] underline hover:text-[#38bdf8] underline-offset-2">royalexcasino.com.pk</Link></p>
           </div>
+          {/* Hero image – desktop */}
           <div className="hidden md:block md:w-1/2 md:mt-8">
-            <Link href="/" className="block relative ml-auto" style={{ width: "260px", height: "260px" }} aria-label="Royal X Casino - Official Home">
-              <Image
-                src="/royal-x-casino.webp"
-                alt="Royal X Casino - Pakistan's Premier Real Money Gaming App"
-                width={260}
-                height={260}
-                className="object-contain"
-                priority
-                fetchPriority="high"
-                sizes="260px"
-              />
+            <Link href="/" className="block relative ml-auto" style={{ width: "320px", height: "320px" }} aria-label="Royal X Casino - Official Home">
+              <Image src="/royal-x-casino.webp" alt="Royal X Casino - Pakistan's Premier Real Money Gaming App" width={320} height={320} className="object-contain drop-shadow-2xl" priority fetchPriority="high" sizes="320px" />
             </Link>
           </div>
+          {/* Hero image – mobile */}
           <div className="mt-8 md:hidden">
-            <Link href="/" className="block relative mx-auto" style={{ width: "220px", height: "220px" }} aria-label="Royal X Casino - Official Home">
-              <Image
-                src="/royal-x-casino.webp"
-                alt="Royal X Casino - Pakistan's Premier Real Money Gaming App"
-                width={220}
-                height={220}
-                className="object-contain"
-                priority
-                fetchPriority="high"
-                sizes="220px"
-              />
+            <Link href="/" className="block relative mx-auto" style={{ width: "280px", height: "280px" }} aria-label="Royal X Casino - Official Home">
+              <Image src="/royal-x-casino.webp" alt="Royal X Casino - Pakistan's Premier Real Money Gaming App" width={280} height={280} className="object-contain drop-shadow-2xl" priority fetchPriority="high" sizes="280px" />
             </Link>
           </div>
         </div>
