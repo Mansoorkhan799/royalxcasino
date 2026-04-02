@@ -3,6 +3,7 @@ import Link from "next/link";
 import Script from "next/script";
 import { Metadata } from "next";
 import { DOWNLOAD_URL } from "@/lib/config";
+import TableOfContentsAccordion from "@/components/TableOfContentsAccordion";
 
 export const metadata: Metadata = {
   title: "Royal X Casino APK Pakistan | Download 2026 | Real Money",
@@ -32,22 +33,6 @@ export const metadata: Metadata = {
   alternates: { canonical: "https://royalexcasino.com.pk" },
 };
 
-const TOC_LINKS = [
-  { href: "#overview", label: "Overview" },
-  { href: "#what-is-royal-x-casino", label: "What is Royal X Casino Pakistan?" },
-  { href: "#key-features", label: "Key Features" },
-  { href: "#games-available", label: "Games Available" },
-  { href: "#app-screenshots", label: "Royal X Casino App Screenshots" },
-  { href: "#how-to-download", label: "How to Download & Install" },
-  { href: "#how-to-register", label: "How to Register" },
-  { href: "#deposit-withdraw", label: "Deposit & Withdrawal Guide" },
-  { href: "#how-to-earn", label: "How to Play & Earn Money" },
-  { href: "#tips-tricks", label: "Tips & Tricks to Win" },
-  { href: "#security", label: "Security & Safety" },
-  { href: "#pros-cons", label: "Pros & Cons" },
-  { href: "#user-reviews", label: "User Reviews" },
-  { href: "#faqs", label: "Frequently Asked Questions" },
-];
 
 export default function Home() {
   const schemaData = {
@@ -147,14 +132,38 @@ export default function Home() {
             </div>
             <p className="text-gray-400 text-sm italic">*Available for Android. Download from <Link href="/" className="text-[#0ea5e9] underline hover:text-[#38bdf8] underline-offset-2">royalexcasino.com.pk</Link></p>
           </div>
-          <div className="hidden md:block md:w-1/2 md:mt-8">
-            <Link href="/" className="block relative ml-auto" style={{ width: "320px", height: "320px" }} aria-label="Royal X Casino - Official Home">
-              <Image src="/royal-x-casino.webp" alt="Royal X Casino - Pakistan's Premier Real Money Gaming App" width={320} height={320} className="object-contain drop-shadow-2xl" priority fetchPriority="high" sizes="320px" />
+          {/* Hero image – desktop */}
+          <div className="hidden md:flex md:w-1/2 md:mt-4 items-center justify-center">
+            <Link href="/" aria-label="Royal X Casino - Official Home" className="block relative">
+              <div className="relative rounded-2xl overflow-hidden shadow-[0_0_60px_rgba(255,165,0,0.25)] border border-[#FFA500]/20">
+                <Image
+                  src="/royal-x-casino.webp"
+                  alt="Royal X Casino - Pakistan's Premier Real Money Gaming App"
+                  width={460}
+                  height={460}
+                  className="object-contain w-full h-auto"
+                  priority
+                  fetchPriority="high"
+                  sizes="(max-width: 1280px) 380px, 460px"
+                />
+              </div>
             </Link>
           </div>
-          <div className="mt-8 md:hidden">
-            <Link href="/" className="block relative mx-auto" style={{ width: "280px", height: "280px" }} aria-label="Royal X Casino - Official Home">
-              <Image src="/royal-x-casino.webp" alt="Royal X Casino - Pakistan's Premier Real Money Gaming App" width={280} height={280} className="object-contain drop-shadow-2xl" priority fetchPriority="high" sizes="280px" />
+          {/* Hero image – mobile */}
+          <div className="mt-8 md:hidden flex justify-center">
+            <Link href="/" aria-label="Royal X Casino - Official Home" className="block">
+              <div className="relative rounded-2xl overflow-hidden shadow-[0_0_40px_rgba(255,165,0,0.2)] border border-[#FFA500]/20">
+                <Image
+                  src="/royal-x-casino.webp"
+                  alt="Royal X Casino - Pakistan's Premier Real Money Gaming App"
+                  width={320}
+                  height={320}
+                  className="object-contain w-full h-auto"
+                  priority
+                  fetchPriority="high"
+                  sizes="320px"
+                />
+              </div>
             </Link>
           </div>
         </div>
@@ -205,37 +214,9 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Table of Contents */}
+      {/* Table of Contents – Accordion */}
       <section className="py-8 px-4 md:px-8 max-w-7xl mx-auto">
-        <div className="bg-gradient-to-br from-[#0A1029] via-[#0f1729] to-[#0A1029] rounded-2xl p-6 md:p-8 border border-gray-700/50 shadow-xl">
-          <div className="flex items-center gap-3 mb-6">
-            <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-[#FFA500]/20">
-              <svg className="w-5 h-5 text-[#FFA500]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h7" />
-              </svg>
-            </div>
-            <h2 className="text-xl md:text-2xl font-bold text-[#FFA500]">Table of Contents</h2>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-            {TOC_LINKS.map(({ href, label }, index) => (
-              <Link
-                key={href}
-                href={href}
-                className="group flex items-center gap-3 px-4 py-3 rounded-xl bg-[#06091F]/60 border border-gray-700/50 hover:border-[#0ea5e9]/50 hover:bg-[#0ea5e9]/5 transition-all duration-200"
-              >
-                <span className="flex-shrink-0 w-7 h-7 flex items-center justify-center rounded-lg bg-[#0ea5e9]/20 text-[#0ea5e9] text-sm font-semibold group-hover:bg-[#0ea5e9]/30 transition-colors">
-                  {index + 1}
-                </span>
-                <span className="text-gray-300 group-hover:text-white transition-colors font-medium">
-                  {label}
-                </span>
-                <svg className="w-4 h-4 ml-auto flex-shrink-0 text-gray-500 group-hover:text-[#0ea5e9] group-hover:translate-x-0.5 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
-                </svg>
-              </Link>
-            ))}
-          </div>
-        </div>
+        <TableOfContentsAccordion />
       </section>
 
       {/* Overview */}
