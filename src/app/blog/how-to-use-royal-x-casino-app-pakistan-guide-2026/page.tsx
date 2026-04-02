@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "https://royalexcasino.com.pk/blog/how-to-use-royal-x-casino-app-pakistan-guide-2026" },
   twitter: {
     card: 'summary_large_image',
-    title: 'How to Use Royal X Casino App in Pakistan: Complete Beginner\',
+    title: "How to Use Royal X Casino App in Pakistan: Beginner's Guide 2026",
     description: 'Step-by-step guide to download, register, deposit, play & earn from Royal X Casino app in Pakistan. Perfect for beginners!',
     images: ['https://royalexcasino.com.pk/royal-x-casino.webp'],
   },
