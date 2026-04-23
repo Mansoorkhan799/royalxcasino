@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { Metadata } from 'next';
-import BreadcrumbSchema from '@/components/BreadcrumbSchema';
+import Breadcrumb from '@/components/Breadcrumb';
 
 export const metadata: Metadata = {
   title: 'Royal X Casino Blog - Guides, Tips & Tutorials 2026',
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
 export default function Blog() {
   return (
     <div className="container mx-auto px-4 py-12">
-      <BreadcrumbSchema items={[
+      <Breadcrumb items={[
         { name: 'Home', url: '/' },
         { name: 'Blog', url: '/blog' },
       ]} />

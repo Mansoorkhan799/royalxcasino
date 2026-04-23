@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { DOWNLOAD_URL } from "@/lib/config";
-import BreadcrumbSchema from "@/components/BreadcrumbSchema";
+import Breadcrumb from "@/components/Breadcrumb";
 
 export const metadata: Metadata = {
   title: "Royal X Casino Old Versions | Download Previous APK Versions 2026",
@@ -14,10 +14,12 @@ export const metadata: Metadata = {
 export default function RoyalXCasinoOldVersionsPage() {
   return (
     <>
-      <BreadcrumbSchema items={[
-        { name: "Home", url: "/" },
-        { name: "Royal X Casino Old Versions", url: "/royal-x-casino-old-versions" },
-      ]} />
+      <div className="max-w-7xl mx-auto px-4 md:px-8 pt-6">
+        <Breadcrumb items={[
+          { name: "Home", url: "/" },
+          { name: "Old Versions", url: "/royal-x-casino-old-versions" },
+        ]} />
+      </div>
       <section className="py-8 md:py-16 px-4 md:px-8 max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">

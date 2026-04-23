@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
-import BreadcrumbSchema from "@/components/BreadcrumbSchema";
+import Breadcrumb from "@/components/Breadcrumb";
 import HowToSchema from "@/components/HowToSchema";
 import ArticleSchema from "@/components/ArticleSchema";
 
@@ -29,10 +29,12 @@ const WITHDRAW_STEPS = [
 export default function RoyalXCasinoWithdrawGuidePage() {
   return (
     <>
-      <BreadcrumbSchema items={[
-        { name: "Home", url: "/" },
-        { name: "Royal X Casino Withdraw Guide", url: "/royal-x-casino-withdraw-guide" },
-      ]} />
+      <div className="max-w-7xl mx-auto px-4 md:px-8 pt-6">
+        <Breadcrumb items={[
+          { name: "Home", url: "/" },
+          { name: "Withdraw Guide", url: "/royal-x-casino-withdraw-guide" },
+        ]} />
+      </div>
       <HowToSchema
         name="Royal X Casino Withdraw Guide"
         description="Withdraw winnings from Royal X Casino in 10-30 minutes. Zero wagering. Use EasyPaisa, JazzCash, USDT, or bank. Min Rs. 600."

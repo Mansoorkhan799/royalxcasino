@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import BreadcrumbSchema from "@/components/BreadcrumbSchema";
+import Breadcrumb from "@/components/Breadcrumb";
 import HowToSchema from "@/components/HowToSchema";
 
 export const metadata: Metadata = {
@@ -22,10 +22,12 @@ export const metadata: Metadata = {
 export default function HowToRegisterRoyalXCasinoPage() {
   return (
     <>
-      <BreadcrumbSchema items={[
-        { name: "Home", url: "/" },
-        { name: "How to Register on Royal X Casino", url: "/how-to-register-royal-x-casino" },
-      ]} />
+      <div className="max-w-7xl mx-auto px-4 md:px-8 pt-6">
+        <Breadcrumb items={[
+          { name: "Home", url: "/" },
+          { name: "How to Register", url: "/how-to-register-royal-x-casino" },
+        ]} />
+      </div>
       <HowToSchema
         name="How to Get Registered on Royal X Casino"
         description="Step-by-step guide to register a Royal X Casino account in 2026. Download the app, tap Register, enter your details, and complete registration."

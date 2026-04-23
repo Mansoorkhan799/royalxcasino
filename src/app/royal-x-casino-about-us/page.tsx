@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import Script from 'next/script';
-import BreadcrumbSchema from '@/components/BreadcrumbSchema';
+import Breadcrumb from '@/components/Breadcrumb';
 
 export const metadata: Metadata = {
   title: 'About Royal X Casino - Pakistan Real Money Gaming',
@@ -28,10 +28,12 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <div className="min-h-screen bg-primary py-12 px-4">
-      <BreadcrumbSchema items={[
-        { name: 'Home', url: '/' },
-        { name: 'About Royal X Casino', url: '/royal-x-casino-about-us' },
-      ]} />
+      <div className="container mx-auto max-w-4xl">
+        <Breadcrumb items={[
+          { name: 'Home', url: '/' },
+          { name: 'About Us', url: '/royal-x-casino-about-us' },
+        ]} />
+      </div>
       <div className="container mx-auto">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">

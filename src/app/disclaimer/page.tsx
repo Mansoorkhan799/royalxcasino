@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import Breadcrumb from '@/components/Breadcrumb';
 
 export const metadata: Metadata = {
   title: 'Disclaimer - Royal X Casino | Legal Information',
@@ -31,6 +32,10 @@ export default function Disclaimer() {
     <div className="min-h-screen bg-primary py-12 px-4">
       <div className="container mx-auto">
         <div className="max-w-4xl mx-auto">
+          <Breadcrumb items={[
+            { name: 'Home', url: '/' },
+            { name: 'Disclaimer', url: '/disclaimer' },
+          ]} />
           {/* Hero Section */}
           <div className="text-center mb-12">
             <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">Disclaimer</h1>

@@ -49,6 +49,13 @@ export default function CreateAccountLogin() {
       />
       <div className="min-h-screen bg-[#060A20]">
         <div className="container mx-auto px-4 py-12">
+          <nav aria-label="Breadcrumb" className="mb-8 text-sm text-gray-400">
+            <Link href="/" className="hover:text-[#FFA500]">Home</Link>
+            <span className="mx-2">/</span>
+            <Link href="/blog" className="hover:text-[#FFA500]">Blog</Link>
+            <span className="mx-2">/</span>
+            <span className="text-white">How to Create a Royal X Casino Account and Login</span>
+          </nav>
           <div className="mb-6">
             <Link href="/blog" className="text-accent hover:text-accent font-semibold inline-flex items-center">
               <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">

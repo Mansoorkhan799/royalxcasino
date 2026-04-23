@@ -56,6 +56,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/royal-x-casino-download`, lastModified: now, changeFrequency: 'weekly', priority: 0.9 },
     { url: `${BASE_URL}/royal-x-casino-deposit-guide`, lastModified: now, changeFrequency: 'weekly', priority: 0.9 },
     { url: `${BASE_URL}/royal-x-casino-withdraw-guide`, lastModified: now, changeFrequency: 'weekly', priority: 0.9 },
+    { url: `${BASE_URL}/royal-x-casino-redeem-code`, lastModified: now, changeFrequency: 'weekly', priority: 0.9 },
     { url: `${BASE_URL}/royal-x-casino-for-pc`, lastModified: now, changeFrequency: 'weekly', priority: 0.9 },
     { url: `${BASE_URL}/royal-x-casino-for-ios`, lastModified: now, changeFrequency: 'weekly', priority: 0.9 },
     { url: `${BASE_URL}/royal-x-casino-old-versions`, lastModified: now, changeFrequency: 'weekly', priority: 0.9 },

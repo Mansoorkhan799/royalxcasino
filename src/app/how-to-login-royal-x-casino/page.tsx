@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import BreadcrumbSchema from "@/components/BreadcrumbSchema";
+import Breadcrumb from "@/components/Breadcrumb";
 import HowToSchema from "@/components/HowToSchema";
 
 export const metadata: Metadata = {
@@ -22,10 +22,12 @@ export const metadata: Metadata = {
 export default function HowToLoginRoyalXCasinoPage() {
   return (
     <>
-      <BreadcrumbSchema items={[
-        { name: "Home", url: "/" },
-        { name: "How to Login to Royal X Casino", url: "/how-to-login-royal-x-casino" },
-      ]} />
+      <div className="max-w-7xl mx-auto px-4 md:px-8 pt-6">
+        <Breadcrumb items={[
+          { name: "Home", url: "/" },
+          { name: "How to Login", url: "/how-to-login-royal-x-casino" },
+        ]} />
+      </div>
       <HowToSchema
         name="How to Login to Royal X Casino"
         description="Step-by-step guide to log in to your Royal X Casino account using your registered mobile number and password."

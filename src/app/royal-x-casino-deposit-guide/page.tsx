@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
-import BreadcrumbSchema from "@/components/BreadcrumbSchema";
+import Breadcrumb from "@/components/Breadcrumb";
 import HowToSchema from "@/components/HowToSchema";
 import ArticleSchema from "@/components/ArticleSchema";
 
@@ -19,10 +19,12 @@ export const metadata: Metadata = {
 export default function RoyalXCasinoDepositGuidePage() {
   return (
     <>
-      <BreadcrumbSchema items={[
-        { name: "Home", url: "/" },
-        { name: "Royal X Casino Deposit Guide", url: "/royal-x-casino-deposit-guide" },
-      ]} />
+      <div className="max-w-7xl mx-auto px-4 md:px-8 pt-6">
+        <Breadcrumb items={[
+          { name: "Home", url: "/" },
+          { name: "Deposit Guide", url: "/royal-x-casino-deposit-guide" },
+        ]} />
+      </div>
       <HowToSchema
         name="Royal X Casino Deposit Guide"
         description="Step-by-step guide to deposit money in Royal X Casino using EasyPaisa, JazzCash, bank transfer, or USDT. Minimum Rs. 100."

@@ -98,6 +98,11 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/royal-x-casino-redeem-code" className="text-gray-300 hover:text-accent transition-colors">
+                  Royal X Casino Redeem Code
+                </Link>
+              </li>
+              <li>
                 <Link href="/blog" className="text-gray-300 hover:text-accent transition-colors">
                   Blog
                 </Link>
