@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import BlogPostSchema from '@/components/BlogPostSchema';
+import { DOWNLOAD_URL } from '@/lib/config';
 
 export const metadata: Metadata = {
   title: 'Royal X Casino App Review 2026: Features, Pros, Cons, and Payout Speed',
@@ -73,6 +74,22 @@ export default function BlogCardRummyAppReview() {
             <p className="text-white text-lg">
               Royal X Casino is one of the best real money gaming apps in Pakistan, with fast withdrawals, generous bonuses, and multiple games. However, it operates in a legal gray area and requires responsible play.
             </p>
+          </div>
+
+          <div className="flex justify-center my-8">
+            <a
+              href={DOWNLOAD_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="relative flex items-center px-8 py-4 text-white font-semibold text-lg rounded-full border-2 border-[#0ea5e9] hover:bg-[#0ea5e9]/10 transition-all group"
+            >
+              <span>Download Royal X Casino APK</span>
+              <div className="ml-3 bg-[#f97316] rounded-full p-2 group-hover:scale-110 transition-transform">
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                </svg>
+              </div>
+            </a>
           </div>
 
           <h2 className="text-3xl font-bold text-white mt-12 mb-6">Quick Summary</h2>
@@ -420,13 +437,20 @@ export default function BlogCardRummyAppReview() {
             <strong>Bottom line:</strong> If you're looking for fast payouts, good bonuses, and game variety, Royal X Casino is an excellent choice - as long as you play responsibly.
           </p>
 
-          <div className="mt-12 text-center">
-            <Link 
-              href="/royal-x-casino-download"
-              className="inline-block bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-bold py-4 px-8 rounded-lg text-lg transition-all transform hover:scale-105 shadow-lg"
+          <div className="mt-12 flex justify-center">
+            <a
+              href={DOWNLOAD_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="relative flex items-center px-8 py-4 text-white font-semibold text-lg rounded-full border-2 border-[#0ea5e9] hover:bg-[#0ea5e9]/10 transition-all group"
             >
-              Download Royal X Casino APK v2.54.7
-            </Link>
+              <span>Download Royal X Casino APK</span>
+              <div className="ml-3 bg-[#f97316] rounded-full p-2 group-hover:scale-110 transition-transform">
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                </svg>
+              </div>
+            </a>
           </div>
         </div>
 
