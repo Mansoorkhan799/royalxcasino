@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import MobileNavigation from './MobileNavigation';
+import { DOWNLOAD_URL } from '@/lib/config';
 
 type NavChild = { href: string; label: string; desc?: string };
 type NavGroup = { id: string; label: string; children: NavChild[] };
@@ -96,9 +97,9 @@ export default function Header() {
           <Link href="/" className="text-white hover:text-accent font-medium transition-colors">
             Home
           </Link>
-          <Link href="/royal-x-casino-download" className="text-white hover:text-accent font-medium transition-colors">
+          <a href={DOWNLOAD_URL} target="_blank" rel="noopener noreferrer" className="text-white hover:text-accent font-medium transition-colors">
             Download
-          </Link>
+          </a>
 
           {GROUPS.map((group) => {
             const isOpen = openId === group.id;

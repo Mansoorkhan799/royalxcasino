@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
 import HowToSchema from "@/components/HowToSchema";
+import { DOWNLOAD_URL } from "@/lib/config";
 
 export const metadata: Metadata = {
   title: "How to Get Registered on Royal X Casino | Sign Up Guide 2026",
@@ -99,9 +100,9 @@ export default function HowToRegisterRoyalXCasinoPage() {
         </section>
 
         <section className="py-8 px-4 text-center" aria-label="Download and navigation">
-        <Link href="/royal-x-casino-download" className="inline-flex items-center px-8 py-4 text-white font-bold rounded-full border-2 border-[#0ea5e9] hover:bg-[#0ea5e9]/10 transition-all mb-4">
+        <a href={DOWNLOAD_URL} target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-8 py-4 text-white font-bold rounded-full border-2 border-[#0ea5e9] hover:bg-[#0ea5e9]/10 transition-all mb-4">
           Download Royal X Casino
-        </Link>
+        </a>
         <br />
         <Link href="/" className="text-accent hover:underline font-semibold">← Back to Home</Link>
         <span className="mx-2 text-gray-500">|</span>

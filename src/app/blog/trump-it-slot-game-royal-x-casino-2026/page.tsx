@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import BlogPostSchema from '@/components/BlogPostSchema';
+import { DOWNLOAD_URL } from '@/lib/config';
 
 export const metadata: Metadata = {
   title: 'Trump IT Slot Game on Royal X Casino – A Complete Review 2026',
@@ -81,9 +82,9 @@ export default function BlogTrumpITSlot() {
           </div>
 
           <div className="mt-12 text-center">
-            <Link href="/royal-x-casino-download" className="inline-block bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-bold py-4 px-8 rounded-lg text-lg transition-all">
+            <a href={DOWNLOAD_URL} target="_blank" rel="noopener noreferrer" className="inline-block bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-bold py-4 px-8 rounded-lg text-lg transition-all">
               Play Trump IT on Royal X Casino
-            </Link>
+            </a>
           </div>
         </div>
       </article>

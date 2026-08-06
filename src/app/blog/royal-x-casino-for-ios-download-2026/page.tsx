@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import BlogPostSchema from '@/components/BlogPostSchema';
+import { DOWNLOAD_URL } from '@/lib/config';
 
 export const metadata: Metadata = {
   title: 'Royal X Casino for iOS Download Latest Version For Free 2026',
@@ -97,9 +98,9 @@ export default function BlogRoyalXCasinoForIOS() {
           </ul>
 
           <div className="mt-12 text-center">
-            <Link href="/royal-x-casino-download" className="inline-block bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-bold py-4 px-8 rounded-lg text-lg transition-all">
-              Visit Download Page
-            </Link>
+            <a href={DOWNLOAD_URL} target="_blank" rel="noopener noreferrer" className="inline-block bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-bold py-4 px-8 rounded-lg text-lg transition-all">
+              Download Royal X Casino
+            </a>
           </div>
         </div>
       </article>

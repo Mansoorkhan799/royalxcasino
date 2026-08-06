@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import BlogPostSchema from '@/components/BlogPostSchema';
+import { DOWNLOAD_URL } from '@/lib/config';
 
 export const metadata: Metadata = {
   title: '3Patti Gold vs Royal X Casino: Which Game Is Better for Earning Real Cash? 2026',
@@ -325,12 +326,14 @@ export default function Blog3PattiGoldVsCardRummy() {
           </p>
 
           <div className="mt-12 text-center">
-            <Link 
-              href="/royal-x-casino-download"
+            <a
+              href={DOWNLOAD_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-block bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-bold py-4 px-8 rounded-lg text-lg transition-all transform hover:scale-105 shadow-lg"
             >
               Download Royal X Casino APK v1.225
-            </Link>
+            </a>
           </div>
         </div>
 

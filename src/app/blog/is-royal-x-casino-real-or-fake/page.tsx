@@ -429,10 +429,10 @@ export default function CardRummyRealOrFakePage() {
           <div className="bg-secondary rounded-xl p-6 md:p-8">
             <h3 className="text-2xl font-bold mb-6 text-[#FFA500]">Related Articles</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <Link href="/royal-x-casino-download" className="bg-[#0A1029] p-4 rounded-lg hover:bg-[#0A1029]/70 transition-colors block">
+              <a href={DOWNLOAD_URL} target="_blank" rel="noopener noreferrer" className="bg-[#0A1029] p-4 rounded-lg hover:bg-[#0A1029]/70 transition-colors block">
                 <h4 className="text-white font-semibold mb-2">📥 Download Royal X Casino APK</h4>
                 <p className="text-gray-400 text-sm">Get the latest version of Royal X Casino for Android</p>
-              </Link>
+              </a>
               <Link href="/blog/royal-x-casino-create-account-and-login" className="bg-[#0A1029] p-4 rounded-lg hover:bg-[#0A1029]/70 transition-colors">
                 <h4 className="text-white font-semibold mb-2">🔐 Account & Login Guide</h4>
                 <p className="text-gray-400 text-sm">Learn how to create and secure your account</p>
