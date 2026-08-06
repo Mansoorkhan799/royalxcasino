@@ -69,7 +69,7 @@ export default function Home() {
         image: "https://royalexcasino.com.pk/royal-x-casino.webp",
         aggregateRating: { "@type": "AggregateRating", ratingValue: "4.5", ratingCount: "500000" },
         offers: { "@type": "Offer", price: "0", priceCurrency: "PKR" },
-        downloadUrl: "https://royalxcasino55.com/?refer_id=101141302616",
+        downloadUrl: "https://xrefer.cc?refer_id=101141302616",
         softwareVersion: "v2.54.7",
         fileSize: "8.9MB",
         description: "Play 200+ casino games. Zero wagering, instant withdrawals via EasyPaisa & JazzCash.",

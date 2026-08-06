@@ -72,7 +72,7 @@ export default function DownloadPage() {
       "ratingCount": "600000",
       "bestRating": "5"
     },
-    "downloadUrl": "https://royalxcasino55.com/?refer_id=101141302616",
+    "downloadUrl": "https://xrefer.cc?refer_id=101141302616",
     "softwareVersion": "V1.225",
     "fileSize": "49MB",
     "datePublished": "2026-01-03",
