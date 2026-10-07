@@ -3,7 +3,6 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { DOWNLOAD_URL } from '@/lib/config';
 
 type Child = { href: string; label: string };
 
@@ -97,9 +96,9 @@ export default function MobileNavigation() {
             <Link href="/" className="text-white hover:text-accent py-2 text-lg font-medium transition-colors border-b border-gray-800" onClick={closeMenu}>
               Home
             </Link>
-            <a href={DOWNLOAD_URL} target="_blank" rel="noopener noreferrer sponsored" className="text-white hover:text-accent py-2 text-lg font-medium transition-colors border-b border-gray-800" onClick={closeMenu}>
+            <Link href="/royal-x-casino-download" className="text-white hover:text-accent py-2 text-lg font-medium transition-colors border-b border-gray-800" onClick={closeMenu}>
               Download
-            </a>
+            </Link>
 
             {MOBILE_GROUPS.map((group) => {
               const isGroupOpen = openGroup === group.id;

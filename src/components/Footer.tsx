@@ -31,9 +31,9 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <a href={DOWNLOAD_URL} target="_blank" rel="noopener noreferrer sponsored" className="text-gray-300 hover:text-accent transition-colors">
+                <Link href="/royal-x-casino-download" className="text-gray-300 hover:text-accent transition-colors">
                   Download
-                </a>
+                </Link>
               </li>
               <li>
                 <Link href="/blog" className="text-gray-300 hover:text-accent transition-colors">
