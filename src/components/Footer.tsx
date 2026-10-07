@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { DOWNLOAD_URL } from '@/lib/config';
+import { DOWNLOAD_URL, APP_INFO } from '@/lib/config';
 
 export default function Footer() {
   return (
@@ -10,7 +10,7 @@ export default function Footer() {
           <div>
             <h3 className="text-xl font-bold text-accent mb-4">Royal X Casino</h3>
             <p className="text-sm text-gray-300 mb-4">
-              Royal X Casino is Pakistan&apos;s premier real money gaming platform with 200+ games including Teen Patti, Slots, Fishing & more. Zero wagering, instant withdrawals via JazzCash & EasyPaisa.
+              Independent guide to the Royal X Casino app for players in Pakistan: APK download, 200+ Teen Patti, slot and fishing games, EasyPaisa and JazzCash payments, bonuses and safety information. 18+ only.
             </p>
             <div className="flex space-x-4">
               <a href="https://www.facebook.com/share/18G2R3ztEx/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
@@ -31,7 +31,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <a href={DOWNLOAD_URL} target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-accent transition-colors">
+                <a href={DOWNLOAD_URL} target="_blank" rel="noopener noreferrer sponsored" className="text-gray-300 hover:text-accent transition-colors">
                   Download
                 </a>
               </li>
@@ -124,12 +124,12 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4 text-accent">Download App</h3>
             <p className="text-sm text-gray-300 mb-4">
-              Download Royal X Casino to play 200+ games and earn real money. Zero wagering, instant withdrawals.
+              Get the Royal X Casino APK ({APP_INFO.version}, {APP_INFO.size}) for Android. Withdrawals to EasyPaisa and JazzCash usually clear in 10 to 30 minutes.
             </p>
             <a 
               href={DOWNLOAD_URL}
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noopener noreferrer sponsored"
               className="download-btn bg-transparent hover:bg-[#0ea5e9]/10 text-white font-bold py-3 px-6 rounded-full inline-flex items-center transition-all shadow-lg hover:shadow-xl border-2 border-[#0ea5e9]"
             >
               <span>DOWNLOAD NOW</span>

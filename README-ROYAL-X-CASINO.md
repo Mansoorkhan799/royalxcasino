@@ -1,6 +1,6 @@
 # Royal X Casino Website
 
-This is the official website for **Royal X Casino** – Pakistan's real money gaming app. Built with Next.js 15, TypeScript, and Tailwind CSS. Cloned and adapted from the [card-rummy](https://github.com/Mansoorkhan799/card-rummy) repository.
+This is the official website for **Royal X Casino** – Pakistan's real money gaming app. Built with Next.js 15, TypeScript, and Tailwind CSS.
 
 ## Quick Start
 
@@ -26,27 +26,29 @@ Open [http://localhost:3000](http://localhost:3000).
 - Set the real APK URL via environment variable:
   - Create `.env.local` and add:  
     `NEXT_PUBLIC_DOWNLOAD_URL=https://your-actual-download-link.com/royal-x-casino.apk`
-- Or edit `src/app/download/page.tsx` and replace the `DOWNLOAD_URL` constant.
+- Or edit `DOWNLOAD_URL` in `src/lib/config.ts` (single source of truth, also holds `APP_INFO` version/size and `APP_RATING`).
 
 ### 3. Blog posts
 
 - **New post:** Add a new folder under `src/app/blog/`, e.g. `src/app/blog/your-post-slug/page.tsx`.
-- Use existing blog posts as a template (e.g. `src/app/blog/card-rummy-app-review-2026/page.tsx`).
-- Add the new post to the list on `src/app/blog/page.tsx` and to `src/app/api/sitemap/route.ts` if you use the API sitemap.
+- Use existing blog posts as a template (e.g. `src/app/blog/royal-x-casino-app-review-2026/page.tsx`).
+- Register the post (slug, title ≤60 chars, description, date, category) in `src/lib/blog-posts.ts`; the blog index and schema read from it. `src/app/sitemap.ts` discovers blog folders automatically.
 
 ### 4. Contact email
 
-- Contact email is set in `src/app/contact-us/page.tsx` as `support@royalexcasino.com.pk`. Change it there if you use a different address.
+- Contact email is set in `src/app/royal-x-casino-contact-us/page.tsx` as `support@royalexcasino.com.pk`. Change it there if you use a different address.
 
 ## Project structure
 
 - `src/app/page.tsx` – Homepage
-- `src/app/download/page.tsx` – Download APK page
-- `src/app/deposit-guide/page.tsx` – Deposit guide
-- `src/app/withdraw-guide/page.tsx` – Withdraw guide
-- `src/app/blog/page.tsx` – Blog index
-- `src/app/about-us/page.tsx` – About
-- `src/app/contact-us/page.tsx` – Contact
+- `src/app/royal-x-casino-download/page.tsx` – Download APK page
+- `src/app/royal-x-casino-deposit-guide/page.tsx` – Deposit guide
+- `src/app/royal-x-casino-withdraw-guide/page.tsx` – Withdraw guide
+- `src/app/blog/page.tsx` – Blog index (data from `src/lib/blog-posts.ts`)
+- `src/app/royal-x-casino-about-us/page.tsx` – About
+- `src/app/royal-x-casino-contact-us/page.tsx` – Contact
+- `src/lib/config.ts` – Download URL, APP_INFO, APP_RATING, SITE_URL
+- `next.config.js` – 301 redirects for legacy URLs, security headers
 - `src/app/layout.tsx` – Root layout, metadata, favicon
 - `src/components/Header.tsx`, `Footer.tsx`, `MobileNavigation.tsx` – Global UI
 - `public/` – Static assets (images, favicon, manifest)
@@ -64,8 +66,8 @@ For Vercel: connect the repo and deploy. Set `NEXT_PUBLIC_DOWNLOAD_URL` in the p
 
 - Default canonical and metadata use `https://royalexcasino.com.pk`. Update in:
   - `src/app/layout.tsx` (metadataBase, canonical, Open Graph, Twitter)
-  - `src/app/api/sitemap/route.ts` (baseUrl)
-  - `src/app/api/robots/route.ts` (baseUrl)
+  - `src/lib/config.ts` (`SITE_URL`, used by `src/app/sitemap.ts`)
+  - `public/robots.txt` (Sitemap line) and `public/sitemap-index.xml`
   - Each page’s `metadata.alternates.canonical` if you change the domain.
 
 ## License

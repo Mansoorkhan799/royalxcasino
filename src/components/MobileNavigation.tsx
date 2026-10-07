@@ -97,7 +97,7 @@ export default function MobileNavigation() {
             <Link href="/" className="text-white hover:text-accent py-2 text-lg font-medium transition-colors border-b border-gray-800" onClick={closeMenu}>
               Home
             </Link>
-            <a href={DOWNLOAD_URL} target="_blank" rel="noopener noreferrer" className="text-white hover:text-accent py-2 text-lg font-medium transition-colors border-b border-gray-800" onClick={closeMenu}>
+            <a href={DOWNLOAD_URL} target="_blank" rel="noopener noreferrer sponsored" className="text-white hover:text-accent py-2 text-lg font-medium transition-colors border-b border-gray-800" onClick={closeMenu}>
               Download
             </a>
 

@@ -1,47 +1,76 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import BlogPostSchema from '@/components/BlogPostSchema';
+import FaqSchema, { type FaqItem } from '@/components/FaqSchema';
+import { SITE_URL } from '@/lib/config';
+
+const TITLE = 'Responsible Gaming Guide for Royal X Casino Players';
+const DESCRIPTION =
+  'Deposit limits, session timers, warning signs of problem play and what to do after a losing streak instead of chasing it.';
+const SLUG = 'responsible-gaming-guide-royal-x-casino';
+const URL = `${SITE_URL}/blog/${SLUG}`;
 
 export const metadata: Metadata = {
-  title: 'Responsible Gaming Guide: How to Enjoy Royal X Casino Without Addiction or Big Losses 2026',
-  description: 'Complete responsible gaming guide for Royal X Casino 2026: How to play safely, avoid addiction, set limits, recognize warning signs, and enjoy gaming without financial harm in Pakistan.',
-  keywords: [
-    'responsible gaming Royal X Casino',
-    'Royal X Casino addiction',
-    'gambling addiction help',
-    'safe gaming Royal X Casino',
-    'Royal X Casino limits',
-    'gaming addiction prevention',
-    'responsible gambling',
-    'Royal X Casino self control',
-    'gaming addiction Pakistan',
-    'how to play safely'
-  ],
+  title: TITLE,
+  description: DESCRIPTION,
+  alternates: { canonical: URL },
   openGraph: {
-    title: 'Responsible Gaming Guide: How to Enjoy Royal X Casino Without Addiction or Big Losses',
-    description: 'Essential guide to playing Royal X Casino responsibly. Learn to set limits, recognize addiction signs, and enjoy gaming safely.',
+    title: TITLE,
+    description: DESCRIPTION,
     type: 'article',
-    url: 'https://royalexcasino.com.pk/blog/responsible-gaming-guide-royal-x-casino',
+    url: URL,
     siteName: 'Royal X Casino',
+    images: [
+      {
+        url: `${SITE_URL}/royal-x-casino-logo.webp`,
+        width: 1000,
+        height: 1000,
+        alt: 'Royal X Casino logotype used as the cover for the responsible gaming guide',
+      },
+    ],
   },
-  alternates: { canonical: "https://royalexcasino.com.pk/blog/responsible-gaming-guide-royal-x-casino" },
   twitter: {
     card: 'summary_large_image',
-    title: 'Responsible Gaming Guide: How to Enjoy Royal X Casino Without Addictio',
-    description: 'Essential guide to playing Royal X Casino responsibly. Learn to set limits, recognize addiction signs, and enjoy gaming safely.',
-    images: ['https://royalexcasino.com.pk/royal-x-casino.webp'],
+    title: TITLE,
+    description: DESCRIPTION,
+    images: [`${SITE_URL}/royal-x-casino-logo.webp`],
   },
 };
+
+const faqs: FaqItem[] = [
+  {
+    q: 'Does Royal X Casino have built-in deposit limits or self-exclusion?',
+    a: 'We cannot verify a formal limit or self-exclusion tool in the app, so do not rely on one. Set limits on your side instead: a fixed weekly deposit amount, a separate EasyPaisa or JazzCash wallet holding only that amount, and a phone timer for sessions. If you need a hard stop, ask the in-app live chat to lock your account and uninstall the app.',
+  },
+  {
+    q: 'How much should I deposit on Royal X Casino?',
+    a: 'Only an amount you have already decided to spend on entertainment and can lose entirely. Pick the number before you open the app, not during a session. The minimum deposit is Rs. 100, so there is no reason to start with more than that while you learn.',
+  },
+  {
+    q: 'What should I do after a losing streak?',
+    a: 'Stop for the day, close the app, and do not deposit again for at least 24 hours. Write down what you lost, lower next week\'s deposit limit, and talk to someone you trust. Chasing losses is the single behaviour that turns a bad evening into a debt.',
+  },
+  {
+    q: 'Can I win back money I lost on Royal X Casino?',
+    a: 'Not reliably. Every game has a house edge, so playing more to recover losses tends to increase them. Any win is luck, not a recovery strategy. The only certain way to stop losing is to stop depositing.',
+  },
+  {
+    q: 'What are the early signs of a gambling problem?',
+    a: 'Depositing again within minutes of losing, using bill or family money, hiding how much you spend, borrowing to play, feeling irritable when you cannot play, and sessions that run much longer than planned. Two or more of these is a signal to stop and get support.',
+  },
+];
 
 export default function BlogResponsibleGamingGuide() {
   return (
     <div className="min-h-screen bg-[#060A20]">
       <BlogPostSchema
-        title="Responsible Gaming Guide: How to Enjoy Royal X Casino Without Addiction or Big Losses 2026"
-        description="Complete responsible gaming guide for Royal X Casino 2026: How to play safely, avoid addiction, set limits, recognize warning signs, and enjoy gaming without financial harm in Pakistan."
-        slug="responsible-gaming-guide-royal-x-casino"
+        title={TITLE}
+        description={DESCRIPTION}
+        slug={SLUG}
         datePublished="2026-01-11"
+        dateModified="2026-10-08"
       />
+      <FaqSchema faqs={faqs} />
       <article className="container mx-auto px-4 py-12 max-w-4xl">
         <nav className="mb-8 text-sm text-gray-400">
           <Link href="/" className="hover:text-[#FFA500]">Home</Link>
@@ -52,374 +81,307 @@ export default function BlogResponsibleGamingGuide() {
         </nav>
 
         <header className="mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            Responsible Gaming Guide: How to Enjoy Royal X Casino Without Addiction or Big Losses
-          </h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">{TITLE}</h1>
           <div className="flex items-center gap-4 text-gray-400 text-sm">
             <time dateTime="2026-01-11">January 11, 2026</time>
             <span>•</span>
-            <span>15 min read</span>
+            <span>Updated October 8, 2026</span>
+            <span>•</span>
+            <span>10 min read</span>
           </div>
         </header>
 
         <div className="prose prose-invert prose-lg max-w-none">
           <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-            <Link href="/" className="text-[#FFA500] hover:underline font-semibold">Royal X Casino</Link> can be entertaining and potentially profitable, but it's crucial to play responsibly. This comprehensive guide will help you enjoy Royal X Casino safely, recognize warning signs of problem gaming, and maintain healthy gaming habits. <strong>Your financial and mental well-being are more important than any game.</strong>
+            The{' '}
+            <Link href="/" className="text-[#FFA500] hover:underline font-semibold">Royal X Casino APK</Link>{' '}
+            is a real-money gambling app. Every game in it carries a house edge, deposits start at
+            Rs. 100 and a round of Dragon vs Tiger lasts seconds, which makes it easy to spend far
+            more than you planned. This guide is about keeping the app in its place: a paid form
+            of entertainment with a fixed cost, not a way to earn and not something that follows
+            you into your bills or your sleep.
           </p>
 
           <div className="bg-red-900/30 border border-red-600 rounded-lg p-8 my-8">
-            <p className="text-white text-lg font-semibold mb-2">⚠️ Important Warning</p>
+            <p className="text-white text-lg font-semibold mb-2">Before you read on</p>
             <p className="text-gray-300">
-              Royal X Casino involves real money risk. You can lose money. If you have a gambling addiction or are at risk, please seek professional help. This guide is for informational purposes only and does not replace professional treatment.
+              You must be 18 or over to use the app. You can lose everything you deposit. If
+              gambling is already causing harm, the most useful step is to stop today and talk to
+              someone; this guide is information, not treatment.
             </p>
           </div>
 
-          <h2 className="text-3xl font-bold text-white mt-12 mb-6">What Is Responsible Gaming?</h2>
-          
+          <h2 className="text-3xl font-bold text-white mt-12 mb-6">What responsible gaming means in practice</h2>
+
           <p className="text-gray-300 mb-4">
-            Responsible gaming means playing in a way that:
+            It is not a slogan. It is a short list of conditions that have to stay true every time
+            you play:
           </p>
           <ul className="list-disc pl-6 text-gray-300 mb-6 space-y-2">
-            <li>Doesn't harm your finances</li>
-            <li>Doesn't interfere with your daily life, work, or relationships</li>
-            <li>Remains fun and entertaining, not compulsive</li>
-            <li>Doesn't cause stress, anxiety, or depression</li>
-            <li>Is sustainable long-term</li>
+            <li>The money came from an entertainment budget you set in advance, not from bills, rent, savings or borrowing</li>
+            <li>You decided when the session would end before it started, and it ended then</li>
+            <li>You could walk away from a loss without depositing again that day</li>
+            <li>Nobody in your household would be shocked by the amount you spent</li>
+            <li>You are not playing to fix a mood or a financial problem</li>
           </ul>
 
-          <h2 className="text-3xl font-bold text-white mt-12 mb-6">1. Set Financial Limits Before You Start</h2>
-          
-          <h3 className="text-2xl font-semibold text-white mt-8 mb-4">Daily Deposit Limit</h3>
+          <h2 className="text-3xl font-bold text-white mt-12 mb-6">1. Set money limits before you open the app</h2>
+
+          <h3 className="text-2xl font-semibold text-white mt-8 mb-4">Deposit limit</h3>
           <p className="text-gray-300 mb-4">
-            <strong>Before playing, decide:</strong> "I will not deposit more than ₨X today." Write it down. Stick to it.
+            Pick a weekly figure you would be comfortable spending on a meal out or a cinema trip,
+            and treat it as gone the moment it leaves your wallet. The app&apos;s Rs. 100 minimum
+            deposit means you never need to load more than that to play; the only reason to deposit
+            more is wanting to bet more, and that is the decision to watch.
           </p>
           <ul className="list-disc pl-6 text-gray-300 mb-6 space-y-2">
-            <li>Recommended: Maximum 5-10% of your monthly income</li>
-            <li>Example: If you earn ₨50,000/month, max daily deposit: ₨2,500-5,000</li>
-            <li>Never exceed this limit, no matter what</li>
-            <li>If you hit the limit, stop playing for the day</li>
+            <li>Write the number down where you will see it, or tell someone</li>
+            <li>Deposit it once; do not top up mid-session</li>
+            <li>When it is gone, the week&apos;s gaming is over</li>
           </ul>
 
-          <h3 className="text-2xl font-semibold text-white mt-8 mb-4">Daily Loss Limit</h3>
+          <h3 className="text-2xl font-semibold text-white mt-8 mb-4">Loss limit</h3>
           <p className="text-gray-300 mb-4">
-            Set a maximum amount you're willing to lose in one day:
+            A deposit limit stops new money going in. A loss limit stops you playing through a
+            whole balance in one sitting. Set it lower than your deposit, for example half, and
+            stop when you hit it even if the balance is not empty.
           </p>
-          <ul className="list-disc pl-6 text-gray-300 mb-6 space-y-2">
-            <li>Recommended: 2-5% of monthly income</li>
-            <li>Example: If you earn ₨50,000/month, max daily loss: ₨1,000-2,500</li>
-            <li>When you hit this limit, <strong>STOP IMMEDIATELY</strong></li>
-            <li>Don't try to "win it back" - that's how people lose everything</li>
-          </ul>
 
-          <h3 className="text-2xl font-semibold text-white mt-8 mb-4">Win Goal</h3>
+          <h3 className="text-2xl font-semibold text-white mt-8 mb-4">Withdraw point</h3>
           <p className="text-gray-300 mb-4">
-            Set a target for when you'll stop playing after winning:
+            Decide in advance at what balance you will cash out. The minimum withdrawal is Rs. 600
+            to EasyPaisa or JazzCash and payouts usually take 10 to 30 minutes, so there is no
+            reason to leave winnings sitting in the app where they are easy to bet again. Note that
+            bonus credit may carry turnover terms before it can be withdrawn; check the in-app
+            bonus terms so you are not surprised. The steps are in the{' '}
+            <Link href="/royal-x-casino-withdraw-guide" className="text-[#FFA500] hover:underline font-semibold">Royal X Casino withdrawal guide</Link>.
           </p>
-          <ul className="list-disc pl-6 text-gray-300 mb-6 space-y-2">
-            <li>Example: "If I win ₨2,000 today, I'll withdraw ₨1,000 and stop"</li>
-            <li>This prevents giving back all your winnings</li>
-            <li>Lock in profits by withdrawing regularly</li>
-          </ul>
 
           <div className="bg-green-900/30 border border-green-600 rounded-lg p-6 my-8">
-            <p className="text-white font-semibold mb-2">💡 Limit Setting Example</p>
-            <p className="text-gray-300 mb-2">
-              Monthly income: ₨50,000
-            </p>
+            <p className="text-white font-semibold mb-2">Worked example</p>
             <ul className="list-disc pl-6 text-gray-300 space-y-1">
-              <li>Daily deposit limit: ₨2,500 (5% of monthly)</li>
-              <li>Daily loss limit: ₨1,500 (3% of monthly)</li>
-              <li>Win goal: ₨2,000 (withdraw 50% when reached)</li>
-              <li>Monthly gaming budget: ₨7,500 (15% of monthly income)</li>
+              <li>Weekly deposit limit: Rs. 1,000, loaded once on Friday</li>
+              <li>Loss limit per session: Rs. 500</li>
+              <li>Withdraw point: any balance above Rs. 1,600 is cashed out immediately</li>
+              <li>Session limit: 45 minutes, phone timer on</li>
             </ul>
           </div>
 
-          <h2 className="text-3xl font-bold text-white mt-12 mb-6">2. Set Time Limits</h2>
-          
-          <h3 className="text-2xl font-semibold text-white mt-8 mb-4">Daily Time Limit</h3>
+          <h2 className="text-3xl font-bold text-white mt-12 mb-6">2. Set time limits and take real breaks</h2>
+
           <ul className="list-disc pl-6 text-gray-300 mb-6 space-y-2">
-            <li><strong>Maximum 2-3 hours per day</strong> of gameplay</li>
-            <li>Set a timer on your phone</li>
-            <li>When timer goes off, stop playing</li>
-            <li>Don't play during work hours or family time</li>
-            <li>Never play late at night (after 11 PM)</li>
+            <li>Set a phone timer before the first bet and stop when it rings, win or lose</li>
+            <li>Keep sessions under an hour; decision quality drops after that</li>
+            <li>Do not play at work, during family time or after midnight</li>
+            <li>Between sessions, leave at least a day; back-to-back evenings are how a habit forms</li>
+            <li>Never play tired, angry, upset or after drinking</li>
           </ul>
 
-          <h3 className="text-2xl font-semibold text-white mt-8 mb-4">Session Breaks</h3>
-          <ul className="list-disc pl-6 text-gray-300 mb-6 space-y-2">
-            <li>Take a 15-30 minute break every hour</li>
-            <li>Use breaks to: Walk, eat, call someone, do chores</li>
-            <li>Never play for more than 1 hour straight</li>
-            <li>Breaks help you make better decisions</li>
-          </ul>
+          <h2 className="text-3xl font-bold text-white mt-12 mb-6">3. Never play with money you cannot lose</h2>
 
-          <h2 className="text-3xl font-bold text-white mt-12 mb-6">3. Never Play with Money You Can't Afford to Lose</h2>
-          
           <p className="text-gray-300 mb-4">
-            <strong>This is the golden rule.</strong> Only play with money that:
+            This is the rule that protects everything else. The money you deposit should already
+            be set aside for entertainment and should disappear from your life without
+            consequence if every bet loses.
           </p>
-          <ul className="list-disc pl-6 text-gray-300 mb-6 space-y-2">
-            <li>You've already set aside for entertainment</li>
-            <li>Won't affect your bills, rent, or essential expenses</li>
-            <li>You can lose completely without stress</li>
-            <li>Is separate from your savings or emergency fund</li>
-          </ul>
 
           <div className="bg-red-900/30 border border-red-600 rounded-lg p-6 my-8">
-            <p className="text-white font-semibold mb-2">🚫 NEVER Use These Funds</p>
+            <p className="text-white font-semibold mb-2">Never use</p>
             <ul className="list-disc pl-6 text-gray-300 space-y-2">
-              <li>Rent or house payment money</li>
-              <li>Bill payment money (electricity, water, etc.)</li>
+              <li>Rent, utility bills or school fees</li>
+              <li>Grocery or household money</li>
               <li>Emergency savings</li>
-              <li>Money borrowed from friends/family</li>
-              <li>Credit card cash advances</li>
-              <li>Loan money</li>
-              <li>Money needed for groceries or essentials</li>
-              <li>Children's education funds</li>
+              <li>Money borrowed from family or friends</li>
+              <li>Loan-app advances, credit card cash or committee money</li>
+              <li>Money you were asked to hold for someone else</li>
             </ul>
           </div>
 
-          <h2 className="text-3xl font-bold text-white mt-12 mb-6">4. Recognize Warning Signs of Problem Gaming</h2>
-          
+          <h2 className="text-3xl font-bold text-white mt-12 mb-6">4. Warning signs of problem play</h2>
+
           <p className="text-gray-300 mb-4">
-            Early recognition is crucial. If you notice these signs, it's time to take action:
+            Problems rarely arrive all at once. They show up as small changes you can catch early
+            if you know what to look for.
           </p>
 
-          <h3 className="text-2xl font-semibold text-white mt-8 mb-4">Financial Warning Signs</h3>
+          <h3 className="text-2xl font-semibold text-white mt-8 mb-4">Money signs</h3>
           <ul className="list-disc pl-6 text-gray-300 mb-6 space-y-2">
-            <li>Spending more than you can afford</li>
-            <li>Borrowing money to play</li>
-            <li>Hiding gaming expenses from family</li>
-            <li>Using credit cards or loans to play</li>
-            <li>Unable to pay bills due to gaming</li>
-            <li>Lying about how much you've spent</li>
-            <li>Chasing losses (trying to win back money)</li>
+            <li>Depositing again within minutes of a loss</li>
+            <li>Spending more than the limit you set, then moving the limit</li>
+            <li>Borrowing, selling things or using a loan app to fund play</li>
+            <li>Bills paid late because of deposits</li>
+            <li>Hiding or understating how much you have spent</li>
           </ul>
 
-          <h3 className="text-2xl font-semibold text-white mt-8 mb-4">Behavioral Warning Signs</h3>
+          <h3 className="text-2xl font-semibold text-white mt-8 mb-4">Behaviour signs</h3>
           <ul className="list-disc pl-6 text-gray-300 mb-6 space-y-2">
-            <li>Playing for longer than intended</li>
-            <li>Neglecting work, family, or responsibilities</li>
-            <li>Feeling restless or irritable when not playing</li>
-            <li>Playing to escape problems or feelings</li>
-            <li>Lying to family/friends about gaming</li>
-            <li>Unable to stop or reduce playing</li>
-            <li>Thinking about gaming constantly</li>
-            <li>Playing when you should be sleeping</li>
+            <li>Sessions that run far past the planned stop</li>
+            <li>Opening the app to escape stress, boredom or an argument</li>
+            <li>Thinking about the next session during work or family time</li>
+            <li>Irritability when you cannot play</li>
+            <li>Losing interest in things you used to enjoy</li>
           </ul>
 
-          <h3 className="text-2xl font-semibold text-white mt-8 mb-4">Emotional Warning Signs</h3>
+          <h3 className="text-2xl font-semibold text-white mt-8 mb-4">Emotional signs</h3>
           <ul className="list-disc pl-6 text-gray-300 mb-6 space-y-2">
-            <li>Feeling guilty, anxious, or depressed about gaming</li>
-            <li>Mood swings related to wins/losses</li>
-            <li>Feeling the need to play to feel normal</li>
-            <li>Loss of interest in other activities</li>
-            <li>Feeling hopeless about finances</li>
-            <li>Suicidal thoughts (seek immediate help if this occurs)</li>
+            <li>Guilt or anxiety after playing</li>
+            <li>Mood swinging with wins and losses</li>
+            <li>Feeling hopeless about money</li>
+            <li>Thoughts of self-harm, which need immediate help from a doctor or someone you trust</li>
           </ul>
 
-          <div className="bg-red-900/30 border border-red-600 rounded-lg p-6 my-8">
-            <p className="text-white font-semibold mb-2">⚠️ If You Recognize These Signs</p>
-            <p className="text-gray-300 mb-2">
-              <strong>Take immediate action:</strong>
-            </p>
-            <ol className="list-decimal pl-6 text-gray-300 space-y-1">
-              <li>Stop playing immediately</li>
-              <li>Contact support to self-exclude or set permanent limits</li>
-              <li>Seek professional help (see resources below)</li>
-              <li>Talk to someone you trust</li>
-              <li>Consider deleting the app temporarily</li>
-            </ol>
-          </div>
+          <h2 className="text-3xl font-bold text-white mt-12 mb-6">What to do after a losing streak (and why chasing losses fails)</h2>
 
-          <h2 className="text-3xl font-bold text-white mt-12 mb-6">5. Strategies to Prevent Addiction</h2>
-          
-          <h3 className="text-2xl font-semibold text-white mt-8 mb-4">Pre-Play Checklist</h3>
           <p className="text-gray-300 mb-4">
-            Before you start playing, ask yourself:
+            A losing streak feels like it owes you a win. It does not. Each round of Teen Patti,
+            Andar Bahar or a slot spin is independent, and the house edge is the same on the
+            twentieth bet as on the first. Betting bigger to recover does not change the odds; it
+            only raises the amount the same odds act on. That is why chasing losses is the most
+            common route from a bad night to real debt, and why no guide, strategy or
+            &quot;recovery&quot; trick can promise to get your money back.
           </p>
-          <ul className="list-disc pl-6 text-gray-300 mb-6 space-y-2">
-            <li>Am I playing for fun, or to solve financial problems? (If latter, don't play)</li>
-            <li>Am I feeling stressed, angry, or emotional? (If yes, don't play)</li>
-            <li>Have I set my limits for today? (If no, set them first)</li>
-            <li>Do I have time for this? (Don't play if you're busy)</li>
-            <li>Can I afford to lose this money? (If no, don't play)</li>
-          </ul>
 
-          <h3 className="text-2xl font-semibold text-white mt-8 mb-4">During Play Rules</h3>
-          <ul className="list-disc pl-6 text-gray-300 mb-6 space-y-2">
-            <li>Set a timer - stop when it goes off</li>
-            <li>Take breaks every hour</li>
-            <li>Don't play when tired or drunk</li>
-            <li>Stop after 3 consecutive losses</li>
-            <li>Don't increase bets after losses (chasing)</li>
-            <li>Don't play to "win back" losses</li>
-          </ul>
-
-          <h3 className="text-2xl font-semibold text-white mt-8 mb-4">Post-Play Review</h3>
           <p className="text-gray-300 mb-4">
-            After each session, ask yourself:
+            What actually works is a sequence of boring, practical steps:
           </p>
-          <ul className="list-disc pl-6 text-gray-300 mb-6 space-y-2">
-            <li>Did I stick to my limits? (If no, take a break tomorrow)</li>
-            <li>Did I enjoy it, or was it stressful? (If stressful, reduce play)</li>
-            <li>Did it affect my day negatively? (If yes, take a break)</li>
-            <li>Am I thinking about playing constantly? (If yes, warning sign)</li>
-          </ul>
 
-          <h2 className="text-3xl font-bold text-white mt-12 mb-6">6. Self-Exclusion and Limit Tools</h2>
-          
-          <h3 className="text-2xl font-semibold text-white mt-8 mb-4">Setting Permanent Limits</h3>
-          <p className="text-gray-300 mb-4">
-            Royal X Casino allows you to set permanent limits:
-          </p>
-          <ul className="list-disc pl-6 text-gray-300 mb-6 space-y-2">
-            <li><strong>Deposit limits:</strong> Maximum you can deposit per day/week/month</li>
-            <li><strong>Loss limits:</strong> Maximum you can lose per day/week/month</li>
-            <li><strong>Time limits:</strong> Maximum play time per day</li>
-            <li><strong>Self-exclusion:</strong> Temporarily or permanently block your account</li>
-          </ul>
-
-          <h3 className="text-2xl font-semibold text-white mt-8 mb-4">How to Set Limits</h3>
-          <ol className="list-decimal pl-6 text-gray-300 mb-6 space-y-2">
-            <li>Go to "My Account" → "Responsible Gaming" or "Settings"</li>
-            <li>Set your limits (be honest with yourself)</li>
-            <li>Confirm the limits</li>
-            <li>Limits cannot be changed for 24-48 hours (prevents impulsive changes)</li>
+          <ol className="list-decimal pl-6 text-gray-300 mb-6 space-y-3">
+            <li>
+              <strong>Stop now.</strong> Close the app before the next round starts. Do not finish &quot;one more
+              hand&quot;.
+            </li>
+            <li>
+              <strong>Set a cooling-off period.</strong> At least 24 hours with no deposits and no opening the app.
+              A week is better after a large loss. Uninstall the app if you need the friction; you can reinstall
+              later from the official link.
+            </li>
+            <li>
+              <strong>Write the number down.</strong> Total deposited minus total withdrawn for the week. Looking at
+              the real figure breaks the feeling that you are &quot;nearly back to even&quot;.
+            </li>
+            <li>
+              <strong>Lower your deposit limit.</strong> Next week&apos;s limit should be smaller than the one you just
+              broke, not larger to make up for it.
+            </li>
+            <li>
+              <strong>Talk to someone.</strong> A friend, spouse, sibling or doctor. Saying the amount out loud
+              removes the secrecy that keeps the cycle going.
+            </li>
+            <li>
+              <strong>Never borrow to play.</strong> No loan apps, no friends, no committee advance. Borrowed money
+              turns a loss you can absorb into one you cannot.
+            </li>
+            <li>
+              <strong>Decide whether to continue at all.</strong> If this is the second or third streak that got
+              out of hand, the honest answer may be to stop permanently.
+            </li>
           </ol>
 
-          <h3 className="text-2xl font-semibold text-white mt-8 mb-4">Self-Exclusion</h3>
+          <h2 className="text-3xl font-bold text-white mt-12 mb-6">5. Limits and account controls you can actually use</h2>
+
           <p className="text-gray-300 mb-4">
-            If you need a break, you can self-exclude:
-          </p>
-          <ul className="list-disc pl-6 text-gray-300 mb-6 space-y-2">
-            <li><strong>24-hour exclusion:</strong> Cool-off period</li>
-            <li><strong>7-day exclusion:</strong> Week-long break</li>
-            <li><strong>30-day exclusion:</strong> Month-long break</li>
-            <li><strong>Permanent exclusion:</strong> Permanent account closure</li>
-          </ul>
-
-          <h2 className="text-3xl font-bold text-white mt-12 mb-6">7. Healthy Gaming Habits</h2>
-          
-          <h3 className="text-2xl font-semibold text-white mt-8 mb-4">Treat It as Entertainment</h3>
-          <ul className="list-disc pl-6 text-gray-300 mb-6 space-y-2">
-            <li>View Royal X Casino like going to a movie or restaurant - entertainment expense</li>
-            <li>Don't expect to make money - any winnings are a bonus</li>
-            <li>Set entertainment budget (like you would for movies)</li>
-            <li>Enjoy the games, not just the money</li>
-          </ul>
-
-          <h3 className="text-2xl font-semibold text-white mt-8 mb-4">Balance with Other Activities</h3>
-          <ul className="list-disc pl-6 text-gray-300 mb-6 space-y-2">
-            <li>Don't let gaming replace other hobbies</li>
-            <li>Spend time with family and friends</li>
-            <li>Exercise regularly</li>
-            <li>Pursue other interests</li>
-            <li>Maintain work-life balance</li>
-          </ul>
-
-          <h3 className="text-2xl font-semibold text-white mt-8 mb-4">Track Your Gaming</h3>
-          <ul className="list-disc pl-6 text-gray-300 mb-6 space-y-2">
-            <li>Keep a simple log: Date, time played, amount deposited, amount won/lost</li>
-            <li>Review weekly to see patterns</li>
-            <li>Identify if you're spending too much time or money</li>
-            <li>Adjust limits based on data, not emotions</li>
-          </ul>
-
-          <h2 className="text-3xl font-bold text-white mt-12 mb-6">8. Getting Help</h2>
-          
-          <h3 className="text-2xl font-semibold text-white mt-8 mb-4">If You Need Help</h3>
-          <p className="text-gray-300 mb-4">
-            <strong>There's no shame in seeking help.</strong> Gambling addiction is a real condition that can be treated. Resources available:
+            We cannot verify a formal deposit-limit or self-exclusion menu in the app, so plan as
+            if it does not exist. The controls below are on your side of the screen and do not
+            depend on the operator.
           </p>
 
-          <h3 className="text-2xl font-semibold text-white mt-8 mb-4">Professional Help</h3>
-          <ul className="list-disc pl-6 text-gray-300 mb-6 space-y-2">
-            <li><strong>Psychologists/Counselors:</strong> Specialized in addiction treatment</li>
-            <li><strong>Support Groups:</strong> Gamblers Anonymous (if available in your area)</li>
-            <li><strong>Helplines:</strong> National helplines for gambling addiction</li>
-            <li><strong>Online Therapy:</strong> Many online platforms offer counseling</li>
+          <ul className="list-disc pl-6 text-gray-300 mb-6 space-y-3">
+            <li><strong>A separate wallet.</strong> Keep a dedicated EasyPaisa or JazzCash account that holds only the week&apos;s gaming money. When it is empty, you cannot deposit without a deliberate transfer.</li>
+            <li><strong>Phone-level limits.</strong> Android&apos;s Digital Wellbeing app timer can cap daily use of the app and lock it after the limit.</li>
+            <li><strong>Remove the shortcut.</strong> Deleting the icon from your home screen adds a few seconds of friction before each session.</li>
+            <li><strong>Ask support to lock the account.</strong> The 24/7 in-app live chat can lock or close an account on request. Do this before uninstalling if you want a hard stop.</li>
+            <li><strong>Practise without money.</strong> Many games have free-trial modes with practice credits. If you want to play cards, that mode costs nothing; see the demo section of{' '}
+              <Link href="/blog/how-to-use-royal-x-casino-app-pakistan-guide-2026" className="text-[#FFA500] hover:underline font-semibold">How to Use the Royal X Casino App in Pakistan (2026 Guide)</Link>.</li>
           </ul>
 
-          <h3 className="text-2xl font-semibold text-white mt-8 mb-4">Talk to Someone</h3>
+          <h2 className="text-3xl font-bold text-white mt-12 mb-6">6. Keep gaming in proportion</h2>
+
           <ul className="list-disc pl-6 text-gray-300 mb-6 space-y-2">
-            <li>Talk to family or close friends</li>
-            <li>Don't keep it secret - secrets make it worse</li>
-            <li>Ask for support in setting limits</li>
-            <li>Have someone monitor your gaming if needed</li>
+            <li>Treat deposits like a cinema ticket: paid for entertainment, not expected back</li>
+            <li>Do not read bonuses, referral payments or VIP rewards as income; they are small and conditional</li>
+            <li>Keep a two-line log per session: amount in, amount out. Review it weekly</li>
+            <li>Make sure the app is not displacing sleep, exercise, friends or family time</li>
+            <li>If the honest answer to &quot;was that fun?&quot; is no, that is your signal</li>
           </ul>
 
-          <h2 className="text-3xl font-bold text-white mt-12 mb-6">9. For Family and Friends</h2>
-          
-          <h3 className="text-2xl font-semibold text-white mt-8 mb-4">If Someone You Know Has a Problem</h3>
+          <h2 className="text-3xl font-bold text-white mt-12 mb-6">7. Getting help</h2>
+
+          <p className="text-gray-300 mb-4">
+            Gambling problems are common and treatable. The barrier is usually shame, not lack of
+            options.
+          </p>
           <ul className="list-disc pl-6 text-gray-300 mb-6 space-y-2">
-            <li><strong>Approach with care:</strong> Don't accuse or shame</li>
-            <li><strong>Express concern:</strong> "I'm worried about your gaming"</li>
-            <li><strong>Offer support:</strong> Help them set limits or seek help</li>
-            <li><strong>Don't enable:</strong> Don't lend money or cover debts</li>
-            <li><strong>Encourage treatment:</strong> Suggest professional help</li>
-            <li><strong>Take care of yourself:</strong> Don't neglect your own needs</li>
+            <li><strong>Your doctor or a psychologist</strong> can refer you to addiction support; many clinics in Pakistan&apos;s larger cities handle behavioural addictions</li>
+            <li><strong>A trusted person</strong> who agrees to hold your gaming wallet or check in weekly</li>
+            <li><strong>Online counselling</strong> if you prefer anonymity</li>
+            <li><strong>Religious or community leaders</strong>, who are often the first people families in Pakistan turn to</li>
           </ul>
 
-          <h2 className="text-3xl font-bold text-white mt-12 mb-6">10. Creating a Healthy Gaming Plan</h2>
-          
+          <h2 className="text-3xl font-bold text-white mt-12 mb-6">8. If you are worried about someone else</h2>
+
+          <ul className="list-disc pl-6 text-gray-300 mb-6 space-y-2">
+            <li>Raise it privately and calmly: &quot;I have noticed, and I am worried&quot;</li>
+            <li>Do not lend money or pay off gambling debts; it removes the consequence that prompts change</li>
+            <li>Offer to help set limits or hold the wallet, not to police every session</li>
+            <li>Suggest professional help without making it a condition of your support</li>
+            <li>Look after yourself; you cannot fix this for them</li>
+          </ul>
+
+          <h2 className="text-3xl font-bold text-white mt-12 mb-6">Your responsible gaming checklist</h2>
+
           <div className="bg-purple-800/30 border border-purple-600 rounded-lg p-8 my-8">
-            <h3 className="text-xl font-bold text-white mb-4">✅ Your Responsible Gaming Checklist</h3>
             <ul className="list-disc pl-6 text-gray-300 space-y-2">
-              <li>✅ Set daily deposit limit (5-10% of monthly income max)</li>
-              <li>✅ Set daily loss limit (2-5% of monthly income max)</li>
-              <li>✅ Set daily time limit (2-3 hours max)</li>
-              <li>✅ Set win goal (withdraw 50% when reached)</li>
-              <li>✅ Only play with entertainment money (not bill money)</li>
-              <li>✅ Take breaks every hour</li>
-              <li>✅ Never chase losses</li>
-              <li>✅ Never play when emotional, tired, or drunk</li>
-              <li>✅ Track your gaming (time and money)</li>
-              <li>✅ Balance gaming with other activities</li>
-              <li>✅ Review your gaming weekly</li>
-              <li>✅ Seek help if you notice warning signs</li>
+              <li>Weekly deposit limit decided and written down</li>
+              <li>Loss limit per session, lower than the deposit</li>
+              <li>Withdraw point decided; cash out at Rs. 600 or above when you reach it</li>
+              <li>Session timer set before the first bet</li>
+              <li>Only entertainment money, never bills or borrowed funds</li>
+              <li>No deposits for 24 hours after a losing streak</li>
+              <li>Someone you trust knows what you spend</li>
+              <li>Two-line log reviewed weekly</li>
             </ul>
           </div>
 
-          <h2 className="text-3xl font-bold text-white mt-12 mb-6">Conclusion</h2>
-          
           <p className="text-gray-300 mb-4">
-            Royal X Casino can be enjoyable entertainment when played responsibly. The key is to:
-          </p>
-          <ul className="list-disc pl-6 text-gray-300 mb-6 space-y-2">
-            <li>Set and stick to limits</li>
-            <li>Only play with money you can afford to lose</li>
-            <li>Recognize warning signs early</li>
-            <li>Seek help if needed</li>
-            <li>Maintain balance in your life</li>
-          </ul>
-
-          <p className="text-gray-300 mb-4">
-            <strong>Remember:</strong> Your financial security, relationships, and mental health are more important than any game. If Royal X Casino is causing problems in your life, it's time to take a break or stop completely.
+            For context on the app&apos;s legal position and the risks that are outside your control,
+            read{' '}
+            <Link href="/blog/is-royal-x-casino-safe-legal-pakistan" className="text-[#FFA500] hover:underline font-semibold">
+              Is Royal X Casino Safe and Legal in Pakistan? 2026 Guide
+            </Link>. For bankroll habits that reduce losses without promising wins, see{' '}
+            <Link href="/blog/royal-x-casino-tips-10-smart-tricks" className="text-[#FFA500] hover:underline font-semibold">
+              Royal X Casino Tips: 10 Smart Tricks to Play Safe and Win
+            </Link>.
           </p>
 
-          <p className="text-gray-300 mb-4">
-            Play for fun, play within your means, and play responsibly. That's the only way to enjoy Royal X Casino long-term.
-          </p>
+          <h2 className="text-3xl font-bold text-white mt-12 mb-6">Frequently asked questions</h2>
+          <div className="space-y-6 mb-8">
+            {faqs.map((f) => (
+              <div key={f.q}>
+                <h3 className="text-xl font-semibold text-white mb-2">{f.q}</h3>
+                <p className="text-gray-300">{f.a}</p>
+              </div>
+            ))}
+          </div>
 
           <div className="bg-orange-600/20 border border-orange-500 rounded-lg p-6 my-8">
-            <p className="text-white font-semibold mb-2">💚 You're Not Alone</p>
+            <p className="text-white font-semibold mb-2">You are not alone</p>
             <p className="text-gray-300">
-              If you're struggling with gaming addiction, remember that help is available. Many people have overcome gambling problems with the right support. Don't hesitate to reach out.
+              Many people have stopped or scaled back gambling with support. If the app is causing
+              harm, stopping is not failure; it is the point of this guide.
             </p>
           </div>
         </div>
 
         <aside className="mt-16 pt-8 border-t border-gray-700">
-          <h3 className="text-2xl font-bold text-white mb-6">Related Safety Guides</h3>
+          <h2 className="text-2xl font-bold text-white mb-6">Related safety guides</h2>
           <div className="grid md:grid-cols-2 gap-6">
             <Link href="/blog/is-royal-x-casino-safe-legal-pakistan" className="block p-6 bg-purple-800/30 rounded-lg hover:bg-purple-800/50 transition-colors">
-              <h4 className="text-xl font-semibold text-white mb-2">Is Royal X Casino Safe and Legal?</h4>
-              <p className="text-gray-400">Complete safety and legal guide</p>
+              <h3 className="text-xl font-semibold text-white mb-2">Is Royal X Casino Safe and Legal in Pakistan? 2026 Guide</h3>
+              <p className="text-gray-400">The 1977 Act, the grey area and the risks you cannot control</p>
             </Link>
-            <Link href="/blog/royal-x-casino-tips-10-smart-tricks" className="block p-6 bg-purple-800/30 rounded-lg hover:bg-purple-800/50 transition-colors">
-              <h4 className="text-xl font-semibold text-white mb-2">10 Smart Tips</h4>
-              <p className="text-gray-400">Tips for safe and profitable play</p>
+            <Link href="/blog/royal-x-casino-app-review-2026" className="block p-6 bg-purple-800/30 rounded-lg hover:bg-purple-800/50 transition-colors">
+              <h3 className="text-xl font-semibold text-white mb-2">Royal X Casino App Review 2026: Pros, Cons and Payout Speed</h3>
+              <p className="text-gray-400">What the app does well and where it falls short</p>
             </Link>
           </div>
         </aside>

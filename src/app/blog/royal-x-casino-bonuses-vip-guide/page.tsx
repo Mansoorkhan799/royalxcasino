@@ -1,558 +1,362 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import BlogPostSchema from '@/components/BlogPostSchema';
-import { DOWNLOAD_URL } from '@/lib/config';
+import FaqSchema, { type FaqItem } from '@/components/FaqSchema';
+import { DOWNLOAD_URL, SITE_URL } from '@/lib/config';
+
+const SLUG = 'royal-x-casino-bonuses-vip-guide';
+const TITLE = 'Royal X Casino Bonuses: Welcome, Rebate and VIP Guide 2026';
+const DESCRIPTION =
+  'Every Royal X Casino bonus explained with exact amounts: Rs. 10 welcome credit, 20 percent first-deposit rebate, referral pay and VIP levels.';
+const URL = `${SITE_URL}/blog/${SLUG}`;
+const OG_IMAGE = `${SITE_URL}/royal-casino-daily-bonus.webp`;
 
 export const metadata: Metadata = {
-  title: 'Royal X Casino Bonuses Explained: Welcome Bonus, Recharge Rebate, and VIP Rewards Guide 2026',
-  description: 'Complete Royal X Casino bonuses guide 2026: Welcome bonus, recharge rebate, VIP levels, referral commission, daily tasks & step-by-step guide to maximize rewards in Pakistan!',
-  keywords: [
-    'Royal X Casino bonuses',
-    'Royal X Casino welcome bonus',
-    'Royal X Casino VIP guide',
-    'Royal X Casino recharge rebate',
-    'Royal X Casino referral bonus',
-    'Royal X Casino VIP levels',
-    'Royal X Casino rewards',
-    'how to get Royal X Casino bonus',
-    'Royal X Casino bonus explained',
-    'Royal X Casino VIP program'
-  ],
+  title: TITLE,
+  description: DESCRIPTION,
+  alternates: { canonical: URL },
   openGraph: {
-    title: 'Royal X Casino Bonuses Explained: Welcome Bonus, Recharge Rebate, and VIP Rewards Guide',
-    description: 'Complete guide to all Royal X Casino bonuses and VIP rewards. Learn how to maximize welcome bonus, recharge rebates, and VIP level benefits!',
+    title: TITLE,
+    description: DESCRIPTION,
     type: 'article',
-    url: 'https://royalexcasino.com.pk/blog/royal-x-casino-bonuses-vip-guide',
+    url: URL,
     siteName: 'Royal X Casino',
+    images: [
+      {
+        url: OG_IMAGE,
+        width: 1200,
+        height: 540,
+        alt: 'Royal X Casino daily bonus calendar showing login rewards',
+      },
+    ],
   },
-  alternates: { canonical: "https://royalexcasino.com.pk/blog/royal-x-casino-bonuses-vip-guide" },
   twitter: {
     card: 'summary_large_image',
-    title: 'Royal X Casino Bonuses Explained: Welcome Bonus, Recharge Rebate, and ',
-    description: 'Complete guide to all Royal X Casino bonuses and VIP rewards. Learn how to maximize welcome bonus, recharge rebates, and VIP level benefits!',
-    images: ['https://royalexcasino.com.pk/royal-x-casino.webp'],
+    title: TITLE,
+    description: DESCRIPTION,
+    images: [OG_IMAGE],
   },
 };
 
-export default function BlogCardRummyBonusesVIPGuide() {
+const FAQS: FaqItem[] = [
+  {
+    q: 'How much is the Royal X Casino welcome bonus?',
+    a: 'New accounts receive Rs. 10 of welcome credit after registration. It is a small trial amount, not a deposit match. The larger offer is the one-time 20 percent first-deposit rebate.',
+  },
+  {
+    q: 'How does the 20 percent first-deposit rebate work?',
+    a: 'Your first deposit earns a one-time 20 percent rebate. Deposit Rs. 1,000 and Rs. 200 is added, so you have Rs. 1,200 to play with. It applies to the first deposit only; later deposits do not get this rebate.',
+  },
+  {
+    q: 'Can I withdraw bonus money straight away?',
+    a: 'Bonus credit may carry turnover terms, so you may need to place some bets before the bonus portion can be withdrawn. Check the in-app bonus terms before you accept any offer.',
+  },
+  {
+    q: 'How much does the referral bonus pay?',
+    a: 'You receive Rs. 20 when a friend registers with your code, and further referral pay up to Rs. 1,000 as that friend\'s deposits reach Rs. 1,000. The exact schedule is shown on the in-app Refer and Earn screen.',
+  },
+  {
+    q: 'What does VIP level V1 give me?',
+    a: 'VIP levels start at V1 and rise with your betting volume. Each level-up pays a one-time bonus starting at Rs. 15, and VIP members receive a small monthly payment starting at Rs. 11 that rises with each level.',
+  },
+  {
+    q: 'Where do I enter a Royal X Casino redeem code?',
+    a: 'Open Promotions, then Redeem Code, and paste the code. Codes come from the official Telegram and WhatsApp channels and partner sites. Each code works once per account and amounts vary.',
+  },
+];
+
+const BONUS_TABLE = [
+  {
+    bonus: 'Welcome credit',
+    how: 'Register with a +92 number and verify the SMS OTP',
+    amount: 'Rs. 10',
+    notes: 'One per account; small trial balance',
+  },
+  {
+    bonus: 'First-deposit rebate',
+    how: 'Make your first deposit (min Rs. 100)',
+    amount: '20% of the deposit',
+    notes: 'One time only; Rs. 1,000 deposit = Rs. 200 extra',
+  },
+  {
+    bonus: 'Daily login reward',
+    how: 'Open the app and tap the daily bonus calendar',
+    amount: 'Varies by day',
+    notes: 'Resets if you miss a day',
+  },
+  {
+    bonus: 'Weekly promotions / cashback',
+    how: 'Check the Promotions tab each week',
+    amount: 'Varies',
+    notes: 'Terms differ per promotion',
+  },
+  {
+    bonus: 'Referral bonus',
+    how: 'Friend registers with your invite code',
+    amount: 'Rs. 20, then up to Rs. 1,000',
+    notes: 'Full amount as their deposits reach Rs. 1,000',
+  },
+  {
+    bonus: 'VIP level-up bonus',
+    how: 'Reach V1 and higher through betting volume',
+    amount: 'From Rs. 15 per level',
+    notes: 'One-time payment at each new level',
+  },
+  {
+    bonus: 'Monthly VIP payment',
+    how: 'Hold a VIP level at month end',
+    amount: 'From Rs. 11, rising per level',
+    notes: 'Paid monthly while you keep the level',
+  },
+  {
+    bonus: 'Redeem / gift codes',
+    how: 'Promotions, then Redeem Code',
+    amount: 'Varies by code',
+    notes: 'Single use per account; from official channels',
+  },
+];
+
+export default function BlogRoyalXBonusesVIPGuide() {
   return (
     <div className="min-h-screen bg-[#060A20]">
       <BlogPostSchema
-        title="Royal X Casino Bonuses Explained: Welcome Bonus, Recharge Rebate, and VIP Rewards Guide 2026"
-        description="Complete Royal X Casino bonuses guide 2026: Welcome bonus, recharge rebate, VIP levels, referral commission, daily tasks & step-by-step guide to maximize rewards in Pakistan!"
-        slug="royal-x-casino-bonuses-vip-guide"
+        title={TITLE}
+        description={DESCRIPTION}
+        slug={SLUG}
         datePublished="2026-01-11"
+        dateModified="2026-10-08"
+        image={OG_IMAGE}
       />
+      <FaqSchema faqs={FAQS} />
       <article className="container mx-auto px-4 py-12 max-w-4xl">
-        <nav className="mb-8 text-sm text-gray-400">
+        <nav className="mb-8 text-sm text-gray-400" aria-label="Breadcrumb">
           <Link href="/" className="hover:text-[#FFA500]">Home</Link>
           <span className="mx-2">/</span>
           <Link href="/blog" className="hover:text-[#FFA500]">Blog</Link>
           <span className="mx-2">/</span>
-          <span className="text-white">Royal X Casino Bonuses & VIP Guide</span>
+          <span className="text-white">Bonuses and VIP guide</span>
         </nav>
 
         <header className="mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            Royal X Casino Bonuses Explained: Welcome Bonus, Recharge Rebate, and VIP Rewards Guide
-          </h1>
-          <div className="flex items-center gap-4 text-gray-400 text-sm">
-            <time dateTime="2026-01-11">January 11, 2026</time>
-            <span>•</span>
-            <span>16 min read</span>
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">{TITLE}</h1>
+          <div className="flex flex-wrap items-center gap-4 text-gray-400 text-sm">
+            <time dateTime="2026-01-11">Published January 11, 2026</time>
+            <span aria-hidden="true">|</span>
+            <time dateTime="2026-10-08">Updated October 8, 2026</time>
+            <span aria-hidden="true">|</span>
+            <span>11 min read</span>
           </div>
         </header>
 
         <div className="prose prose-invert prose-lg max-w-none">
           <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-            <Link href="/" className="text-[#FFA500] hover:underline font-semibold">Royal X Casino</Link> offers one of the most generous bonus systems in Pakistan&apos;s online gaming market – with <strong>zero wagering requirements</strong>, meaning you can withdraw bonus winnings immediately. From welcome bonuses to VIP rewards, this complete guide explains every bonus type, how to claim them, and strategies to maximize your rewards.
+            The <Link href="/" className="text-[#FFA500] hover:underline font-semibold">Royal X Casino APK</Link> gives
+            new players a small welcome credit, a one-time first-deposit rebate, daily login rewards and a VIP ladder.
+            None of these amounts are large, and some bonus credit may carry turnover terms before you can withdraw it.
+            This guide lists every bonus with the real figures so you know what to expect before you deposit.
           </p>
 
-          <h2 className="text-3xl font-bold text-white mt-12 mb-6">Complete Bonus Overview</h2>
+          <h2 className="text-3xl font-bold text-white mt-12 mb-6">Royal X Casino bonus summary</h2>
           <div className="overflow-x-auto mb-8">
-            <table className="w-full border-collapse border border-gray-700">
+            <table className="w-full border-collapse border border-gray-700 text-gray-300">
               <thead>
                 <tr className="bg-purple-900">
-                  <th className="border border-gray-700 p-4 text-left text-white">Bonus Type</th>
+                  <th className="border border-gray-700 p-4 text-left text-white">Bonus</th>
+                  <th className="border border-gray-700 p-4 text-left text-white">How to get it</th>
                   <th className="border border-gray-700 p-4 text-left text-white">Amount</th>
-                  <th className="border border-gray-700 p-4 text-left text-white">How to Get</th>
+                  <th className="border border-gray-700 p-4 text-left text-white">Notes</th>
                 </tr>
               </thead>
               <tbody>
-                <tr>
-                  <td className="border border-gray-700 p-4">Welcome Bonus</td>
-                  <td className="border border-gray-700 p-4">Up to ₨500</td>
-                  <td className="border border-gray-700 p-4">Automatic after first deposit</td>
-                </tr>
-                <tr>
-                  <td className="border border-gray-700 p-4">First Deposit Bonus</td>
-                  <td className="border border-gray-700 p-4">100% (max ₨5,000)</td>
-                  <td className="border border-gray-700 p-4">First recharge</td>
-                </tr>
-                <tr>
-                  <td className="border border-gray-700 p-4">Daily Recharge Rebate</td>
-                  <td className="border border-gray-700 p-4">5-15%</td>
-                  <td className="border border-gray-700 p-4">Based on VIP level</td>
-                </tr>
-                <tr>
-                  <td className="border border-gray-700 p-4">VIP Level-Up Bonus</td>
-                  <td className="border border-gray-700 p-4">₨100-10,000+</td>
-                  <td className="border border-gray-700 p-4">Reach new VIP level</td>
-                </tr>
-                <tr>
-                  <td className="border border-gray-700 p-4">Referral Commission</td>
-                  <td className="border border-gray-700 p-4">10-20%</td>
-                  <td className="border border-gray-700 p-4">Lifetime on referrals' deposits</td>
-                </tr>
-                <tr>
-                  <td className="border border-gray-700 p-4">Daily Tasks</td>
-                  <td className="border border-gray-700 p-4">₨50-500/day</td>
-                  <td className="border border-gray-700 p-4">Complete daily tasks</td>
-                </tr>
-                <tr>
-                  <td className="border border-gray-700 p-4">Weekly/Monthly Promotions</td>
-                  <td className="border border-gray-700 p-4">Varies</td>
-                  <td className="border border-gray-700 p-4">Check Promotions tab</td>
-                </tr>
+                {BONUS_TABLE.map((row) => (
+                  <tr key={row.bonus}>
+                    <td className="border border-gray-700 p-4 font-semibold text-white">{row.bonus}</td>
+                    <td className="border border-gray-700 p-4">{row.how}</td>
+                    <td className="border border-gray-700 p-4">{row.amount}</td>
+                    <td className="border border-gray-700 p-4">{row.notes}</td>
+                  </tr>
+                ))}
               </tbody>
             </table>
           </div>
 
-          <h2 className="text-3xl font-bold text-white mt-12 mb-6">1. Welcome Bonus - Your First Reward</h2>
-          
-          <h3 className="text-2xl font-semibold text-white mt-8 mb-4">What Is the Welcome Bonus?</h3>
+          <h2 className="text-3xl font-bold text-white mt-12 mb-6">Welcome credit: Rs. 10 on registration</h2>
           <p className="text-gray-300 mb-4">
-            The welcome bonus is a one-time bonus given to new players when they make their first deposit. It's Royal X Casino's way of saying "thank you" for joining.
+            Every new account gets Rs. 10 of credit once registration is complete. You need a Pakistani +92 mobile
+            number, the SMS OTP and a password; an invite code is optional. The whole process takes two to three
+            minutes and is covered step by step in our{' '}
+            <Link href="/how-to-register-royal-x-casino" className="text-[#FFA500] hover:underline font-semibold">
+              Royal X Casino registration guide
+            </Link>.
+          </p>
+          <p className="text-gray-300 mb-4">
+            Rs. 10 is enough to try a few low-stake rounds or a demo-style session in a slot. Treat it as a way to look
+            around the lobby, not as money you can cash out. One account per person and per number is allowed, so you
+            cannot repeat the welcome credit with a second registration.
           </p>
 
-          <h3 className="text-2xl font-semibold text-white mt-8 mb-4">Welcome Bonus Details</h3>
-          <ul className="list-disc pl-6 text-gray-300 mb-6 space-y-2">
-            <li><strong>Amount:</strong> Up to ₨500</li>
-            <li><strong>When:</strong> Automatically credited after first deposit</li>
-            <li><strong>Requirements:</strong> Make minimum deposit of ₨300</li>
-            <li><strong>Usage:</strong> Can be used to play any game</li>
-            <li><strong>Withdrawal:</strong> May have wagering requirements (check terms)</li>
-          </ul>
-
-          <h3 className="text-2xl font-semibold text-white mt-8 mb-4">How to Claim Welcome Bonus</h3>
-          <ol className="list-decimal pl-6 text-gray-300 mb-6 space-y-3">
-            <li>Register your Royal X Casino account (see our <Link href="/blog/royal-x-casino-create-account-and-login" className="text-[#FFA500] hover:underline font-semibold">account creation guide</Link>)</li>
-            <li>Make your first deposit (minimum ₨300) - learn about <Link href="/royal-x-casino-deposit-guide" className="text-[#FFA500] hover:underline font-semibold">depositing money</Link></li>
-            <li>Bonus is automatically added to your account</li>
-            <li>Check your balance - you should see the bonus amount</li>
-            <li>Start playing with your bonus + deposit!</li>
-          </ol>
-
-          <div className="bg-green-900/30 border border-green-600 rounded-lg p-6 my-8">
-            <p className="text-white font-semibold mb-2">💡 Pro Tip</p>
-            <p className="text-gray-300">
-              Combine welcome bonus with first deposit bonus! If you deposit ₨5,000, you get ₨500 welcome bonus + ₨5,000 first deposit bonus = ₨10,500 total to play with!
-            </p>
-          </div>
-
-          <h2 className="text-3xl font-bold text-white mt-12 mb-6">2. First Deposit Bonus - Double Your Money</h2>
-          
-          <h3 className="text-2xl font-semibold text-white mt-8 mb-4">First Deposit Bonus Explained</h3>
+          <h2 className="text-3xl font-bold text-white mt-12 mb-6">First-deposit bonus explained</h2>
           <p className="text-gray-300 mb-4">
-            The first deposit bonus is Royal X Casino's most generous offer - a <strong>100% match bonus</strong> on your first recharge, up to ₨5,000.
+            The main offer for new players is a 20 percent rebate on your first deposit. It is paid once, on the first
+            deposit only, and it is calculated on the amount you actually deposit.
           </p>
-
-          <h3 className="text-2xl font-semibold text-white mt-8 mb-4">How It Works</h3>
-          <ul className="list-disc pl-6 text-gray-300 mb-6 space-y-2">
-            <li><strong>Rate:</strong> 100% of your deposit amount</li>
-            <li><strong>Maximum:</strong> ₨5,000 bonus (so deposit ₨5,000+ to get full bonus)</li>
-            <li><strong>Minimum deposit:</strong> ₨300</li>
-            <li><strong>One-time only:</strong> Only applies to your very first deposit</li>
-            <li><strong>Automatic:</strong> Credited immediately after deposit</li>
-          </ul>
-
-          <h3 className="text-2xl font-semibold text-white mt-8 mb-4">First Deposit Bonus Examples</h3>
           <div className="bg-purple-800/30 border border-purple-600 rounded-lg p-6 my-8">
-            <p className="text-white font-semibold mb-4">💰 Bonus Calculation Examples</p>
+            <p className="text-white font-semibold mb-3">Worked example</p>
             <ul className="list-disc pl-6 text-gray-300 space-y-2">
-              <li><strong>Deposit ₨1,000:</strong> Get ₨1,000 bonus = ₨2,000 total</li>
-              <li><strong>Deposit ₨3,000:</strong> Get ₨3,000 bonus = ₨6,000 total</li>
-              <li><strong>Deposit ₨5,000:</strong> Get ₨5,000 bonus = ₨10,000 total</li>
-              <li><strong>Deposit ₨10,000:</strong> Get ₨5,000 bonus (capped) = ₨15,000 total</li>
+              <li>You deposit Rs. 1,000 through EasyPaisa.</li>
+              <li>The rebate is 20 percent of Rs. 1,000, which is Rs. 200.</li>
+              <li>Your balance shows Rs. 1,200: Rs. 1,000 of your own money plus Rs. 200 of bonus credit.</li>
+              <li>A later deposit of Rs. 1,000 earns no rebate, because the offer is one time only.</li>
             </ul>
           </div>
-
-          <h3 className="text-2xl font-semibold text-white mt-8 mb-4">How to Maximize First Deposit Bonus</h3>
-          <ul className="list-disc pl-6 text-gray-300 mb-6 space-y-2">
-            <li><strong>Deposit ₨5,000:</strong> Get maximum ₨5,000 bonus (100% return)</li>
-            <li><strong>Combine with welcome bonus:</strong> Get both bonuses together</li>
-            <li><strong>Use referral code:</strong> Get extra referral bonus if someone referred you</li>
-            <li><strong>Time it right:</strong> Check for special promotions that boost first deposit bonus</li>
-          </ul>
-
-          <h2 className="text-3xl font-bold text-white mt-12 mb-6">3. Daily Recharge Rebate - Ongoing Rewards</h2>
-          
-          <h3 className="text-2xl font-semibold text-white mt-8 mb-4">What Is Daily Recharge Rebate?</h3>
           <p className="text-gray-300 mb-4">
-            Every time you recharge (deposit money), you get a percentage back as rebate. The rebate rate depends on your VIP level - higher VIP = higher rebate!
+            The minimum deposit is Rs. 100 and the maximum is Rs. 50,000 per transaction, so the rebate ranges from
+            Rs. 20 to Rs. 10,000 depending on how much you put in. Deposit only what you planned to play with; a bigger
+            rebate is not a reason to deposit more than your budget. Payment steps are in the{' '}
+            <Link href="/royal-x-casino-deposit-guide" className="text-[#FFA500] hover:underline font-semibold">
+              Royal X Casino deposit guide
+            </Link>.
+          </p>
+          <p className="text-gray-300 mb-4">
+            <strong>Turnover terms:</strong> bonus credit may carry turnover terms, meaning you place a certain amount
+            of bets before the bonus part becomes withdrawable. The operator shows the current terms in the app when you
+            accept the offer. Read them before you deposit so the bonus does not lock up money you wanted to withdraw.
           </p>
 
-          <h3 className="text-2xl font-semibold text-white mt-8 mb-4">Rebate Rates by VIP Level</h3>
-          <div className="overflow-x-auto mb-8">
-            <table className="w-full border-collapse border border-gray-700">
-              <thead>
-                <tr className="bg-purple-900">
-                  <th className="border border-gray-700 p-4 text-left text-white">VIP Level</th>
-                  <th className="border border-gray-700 p-4 text-left text-white">Daily Rebate Rate</th>
-                  <th className="border border-gray-700 p-4 text-left text-white">Example (₨10,000 deposit)</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td className="border border-gray-700 p-4">VIP 1</td>
-                  <td className="border border-gray-700 p-4">5%</td>
-                  <td className="border border-gray-700 p-4">₨500</td>
-                </tr>
-                <tr>
-                  <td className="border border-gray-700 p-4">VIP 2-3</td>
-                  <td className="border border-gray-700 p-4">6-8%</td>
-                  <td className="border border-gray-700 p-4">₨600-800</td>
-                </tr>
-                <tr>
-                  <td className="border border-gray-700 p-4">VIP 4-6</td>
-                  <td className="border border-gray-700 p-4">9-11%</td>
-                  <td className="border border-gray-700 p-4">₨900-1,100</td>
-                </tr>
-                <tr>
-                  <td className="border border-gray-700 p-4">VIP 7-9</td>
-                  <td className="border border-gray-700 p-4">12-14%</td>
-                  <td className="border border-gray-700 p-4">₨1,200-1,400</td>
-                </tr>
-                <tr>
-                  <td className="border border-gray-700 p-4">VIP 10</td>
-                  <td className="border border-gray-700 p-4 text-green-400">15%</td>
-                  <td className="border border-gray-700 p-4 text-green-400">₨1,500</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <h3 className="text-2xl font-semibold text-white mt-8 mb-4">How Daily Rebate Works</h3>
-          <ol className="list-decimal pl-6 text-gray-300 mb-6 space-y-2">
-            <li>Make a deposit (recharge) to your account</li>
-            <li>Rebate is calculated based on your VIP level</li>
-            <li>Rebate is credited automatically (usually within 24 hours)</li>
-            <li>Check "My Account" → "Rebate History" to see all rebates</li>
-            <li>Rebate can be withdrawn or used to play</li>
-          </ol>
-
-          <div className="bg-green-900/30 border border-green-600 rounded-lg p-6 my-8">
-            <p className="text-white font-semibold mb-2">💎 Monthly Rebate Example</p>
-            <p className="text-gray-300 mb-2">
-              If you deposit ₨20,000/month at VIP 10 level (15% rebate):
-            </p>
-            <p className="text-gray-300">
-              <strong>Monthly rebate: ₨3,000</strong> (that's free money just for depositing!)
-            </p>
-          </div>
-
-          <h2 className="text-3xl font-bold text-white mt-12 mb-6">4. VIP System - The Ultimate Rewards Program</h2>
-          
-          <h3 className="text-2xl font-semibold text-white mt-8 mb-4">What Is the VIP System?</h3>
+          <h2 className="text-3xl font-bold text-white mt-12 mb-6">Daily login rewards</h2>
+          <Image
+            src="/royal-casino-daily-bonus.webp"
+            alt="Royal X Casino daily login bonus calendar with a reward for each day of the week"
+            width={1200}
+            height={540}
+            className="rounded-xl w-full h-auto my-6"
+          />
           <p className="text-gray-300 mb-4">
-            Royal X Casino's VIP system has <strong>10 levels</strong> that reward you for playing. As you play more and deposit more, you automatically level up and unlock better rewards.
+            Opening the app each day and tapping the daily bonus calendar gives a small credit. The amount changes by
+            day and the streak resets if you skip a day. It is not worth logging in only to collect it, but if you are
+            playing anyway, claim it before you start so it is not forgotten.
           </p>
 
-          <h3 className="text-2xl font-semibold text-white mt-8 mb-4">Complete VIP Level Breakdown</h3>
-          <div className="space-y-6 mb-8">
-            <div className="bg-purple-800/30 border border-purple-600 rounded-lg p-6">
-              <h4 className="text-xl font-semibold text-white mb-3">VIP 1-3: Bronze Tier</h4>
-              <ul className="list-disc pl-6 text-gray-300 space-y-1">
-                <li>Daily Rebate: 5-8%</li>
-                <li>Level-Up Bonus: ₨100-500</li>
-                <li>Basic customer support</li>
-                <li>Standard withdrawal limits</li>
-              </ul>
-            </div>
-
-            <div className="bg-purple-800/30 border border-purple-600 rounded-lg p-6">
-              <h4 className="text-xl font-semibold text-white mb-3">VIP 4-6: Silver Tier</h4>
-              <ul className="list-disc pl-6 text-gray-300 space-y-1">
-                <li>Daily Rebate: 9-11%</li>
-                <li>Level-Up Bonus: ₨1,000-3,000</li>
-                <li>Priority customer support</li>
-                <li>Faster withdrawal processing</li>
-                <li>Exclusive promotions</li>
-              </ul>
-            </div>
-
-            <div className="bg-purple-800/30 border border-purple-600 rounded-lg p-6">
-              <h4 className="text-xl font-semibold text-white mb-3">VIP 7-9: Gold Tier</h4>
-              <ul className="list-disc pl-6 text-gray-300 space-y-1">
-                <li>Daily Rebate: 12-14%</li>
-                <li>Level-Up Bonus: ₨5,000-8,000</li>
-                <li>VIP manager support</li>
-                <li>Highest withdrawal limits (₨500,000/day)</li>
-                <li>Exclusive tournaments</li>
-                <li>Birthday bonuses</li>
-              </ul>
-            </div>
-
-            <div className="bg-gradient-to-r from-orange-600/30 to-yellow-600/30 border border-orange-500 rounded-lg p-6">
-              <h4 className="text-xl font-semibold text-white mb-3">VIP 10: King Tier</h4>
-              <ul className="list-disc pl-6 text-gray-300 space-y-1">
-                <li>Daily Rebate: 15% (maximum)</li>
-                <li>Level-Up Bonus: ₨10,000+</li>
-                <li>Personal VIP manager</li>
-                <li>Unlimited withdrawal limits</li>
-                <li>Exclusive VIP-only events</li>
-                <li>Custom promotions</li>
-                <li>Highest referral commission (20%)</li>
-              </ul>
-            </div>
-          </div>
-
-          <h3 className="text-2xl font-semibold text-white mt-8 mb-4">How to Level Up VIP</h3>
+          <h2 className="text-3xl font-bold text-white mt-12 mb-6">Weekly promotions and cashback</h2>
           <p className="text-gray-300 mb-4">
-            VIP levels are based on your total turnover (amount wagered) and deposits:
+            The Promotions tab lists time-limited offers that change weekly, including cashback-style promotions.
+            Each one has its own conditions, such as which games count and any minimum activity, so open the detail
+            page in the app rather than relying on the banner text.
+          </p>
+
+          <h2 className="text-3xl font-bold text-white mt-12 mb-6">Referral bonus: Rs. 20 per friend, up to Rs. 1,000</h2>
+          <Image
+            src="/royal-x-casino-refer-and-earn.webp"
+            alt="Royal X Casino refer and earn screen with invite code and referral reward tiers"
+            width={1200}
+            height={540}
+            className="rounded-xl w-full h-auto my-6"
+          />
+          <p className="text-gray-300 mb-4">
+            Under Refer and Earn you get a personal invite code. When a friend registers with it, you receive Rs. 20.
+            Further referral pay unlocks as that friend deposits, reaching a total of up to Rs. 1,000 once their
+            deposits reach Rs. 1,000. The in-app screen shows how much each referred player has unlocked so far.
+          </p>
+          <p className="text-gray-300 mb-4">
+            This is a modest reward for sharing a code with people who already intend to play. Do not present it to
+            friends as a way to make money; they are being invited to a real-money gambling app, and the referral
+            amounts are capped.
+          </p>
+
+          <h2 className="text-3xl font-bold text-white mt-12 mb-6">VIP levels: V1 and upward</h2>
+          <p className="text-gray-300 mb-4">
+            VIP status is based on your betting volume over time. You start below V1 and move up as your total bets
+            grow; the VIP page in the app shows your current level and the volume needed for the next one.
           </p>
           <ul className="list-disc pl-6 text-gray-300 mb-6 space-y-2">
-            <li><strong>Play games:</strong> Every bet counts toward VIP points</li>
-            <li><strong>Deposit regularly:</strong> Deposits also contribute to VIP progress</li>
-            <li><strong>Check progress:</strong> Go to "VIP" tab to see your current level and requirements</li>
-            <li><strong>Automatic level-up:</strong> When you meet requirements, you level up automatically</li>
-            <li><strong>Level-up bonus:</strong> Claim your bonus immediately after leveling up</li>
+            <li>
+              <strong>Level-up bonus:</strong> a one-time payment at each new level, starting at Rs. 15 for V1 and
+              increasing at higher levels.
+            </li>
+            <li>
+              <strong>Monthly VIP payment:</strong> a small recurring credit, starting at Rs. 11 per month and rising
+              with each level you hold.
+            </li>
+            <li>
+              <strong>Progress tracking:</strong> the VIP page shows your current level and the volume needed for
+              the next one.
+            </li>
           </ul>
+          <p className="text-gray-300 mb-4">
+            The amounts are small on purpose. Chasing the next VIP level by betting more than you intended costs far
+            more than the bonus returns, so let VIP progress happen as a by-product of normal play.
+          </p>
 
-          <h3 className="text-2xl font-semibold text-white mt-8 mb-4">Step-by-Step Guide to Using VIP Levels</h3>
-          <ol className="list-decimal pl-6 text-gray-300 mb-6 space-y-3">
-            <li>
-              <strong>Check your current VIP level:</strong> Go to "VIP" tab in app
-            </li>
-            <li>
-              <strong>View requirements:</strong> See how much turnover/deposit needed for next level
-            </li>
-            <li>
-              <strong>Play strategically:</strong> Focus on games you're good at to maximize turnover
-            </li>
-            <li>
-              <strong>Claim level-up bonus:</strong> When you level up, bonus is automatically added
-            </li>
-            <li>
-              <strong>Enjoy new benefits:</strong> Higher rebate rates, better support, exclusive promotions
-            </li>
-            <li>
-              <strong>Track your progress:</strong> Monitor VIP points in "My Account" → "VIP Status"
-            </li>
-            <li>
-              <strong>Maximize rebates:</strong> Higher VIP = higher daily rebate on all deposits
-            </li>
-          </ol>
+          <h2 className="text-3xl font-bold text-white mt-12 mb-6">Redeem codes and gift codes</h2>
+          <p className="text-gray-300 mb-4">
+            Codes are posted on the official Telegram and WhatsApp channels and on partner sites. Enter them under
+            Promotions, then Redeem Code. Each code is single use per account and the credit varies. Anyone who sells you
+            a code or asks for your password to apply one is not official. Our{' '}
+            <Link href="/royal-x-casino-redeem-code" className="text-[#FFA500] hover:underline font-semibold">
+              Royal X Casino redeem code page
+            </Link>{' '}
+            explains where to find current codes and how to enter them.
+          </p>
 
-          <div className="bg-green-900/30 border border-green-600 rounded-lg p-6 my-8">
-            <p className="text-white font-semibold mb-2">🎯 VIP Strategy</p>
-            <p className="text-gray-300">
-              Focus on reaching VIP 4 first (9% rebate). Then aim for VIP 7 (12% rebate) for significant benefits. VIP 10 (15% rebate) is the ultimate goal for serious players.
-            </p>
+          <h2 className="text-3xl font-bold text-white mt-12 mb-6">Withdrawing bonus money</h2>
+          <p className="text-gray-300 mb-4">
+            Bonus credit and your own deposit sit in the same balance, but the bonus portion may carry turnover terms
+            before it can be withdrawn. Once those are met, withdrawals to EasyPaisa or JazzCash run from Rs. 600 to
+            Rs. 50,000 per request and usually arrive in 10 to 30 minutes, longer at peak times or for a first
+            withdrawal. The name on your wallet must match your account details. Steps and limits are in the{' '}
+            <Link href="/royal-x-casino-withdraw-guide" className="text-[#FFA500] hover:underline font-semibold">
+              Royal X Casino withdrawal guide
+            </Link>.
+          </p>
+          <p className="text-gray-300 mb-4">
+            For how bonuses fit into a sensible play routine, read{' '}
+            <Link href="/blog/royal-x-casino-tips-10-smart-tricks" className="text-[#FFA500] hover:underline font-semibold">
+              Royal X Casino Tips: 10 Smart Tricks to Play Safe and Win
+            </Link>{' '}
+            and, if you are new to the app,{' '}
+            <Link
+              href="/blog/how-to-use-royal-x-casino-app-pakistan-guide-2026"
+              className="text-[#FFA500] hover:underline font-semibold"
+            >
+              How to Use the Royal X Casino App in Pakistan (2026 Guide)
+            </Link>.
+          </p>
+
+          <h2 className="text-3xl font-bold text-white mt-12 mb-6">Frequently asked questions</h2>
+          <div className="space-y-6 mb-10">
+            {FAQS.map((f) => (
+              <div key={f.q}>
+                <h3 className="text-xl font-semibold text-white mb-2">{f.q}</h3>
+                <p className="text-gray-300">{f.a}</p>
+              </div>
+            ))}
           </div>
-
-          <h2 className="text-3xl font-bold text-white mt-12 mb-6">5. Referral Commission - Passive Income</h2>
-          
-          <h3 className="text-2xl font-semibold text-white mt-8 mb-4">How Referral Commission Works</h3>
-          <p className="text-gray-300 mb-4">
-            When you refer friends to Royal X Casino, you earn a <strong>lifetime commission</strong> on all their deposits. This is one of the best ways to build passive income.
-          </p>
-
-          <h3 className="text-2xl font-semibold text-white mt-8 mb-4">Referral Commission Rates</h3>
-          <ul className="list-disc pl-6 text-gray-300 mb-6 space-y-2">
-            <li><strong>VIP 1-3:</strong> 10% commission</li>
-            <li><strong>VIP 4-6:</strong> 12-15% commission</li>
-            <li><strong>VIP 7-9:</strong> 16-18% commission</li>
-            <li><strong>VIP 10:</strong> 20% commission (maximum)</li>
-          </ul>
-
-          <h3 className="text-2xl font-semibold text-white mt-8 mb-4">How to Get Your Referral Code</h3>
-          <ol className="list-decimal pl-6 text-gray-300 mb-6 space-y-2">
-            <li>Go to "My Account" → "Invite Friends"</li>
-            <li>Copy your unique referral code or link</li>
-            <li>Share with friends via WhatsApp, Facebook, etc.</li>
-            <li>When they register using your code and deposit, you start earning!</li>
-          </ol>
-
-          <div className="bg-green-900/30 border border-green-600 rounded-lg p-6 my-8">
-            <p className="text-white font-semibold mb-2">💰 Referral Income Example</p>
-            <p className="text-gray-300 mb-2">
-              If you refer 10 friends who each deposit ₨5,000/month:
-            </p>
-            <p className="text-gray-300 mb-2">
-              Total deposits: ₨50,000/month
-            </p>
-            <p className="text-gray-300">
-              <strong>Your commission (VIP 10, 20%): ₨10,000/month passive income!</strong>
-            </p>
-          </div>
-
-          <h2 className="text-3xl font-bold text-white mt-12 mb-6">6. Daily Tasks - Easy Extra Money</h2>
-          
-          <h3 className="text-2xl font-semibold text-white mt-8 mb-4">What Are Daily Tasks?</h3>
-          <p className="text-gray-300 mb-4">
-            Daily tasks are simple activities you can complete each day to earn extra bonus money. They're easy and add up quickly!
-          </p>
-
-          <h3 className="text-2xl font-semibold text-white mt-8 mb-4">Common Daily Tasks</h3>
-          <ul className="list-disc pl-6 text-gray-300 mb-6 space-y-2">
-            <li><strong>Play 5 games:</strong> Get ₨50-100</li>
-            <li><strong>Deposit ₨500:</strong> Get ₨100-200</li>
-            <li><strong>Win 3 games:</strong> Get ₨50-150</li>
-            <li><strong>Refer 1 friend:</strong> Get ₨200-500</li>
-            <li><strong>Login bonus:</strong> Get ₨20-50 just for logging in</li>
-            <li><strong>Complete all tasks:</strong> Bonus ₨100-300</li>
-          </ul>
-
-          <h3 className="text-2xl font-semibold text-white mt-8 mb-4">How to Complete Daily Tasks</h3>
-          <ol className="list-decimal pl-6 text-gray-300 mb-6 space-y-2">
-            <li>Go to "Promotions" → "Daily Tasks"</li>
-            <li>See all available tasks for the day</li>
-            <li>Complete each task (play games, deposit, etc.)</li>
-            <li>Click "Claim" button next to completed tasks</li>
-            <li>Bonus is instantly added to your account</li>
-          </ol>
-
-          <div className="bg-green-900/30 border border-green-600 rounded-lg p-6 my-8">
-            <p className="text-white font-semibold mb-2">💡 Daily Task Strategy</p>
-            <p className="text-gray-300">
-              Complete all daily tasks every day. If you earn ₨300/day from tasks, that's ₨9,000/month in free bonus money!
-            </p>
-          </div>
-
-          <h2 className="text-3xl font-bold text-white mt-12 mb-6">7. Special Promotions & Events</h2>
-          
-          <p className="text-gray-300 mb-4">
-            Royal X Casino regularly runs special promotions:
-          </p>
-          <ul className="list-disc pl-6 text-gray-300 mb-6 space-y-2">
-            <li><strong>2x VIP Points:</strong> Earn double VIP points during events</li>
-            <li><strong>Tournament Bonuses:</strong> Extra prizes in weekly/monthly tournaments</li>
-            <li><strong>Holiday Promotions:</strong> Special bonuses on Eid, New Year, etc.</li>
-            <li><strong>Deposit Contests:</strong> Win prizes based on deposit amounts</li>
-            <li><strong>Lucky Draws:</strong> Random bonuses for active players</li>
-          </ul>
-
-          <h3 className="text-2xl font-semibold text-white mt-8 mb-4">How to Stay Updated</h3>
-          <ul className="list-disc pl-6 text-gray-300 mb-6 space-y-2">
-            <li>Check "Promotions" tab daily</li>
-            <li>Enable push notifications</li>
-            <li>Follow Royal X Casino on social media</li>
-            <li>Check email for special offers</li>
-          </ul>
-
-          <h2 className="text-3xl font-bold text-white mt-12 mb-6">Maximizing All Bonuses - Complete Strategy</h2>
-          
-          <div className="bg-gradient-to-r from-purple-800 to-orange-600 rounded-lg p-8 my-8">
-            <h3 className="text-xl font-bold text-white mb-4">🎯 Ultimate Bonus Maximization Plan</h3>
-            <ol className="list-decimal pl-6 text-white space-y-3">
-              <li>
-                <strong>Start Right:</strong> Use referral code during registration, deposit ₨5,000 for maximum first deposit bonus
-              </li>
-              <li>
-                <strong>Daily Routine:</strong> Complete all daily tasks every single day (₨300-500/day)
-              </li>
-              <li>
-                <strong>VIP Focus:</strong> Play consistently to level up VIP (aim for VIP 4 first, then VIP 7)
-              </li>
-              <li>
-                <strong>Rebate Maximization:</strong> Time deposits during 2x VIP events, always claim rebates
-              </li>
-              <li>
-                <strong>Referral Network:</strong> Share referral code with 10-20 friends for passive income
-              </li>
-              <li>
-                <strong>Promotion Awareness:</strong> Check promotions daily, participate in all events
-              </li>
-              <li>
-                <strong>Withdraw Strategically:</strong> Withdraw profits regularly, but keep enough to maintain VIP level
-              </li>
-            </ol>
-          </div>
-
-          <h2 className="text-3xl font-bold text-white mt-12 mb-6">Total Bonus Potential Example</h2>
-          
-          <div className="bg-green-900/30 border border-green-600 rounded-lg p-6 my-8">
-            <p className="text-white font-semibold mb-4">💰 Monthly Bonus Breakdown (Active Player)</p>
-            <ul className="list-disc pl-6 text-gray-300 space-y-2">
-              <li>Welcome + First Deposit Bonus: ₨5,500 (one-time)</li>
-              <li>Daily Tasks (₨300/day × 30): ₨9,000</li>
-              <li>Daily Rebate (VIP 7, 12% on ₨30,000 deposits): ₨3,600</li>
-              <li>VIP Level-Up Bonuses: ₨2,000-5,000</li>
-              <li>Referral Commission (10 friends × ₨5,000 × 15%): ₨7,500</li>
-              <li>Special Promotions: ₨1,000-3,000</li>
-              <li><strong>Total Monthly Bonuses: ₨28,600-34,600!</strong></li>
-            </ul>
-          </div>
-
-          <h2 className="text-3xl font-bold text-white mt-12 mb-6">Common Bonus Questions</h2>
-          
-          <h3 className="text-2xl font-semibold text-white mt-8 mb-4">Q: Can I withdraw bonus money?</h3>
-          <p className="text-gray-300 mb-4">
-            A: Most bonuses have wagering requirements. Check terms and conditions. Generally, you need to play through the bonus amount 1-3 times before withdrawal.
-          </p>
-
-          <h3 className="text-2xl font-semibold text-white mt-8 mb-4">Q: Do bonuses expire?</h3>
-          <p className="text-gray-300 mb-4">
-            A: Some bonuses have expiration dates (usually 7-30 days). Check bonus terms. Daily rebates and VIP bonuses don't expire.
-          </p>
-
-          <h3 className="text-2xl font-semibold text-white mt-8 mb-4">Q: Can I get welcome bonus twice?</h3>
-          <p className="text-gray-300 mb-4">
-            A: No, welcome bonus is one-time only. But you can get first deposit bonus if you haven't deposited yet.
-          </p>
-
-          <h3 className="text-2xl font-semibold text-white mt-8 mb-4">Q: How fast are bonuses credited?</h3>
-          <p className="text-gray-300 mb-4">
-            A: Most bonuses are instant (welcome, first deposit, daily tasks). Rebates are credited within 24 hours. VIP level-up bonuses are instant.
-          </p>
-
-          <h2 className="text-3xl font-bold text-white mt-12 mb-6">Conclusion</h2>
-          
-          <p className="text-gray-300 mb-4">
-            Royal X Casino's bonus system is one of the most generous in Pakistan. By understanding and maximizing all bonus types - welcome bonus, first deposit bonus, daily rebates, VIP rewards, referral commission, and daily tasks - you can significantly increase your earning potential.
-          </p>
-
-          <p className="text-gray-300 mb-4">
-            <strong>Key takeaways:</strong>
-          </p>
-          <ul className="list-disc pl-6 text-gray-300 mb-6 space-y-2">
-            <li>Start with maximum first deposit bonus (deposit ₨5,000)</li>
-            <li>Complete daily tasks religiously (₨9,000+/month)</li>
-            <li>Level up VIP for higher rebates (aim for VIP 7+)</li>
-            <li>Build referral network for passive income</li>
-            <li>Stay active during promotions for extra bonuses</li>
-          </ul>
-
-          <p className="text-gray-300 mb-4">
-            With the right strategy, bonuses alone can add ₨25,000-35,000+ to your monthly earnings!
-          </p>
 
           <div className="mt-12 text-center">
             <a
               href={DOWNLOAD_URL}
               target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-bold py-4 px-8 rounded-lg text-lg transition-all transform hover:scale-105 shadow-lg"
+              rel="noopener noreferrer sponsored"
+              className="inline-block bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-bold py-4 px-8 rounded-lg text-lg transition-all"
             >
-              Download Royal X Casino - Claim Your Bonuses Now
+              Download Royal X Casino and claim the Rs. 10 welcome credit
             </a>
+            <p className="text-xs text-gray-500 mt-3">
+              This button opens the operator&apos;s referral link. We may earn a commission when you register through
+              it, at no cost to you. See our{' '}
+              <Link href="/disclaimer" className="underline hover:text-[#FFA500]">disclaimer</Link>.
+            </p>
           </div>
-        </div>
 
-        <aside className="mt-16 pt-8 border-t border-gray-700">
-          <h3 className="text-2xl font-bold text-white mb-6">Related Guides</h3>
-          <div className="grid md:grid-cols-2 gap-6">
-            <Link href="/blog/how-to-use-royal-x-casino-app-pakistan-guide-2026" className="block p-6 bg-purple-800/30 rounded-lg hover:bg-purple-800/50 transition-colors">
-              <h4 className="text-xl font-semibold text-white mb-2">Complete Beginner's Guide</h4>
-              <p className="text-gray-400">Learn how to use Royal X Casino app</p>
-            </Link>
-            <Link href="/blog/tips-to-win-big-in-royal-x-casino" className="block p-6 bg-purple-800/30 rounded-lg hover:bg-purple-800/50 transition-colors">
-              <h4 className="text-xl font-semibold text-white mb-2">Tips to Win Big</h4>
-              <p className="text-gray-400">Maximize your earnings with smart strategies</p>
-            </Link>
-          </div>
-        </aside>
+          <p className="text-sm text-gray-400 mt-10">
+            Royal X Casino is a real-money gambling app for players aged 18 and over. Bonuses do not change the house
+            edge, and you can lose the money you deposit. Set limits before you play; see the{' '}
+            <Link href="/blog/responsible-gaming-guide-royal-x-casino" className="underline hover:text-[#FFA500]">
+              Responsible Gaming Guide for Royal X Casino Players
+            </Link>.
+          </p>
+        </div>
       </article>
     </div>
   );

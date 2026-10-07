@@ -11,19 +11,14 @@ const nextConfig = {
   
   // Optimize images
   images: {
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'slotspk.com.pk',
-      },
-    ],
     formats: ['image/webp'],
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
     qualities: [75, 80, 90, 100], // Configure allowed image quality values
   },
 
-  // 301 redirects for old URLs (Card Rummy -> Royal X Casino)
+  // 301 redirects: legacy slugs that were live on this domain before the current URL structure.
+  // Kept so any indexed or shared old URL passes equity to the current page.
   async redirects() {
     return [
       { source: '/download', destination: '/royal-x-casino-download', permanent: true },
@@ -37,14 +32,20 @@ const nextConfig = {
       { source: '/blog/royal-x-casino-old-versions-download-2026', destination: '/royal-x-casino-old-versions', permanent: true },
       { source: '/blog/how-to-register-royal-x-casino-2026', destination: '/how-to-register-royal-x-casino', permanent: true },
       { source: '/blog/how-to-login-royal-x-casino-2026', destination: '/how-to-login-royal-x-casino', permanent: true },
+      { source: '/blog/royal-x-casino-create-account-and-login', destination: '/how-to-register-royal-x-casino', permanent: true },
+      { source: '/blog/royal-x-casino-login-problems-solutions', destination: '/how-to-login-royal-x-casino', permanent: true },
+      { source: '/blog/tips-to-win-big-in-royal-x-casino', destination: '/blog/royal-x-casino-tips-10-smart-tricks', permanent: true },
+      { source: '/blog/daily-first-deposit-bonus-royal-x-casino', destination: '/blog/royal-x-casino-bonuses-vip-guide', permanent: true },
+      { source: '/blog/free-trial-game-modes-royal-x-casino', destination: '/blog/how-to-use-royal-x-casino-app-pakistan-guide-2026', permanent: true },
+      { source: '/blog/how-to-recover-losses-royal-x-casino', destination: '/blog/responsible-gaming-guide-royal-x-casino', permanent: true },
       { source: '/about-us', destination: '/royal-x-casino-about-us', permanent: true },
       { source: '/contact-us', destination: '/royal-x-casino-contact-us', permanent: true },
       { source: '/blog/card-rummy-app-review-2026', destination: '/blog/royal-x-casino-app-review-2026', permanent: true },
       { source: '/blog/is-card-rummy-real-or-fake', destination: '/blog/is-royal-x-casino-real-or-fake', permanent: true },
       { source: '/blog/how-to-use-card-rummy-app-pakistan-guide-2026', destination: '/blog/how-to-use-royal-x-casino-app-pakistan-guide-2026', permanent: true },
-      { source: '/blog/create-card-rummy-account-and-login', destination: '/blog/royal-x-casino-create-account-and-login', permanent: true },
-      { source: '/blog/create-account-login', destination: '/blog/royal-x-casino-create-account-and-login', permanent: true },
-      { source: '/blog/tips-to-win-big-in-card-rummy', destination: '/blog/tips-to-win-big-in-royal-x-casino', permanent: true },
+      { source: '/blog/create-card-rummy-account-and-login', destination: '/how-to-register-royal-x-casino', permanent: true },
+      { source: '/blog/create-account-login', destination: '/how-to-register-royal-x-casino', permanent: true },
+      { source: '/blog/tips-to-win-big-in-card-rummy', destination: '/blog/royal-x-casino-tips-10-smart-tricks', permanent: true },
       { source: '/blog/card-rummy-tips-10-smart-tricks', destination: '/blog/royal-x-casino-tips-10-smart-tricks', permanent: true },
       { source: '/blog/dragon-vs-tiger-andar-bahar-high-payout-games', destination: '/blog/royal-x-casino-dragon-vs-tiger-andar-bahar-high-payout-games', permanent: true },
       { source: '/blog/card-rummy-bonuses-vip-guide', destination: '/blog/royal-x-casino-bonuses-vip-guide', permanent: true },
@@ -57,44 +58,25 @@ const nextConfig = {
     ];
   },
 
-  // Optimize static file serving
-  async rewrites() {
-    return [
-      {
-        source: '/.well-known/:path*',
-        destination: '/public/.well-known/:path*',
-      },
-      // Redirect old 3Patti Blue logo to Royal X Casino logo
-      {
-        source: '/3-patti-blue-logo.webp',
-        destination: '/royal-x-casino-logo.webp',
-      },
-    ];
-  },
-
   // Optimize headers
   async headers() {
     return [
       {
+        // Security headers for every response. No long-lived Cache-Control here:
+        // HTML pages must revalidate so content updates reach users and crawlers.
         source: '/:path*',
         headers: [
-          {
-            key: 'Cache-Control',
-            value: 'public, max-age=31536000, immutable',
-          },
-          {
-            key: 'X-DNS-Prefetch-Control',
-            value: 'on',
-          },
-          {
-            key: 'Strict-Transport-Security',
-            value: 'max-age=63072000; includeSubDomains; preload',
-          },
-          {
-            key: 'X-Content-Type-Options',
-            value: 'nosniff',
-          },
+          { key: 'X-DNS-Prefetch-Control', value: 'on' },
+          { key: 'Strict-Transport-Security', value: 'max-age=63072000; includeSubDomains; preload' },
+          { key: 'X-Content-Type-Options', value: 'nosniff' },
+          { key: 'X-Frame-Options', value: 'SAMEORIGIN' },
+          { key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin' },
+          { key: 'Permissions-Policy', value: 'camera=(), microphone=(), geolocation=()' },
         ],
+      },
+      {
+        source: '/:path*.(webp|png|jpg|jpeg|svg|ico|woff2)',
+        headers: [{ key: 'Cache-Control', value: 'public, max-age=31536000, immutable' }],
       },
       {
         source: '/_next/static/:path*',

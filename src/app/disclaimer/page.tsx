@@ -1,156 +1,203 @@
-import type { Metadata } from 'next';
-import Link from 'next/link';
-import Breadcrumb from '@/components/Breadcrumb';
+import type { Metadata } from "next";
+import Link from "next/link";
+import { SITE_URL } from "@/lib/config";
+import Breadcrumb from "@/components/Breadcrumb";
+
+const PAGE_URL = `${SITE_URL}/disclaimer`;
+const TITLE = "Royal X Casino PK Disclaimer: Affiliate and Risk Notice";
+const DESCRIPTION =
+  "Royal X Casino PK is not the operator. Read how we earn referral commission, the risks of real-money gambling, Pakistani law and what we cannot verify.";
+const LAST_UPDATED = "October 8, 2026";
 
 export const metadata: Metadata = {
-  title: 'Disclaimer - Royal X Casino | Legal Information',
-  description: 'Read the disclaimer for Royal X Casino. Important legal information about the use of this blog and third-party platforms.',
-  keywords: ['Royal X Casino disclaimer', 'legal disclaimer', 'terms', 'conditions', 'gambling disclaimer'],
+  title: TITLE,
+  description: DESCRIPTION,
+  alternates: { canonical: PAGE_URL },
   openGraph: {
-    title: 'Disclaimer - Royal X Casino',
-    description: 'Legal disclaimer and important information about Royal X Casino.',
-    url: 'https://royalexcasino.com.pk/disclaimer',
-    siteName: 'Royal X Casino',
-    type: 'website',
+    title: TITLE,
+    description: DESCRIPTION,
+    url: PAGE_URL,
+    siteName: "Royal X Casino",
+    type: "website",
+    images: [
+      {
+        url: `${SITE_URL}/royal-x-casino-logo.webp`,
+        width: 1000,
+        height: 1000,
+        alt: "Gold Royal X Casino logotype with a casino chip on the Royal X Casino PK disclaimer page",
+      },
+    ],
   },
   twitter: {
-    card: 'summary',
-    title: 'Disclaimer - Royal X Casino',
-    description: 'Legal disclaimer and important information about Royal X Casino.',
+    card: "summary_large_image",
+    title: TITLE,
+    description: DESCRIPTION,
+    images: [`${SITE_URL}/royal-x-casino-logo.webp`],
   },
-  alternates: {
-    canonical: 'https://royalexcasino.com.pk/disclaimer',
-  },
-  robots: {
-    index: true,
-    follow: true,
-  }
+  robots: { index: true, follow: true },
+};
+
+function safeJsonLd(obj: object): string {
+  return JSON.stringify(obj).replace(/</g, "\\u003c");
+}
+
+const webPageSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": PAGE_URL,
+  url: PAGE_URL,
+  name: TITLE,
+  description: DESCRIPTION,
+  dateModified: "2026-10-08",
+  isPartOf: { "@type": "WebSite", url: SITE_URL, name: "Royal X Casino" },
+  publisher: { "@type": "Organization", "@id": `${SITE_URL}/#organization`, name: "Royal X Casino PK" },
 };
 
 export default function Disclaimer() {
   return (
     <div className="min-h-screen bg-primary py-12 px-4">
-      <div className="container mx-auto">
-        <div className="max-w-4xl mx-auto">
-          <Breadcrumb items={[
-            { name: 'Home', url: '/' },
-            { name: 'Disclaimer', url: '/disclaimer' },
-          ]} />
-          {/* Hero Section */}
-          <div className="text-center mb-12">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">Disclaimer</h1>
-            <p className="text-lg text-gray-400">Please read this disclaimer carefully before using our website</p>
-          </div>
-          
-          {/* Main Content */}
-          <div className="bg-secondary rounded-2xl shadow-xl p-8 md:p-12">
-            <div className="prose prose-lg max-w-none">
-              {/* Warning Banner */}
-              <div className="bg-[#0A1029] border-l-4 border-accent p-6 mb-8 rounded-r-lg">
-                <div className="flex items-start">
-                  <svg className="w-6 h-6 text-accent mr-3 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                    <path fillRule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clipRule="evenodd"></path>
-                  </svg>
-                  <div>
-                    <h3 className="text-xl font-bold text-accent mb-2">Important Notice</h3>
-                    <p className="text-accent mb-0">
-                      Please read this disclaimer carefully. By using this website, you agree to the terms outlined below.
-                    </p>
-                  </div>
-                </div>
-              </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: safeJsonLd(webPageSchema) }} />
 
-              {/* Main Disclaimer Content */}
-              <div className="space-y-6 text-gray-300">
-                <p className="text-lg leading-relaxed">
-                  The information provided on this blog (<a href="https://www.royalexcasino.com.pk" className="text-accent hover:text-accent font-semibold" target="_blank" rel="noopener noreferrer">www.royalexcasino.com.pk</a>) about <Link href="/" className="text-accent hover:underline font-semibold">Royal X Casino</Link> is for <strong>general informational and entertainment purposes only</strong>. We do not host, promote, or encourage any form of gambling or betting activities.
-                </p>
+      <div className="container mx-auto max-w-4xl">
+        <Breadcrumb
+          items={[
+            { name: "Home", url: "/" },
+            { name: "Disclaimer", url: "/disclaimer" },
+          ]}
+        />
 
-                <div className="bg-[#0A1029] rounded-xl p-6 border border-accent">
-                  <h2 className="text-2xl font-bold mb-4 text-white">⚠️ Important Warnings</h2>
-                  <ul className="space-y-3 text-gray-300">
-                    <li className="flex items-start">
-                      <span className="text-accent mr-2 font-bold">•</span>
-                      <span>Royal X Casino is a gaming platform that may involve <strong>real money</strong> when played on certain platforms.</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-accent mr-2 font-bold">•</span>
-                      <span>Users are advised to be aware of their <strong>local laws and regulations</strong> related to online gaming and gambling before engaging with any app or website mentioned.</span>
-                    </li>
-              </ul>
-                </div>
+        <div className="text-center mb-10">
+          <h1 className="text-3xl md:text-5xl font-bold mb-4 text-white leading-tight">
+            Disclaimer: Royal X Casino PK Is an Independent Affiliate Site
+          </h1>
+          <p className="text-gray-400">Last updated: {LAST_UPDATED}</p>
+        </div>
 
-                <div className="bg-[#0A1029] rounded-xl p-6 border border-red-200">
-                  <h2 className="text-2xl font-bold mb-4 text-red-400">🚫 No Liability</h2>
-                  <p className="text-gray-300 leading-relaxed mb-0">
-                    We are <strong>not responsible</strong> for any loss, risk, or legal issues resulting from the use of third-party platforms. All app names, logos, and trademarks belong to their respective owners, and we do not claim any affiliation or endorsement.
-                  </p>
-                </div>
+        <div className="bg-secondary rounded-2xl shadow-xl p-8 md:p-12 space-y-10 text-gray-300">
+          <section>
+            <h2 className="text-2xl font-bold mb-3 text-[#FFA500]">Who we are and who we are not</h2>
+            <p className="leading-relaxed mb-3">
+              royalexcasino.com.pk is an independent informational and affiliate website about the Royal X Casino
+              Android app. We are not the operator of the app and we are not affiliated with, endorsed by or acting on
+              behalf of the operator. We do not run the games, hold player funds, process deposits or withdrawals, or
+              have access to any player account.
+            </p>
+            <p className="leading-relaxed">
+              The name Royal X Casino and its logo belong to their owner. We use them only to identify the app our
+              guides describe. For account, payment or login problems you must use the app&apos;s in-app live chat or
+              its official Telegram and WhatsApp channels; our{" "}
+              <Link href="/royal-x-casino-contact-us" className="text-accent hover:underline">
+                contact page
+              </Link>{" "}
+              reaches the website team only.
+            </p>
+          </section>
 
-                <div className="bg-[#0A1029] rounded-xl p-6 border border-blue-200">
-                  <h2 className="text-2xl font-bold mb-4 text-blue-400">📋 User Responsibility</h2>
-                  <p className="text-gray-300 leading-relaxed mb-0">
-                    By using this blog, you agree that any actions you take based on the content are <strong>strictly at your own risk</strong>. We encourage all users to:
-                  </p>
-                  <ul className="mt-4 space-y-2 text-gray-300">
-                    <li className="flex items-start">
-                      <span className="text-blue-600 mr-2">✓</span>
-                      <span>Verify local laws before engaging with any gaming platform</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-blue-600 mr-2">✓</span>
-                      <span>Play responsibly and within your means</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-blue-600 mr-2">✓</span>
-                      <span>Be aware of the risks involved in real money gaming</span>
-                </li>
-                    <li className="flex items-start">
-                      <span className="text-blue-600 mr-2">✓</span>
-                      <span>Seek professional help if you have gambling concerns</span>
-                </li>
-              </ul>
-                </div>
+          <section>
+            <h2 className="text-2xl font-bold mb-3 text-[#FFA500]">Affiliate disclosure: how we earn money</h2>
+            <p className="leading-relaxed mb-3">
+              Download buttons and some text links on this site open the operator&apos;s referral link. When you
+              register through that link, the operator may pay us a referral or affiliate commission. This costs you
+              nothing extra and does not change the app, bonuses or limits you receive.
+            </p>
+            <p className="leading-relaxed">
+              Because these are paid relationships, every such link carries the <code className="text-sm">rel=&quot;sponsored&quot;</code>{" "}
+              attribute and a disclosure line sits under the first button on each page. Commission does not influence
+              what we write; the{" "}
+              <Link href="/royal-x-casino-about-us" className="text-accent hover:underline">
+                about page
+              </Link>{" "}
+              explains our editorial standards.
+            </p>
+          </section>
 
-                <div className="bg-[#0A1029] rounded-xl p-6 border border-accent">
-                  <h2 className="text-2xl font-bold mb-4 text-white">™️ Trademarks & Affiliations</h2>
-                  <p className="text-gray-300 leading-relaxed mb-0">
-                    All app names, logos, and trademarks mentioned on this website belong to their respective owners. We do not claim any affiliation, endorsement, or partnership with any of the apps or platforms mentioned on this blog.
-                  </p>
-                </div>
-              </div>
+          <section>
+            <h2 className="text-2xl font-bold mb-3 text-[#FFA500]">Gambling risk, age limit and no guarantee of winnings</h2>
+            <p className="leading-relaxed mb-3">
+              Royal X Casino is a real-money gambling app. Gambling involves a risk of financial loss, and you can lose
+              the full amount you deposit. Game outcomes are random or carry a house edge; no bonus, code, tip or
+              strategy described on this site guarantees a win or an income. Any example figures we quote, such as a
+              20% first-deposit rebate, are promotional terms shown by the app and not a prediction of what you will
+              earn.
+            </p>
+            <p className="leading-relaxed">
+              The app is for adults aged 18 and over. If gambling stops being entertainment for you, read our{" "}
+              <Link href="/blog/responsible-gaming-guide-royal-x-casino" className="text-accent hover:underline">
+                responsible gaming guide
+              </Link>{" "}
+              for limits and support options.
+            </p>
+          </section>
 
-              {/* Contact Section */}
-              <div className="mt-12 p-6 bg-secondary rounded-xl border-2 border-accent">
-                <h2 className="text-2xl font-bold mb-4 text-white">Questions?</h2>
-                <p className="text-gray-300 mb-4">
-                  If you have any questions about this Disclaimer, please feel free to contact us.
-                </p>
-                <Link 
-                  href="/royal-x-casino-contact-us" 
-                  className="inline-block bg-accent hover:bg-accent/90 text-primary font-bold py-3 px-6 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
-                >
-                  Contact Us
-                </Link>
-              </div>
-            </div>
-          </div>
+          <section>
+            <h2 className="text-2xl font-bold mb-3 text-[#FFA500]">Legal status in Pakistan</h2>
+            <p className="leading-relaxed">
+              Gambling is restricted in Pakistan under the Prevention of Gambling Act 1977, and offshore online apps
+              operate in a legal grey area. The legality of using such an app can vary by province and may change.
+              You are solely responsible for knowing and complying with the law that applies to you before you
+              install, register or deposit. Nothing on this site is legal advice. Our summary of the position is in{" "}
+              <Link href="/blog/is-royal-x-casino-safe-legal-pakistan" className="text-accent hover:underline">
+                Is Royal X Casino Safe and Legal in Pakistan? 2026 Guide
+              </Link>
+              .
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-bold mb-3 text-[#FFA500]">What we cannot verify</h2>
+            <p className="leading-relaxed">
+              The operator does not publish a licence number or the name of a regulator, and no Pakistani authority
+              licenses offshore gambling apps. We therefore cannot verify that the operator is licensed, and we do not
+              describe it as licensed, regulated or approved. Statements the operator makes about fairness, random
+              number generation or security are the operator&apos;s claims unless we say otherwise.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-bold mb-3 text-[#FFA500]">Accuracy and changes</h2>
+            <p className="leading-relaxed">
+              We base our guides on the current app build, its in-app terms and community reports, and we update pages
+              when we find changes. Even so, app menus, limits, bonuses, fees and processing times can change without
+              notice, and information on this site may be out of date at any given moment. The in-app terms always take
+              precedence over anything written here. Check them before you deposit or request a withdrawal.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-bold mb-3 text-[#FFA500]">Limitation of liability</h2>
+            <p className="leading-relaxed">
+              You use this website and any third-party app or link at your own risk. To the extent permitted by law, we
+              accept no liability for financial loss, account problems, legal consequences, device issues or any other
+              damage arising from your use of the Royal X Casino app, the operator&apos;s services or the information
+              on this site. Links to external websites are provided for reference; we do not control their content or
+              privacy practices.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-bold mb-3 text-[#FFA500]">Questions about this disclaimer</h2>
+            <p className="leading-relaxed">
+              Write to the website team through the{" "}
+              <Link href="/royal-x-casino-contact-us" className="text-accent hover:underline">
+                contact page
+              </Link>{" "}
+              or email{" "}
+              <a href="mailto:support@royalexcasino.com.pk" className="text-accent hover:underline">
+                support@royalexcasino.com.pk
+              </a>
+              . See our{" "}
+              <Link href="/privacy" className="text-accent hover:underline">
+                privacy policy
+              </Link>{" "}
+              for how we handle what you send, and the{" "}
+              <Link href="/" className="text-accent hover:underline">
+                Royal X Casino APK
+              </Link>{" "}
+              page for the app itself.
+            </p>
+          </section>
         </div>
       </div>
-
-      {/* Structured Data */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "WebPage",
-            "name": "Disclaimer - Royal X Casino",
-            "description": "Legal disclaimer and important information about Royal X Casino website.",
-            "url": "https://royalexcasino.com.pk/disclaimer"
-          })
-        }}
-      />
     </div>
   );
-} 
+}

@@ -1,645 +1,501 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
-import BlogPostSchema from '@/components/BlogPostSchema';
-import { DOWNLOAD_URL } from '@/lib/config';
+import Image from 'next/image';
+import BlogPostSchema, { type HowToStep } from '@/components/BlogPostSchema';
+import FaqSchema, { type FaqItem } from '@/components/FaqSchema';
+import { DOWNLOAD_URL, SITE_URL, APP_INFO } from '@/lib/config';
+
+const TITLE = 'How to Use the Royal X Casino App in Pakistan (2026 Guide)';
+const DESCRIPTION =
+  'From install to first withdrawal: navigation, free-trial modes, deposits, bonuses and the settings every new player should change.';
+const SLUG = 'how-to-use-royal-x-casino-app-pakistan-guide-2026';
+const URL = `${SITE_URL}/blog/${SLUG}`;
 
 export const metadata: Metadata = {
-  title: 'How to Use Royal X Casino App in Pakistan: Complete Beginner\'s Guide 2026',
-  description: 'Complete Royal X Casino app guide 2026 for Pakistan: Download, registration, deposit, withdrawal, gameplay & earning tips. Step-by-step tutorial for beginners!',
-  keywords: [
-    'how to use Royal X Casino',
-    'Royal X Casino guide Pakistan',
-    'Royal X Casino tutorial',
-    'Royal X Casino for beginners',
-    'how to play Royal X Casino',
-    'Royal X Casino download guide',
-    'Royal X Casino deposit withdrawal',
-    'Royal X Casino earning guide',
-    'Royal X Casino Pakistan 2026',
-    'Royal X Casino complete guide'
-  ],
+  title: TITLE,
+  description: DESCRIPTION,
+  alternates: { canonical: URL },
   openGraph: {
-    title: 'How to Use Royal X Casino App in Pakistan: Complete Beginner\'s Guide 2026',
-    description: 'Step-by-step guide to download, register, deposit, play & earn from Royal X Casino app in Pakistan. Perfect for beginners!',
+    title: TITLE,
+    description: DESCRIPTION,
     type: 'article',
-    url: 'https://royalexcasino.com.pk/blog/how-to-use-royal-x-casino-app-pakistan-guide-2026',
+    url: URL,
     siteName: 'Royal X Casino',
+    images: [
+      {
+        url: `${SITE_URL}/royal-x-casino-app-landing-page.webp`,
+        width: 1200,
+        height: 540,
+        alt: 'Royal X Casino app lobby on Android showing the main game categories',
+      },
+    ],
   },
-  alternates: { canonical: "https://royalexcasino.com.pk/blog/how-to-use-royal-x-casino-app-pakistan-guide-2026" },
   twitter: {
     card: 'summary_large_image',
-    title: "How to Use Royal X Casino App in Pakistan: Beginner's Guide 2026",
-    description: 'Step-by-step guide to download, register, deposit, play & earn from Royal X Casino app in Pakistan. Perfect for beginners!',
-    images: ['https://royalexcasino.com.pk/royal-x-casino.webp'],
+    title: TITLE,
+    description: DESCRIPTION,
+    images: [`${SITE_URL}/royal-x-casino-app-landing-page.webp`],
   },
 };
 
-export default function BlogHowToUseCardRummyGuide() {
+const overviewSteps: HowToStep[] = [
+  {
+    name: 'Install the APK',
+    text: `Download the ${APP_INFO.size} Royal X Casino APK from the official link, allow your browser to install unknown apps, and open it on ${APP_INFO.androidMin}.`,
+  },
+  {
+    name: 'Register with your +92 number',
+    text: 'Enter your Pakistani mobile number, confirm the SMS OTP, set a password and add an optional invite code. Rs. 10 welcome credit is added after registration.',
+  },
+  {
+    name: 'Practise in free-trial mode',
+    text: 'Open a game in demo mode and learn the controls with practice credits before any real money is involved.',
+  },
+  {
+    name: 'Deposit from Rs. 100',
+    text: 'Use EasyPaisa, JazzCash, bank transfer or USDT. Minimum Rs. 100, maximum Rs. 50,000 per transaction, with a one-time 20 percent rebate on the first deposit.',
+  },
+  {
+    name: 'Play with a limit set',
+    text: 'Choose a low-stake room, set a session timer and stop at the loss limit you decided before opening the app.',
+  },
+  {
+    name: 'Withdraw from Rs. 600',
+    text: 'Request a payout to an EasyPaisa or JazzCash account in your own name. Payouts usually arrive in 10 to 30 minutes.',
+  },
+];
+
+const faqs: FaqItem[] = [
+  {
+    q: 'Do I need to deposit to try Royal X Casino?',
+    a: 'No. After registering you can open many games in free-trial mode and play with practice credits. Those credits cannot be withdrawn and wins in demo mode are not real; they exist so you can learn the rules before deciding whether to deposit.',
+  },
+  {
+    q: 'What is the minimum deposit and withdrawal?',
+    a: 'Deposits start at Rs. 100 and go up to Rs. 50,000 per transaction with no deposit fee. Withdrawals to EasyPaisa or JazzCash run from Rs. 600 to Rs. 50,000 per request. USDT withdrawals start at Rs. 50,000.',
+  },
+  {
+    q: 'How long does a withdrawal take?',
+    a: 'Usually 10 to 30 minutes to EasyPaisa or JazzCash. The first withdrawal and peak evening periods can take longer because of verification and queue volume. The wallet must be in the same name as your account.',
+  },
+  {
+    q: 'Which bonuses do new players actually get?',
+    a: 'Rs. 10 welcome credit on registration, a one-time 20 percent rebate on the first deposit (deposit Rs. 1,000, receive Rs. 200 extra), daily login rewards and weekly promotions. Bonus credit may carry turnover terms, so check the in-app bonus terms before you plan a withdrawal.',
+  },
+  {
+    q: 'Can I use Royal X Casino on iPhone or PC?',
+    a: 'There is no iOS app and no Windows app. iPhone users play the browser version through Safari or Chrome via the same link. On a PC you can use the browser version or run the APK in an Android emulator such as BlueStacks.',
+  },
+];
+
+export default function BlogHowToUseRoyalXGuide() {
   return (
     <div className="min-h-screen bg-[#060A20]">
       <BlogPostSchema
-        title="How to Use Royal X Casino App in Pakistan: Complete Beginner's Guide 2026"
-        description="Complete Royal X Casino app guide 2026 for Pakistan: Download, registration, deposit, withdrawal, gameplay & earning tips. Step-by-step tutorial for beginners!"
-        slug="how-to-use-royal-x-casino-app-pakistan-guide-2026"
+        title={TITLE}
+        description={DESCRIPTION}
+        slug={SLUG}
         datePublished="2026-01-11"
+        dateModified="2026-10-08"
+        image={`${SITE_URL}/royal-x-casino-app-landing-page.webp`}
+        howToSteps={overviewSteps}
       />
+      <FaqSchema faqs={faqs} />
       <article className="container mx-auto px-4 py-12 max-w-4xl">
         <nav className="mb-8 text-sm text-gray-400">
           <Link href="/" className="hover:text-[#FFA500]">Home</Link>
           <span className="mx-2">/</span>
           <Link href="/blog" className="hover:text-[#FFA500]">Blog</Link>
           <span className="mx-2">/</span>
-          <span className="text-white">How to Use Royal X Casino App Guide 2026</span>
+          <span className="text-white">How to Use the Royal X Casino App</span>
         </nav>
 
         <header className="mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            How to Use Royal X Casino App in Pakistan: Complete Beginner's Guide 2026
-          </h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">{TITLE}</h1>
           <div className="flex items-center gap-4 text-gray-400 text-sm">
             <time dateTime="2026-01-11">January 11, 2026</time>
             <span>•</span>
-            <span>15 min read</span>
+            <span>Updated October 8, 2026</span>
+            <span>•</span>
+            <span>14 min read</span>
           </div>
         </header>
 
         <div className="prose prose-invert prose-lg max-w-none">
           <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-            New to <Link href="/" className="text-[#FFA500] hover:underline font-semibold">Royal X Casino</Link>? This complete beginner's guide will walk you through everything from downloading the app to making your first withdrawal. By the end of this guide, you'll know exactly how to use Royal X Casino to start earning real cash in Pakistan.
+            This guide takes a first-time Android user through the{' '}
+            <Link href="/" className="text-[#FFA500] hover:underline font-semibold">Royal X Casino APK</Link>{' '}
+            from install to first withdrawal: where things are in the lobby, how free-trial modes
+            work, the real deposit and withdrawal limits, which bonuses exist and the settings
+            worth changing on day one. It is a real-money gambling app for players 18 and over;
+            every number below is the app&apos;s own, and nothing here is a way to earn.
           </p>
+
+          <Image
+            src="/royal-x-casino-app-landing-page.webp"
+            alt="Royal X Casino lobby with Teen Patti, Rummy, Dragon vs Tiger, fishing and slot categories"
+            width={1200}
+            height={540}
+            className="w-full h-auto rounded-xl my-8"
+            priority
+          />
 
           <div className="bg-gradient-to-r from-purple-800/50 to-orange-600/50 rounded-lg p-8 my-8">
-            <p className="text-white text-lg mb-4">
-              <strong>📚 What This Guide Covers:</strong>
-            </p>
-            <ul className="list-disc pl-6 text-white space-y-2">
-              <li>Downloading & installing Royal X Casino APK</li>
-              <li>Creating your account step-by-step</li>
-              <li>Making your first deposit</li>
-              <li>Understanding all game modes</li>
-              <li>How to play each game</li>
-              <li>Claiming bonuses & rewards</li>
-              <li>Withdrawing your winnings</li>
-              <li>VIP system explained</li>
-              <li>Tips for maximizing earnings</li>
-            </ul>
+            <h2 className="text-white text-2xl font-bold mb-4">The whole process in six steps</h2>
+            <ol className="list-decimal pl-6 text-white space-y-2">
+              {overviewSteps.map((s) => (
+                <li key={s.name}>
+                  <strong>{s.name}.</strong> {s.text}
+                </li>
+              ))}
+            </ol>
           </div>
 
-          <h2 className="text-3xl font-bold text-white mt-12 mb-6">Step 1: Download & Install Royal X Casino APK</h2>
-          
+          <div className="flex flex-col items-center my-8">
+            <a
+              href={DOWNLOAD_URL}
+              target="_blank"
+              rel="noopener noreferrer sponsored"
+              className="inline-block bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-bold py-4 px-8 rounded-lg text-lg transition-all transform hover:scale-105 shadow-lg"
+            >
+              Download Royal X Casino APK {APP_INFO.version}
+            </a>
+            <p className="text-gray-400 text-sm mt-3 text-center">
+              This button opens the operator&apos;s referral link. We may earn a commission when you
+              register through it, at no cost to you. See our{' '}
+              <Link href="/disclaimer" className="text-[#FFA500] hover:underline">disclaimer</Link>.
+            </p>
+          </div>
+
+          <h2 className="text-3xl font-bold text-white mt-12 mb-6">Step 1: Download and install the Royal X Casino APK</h2>
+
           <h3 className="text-2xl font-semibold text-white mt-8 mb-4">Requirements</h3>
           <ul className="list-disc pl-6 text-gray-300 mb-6 space-y-2">
-            <li>Android device (version 5.0 or higher)</li>
-            <li>At least 100MB free storage space</li>
-            <li>Stable internet connection (Wi-Fi or mobile data)</li>
-            <li>Pakistani phone number for verification</li>
+            <li>Android phone on {APP_INFO.androidMin}</li>
+            <li>The APK is {APP_INFO.size}; keep roughly 600 MB free for game assets that download on first launch</li>
+            <li>Stable Wi-Fi or 4G</li>
+            <li>A Pakistani (+92) mobile number that can receive SMS</li>
           </ul>
 
-          <h3 className="text-2xl font-semibold text-white mt-8 mb-4">Download Process</h3>
+          <h3 className="text-2xl font-semibold text-white mt-8 mb-4">Install steps</h3>
           <ol className="list-decimal pl-6 text-gray-300 mb-6 space-y-3">
-            <li>Visit the official <Link href="/" className="text-[#FFA500] hover:underline font-semibold">Royal X Casino</Link> website: royalexcasino.com.pk</li>
-            <li>Click the big "Download APK" button (usually orange or green) - or visit our <Link href="/royal-x-casino-download" className="text-[#FFA500] hover:underline font-semibold">download page</Link></li>
-            <li>Your browser will warn you about downloading from unknown sources - click "OK" or "Download anyway"</li>
-            <li>Wait for the APK file to download (typically 50-80MB, takes 30 seconds to 2 minutes)</li>
+            <li>Open the official link from our{' '}
+              <Link href="/royal-x-casino-download" className="text-[#FFA500] hover:underline font-semibold">Royal X Casino APK download page</Link>{' '}
+              and tap Download. Ignore APK files forwarded on Telegram or WhatsApp.</li>
+            <li>When Android blocks the install, open Settings, find your browser under &quot;Install unknown apps&quot; and allow it.</li>
+            <li>Tap the downloaded file in your notifications or Downloads folder and press Install.</li>
+            <li>Open the app; the first launch downloads game assets, so wait on Wi-Fi if you can.</li>
+            <li>Go back and turn &quot;Install unknown apps&quot; off again for your browser.</li>
           </ol>
 
-          <h3 className="text-2xl font-semibold text-white mt-8 mb-4">Installation Process</h3>
+          <p className="text-gray-300 mb-4">
+            Only the current {APP_INFO.version} release is linked. Older builds exist but break
+            login and payments. There is no iOS app or Windows app; iPhone users play the browser
+            version in Safari or Chrome, and PC users run the browser version or an Android
+            emulator.
+          </p>
+
+          <h2 className="text-3xl font-bold text-white mt-12 mb-6">Step 2: Register with your mobile number</h2>
+
+          <Image
+            src="/royal-x-casino-registration-page.webp"
+            alt="Royal X Casino registration screen with phone number, OTP, password and invite code fields"
+            width={1200}
+            height={540}
+            className="w-full h-auto rounded-xl my-8"
+          />
+
           <ol className="list-decimal pl-6 text-gray-300 mb-6 space-y-3">
-            <li>Open your "Downloads" folder or notification bar</li>
-            <li>Tap the downloaded APK file (named something like "RoyalXCasino_v2.54.7.apk")</li>
-            <li>If prompted, go to Settings → Security → Enable "Install from Unknown Sources"</li>
-            <li>Go back and tap the APK again</li>
-            <li>Click "Install" and wait 10-30 seconds</li>
-            <li>Click "Open" when installation completes</li>
-          </ol>
-
-          <div className="bg-orange-600/20 border border-orange-500 rounded-lg p-6 my-8">
-            <p className="text-white font-semibold mb-2">⚠️ Important Security Note</p>
-            <p className="text-gray-300">
-              ONLY download from the official website (royalexcasino.com.pk). Never download from third-party sites, Play Store clones, or random links. Fake versions can steal your money!
-            </p>
-          </div>
-
-          <h2 className="text-3xl font-bold text-white mt-12 mb-6">Step 2: Create Your Account</h2>
-          
-          <ol className="list-decimal pl-6 text-gray-300 mb-6 space-y-4">
-            <li>
-              <strong>Open the app</strong> - You'll see the welcome screen with a "Register" or "Sign Up" button
-            </li>
-            <li>
-              <strong>Enter your mobile number</strong> - Use a Pakistani number (03XX-XXXXXXX format). This will be used for:
-              <ul className="list-disc pl-6 mt-2 space-y-1">
-                <li>Account verification</li>
-                <li>Login</li>
-                <li>Withdrawal verification</li>
-                <li>Important notifications</li>
-              </ul>
-            </li>
-            <li>
-              <strong>Get OTP code</strong> - Click "Send OTP". You'll receive a 4 or 6-digit code via SMS within 30 seconds
-            </li>
-            <li>
-              <strong>Enter the OTP</strong> - Type the code carefully. You usually get 3 attempts before needing to request a new code
-            </li>
-            <li>
-              <strong>Create password</strong> - Choose a strong password (at least 6 characters, mix of letters and numbers)
-            </li>
-            <li>
-              <strong>Optional: Enter referral code</strong> - If you have a friend's referral code, enter it now to get bonus rewards. If not, skip this step
-            </li>
-            <li>
-              <strong>Click "Complete Registration"</strong> - Your account is now created!
-            </li>
+            <li><strong>Tap Register</strong> on the welcome screen.</li>
+            <li><strong>Enter your +92 mobile number.</strong> It becomes your login and receives every OTP, so use a number you control.</li>
+            <li><strong>Request the SMS code.</strong> It can take up to 2 minutes to arrive; use Resend if it does not.</li>
+            <li><strong>Set a password</strong> you do not use for your wallet or email.</li>
+            <li><strong>Add an invite code</strong> if a friend gave you one. This is optional.</li>
+            <li><strong>Confirm.</strong> Registration takes 2 to 3 minutes. One account per person and number; you must be 18 or over.</li>
           </ol>
 
           <div className="bg-green-900/30 border border-green-600 rounded-lg p-6 my-8">
-            <p className="text-white font-semibold mb-2">🎁 Welcome Bonus Activated!</p>
+            <p className="text-white font-semibold mb-2">Welcome credit</p>
             <p className="text-gray-300">
-              After registration, you'll automatically receive up to ₨500 welcome bonus. This bonus will be credited after your first deposit.
+              Rs. 10 is credited after registration. It is enough to see how a real-money round
+              works, not enough to matter. Bonus credit may carry turnover terms before withdrawal;
+              check the in-app bonus terms.
             </p>
           </div>
 
-          <h2 className="text-3xl font-bold text-white mt-12 mb-6">Step 3: Navigate the App Interface</h2>
-          
-          <h3 className="text-2xl font-semibold text-white mt-8 mb-4">Home Screen Layout</h3>
-          <p className="text-gray-300 mb-4">When you first log in, here's what you'll see:</p>
+          <p className="text-gray-300 mb-4">
+            A screenshot walkthrough of each field is on the{' '}
+            <Link href="/how-to-register-royal-x-casino" className="text-[#FFA500] hover:underline font-semibold">Royal X Casino registration page</Link>.
+          </p>
+
+          <h2 className="text-3xl font-bold text-white mt-12 mb-6">Step 3: Find your way around the lobby</h2>
+
           <ul className="list-disc pl-6 text-gray-300 mb-6 space-y-3">
-            <li><strong>Top Bar:</strong> Shows your current balance, wallet icon, and notification bell</li>
-            <li><strong>Banner Section:</strong> Displays current promotions, bonuses, and special offers</li>
-            <li><strong>Game Cards:</strong> 200+ games - Teen Patti, Slots, Fishing, Rummy, Dragon vs Tiger, Andar Bahar & more</li>
-            <li><strong>Bottom Navigation:</strong>
-              <ul className="list-disc pl-6 mt-2 space-y-1">
-                <li>Home - Main screen</li>
-                <li>Promotions - All bonuses and offers</li>
-                <li>VIP - Your VIP level and rewards</li>
-                <li>My Account - Profile, history, settings</li>
-              </ul>
-            </li>
+            <li><strong>Top bar:</strong> balance, wallet shortcut and notifications.</li>
+            <li><strong>Banner strip:</strong> current promotions and weekly events.</li>
+            <li><strong>Game grid:</strong> 200+ titles grouped as Teen Patti (Classic, AK47, Joker, Muflis), Rummy, Andar Bahar, Dragon vs Tiger, 7 Up Down, Roulette, Baccarat, crash and Aviator-style, fishing arcade rooms and slots such as Father Kim, Trump IT and Cashpot.</li>
+            <li><strong>Bottom navigation:</strong> Home, Promotions (including Redeem Code), VIP and My Account, where transaction history and the live chat live.</li>
           </ul>
 
-          <h2 className="text-3xl font-bold text-white mt-12 mb-6">Step 4: Make Your First Deposit</h2>
-          
+          <h2 className="text-3xl font-bold text-white mt-12 mb-6">Free-trial and demo modes: how to practise without depositing</h2>
+
           <p className="text-gray-300 mb-4">
-            You need to add money to your account before you can play real money games. Here's how:
+            Many games in the lobby open in a free-trial or demo mode. The game runs exactly as it
+            does for real money, but your bets use practice credits supplied by the app. This is
+            the right place to spend your first few sessions, and the only place to learn a new
+            game.
           </p>
 
-          <h3 className="text-2xl font-semibold text-white mt-8 mb-4">Deposit Methods Available</h3>
+          <h3 className="text-2xl font-semibold text-white mt-8 mb-4">How demo modes work</h3>
+          <ul className="list-disc pl-6 text-gray-300 mb-6 space-y-3">
+            <li><strong>Practice credits are not money.</strong> They cannot be withdrawn, and a win in demo mode adds nothing to your real balance.</li>
+            <li><strong>The rules and payout tables are the same.</strong> Use the trial to read the hand rankings in Teen Patti, see how the Tie bet pays in Dragon vs Tiger, or learn when to cash out in a crash game.</li>
+            <li><strong>Pace is the lesson.</strong> Notice how fast a one-bet game resolves and how quickly practice credits disappear. Real money disappears at the same speed.</li>
+            <li><strong>Switching to real money</strong> requires a verified account with a completed registration and a deposit. The app will prompt you; it never switches silently.</li>
+            <li><strong>Not every title has a trial.</strong> If a game has no demo option, read its rules panel before betting the minimum stake.</li>
+          </ul>
+
           <p className="text-gray-300 mb-4">
-            Royal X Casino supports multiple payment methods. For detailed instructions, check our <Link href="/royal-x-casino-deposit-guide" className="text-[#FFA500] hover:underline font-semibold">deposit money guide</Link>.
-          </p>
-          <ul className="list-disc pl-6 text-gray-300 mb-6 space-y-2">
-            <li><strong>JazzCash:</strong> Most popular, instant processing</li>
-            <li><strong>EasyPaisa:</strong> Also instant, widely used</li>
-            <li><strong>Bank Transfer:</strong> Takes 1-3 hours</li>
-          </ul>
-
-          <h3 className="text-2xl font-semibold text-white mt-8 mb-4">Step-by-Step Deposit Process</h3>
-          <ol className="list-decimal pl-6 text-gray-300 mb-6 space-y-3">
-            <li>Tap the "Wallet" or "Deposit" icon (usually in the top right)</li>
-            <li>Select your deposit method (JazzCash/EasyPaisa/Bank)</li>
-            <li>Enter the amount you want to deposit
-              <ul className="list-disc pl-6 mt-2 space-y-1">
-                <li>Minimum: ₨300</li>
-                <li>Maximum: ₨100,000 per transaction</li>
-                <li>Recommended first deposit: ₨1,000-3,000</li>
-              </ul>
-            </li>
-            <li>Click "Continue" or "Proceed"</li>
-            <li>You'll see the payment account details (account number or mobile number)</li>
-            <li>Open your JazzCash/EasyPaisa app or go to your bank</li>
-            <li>Send the EXACT amount to the provided account</li>
-            <li>Take a screenshot of the transaction confirmation</li>
-            <li>Return to Royal X Casino app</li>
-            <li>Upload the screenshot or enter transaction ID</li>
-            <li>Click "Submit"</li>
-            <li>Wait 1-5 minutes for processing (usually instant for JazzCash/EasyPaisa)</li>
-          </ol>
-
-          <div className="bg-purple-800/30 border border-purple-600 rounded-lg p-6 my-8">
-            <p className="text-white font-semibold mb-2">🎉 First Deposit Bonus</p>
-            <p className="text-gray-300 mb-2">
-              Your first deposit gets a <strong>100% bonus</strong> up to ₨5,000!
-            </p>
-            <p className="text-gray-300">
-              Example: Deposit ₨2,000 → Get ₨2,000 bonus → Play with ₨4,000 total!
-            </p>
-          </div>
-
-          <h2 className="text-3xl font-bold text-white mt-12 mb-6">Step 5: Understand the Games</h2>
-          
-          <h3 className="text-2xl font-semibold text-white mt-8 mb-4">1. Teen Patti (3 Patti)</h3>
-          <p className="text-gray-300 mb-2"><strong>Best for:</strong> Strategy players who know poker rankings</p>
-          <p className="text-gray-300 mb-4"><strong>How to play:</strong></p>
-          <ul className="list-disc pl-6 text-gray-300 mb-6 space-y-2">
-            <li>Each player gets 3 cards</li>
-            <li>Players bet on who has the best hand</li>
-            <li>Hand rankings: Trail (three of a kind) &gt; Pure Sequence &gt; Sequence &gt; Color &gt; Pair &gt; High Card</li>
-            <li>Choose to play "Seen" (see your cards) or "Blind" (don't see, but bets cost less)</li>
-            <li>Typical round: 2-5 minutes</li>
-            <li>Entry: ₨10 to ₨10,000+ tables available</li>
-          </ul>
-
-          <h3 className="text-2xl font-semibold text-white mt-8 mb-4">2. Rummy</h3>
-          <p className="text-gray-300 mb-2"><strong>Best for:</strong> Players who enjoy strategy and forming sets/sequences</p>
-          <p className="text-gray-300 mb-4"><strong>How to play:</strong></p>
-          <ul className="list-disc pl-6 text-gray-300 mb-6 space-y-2">
-            <li>13-card or 21-card versions available</li>
-            <li>Goal: Form valid sets (same rank) and sequences (consecutive cards)</li>
-            <li>Draw and discard cards each turn</li>
-            <li>First to meld all cards wins</li>
-            <li>Typical round: 5-10 minutes</li>
-            <li>Entry: ₨20 to ₨5,000+ tables</li>
-          </ul>
-
-          <h3 className="text-2xl font-semibold text-white mt-8 mb-4">3. Dragon vs Tiger</h3>
-          <p className="text-gray-300 mb-2"><strong>Best for:</strong> Quick earnings, beginners, fast-paced action</p>
-          <p className="text-gray-300 mb-4"><strong>How to play:</strong></p>
-          <ul className="list-disc pl-6 text-gray-300 mb-6 space-y-2">
-            <li>Super simple: Bet on Dragon, Tiger, or Tie</li>
-            <li>One card is dealt to Dragon side, one to Tiger side</li>
-            <li>Highest card wins</li>
-            <li>Payout: 1:1 for Dragon/Tiger, 11:1 for Tie</li>
-            <li>Typical round: 30 seconds!</li>
-            <li>Entry: ₨10 to ₨50,000+</li>
-            <li>Perfect for beginners - no strategy needed</li>
-          </ul>
-
-          <h3 className="text-2xl font-semibold text-white mt-8 mb-4">4. Andar Bahar</h3>
-          <p className="text-gray-300 mb-2"><strong>Best for:</strong> 50/50 chances, simple gameplay</p>
-          <p className="text-gray-300 mb-4"><strong>How to play:</strong></p>
-          <ul className="list-disc pl-6 text-gray-300 mb-6 space-y-2">
-            <li>One card is shown (joker card)</li>
-            <li>Bet on whether matching card will appear on Andar (inside) or Bahar (outside)</li>
-            <li>Cards are dealt alternately to both sides until match is found</li>
-            <li>First side to match wins</li>
-            <li>Typical round: 1-2 minutes</li>
-            <li>Entry: ₨10 to ₨20,000+</li>
-          </ul>
-
-          <div className="bg-green-900/30 border border-green-600 rounded-lg p-6 my-8">
-            <p className="text-white font-semibold mb-2">💡 Beginner Tip</p>
-            <p className="text-gray-300">
-              Start with Dragon vs Tiger or Andar Bahar. These games are simplest and have quick rounds, so you can learn fast without risking too much. Once comfortable, try Teen Patti and Rummy for higher earning potential.
-            </p>
-          </div>
-
-          <h2 className="text-3xl font-bold text-white mt-12 mb-6">Step 6: How to Start Playing</h2>
-          
-          <ol className="list-decimal pl-6 text-gray-300 mb-6 space-y-4">
-            <li>
-              <strong>Choose a game</strong> from the home screen
-            </li>
-            <li>
-              <strong>Select table/room:</strong> You'll see multiple tables with different entry amounts:
-              <ul className="list-disc pl-6 mt-2 space-y-1">
-                <li>Beginner tables: ₨10-50 entry</li>
-                <li>Intermediate: ₨100-500</li>
-                <li>Advanced: ₨1,000+</li>
-                <li>VIP: ₨10,000+</li>
-              </ul>
-            </li>
-            <li>
-              <strong>Start with small amounts!</strong> If you're new, choose a ₨10 or ₨20 table to practice
-            </li>
-            <li>
-              <strong>Tap "Join Table"</strong> or "Play Now"
-            </li>
-            <li>
-              <strong>Wait for game to start</strong> (usually 5-30 seconds as other players join)
-            </li>
-            <li>
-              <strong>Play the game</strong> according to the rules (shown on screen)
-            </li>
-            <li>
-              <strong>Collect winnings</strong> automatically added to your balance if you win!
-            </li>
-          </ol>
-
-          <h2 className="text-3xl font-bold text-white mt-12 mb-6">Step 7: Claim Your Bonuses</h2>
-          
-          <p className="text-gray-300 mb-4">
-            Royal X Casino offers multiple bonus opportunities. Here's how to claim them all:
+            A sensible rule: do not deposit for a game until you have played it in demo mode long
+            enough to predict what the next screen will show. If a game is only fun when real
+            money is on the line, that is worth noticing before you deposit, because it means the
+            appeal is the risk rather than the play.
           </p>
 
-          <h3 className="text-2xl font-semibold text-white mt-8 mb-4">Daily Tasks</h3>
-          <ol className="list-decimal pl-6 text-gray-300 mb-6 space-y-2">
-            <li>Go to "Promotions" tab</li>
-            <li>Click "Daily Tasks"</li>
-            <li>You'll see tasks like:
-              <ul className="list-disc pl-6 mt-2 space-y-1">
-                <li>Play 5 games → Get ₨50</li>
-                <li>Deposit ₨500 → Get ₨100</li>
-                <li>Refer 1 friend → Get ₨200</li>
-              </ul>
-            </li>
-            <li>Complete the task</li>
-            <li>Click "Claim" button next to completed task</li>
-            <li>Bonus is instantly added to your account!</li>
-          </ol>
+          <h2 className="text-3xl font-bold text-white mt-12 mb-6">Step 4: Make your first deposit</h2>
 
-          <h3 className="text-2xl font-semibold text-white mt-8 mb-4">Daily Rebate</h3>
-          <ul className="list-disc pl-6 text-gray-300 mb-6 space-y-2">
-            <li>Based on your total gameplay (turnover) each day</li>
-            <li>Rate depends on VIP level (5-15%)</li>
-            <li>Automatically calculated and added daily</li>
-            <li>Check in "My Account" → "Rebate History"</li>
-          </ul>
+          <Image
+            src="/royal-x-casino-deposit-money-interface.webp"
+            alt="Royal X Casino deposit interface with amount field and EasyPaisa, JazzCash, bank and USDT tabs"
+            width={1200}
+            height={540}
+            className="w-full h-auto rounded-xl my-8"
+          />
 
-          <h3 className="text-2xl font-semibold text-white mt-8 mb-4">Referral Bonus</h3>
-          <ol className="list-decimal pl-6 text-gray-300 mb-6 space-y-2">
-            <li>Go to "My Account" → "Invite Friends"</li>
-            <li>Copy your unique referral code or link</li>
-            <li>Share with friends via WhatsApp, Facebook, etc.</li>
-            <li>When they register using your code and deposit, you get:
-              <ul className="list-disc pl-6 mt-2 space-y-1">
-                <li>10-20% commission on all their deposits (forever!)</li>
-                <li>Bonus if they become active players</li>
-              </ul>
-            </li>
-            <li>Commission paid instantly</li>
-          </ol>
-
-          <h2 className="text-3xl font-bold text-white mt-12 mb-6">Step 8: Withdraw Your Winnings</h2>
-          
-          <p className="text-gray-300 mb-4">
-            This is the most important part - getting your money out! Royal X Casino has one of the fastest withdrawal systems in Pakistan.
-          </p>
-
-          <h3 className="text-2xl font-semibold text-white mt-8 mb-4">Withdrawal Requirements</h3>
-          <ul className="list-disc pl-6 text-gray-300 mb-6 space-y-2">
-            <li>Minimum withdrawal: ₨300</li>
-            <li>Maximum daily withdrawal: ₨100,000 (₨500,000 for VIP 8+)</li>
-            <li>Account must be verified (automatic after first deposit)</li>
-            <li>Must use same payment method as deposit (for first withdrawal)</li>
-          </ul>
-
-          <h3 className="text-2xl font-semibold text-white mt-8 mb-4">How to Withdraw (Step-by-Step)</h3>
-          <p className="text-gray-300 mb-4">
-            For a complete guide with screenshots, see our <Link href="/royal-x-casino-withdraw-guide" className="text-[#FFA500] hover:underline font-semibold">withdraw money guide</Link>.
-          </p>
-          <ol className="list-decimal pl-6 text-gray-300 mb-6 space-y-3">
-            <li>Tap "Wallet" icon at top of screen</li>
-            <li>Select "Withdraw" tab</li>
-            <li>Choose withdrawal method (JazzCash/EasyPaisa/Bank)</li>
-            <li>Enter the amount you want to withdraw</li>
-            <li>Enter your JazzCash/EasyPaisa number or bank account details</li>
-            <li>Double-check all details (incorrect details = money goes to wrong person!)</li>
-            <li>Click "Submit Withdrawal Request"</li>
-            <li>You'll receive an OTP code on your registered mobile number</li>
-            <li>Enter the OTP to confirm</li>
-            <li>Wait for processing:
-              <ul className="list-disc pl-6 mt-2 space-y-1">
-                <li>JazzCash/EasyPaisa: 5-30 minutes</li>
-                <li>Bank Transfer: 1-3 hours</li>
-              </ul>
-            </li>
-            <li>Check your JazzCash/EasyPaisa account or bank - money will appear!</li>
-          </ol>
-
-          <div className="bg-green-900/30 border border-green-600 rounded-lg p-6 my-8">
-            <p className="text-white font-semibold mb-2">⚡ Super Fast Withdrawals!</p>
-            <p className="text-gray-300">
-              Most JazzCash and EasyPaisa withdrawals complete in under 30 minutes. Many users report getting their money in just 5-10 minutes!
-            </p>
-          </div>
-
-          <h2 className="text-3xl font-bold text-white mt-12 mb-6">Step 9: Understanding the VIP System</h2>
-          
-          <p className="text-gray-300 mb-4">
-            Royal X Casino has a 10-level VIP system that rewards active players. As you play more, you automatically level up and unlock better rewards.
-          </p>
-
-          <h3 className="text-2xl font-semibold text-white mt-8 mb-4">VIP Level Benefits</h3>
-          <p className="text-gray-300 mb-4">
-            For a complete guide to all VIP benefits and bonuses, see our <Link href="/blog/royal-x-casino-bonuses-vip-guide" className="text-[#FFA500] hover:underline font-semibold">Royal X Casino Bonuses & VIP Guide</Link>.
-          </p>
           <div className="overflow-x-auto mb-8">
             <table className="w-full border-collapse border border-gray-700">
               <thead>
                 <tr className="bg-purple-900">
-                  <th className="border border-gray-700 p-4 text-left text-white">Level</th>
-                  <th className="border border-gray-700 p-4 text-left text-white">Daily Rebate</th>
-                  <th className="border border-gray-700 p-4 text-left text-white">Level-Up Bonus</th>
+                  <th className="border border-gray-700 p-4 text-left text-white">Method</th>
+                  <th className="border border-gray-700 p-4 text-left text-white">Limits per transaction</th>
+                  <th className="border border-gray-700 p-4 text-left text-white">Credited</th>
                 </tr>
               </thead>
-              <tbody>
+              <tbody className="text-gray-300">
                 <tr>
-                  <td className="border border-gray-700 p-4">VIP 1</td>
-                  <td className="border border-gray-700 p-4">5%</td>
-                  <td className="border border-gray-700 p-4">₨100</td>
+                  <td className="border border-gray-700 p-4">EasyPaisa</td>
+                  <td className="border border-gray-700 p-4">Rs. 100 to Rs. 50,000</td>
+                  <td className="border border-gray-700 p-4">Instantly to a few minutes</td>
                 </tr>
                 <tr>
-                  <td className="border border-gray-700 p-4">VIP 2-3</td>
-                  <td className="border border-gray-700 p-4">6-8%</td>
-                  <td className="border border-gray-700 p-4">₨300-500</td>
+                  <td className="border border-gray-700 p-4">JazzCash</td>
+                  <td className="border border-gray-700 p-4">Rs. 100 to Rs. 50,000</td>
+                  <td className="border border-gray-700 p-4">Instantly to a few minutes</td>
                 </tr>
                 <tr>
-                  <td className="border border-gray-700 p-4">VIP 4-6</td>
-                  <td className="border border-gray-700 p-4">9-11%</td>
-                  <td className="border border-gray-700 p-4">₨1,000-3,000</td>
+                  <td className="border border-gray-700 p-4">Bank transfer (deposits only)</td>
+                  <td className="border border-gray-700 p-4">Rs. 100 to Rs. 50,000</td>
+                  <td className="border border-gray-700 p-4">Up to about 30 minutes</td>
                 </tr>
                 <tr>
-                  <td className="border border-gray-700 p-4">VIP 7-9</td>
-                  <td className="border border-gray-700 p-4">12-14%</td>
-                  <td className="border border-gray-700 p-4">₨5,000-8,000</td>
-                </tr>
-                <tr>
-                  <td className="border border-gray-700 p-4">VIP 10</td>
-                  <td className="border border-gray-700 p-4 text-green-400">15%</td>
-                  <td className="border border-gray-700 p-4 text-green-400">₨10,000+</td>
+                  <td className="border border-gray-700 p-4">USDT</td>
+                  <td className="border border-gray-700 p-4">Supported</td>
+                  <td className="border border-gray-700 p-4">After network confirmation</td>
                 </tr>
               </tbody>
             </table>
           </div>
 
-          <h3 className="text-2xl font-semibold text-white mt-8 mb-4">How to Check Your VIP Status</h3>
-          <ol className="list-decimal pl-6 text-gray-300 mb-6 space-y-2">
-            <li>Tap "VIP" tab in bottom navigation</li>
-            <li>You'll see your current level, progress bar, and benefits</li>
-            <li>Check "Requirements" to see what you need for next level</li>
-            <li>View your rebate history and level-up bonuses</li>
+          <ol className="list-decimal pl-6 text-gray-300 mb-6 space-y-3">
+            <li>Tap the wallet icon, then Deposit.</li>
+            <li>Choose EasyPaisa, JazzCash, bank transfer or USDT.</li>
+            <li>Enter an amount from Rs. 100. There is no deposit fee. Start with the minimum.</li>
+            <li>Send the exact amount from your wallet app to the account shown, and keep the transaction ID.</li>
+            <li>Return to the app, enter the transaction ID or upload the screenshot, and submit.</li>
           </ol>
 
-          <h2 className="text-3xl font-bold text-white mt-12 mb-6">Beginner Tips for Maximum Earnings</h2>
-          
           <div className="bg-purple-800/30 border border-purple-600 rounded-lg p-6 my-8">
-            <h3 className="text-xl font-semibold text-white mb-4">🎯 Smart Strategies for New Players</h3>
-            <ol className="list-decimal pl-6 text-gray-300 space-y-3">
-              <li><strong>Start small:</strong> Play ₨10-20 tables until you understand the games</li>
-              <li><strong>Complete daily tasks:</strong> Easy ₨500-1,000 extra per day</li>
-              <li><strong>Focus on Dragon vs Tiger first:</strong> Simplest game, quickest way to learn</li>
-              <li><strong>Set daily limits:</strong> Don't play with more than you can afford to lose</li>
-              <li><strong>Refer friends:</strong> Build passive income (10-20% of their deposits forever)</li>
-              <li><strong>Play during VIP 2x events:</strong> Get double VIP points (announced in Promotions)</li>
-              <li><strong>Withdraw regularly:</strong> Don't keep large amounts in your account</li>
-              <li><strong>Learn one game at a time:</strong> Master Dragon vs Tiger, then Teen Patti, then others</li>
-              <li><strong>Watch tutorials:</strong> Available in-app under "Help" section</li>
-              <li><strong>Join VIP groups:</strong> Get tips from experienced players</li>
-            </ol>
-          </div>
-
-          <h2 className="text-3xl font-bold text-white mt-12 mb-6">Common Mistakes to Avoid</h2>
-          
-          <ul className="list-disc pl-6 text-gray-300 mb-8 space-y-3">
-            <li><strong>Playing too high stakes too soon:</strong> Start small, increase as you gain experience</li>
-            <li><strong>Chasing losses:</strong> If you lose, take a break. Don't try to "win it back" immediately</li>
-            <li><strong>Ignoring daily tasks:</strong> Free money! Always complete them</li>
-            <li><strong>Not verifying account:</strong> Slows down withdrawals. Verify immediately after first deposit</li>
-            <li><strong>Forgetting referral code:</strong> If a friend referred you, use their code during registration for bonus</li>
-            <li><strong>Playing on weak internet:</strong> Disconnections can cost you games. Use stable Wi-Fi or 4G</li>
-            <li><strong>Not reading game rules:</strong> Spend 5 minutes learning each game before playing for real money</li>
-          </ul>
-
-          <h2 className="text-3xl font-bold text-white mt-12 mb-6">Troubleshooting Common Issues</h2>
-          
-          <h3 className="text-2xl font-semibold text-white mt-8 mb-4">Deposit Not Showing?</h3>
-          <ul className="list-disc pl-6 text-gray-300 mb-6 space-y-2">
-            <li>Wait 5 minutes - sometimes there's a small delay</li>
-            <li>Check if you sent to correct account number</li>
-            <li>Check if you sent exact amount</li>
-            <li>Contact support via live chat with screenshot</li>
-          </ul>
-
-          <h3 className="text-2xl font-semibold text-white mt-8 mb-4">Withdrawal Pending Too Long?</h3>
-          <ul className="list-disc pl-6 text-gray-300 mb-6 space-y-2">
-            <li>JazzCash/EasyPaisa should be under 30 minutes</li>
-            <li>If longer, check if you entered correct account details</li>
-            <li>Contact 24/7 live chat support</li>
-            <li>First withdrawal may take slightly longer for verification</li>
-          </ul>
-
-          <h3 className="text-2xl font-semibold text-white mt-8 mb-4">App Crashing or Laggy?</h3>
-          <ul className="list-disc pl-6 text-gray-300 mb-6 space-y-2">
-            <li>Clear app cache: Settings → Apps → Royal X Casino → Clear Cache</li>
-            <li>Update to latest version</li>
-            <li>Restart your phone</li>
-            <li>Ensure stable internet connection</li>
-            <li>Free up storage space (at least 500MB free)</li>
-          </ul>
-
-          <h3 className="text-2xl font-semibold text-white mt-8 mb-4">Forgot Password?</h3>
-          <ul className="list-disc pl-6 text-gray-300 mb-6 space-y-2">
-            <li>On login screen, tap "Forgot Password"</li>
-            <li>Enter your registered mobile number</li>
-            <li>Receive OTP code via SMS</li>
-            <li>Enter OTP and create new password</li>
-          </ul>
-
-          <h2 className="text-3xl font-bold text-white mt-12 mb-6">Getting Help & Support</h2>
-          
-          <p className="text-gray-300 mb-4">
-            Royal X Casino offers multiple support options:
-          </p>
-          <ul className="list-disc pl-6 text-gray-300 mb-8 space-y-3">
-            <li><strong>24/7 Live Chat:</strong> Tap the chat icon (usually bottom right). Instant responses from support team</li>
-            <li><strong>WhatsApp:</strong> Available in "Contact Us" section</li>
-            <li><strong>Email:</strong> support@royalexcasino.com.pk (response within 24 hours)</li>
-            <li><strong>FAQ Section:</strong> In-app under "Help" - answers to common questions</li>
-            <li><strong>Video Tutorials:</strong> Step-by-step guides for each game</li>
-          </ul>
-
-          <h2 className="text-3xl font-bold text-white mt-12 mb-6">Your First Week Action Plan</h2>
-          
-          <div className="bg-gradient-to-r from-orange-600/30 to-purple-800/30 rounded-lg p-8 my-8">
-            <h3 className="text-xl font-bold text-white mb-4">Follow this 7-day plan for best results:</h3>
-            <div className="space-y-4 text-gray-300">
-              <div>
-                <strong className="text-white">Day 1:</strong> Download, register, verify account. Deposit ₨1,000, claim welcome bonus. Play Dragon vs Tiger with ₨10-20 bets to learn.
-              </div>
-              <div>
-                <strong className="text-white">Day 2:</strong> Try Andar Bahar. Complete daily tasks. Play 1-2 hours, aim for small wins.
-              </div>
-              <div>
-                <strong className="text-white">Day 3:</strong> Learn Teen Patti basics. Watch tutorial. Practice at ₨20 tables. Share referral code with 5 friends.
-              </div>
-              <div>
-                <strong className="text-white">Day 4:</strong> Try Rummy (simpler 13-card version). Continue daily tasks. Check VIP progress.
-              </div>
-              <div>
-                <strong className="text-white">Day 5:</strong> Make first withdrawal (even if small like ₨500) to test the process. Confirm it's fast and easy.
-              </div>
-              <div>
-                <strong className="text-white">Day 6:</strong> Increase bet sizes slightly if winning consistently. Focus on game where you perform best.
-              </div>
-              <div>
-                <strong className="text-white">Day 7:</strong> Review your week. Calculate profit/loss. Claim weekly rebate. Plan next week's strategy.
-              </div>
-            </div>
-          </div>
-
-          <h2 className="text-3xl font-bold text-white mt-12 mb-6">Final Tips for Success</h2>
-          
-          <ul className="list-disc pl-6 text-gray-300 mb-8 space-y-3">
-            <li><strong>Be patient:</strong> Earning real money takes time. Don't expect to get rich overnight</li>
-            <li><strong>Treat it as entertainment:</strong> Play for fun, with earning as a bonus. This mindset prevents addiction</li>
-            <li><strong>Keep learning:</strong> Watch how experienced players play. Learn from your losses</li>
-            <li><strong>Manage your bankroll:</strong> Never bet more than 5-10% of your balance on a single game</li>
-            <li><strong>Take breaks:</strong> Play 1-2 hour sessions, then rest. Tired players make mistakes</li>
-            <li><strong>Track your performance:</strong> Note which games you win/lose most at. Focus on winners</li>
-            <li><strong>Stay updated:</strong> Check Promotions tab daily for special offers and bonuses</li>
-          </ul>
-
-          <div className="bg-orange-600/20 border border-orange-500 rounded-lg p-6 my-8">
-            <p className="text-white font-semibold mb-2">⚠️ Responsible Gaming Reminder</p>
+            <p className="text-white font-semibold mb-2">First-deposit rebate</p>
             <p className="text-gray-300">
-              Royal X Casino is entertainment with earning potential, but it involves real money risk. Only play with money you can afford to lose. Set daily limits. If you feel you're playing too much or it's affecting your life negatively, take a break or seek help.
+              A one-time 20 percent rebate applies to your first deposit: deposit Rs. 1,000 and
+              Rs. 200 is added. Bonus credit may carry turnover terms, so check the in-app bonus
+              terms before counting it as withdrawable.
             </p>
           </div>
 
-          <h2 className="text-3xl font-bold text-white mt-12 mb-6">Conclusion</h2>
-          
           <p className="text-gray-300 mb-4">
-            Congratulations! You now know everything you need to start using Royal X Casino app in Pakistan. From downloading the APK to making your first withdrawal, you have a complete roadmap.
+            Each method&apos;s screens are covered in the{' '}
+            <Link href="/royal-x-casino-deposit-guide" className="text-[#FFA500] hover:underline font-semibold">Royal X Casino deposit guide</Link>.
           </p>
 
+          <h2 className="text-3xl font-bold text-white mt-12 mb-6">Step 5: Play with a limit already set</h2>
+
+          <ol className="list-decimal pl-6 text-gray-300 mb-6 space-y-3">
+            <li><strong>Decide the session loss limit and time limit</strong> before opening a game, and start a phone timer.</li>
+            <li><strong>Pick a game you have already played in demo mode.</strong></li>
+            <li><strong>Choose the lowest-stake room.</strong> Rooms are labelled by minimum bet; the smallest tables exist for exactly this stage.</li>
+            <li><strong>Read the rules panel</strong> once more for the payout table.</li>
+            <li><strong>Stop at the limit</strong>, whichever comes first, win or lose.</li>
+          </ol>
+
+          <div className="bg-green-900/30 border border-green-600 rounded-lg p-6 my-8">
+            <p className="text-white font-semibold mb-2">A sensible first session</p>
+            <p className="text-gray-300">
+              Deposit the Rs. 100 minimum. Set a 30-minute timer and a loss limit of the whole
+              Rs. 100, nothing more. Open a Teen Patti or Andar Bahar room you already know from
+              demo mode, at the lowest stake shown. When the timer rings or the balance hits zero,
+              close the app. If you finish above Rs. 600, request a withdrawal straight away so
+              you have seen the payout process end to end before anything larger is at stake.
+            </p>
+          </div>
+
+          <h3 className="text-2xl font-semibold text-white mt-8 mb-4">What the main games ask of you</h3>
+          <ul className="list-disc pl-6 text-gray-300 mb-6 space-y-3">
+            <li><strong>Teen Patti:</strong> three cards each, standard hand rankings, play Seen or Blind. Slower rounds and real decisions.</li>
+            <li><strong>Rummy:</strong> form sets and sequences by drawing and discarding. The most skill-dependent game in the lobby.</li>
+            <li><strong>Dragon vs Tiger and Andar Bahar:</strong> one bet, one outcome, a few seconds per round. Easiest to learn and easiest to overplay.</li>
+            <li><strong>Crash and Aviator-style:</strong> cash out before the multiplier bursts. High variance; set a fixed cash-out point.</li>
+            <li><strong>Fishing and slots:</strong> credits per shot or spin; set a spend cap before you start.</li>
+          </ul>
+
+          <h2 className="text-3xl font-bold text-white mt-12 mb-6">Step 6: Claim the bonuses that exist</h2>
+
+          <ul className="list-disc pl-6 text-gray-300 mb-6 space-y-3">
+            <li><strong>Daily login rewards:</strong> open the daily calendar under Promotions and tap Claim each day you play.</li>
+            <li><strong>Weekly promotions and cashback:</strong> listed in the banner strip and Promotions tab; terms vary by week.</li>
+            <li><strong>Referral:</strong> Rs. 20 when a friend registers with your code, rising to Rs. 1,000 as their deposits reach Rs. 1,000. Share from My Account.</li>
+            <li><strong>Redeem codes:</strong> enter them under Promotions, then Redeem Code. Codes come from the official Telegram and WhatsApp channels and partner sites, are single-use per account and vary in value. See the{' '}
+              <Link href="/royal-x-casino-redeem-code" className="text-[#FFA500] hover:underline font-semibold">Royal X Casino redeem code page</Link>.</li>
+            <li><strong>VIP levels:</strong> V1 upward, based on betting volume, with a one-time level-up bonus starting at Rs. 15 and a small monthly payment starting at Rs. 11. These amounts are small by design and are not a reason to bet more.</li>
+          </ul>
+
           <p className="text-gray-300 mb-4">
-            <strong>Remember the key steps:</strong>
+            The full list with conditions is in{' '}
+            <Link href="/blog/royal-x-casino-bonuses-vip-guide" className="text-[#FFA500] hover:underline font-semibold">
+              Royal X Casino Bonuses: Welcome, Rebate and VIP Guide 2026
+            </Link>.
           </p>
-          <ol className="list-decimal pl-6 text-gray-300 mb-6 space-y-2">
-            <li>Download from official website only</li>
-            <li>Register with Pakistani mobile number</li>
-            <li>Start with small deposits (₨1,000-2,000)</li>
-            <li>Learn with Dragon vs Tiger first</li>
-            <li>Complete daily tasks religiously</li>
-            <li>Refer friends for passive income</li>
-            <li>Withdraw regularly to test the system</li>
-            <li>Level up your VIP status gradually</li>
+
+          <h2 className="text-3xl font-bold text-white mt-12 mb-6">Step 7: Withdraw your balance</h2>
+
+          <ul className="list-disc pl-6 text-gray-300 mb-6 space-y-2">
+            <li>EasyPaisa and JazzCash: Rs. 600 to Rs. 50,000 per request, no operator fee</li>
+            <li>USDT: Rs. 50,000 to Rs. 500,000, network fee applies</li>
+            <li>Bank transfer is for deposits only</li>
+            <li>The wallet must be in the same name as your account</li>
+          </ul>
+
+          <ol className="list-decimal pl-6 text-gray-300 mb-6 space-y-3">
+            <li>Tap the wallet icon, then Withdraw.</li>
+            <li>Choose EasyPaisa or JazzCash and enter the account number in your name.</li>
+            <li>Enter an amount of Rs. 600 or more and submit.</li>
+            <li>Confirm the SMS OTP.</li>
+            <li>Wait. Payouts usually take 10 to 30 minutes; the first withdrawal and peak evenings can take longer.</li>
           </ol>
 
           <p className="text-gray-300 mb-4">
-            Most importantly: start small, learn the games, and gradually increase your stakes as you gain confidence. Many successful Royal X Casino players started exactly where you are now!
+            Make your first withdrawal small and early, so you know the process works before any
+            larger balance builds up. Details and screenshots are in the{' '}
+            <Link href="/royal-x-casino-withdraw-guide" className="text-[#FFA500] hover:underline font-semibold">Royal X Casino withdrawal guide</Link>.
           </p>
+
+          <h2 className="text-3xl font-bold text-white mt-12 mb-6">Settings every new player should change</h2>
+
+          <ul className="list-disc pl-6 text-gray-300 mb-6 space-y-3">
+            <li><strong>Turn off &quot;Install unknown apps&quot;</strong> for your browser after installing, so a clone cannot slip in later.</li>
+            <li><strong>Use a unique password</strong> and change it if you ever typed it into a link someone sent you.</li>
+            <li><strong>Mute promotional notifications</strong> in Android settings. Fewer prompts, fewer impulse sessions.</li>
+            <li><strong>Set an app timer</strong> in Digital Wellbeing to cap daily use.</li>
+            <li><strong>Save your withdrawal wallet</strong> once, in your own name, and do not change it casually.</li>
+            <li><strong>Keep a two-line log</strong> of deposits and withdrawals; it is the only honest scoreboard.</li>
+          </ul>
+
+          <h2 className="text-3xl font-bold text-white mt-12 mb-6">Troubleshooting</h2>
+
+          <h3 className="text-2xl font-semibold text-white mt-8 mb-4">OTP or login problems</h3>
+          <ul className="list-disc pl-6 text-gray-300 mb-6 space-y-2">
+            <li>Wait up to 2 minutes for the SMS, then tap Resend</li>
+            <li>Check the number is in +92 format with no leading zero issues</li>
+            <li>Use Forgot Password on the login screen to get a reset code</li>
+            <li>Repeated wrong attempts lock the account; open the in-app live chat to unlock it</li>
+            <li>Update to {APP_INFO.version}, clear the app cache and check your connection</li>
+          </ul>
+
+          <h3 className="text-2xl font-semibold text-white mt-8 mb-4">Deposit not credited</h3>
+          <ul className="list-disc pl-6 text-gray-300 mb-6 space-y-2">
+            <li>Wallet deposits can take a few minutes; bank transfers up to about 30</li>
+            <li>Confirm you sent the exact amount to the account shown</li>
+            <li>Send the transaction ID and screenshot to live chat</li>
+          </ul>
+
+          <h3 className="text-2xl font-semibold text-white mt-8 mb-4">Withdrawal pending</h3>
+          <ul className="list-disc pl-6 text-gray-300 mb-6 space-y-2">
+            <li>Check the wallet name matches your account</li>
+            <li>Allow extra time for a first withdrawal or a busy evening</li>
+            <li>Check whether bonus credit with turnover terms is holding the request</li>
+            <li>Contact live chat with the request ID</li>
+          </ul>
+
+          <h3 className="text-2xl font-semibold text-white mt-8 mb-4">Crashes or lag</h3>
+          <ul className="list-disc pl-6 text-gray-300 mb-6 space-y-2">
+            <li>Clear the app cache and free up storage toward the 600 MB recommendation</li>
+            <li>Update to the latest version and restart the phone</li>
+            <li>Switch from mobile data to Wi-Fi for the heavier fishing and slot rooms</li>
+          </ul>
+
+          <h2 className="text-3xl font-bold text-white mt-12 mb-6">Getting support</h2>
+
+          <p className="text-gray-300 mb-4">
+            The operator&apos;s support is the 24/7 live chat inside the app plus its official
+            Telegram and WhatsApp channels linked from the app. This website is independent of the
+            operator; our contact form reaches us, not the casino, and we cannot move money or
+            unlock accounts.
+          </p>
+
+          <div className="bg-orange-600/20 border border-orange-500 rounded-lg p-6 my-8">
+            <p className="text-white font-semibold mb-2">Responsible gaming</p>
+            <p className="text-gray-300">
+              Royal X Casino is entertainment with a real cost, not an income. Decide your limits
+              before you open the app and stop when you reach them. If play starts to feel
+              compulsive, read{' '}
+              <Link href="/blog/responsible-gaming-guide-royal-x-casino" className="text-[#FFA500] hover:underline font-semibold">
+                Responsible Gaming Guide for Royal X Casino Players
+              </Link>, including what to do after a losing streak.
+            </p>
+          </div>
+
+          <h2 className="text-3xl font-bold text-white mt-12 mb-6">Frequently asked questions</h2>
+          <div className="space-y-6 mb-8">
+            {faqs.map((f) => (
+              <div key={f.q}>
+                <h3 className="text-xl font-semibold text-white mb-2">{f.q}</h3>
+                <p className="text-gray-300">{f.a}</p>
+              </div>
+            ))}
+          </div>
 
           <div className="mt-12 text-center">
             <a
               href={DOWNLOAD_URL}
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noopener noreferrer sponsored"
               className="inline-block bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-bold py-4 px-8 rounded-lg text-lg transition-all transform hover:scale-105 shadow-lg"
             >
-              Download Royal X Casino APK v2.54.7 - Start Your Journey
+              Download Royal X Casino APK {APP_INFO.version}
             </a>
           </div>
         </div>
 
         <aside className="mt-16 pt-8 border-t border-gray-700">
-          <h3 className="text-2xl font-bold text-white mb-6">Related Guides</h3>
+          <h2 className="text-2xl font-bold text-white mb-6">Related guides</h2>
           <div className="grid md:grid-cols-2 gap-6">
-            <Link href="/blog/tips-to-win-big-in-royal-x-casino" className="block p-6 bg-purple-800/30 rounded-lg hover:bg-purple-800/50 transition-colors">
-              <h4 className="text-xl font-semibold text-white mb-2">Tips to Win Big</h4>
-              <p className="text-gray-400">Advanced strategies for maximizing earnings</p>
-            </Link>
-            <Link href="/blog/royal-x-casino-create-account-and-login" className="block p-6 bg-purple-800/30 rounded-lg hover:bg-purple-800/50 transition-colors">
-              <h4 className="text-xl font-semibold text-white mb-2">Account Creation Guide</h4>
-              <p className="text-gray-400">Detailed registration walkthrough</p>
-            </Link>
-            <Link href="/blog/royal-x-casino-tips-10-smart-tricks" className="block p-6 bg-purple-800/30 rounded-lg hover:bg-purple-800/50 transition-colors">
-              <h4 className="text-xl font-semibold text-white mb-2">10 Smart Tricks</h4>
-              <p className="text-gray-400">Proven tips to play safely and win more</p>
+            <Link href="/how-to-register-royal-x-casino" className="block p-6 bg-purple-800/30 rounded-lg hover:bg-purple-800/50 transition-colors">
+              <h3 className="text-xl font-semibold text-white mb-2">How to register a Royal X Casino account</h3>
+              <p className="text-gray-400">Field-by-field registration walkthrough</p>
             </Link>
             <Link href="/blog/royal-x-casino-bonuses-vip-guide" className="block p-6 bg-purple-800/30 rounded-lg hover:bg-purple-800/50 transition-colors">
-              <h4 className="text-xl font-semibold text-white mb-2">Bonuses & VIP Guide</h4>
-              <p className="text-gray-400">Complete guide to all bonuses and rewards</p>
+              <h3 className="text-xl font-semibold text-white mb-2">Royal X Casino Bonuses: Welcome, Rebate and VIP Guide 2026</h3>
+              <p className="text-gray-400">Every bonus with its exact amount and conditions</p>
             </Link>
           </div>
         </aside>

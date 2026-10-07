@@ -31,7 +31,7 @@ const GROUPS: NavGroup[] = [
     label: 'Banking',
     children: [
       { href: '/royal-x-casino-deposit-guide', label: 'Deposit', desc: 'Add funds via EasyPaisa & JazzCash' },
-      { href: '/royal-x-casino-withdraw-guide', label: 'Withdraw', desc: 'Instant withdrawals in 10–30 minutes' },
+      { href: '/royal-x-casino-withdraw-guide', label: 'Withdraw', desc: 'Withdraw to EasyPaisa or JazzCash in 10–30 minutes' },
     ],
   },
 ];
@@ -97,7 +97,7 @@ export default function Header() {
           <Link href="/" className="text-white hover:text-accent font-medium transition-colors">
             Home
           </Link>
-          <a href={DOWNLOAD_URL} target="_blank" rel="noopener noreferrer" className="text-white hover:text-accent font-medium transition-colors">
+          <a href={DOWNLOAD_URL} target="_blank" rel="noopener noreferrer sponsored" className="text-white hover:text-accent font-medium transition-colors">
             Download
           </a>
 

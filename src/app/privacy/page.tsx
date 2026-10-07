@@ -1,255 +1,242 @@
-import { Metadata } from 'next';
-import Link from 'next/link';
-import Breadcrumb from '@/components/Breadcrumb';
+import { Metadata } from "next";
+import Link from "next/link";
+import { SITE_URL } from "@/lib/config";
+import Breadcrumb from "@/components/Breadcrumb";
+
+const PAGE_URL = `${SITE_URL}/privacy`;
+const TITLE = "Royal X Casino PK Privacy Policy: What Data We Collect";
+const DESCRIPTION =
+  "How royalexcasino.com.pk handles your data: contact form details, Google Analytics cookies when enabled, outbound referral links, and how to reach us.";
+const LAST_UPDATED = "October 8, 2026";
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy - Royal X Casino | Your Privacy Matters',
-  description: 'Read our privacy policy to understand how Royal X Casino collects, uses, and protects your personal information. We are committed to your data security.',
-  keywords: ['Royal X Casino privacy policy', 'privacy', 'data protection', 'user privacy', 'data security'],
+  title: TITLE,
+  description: DESCRIPTION,
+  alternates: { canonical: PAGE_URL },
   openGraph: {
-    title: 'Privacy Policy - Royal X Casino',
-    description: 'Learn how Royal X Casino protects your personal information and data.',
-    url: 'https://royalexcasino.com.pk/privacy',
-    siteName: 'Royal X Casino',
-    type: 'website',
+    title: TITLE,
+    description: DESCRIPTION,
+    url: PAGE_URL,
+    siteName: "Royal X Casino",
+    type: "website",
+    images: [
+      {
+        url: `${SITE_URL}/royal-x-casino-logo.webp`,
+        width: 1000,
+        height: 1000,
+        alt: "Gold Royal X Casino logotype with a casino chip on the Royal X Casino PK privacy policy page",
+      },
+    ],
   },
-  alternates: {
-    canonical: 'https://royalexcasino.com.pk/privacy',
+  twitter: {
+    card: "summary_large_image",
+    title: TITLE,
+    description: DESCRIPTION,
+    images: [`${SITE_URL}/royal-x-casino-logo.webp`],
   },
+};
+
+function safeJsonLd(obj: object): string {
+  return JSON.stringify(obj).replace(/</g, "\\u003c");
+}
+
+const webPageSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": PAGE_URL,
+  url: PAGE_URL,
+  name: TITLE,
+  description: DESCRIPTION,
+  dateModified: "2026-10-08",
+  isPartOf: { "@type": "WebSite", url: SITE_URL, name: "Royal X Casino" },
+  publisher: { "@type": "Organization", "@id": `${SITE_URL}/#organization`, name: "Royal X Casino PK" },
 };
 
 export default function PrivacyPolicyPage() {
   return (
     <div className="min-h-screen bg-primary py-12 px-4">
-      <div className="container mx-auto">
-        <div className="max-w-4xl mx-auto">
-          <Breadcrumb items={[
-            { name: 'Home', url: '/' },
-            { name: 'Privacy Policy', url: '/privacy' },
-          ]} />
-          {/* Hero Section */}
-          <div className="text-center mb-12">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">Privacy Policy</h1>
-            <p className="text-lg text-gray-400">Last Updated: January 3, 2026</p>
-          </div>
-          
-          <div className="bg-secondary rounded-2xl shadow-xl p-8 md:p-12">
-            <div className="prose prose-lg max-w-none">
-              
-              <div className="bg-[#0A1029] border-l-4 border-accent rounded-r-lg p-6 mb-8">
-                <h2 className="text-2xl font-bold mb-4 text-white">Introduction</h2>
-                <p className="text-gray-300 mb-4">
-                  <Link href="/" className="text-accent hover:underline font-semibold">Royal X Casino</Link> ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application and website at <a href="https://www.royalexcasino.com.pk" className="text-accent hover:underline" target="_blank" rel="noopener noreferrer">www.royalexcasino.com.pk</a> (collectively, the "Service").
-              </p>
-                <p className="text-gray-300">
-                Please read this Privacy Policy carefully. By accessing or using our Service, you acknowledge that you have read, understood, and agree to be bound by all the terms outlined in this Privacy Policy.
-              </p>
-              </div>
-              
-              <h2 className="text-3xl font-bold mt-12 mb-6 text-white">Information We Collect</h2>
-              
-              <div className="bg-[#0A1029] rounded-xl p-6 mb-6">
-                <h3 className="text-2xl font-semibold mb-4 text-accent">Personal Data</h3>
-                <p className="text-gray-300 mb-4">
-                When you use our Service, we may collect personally identifiable information, such as:
-              </p>
-                <ul className="list-disc pl-6 space-y-2 text-gray-300">
-                  <li>Mobile phone number (for account registration)</li>
-                  <li>Email address (optional)</li>
-                <li>Device information (model, operating system, unique device identifiers)</li>
-                  <li>IP address and location data</li>
-                  <li>JazzCash/EasyPaisa account details for transactions</li>
-                  <li>Transaction history and payment information</li>
-                  <li>Gameplay data and statistics</li>
-              </ul>
-              </div>
-              
-              <div className="bg-[#0A1029] rounded-xl p-6 mb-8">
-                <h3 className="text-2xl font-semibold mb-4 text-accent">Usage Data</h3>
-                <p className="text-gray-300 mb-4">
-                We may also collect information on how the Service is accessed and used ("Usage Data"). This Usage Data may include:
-              </p>
-                <ul className="list-disc pl-6 space-y-2 text-gray-300">
-                  <li>Games played (Teen Patti, Rummy, Dragon vs Tiger, etc.) and time spent</li>
-                  <li>Deposits and withdrawals through JazzCash/EasyPaisa</li>
-                  <li>Bonus and rewards claimed</li>
-                  <li>Features accessed within the app</li>
-                  <li>Performance data and crash reports</li>
-                  <li>Referral activities</li>
-              </ul>
-              </div>
-              
-              <h2 className="text-3xl font-bold mt-12 mb-6 text-white">How We Use Your Information</h2>
-              <div className="bg-[#0A1029] rounded-xl p-6 mb-8">
-                <p className="text-gray-300 mb-4">
-                We use the collected data for various purposes:
-              </p>
-                <ul className="list-disc pl-6 space-y-2 text-gray-300">
-                  <li>To provide and maintain our Royal X Casino gaming Service</li>
-                  <li>To verify your identity and prevent fraud</li>
-                  <li>To process deposits and withdrawals through JazzCash and EasyPaisa</li>
-                  <li>To notify you about changes, updates, or new features</li>
-                  <li>To allow you to participate in games and tournaments</li>
-                  <li>To provide customer support via live chat, WhatsApp, or email</li>
-                  <li>To send you daily bonus notifications and promotional offers</li>
-                  <li>To track referral rewards and commission payments</li>
-                  <li>To monitor gameplay for fair play and security</li>
-                  <li>To comply with legal obligations and regulations</li>
-                </ul>
-              </div>
-              
-              <h2 className="text-3xl font-bold mt-12 mb-6 text-white">Payment Information Security</h2>
-              <div className="bg-[#0A1029] rounded-xl p-6 mb-8">
-                <p className="text-gray-300 mb-4">
-                  Your payment security is our top priority. When you use JazzCash or EasyPaisa for deposits and withdrawals:
-                </p>
-                <ul className="list-disc pl-6 space-y-2 text-gray-300">
-                  <li>We use encrypted connections to protect your financial data</li>
-                  <li>Your mobile wallet PIN is never stored on our servers</li>
-                  <li>All transactions are processed through secure payment gateways</li>
-                  <li>We maintain detailed transaction logs for your security and reference</li>
-                  <li>Your account number is encrypted and stored securely</li>
-              </ul>
-              </div>
-              
-              <h2 className="text-3xl font-bold mt-12 mb-6 text-white">Disclosure of Data</h2>
-              
-              <div className="bg-[#0A1029] rounded-xl p-6 mb-6">
-                <h3 className="text-2xl font-semibold mb-4 text-accent">Legal Requirements</h3>
-                <p className="text-gray-300">
-                  We may disclose your Personal Data if required to do so by law or in response to valid requests by public authorities in Pakistan (e.g., a court or a government agency).
-              </p>
-              </div>
-              
-              <div className="bg-[#0A1029] rounded-xl p-6 mb-8">
-                <h3 className="text-2xl font-semibold mb-4 text-accent">Third-Party Services</h3>
-                <p className="text-gray-300 mb-4">
-                  We may share limited data with:
-                </p>
-                <ul className="list-disc pl-6 space-y-2 text-gray-300">
-                  <li>Payment processors (JazzCash, EasyPaisa) for transaction processing</li>
-                  <li>Analytics services to improve our app performance</li>
-                  <li>Customer support tools to assist you better</li>
-                </ul>
-                <p className="text-gray-300 mt-4">
-                  We ensure all third parties comply with strict data protection standards.
-              </p>
-              </div>
-              
-              <h2 className="text-3xl font-bold mt-12 mb-6 text-white">Data Security</h2>
-              <div className="bg-[#0A1029] rounded-xl p-6 mb-8">
-                <p className="text-gray-300 mb-4">
-                  The security of your data is important to us. We implement various security measures including:
-                </p>
-                <ul className="list-disc pl-6 space-y-2 text-gray-300">
-                  <li>SSL/TLS encryption for data transmission</li>
-                  <li>Secure servers with firewall protection</li>
-                  <li>Regular security audits and updates</li>
-                  <li>Access controls and authentication systems</li>
-                  <li>Data backup and recovery procedures</li>
-                </ul>
-                <p className="text-gray-300 mt-4">
-                  However, no method of transmission over the Internet or electronic storage is 100% secure. While we strive to protect your Personal Data, we cannot guarantee absolute security.
-              </p>
-              </div>
-              
-              <h2 className="text-3xl font-bold mt-12 mb-6 text-white">Your Data Protection Rights</h2>
-              <div className="bg-[#0A1029] rounded-xl p-6 mb-8">
-                <p className="text-gray-300 mb-4">
-                  You have the following rights regarding your personal data:
-              </p>
-                <ul className="list-disc pl-6 space-y-2 text-gray-300">
-                  <li><strong className="text-white">Right to Access:</strong> Request a copy of your personal data</li>
-                  <li><strong className="text-white">Right to Rectification:</strong> Correct inaccurate or incomplete information</li>
-                  <li><strong className="text-white">Right to Erasure:</strong> Request deletion of your account and data</li>
-                  <li><strong className="text-white">Right to Object:</strong> Object to certain data processing activities</li>
-                  <li><strong className="text-white">Right to Data Portability:</strong> Receive your data in a structured format</li>
-                  <li><strong className="text-white">Right to Withdraw Consent:</strong> Withdraw consent for data processing at any time</li>
-              </ul>
-                <p className="text-gray-300 mt-4">
-                  To exercise any of these rights, please contact us at <a href="mailto:support@royalexcasino.com.pk" className="text-accent hover:underline">support@royalexcasino.com.pk</a>
-              </p>
-              </div>
-              
-              <h2 className="text-3xl font-bold mt-12 mb-6 text-white">Age Restriction</h2>
-              <div className="bg-red-900/20 border-l-4 border-red-500 rounded-r-lg p-6 mb-8">
-                <p className="text-gray-300 mb-4">
-                  <strong className="text-white">Important:</strong> Royal X Casino is intended only for users who are 18 years of age or older. We do not knowingly collect personally identifiable information from anyone under 18 years of age.
-                </p>
-                <p className="text-gray-300">
-                  If you are a parent or guardian and you are aware that your child has provided us with Personal Data, please contact us immediately. If we become aware that we have collected Personal Data from users under 18 without verification of parental consent, we will take steps to remove that information from our servers.
-              </p>
-              </div>
-              
-              <h2 className="text-3xl font-bold mt-12 mb-6 text-white">Cookies and Tracking</h2>
-              <div className="bg-[#0A1029] rounded-xl p-6 mb-8">
-                <p className="text-gray-300 mb-4">
-                  We use cookies and similar tracking technologies to track activity on our Service and hold certain information. Cookies are files with small amounts of data which may include an anonymous unique identifier.
-                </p>
-                <p className="text-gray-300">
-                  You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent. However, if you do not accept cookies, you may not be able to use some features of our Service.
-                </p>
-              </div>
-              
-              <h2 className="text-3xl font-bold mt-12 mb-6 text-white">Changes to This Privacy Policy</h2>
-              <div className="bg-[#0A1029] rounded-xl p-6 mb-8">
-                <p className="text-gray-300 mb-4">
-                  We may update our Privacy Policy from time to time to reflect changes in our practices or for legal, regulatory, or operational reasons. We will notify you of any material changes by:
-                </p>
-                <ul className="list-disc pl-6 space-y-2 text-gray-300">
-                  <li>Posting the new Privacy Policy on this page</li>
-                  <li>Updating the "Last Updated" date at the top</li>
-                  <li>Sending an in-app notification for significant changes</li>
-                </ul>
-                <p className="text-gray-300 mt-4">
-                You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.
-              </p>
-              </div>
-              
-              <h2 className="text-3xl font-bold mt-12 mb-6 text-white">Contact Us</h2>
-              <div className="bg-accent/10 border-l-4 border-accent rounded-r-lg p-6 mb-4">
-                <p className="text-gray-300 mb-4">
-                  If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us:
-              </p>
-                <ul className="space-y-3 text-gray-300">
-                  <li className="flex items-center">
-                    <svg className="w-5 h-5 text-accent mr-3" fill="currentColor" viewBox="0 0 20 20">
-                      <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
-                      <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
-                    </svg>
-                    <strong className="text-white mr-2">Email:</strong>
-                    <a href="mailto:support@royalexcasino.com.pk" className="text-accent hover:underline">support@royalexcasino.com.pk</a>
-                  </li>
-                  <li className="flex items-center">
-                    <svg className="w-5 h-5 text-accent mr-3" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z" clipRule="evenodd"/>
-                    </svg>
-                    <strong className="text-white mr-2">Website:</strong>
-                    <a href="https://www.royalexcasino.com.pk" className="text-accent hover:underline" target="_blank" rel="noopener noreferrer">www.royalexcasino.com.pk</a>
-                  </li>
-                  <li className="flex items-center">
-                    <svg className="w-5 h-5 text-accent mr-3" fill="currentColor" viewBox="0 0 20 20">
-                      <path d="M2 5a2 2 0 012-2h7a2 2 0 012 2v4a2 2 0 01-2 2H9l-3 3v-3H4a2 2 0 01-2-2V5z"/>
-                      <path d="M15 7v2a4 4 0 01-4 4H9.828l-1.766 1.767c.28.149.599.233.938.233h2l3 3v-3h2a2 2 0 002-2V9a2 2 0 00-2-2h-1z"/>
-                    </svg>
-                    <strong className="text-white mr-2">Support:</strong>
-                    <Link href="/royal-x-casino-contact-us" className="text-accent hover:underline">Visit Contact Us page</Link>
-                  </li>
-              </ul>
-              </div>
-              
-              <div className="bg-[#0A1029] rounded-xl p-6 mt-8 text-center">
-                <p className="text-gray-400 text-sm mb-4">
-                  By using Royal X Casino, you consent to this Privacy Policy and agree to its terms.
-                </p>
-                <p className="text-gray-400 text-sm">
-                  © 2026 Royal X Casino. All rights reserved.
-                </p>
-              </div>
-            </div>
-          </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: safeJsonLd(webPageSchema) }} />
+
+      <div className="container mx-auto max-w-4xl">
+        <Breadcrumb
+          items={[
+            { name: "Home", url: "/" },
+            { name: "Privacy Policy", url: "/privacy" },
+          ]}
+        />
+
+        <div className="text-center mb-10">
+          <h1 className="text-3xl md:text-5xl font-bold mb-4 text-white leading-tight">
+            Royal X Casino PK Privacy Policy: What Data We Collect
+          </h1>
+          <p className="text-gray-400">Last updated: {LAST_UPDATED}</p>
+        </div>
+
+        <div className="bg-secondary rounded-2xl shadow-xl p-8 md:p-12 space-y-10 text-gray-300">
+          <section>
+            <h2 className="text-2xl font-bold mb-3 text-[#FFA500]">Who this policy covers</h2>
+            <p className="leading-relaxed mb-3">
+              This policy describes how royalexcasino.com.pk (&quot;we&quot;, &quot;the website&quot;) handles
+              information when you browse the site or contact us. We are an independent informational website about the
+              Royal X Casino Android app. We do not operate the app, and this policy does not cover anything you do
+              inside it.
+            </p>
+            <p className="leading-relaxed">
+              When you register, deposit, play or chat with support in the app, the operator collects your data under
+              its own privacy policy, which you should read inside the app. We never receive your phone number,
+              password, OTP, wallet details or transaction history from the operator.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-bold mb-3 text-[#FFA500]">Information we collect</h2>
+            <h3 className="text-lg font-semibold text-white mb-2">Contact form and email</h3>
+            <p className="leading-relaxed mb-4">
+              If you use the form on our{" "}
+              <Link href="/royal-x-casino-contact-us" className="text-accent hover:underline">
+                contact page
+              </Link>{" "}
+              or email us, we receive the name, email address, subject and message you provide. We use them only to
+              read and answer your message. Please do not include passwords, OTP codes or wallet numbers; we do not need
+              them and will not ask for them.
+            </p>
+            <h3 className="text-lg font-semibold text-white mb-2">Analytics and performance data</h3>
+            <p className="leading-relaxed mb-4">
+              When analytics is enabled on the site, we load Google Analytics (gtag.js). It sets cookies and records
+              which pages are viewed, the approximate region, device and browser type, and Core Web Vitals performance
+              metrics (how quickly pages load and respond). This data is aggregated and does not identify you by name.
+              Google processes it under its own privacy policy. If analytics is not enabled in a given deployment, none
+              of this is loaded.
+            </p>
+            <h3 className="text-lg font-semibold text-white mb-2">Server logs</h3>
+            <p className="leading-relaxed">
+              Like any website, our hosting provider may keep standard server logs (IP address, browser string, pages
+              requested, time). They are used for security and error diagnosis only.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-bold mb-3 text-[#FFA500]">What we do not collect</h2>
+            <ul className="list-disc pl-6 space-y-2">
+              <li>We have no user accounts, so we do not store usernames, passwords or profiles.</li>
+              <li>We do not process payments and never see deposit or withdrawal details.</li>
+              <li>We do not collect precise location, contacts, photos or device identifiers.</li>
+              <li>We do not run third-party advertising networks or ad-tracking pixels on this site.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-bold mb-3 text-[#FFA500]">Cookies</h2>
+            <p className="leading-relaxed">
+              The only cookies the website sets are those placed by Google Analytics when it is enabled. They are used
+              to distinguish repeat visits in aggregate statistics. You can block or delete cookies in your browser
+              settings, use a browser extension that blocks analytics, or enable your browser&apos;s tracking protection.
+              The site works normally without cookies.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-bold mb-3 text-[#FFA500]">Outbound referral links to the operator</h2>
+            <p className="leading-relaxed mb-3">
+              Download buttons on this site open the operator&apos;s referral link in a new tab. The link contains a
+              referral identifier so the operator can attribute your registration to this website and may pay us a
+              commission, as explained in our{" "}
+              <Link href="/disclaimer" className="text-accent hover:underline">
+                disclaimer
+              </Link>
+              .
+            </p>
+            <p className="leading-relaxed">
+              Once you leave our site, the operator&apos;s website and app collect data under their own privacy policy,
+              which we do not control. We do not receive your personal details from the operator; at most we may see
+              anonymous counts of registrations attributed to our link.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-bold mb-3 text-[#FFA500]">How we share data, and what we never do</h2>
+            <p className="leading-relaxed mb-3">
+              We do not sell, rent or trade your personal data to anyone. Contact form details are seen only by the
+              website team. Analytics data is processed by Google as a service provider. We may disclose information if
+              required by law or a valid request from a public authority in Pakistan.
+            </p>
+            <p className="leading-relaxed">Links to external sites such as review platforms follow their own privacy practices.</p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-bold mb-3 text-[#FFA500]">How long we keep information</h2>
+            <p className="leading-relaxed">
+              Contact messages are kept for as long as needed to resolve your query and for a reasonable period
+              afterwards in case you follow up, then deleted. Analytics data is retained according to the Google
+              Analytics retention setting for the property. Server logs are rotated by the hosting provider.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-bold mb-3 text-[#FFA500]">Age limit</h2>
+            <p className="leading-relaxed">
+              This website describes a real-money gambling app and is intended for adults aged 18 and over. We do not
+              knowingly collect information from anyone under 18. If you believe a minor has contacted us, email us and
+              we will delete the message. Our{" "}
+              <Link href="/blog/responsible-gaming-guide-royal-x-casino" className="text-accent hover:underline">
+                responsible gaming guide
+              </Link>{" "}
+              covers limits and where to find help.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-bold mb-3 text-[#FFA500]">Your choices and rights</h2>
+            <p className="leading-relaxed mb-3">You can at any time:</p>
+            <ul className="list-disc pl-6 space-y-2 mb-3">
+              <li>Ask what information we hold about you from contact form submissions.</li>
+              <li>Ask us to correct or delete that information.</li>
+              <li>Block analytics cookies in your browser so no usage data is sent to Google.</li>
+              <li>Choose not to use the referral links and visit the operator directly.</li>
+            </ul>
+            <p className="leading-relaxed">
+              Send requests to{" "}
+              <a href="mailto:support@royalexcasino.com.pk" className="text-accent hover:underline">
+                support@royalexcasino.com.pk
+              </a>{" "}
+              from the address you used to contact us, so we can confirm the request is yours.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-bold mb-3 text-[#FFA500]">Changes to this policy</h2>
+            <p className="leading-relaxed">
+              We update this page when our practices change, for example if we add or remove an analytics tool. The
+              &quot;Last updated&quot; date at the top shows the current version. Continued use of the site after a
+              change means you accept the updated policy.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-bold mb-3 text-[#FFA500]">Contact</h2>
+            <p className="leading-relaxed">
+              Questions about this policy go to the website team at{" "}
+              <a href="mailto:support@royalexcasino.com.pk" className="text-accent hover:underline">
+                support@royalexcasino.com.pk
+              </a>{" "}
+              or through the{" "}
+              <Link href="/royal-x-casino-contact-us" className="text-accent hover:underline">
+                contact page
+              </Link>
+              . This is the website&apos;s address, not the operator&apos;s. Who we are and how we work is explained on
+              the{" "}
+              <Link href="/royal-x-casino-about-us" className="text-accent hover:underline">
+                about page
+              </Link>
+              , and the app itself is covered on the{" "}
+              <Link href="/" className="text-accent hover:underline">
+                Royal X Casino APK
+              </Link>{" "}
+              page.
+            </p>
+          </section>
         </div>
       </div>
     </div>
   );
-} 
+}

@@ -20,31 +20,11 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL('https://royalexcasino.com.pk'),
   title: {
-    default: "Royal X Casino APK Pakistan | Download Latest Version 2026 | Real Money Gaming",
-    template: "%s | Royal X Casino"
+    default: "Royal X Casino APK Pakistan | Download 2026 | Real Money",
+    // Page titles already carry the brand; no suffix so titles stay under 60 characters.
+    template: "%s",
   },
-  description: "Royal X Casino 2026 - Pakistan's #1 real money gaming app. Download Royal X Casino APK, play Teen Patti, Slots, Fishing & 200+ games. Zero wagering, instant withdrawals via JazzCash & EasyPaisa.",
-  keywords: [
-    "Royal X Casino",
-    "Royal X Casino APK",
-    "Royal X Casino download",
-    "Royal X Casino Pakistan",
-    "royal x casino app",
-    "royal x casino game",
-    "download royal x casino",
-    "royal x casino real money",
-    "Teen Patti",
-    "Andar Bahar",
-    "casino games Pakistan",
-    "earn money gaming Pakistan",
-    "JazzCash gaming",
-    "EasyPaisa gaming",
-    "real money games Pakistan",
-    "Royal X Casino 2026",
-    "best earning app Pakistan",
-    "zero wagering casino",
-    "instant withdrawal casino Pakistan",
-  ],
+  description: "Royal X Casino APK for Android: 200+ Teen Patti, slot and fishing games, EasyPaisa and JazzCash payments, bonuses, VIP levels and an honest safety review.",
   authors: [{ name: "Royal X Casino" }],
   creator: "Royal X Casino",
   publisher: "Royal X Casino",
@@ -76,8 +56,8 @@ export const metadata: Metadata = {
     canonical: "https://royalexcasino.com.pk",
   },
   openGraph: {
-    title: "Royal X Casino APK Pakistan | Download 2026 | Real Money Gaming App",
-    description: "Royal X Casino 2026 - 200+ games, zero wagering, instant withdrawals. Play Teen Patti, Slots, Fishing. Earn real money with JazzCash & EasyPaisa. Download now!",
+    title: "Royal X Casino APK Pakistan | Download 2026",
+    description: "Download the Royal X Casino APK, see every bonus and payment method, and read an honest safety review before you play.",
     url: "https://royalexcasino.com.pk",
     siteName: "Royal X Casino",
     locale: "en_US",
@@ -87,20 +67,20 @@ export const metadata: Metadata = {
         url: "https://royalexcasino.com.pk/royal-x-casino.webp",
         width: 1200,
         height: 1200,
-        alt: "Royal X Casino - Pakistan's Premier Real Money Gaming App",
+        alt: "Royal X Casino app icon: gold logo with a casino chip on a golden casino hall background",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Royal X Casino APK Pakistan | Download 2026",
-    description: "Royal X Casino - 200+ games, zero wagering, instant withdrawals. Earn real money with JazzCash & EasyPaisa.",
+    description: "Download the Royal X Casino APK, see every bonus and payment method, and read an honest safety review before you play.",
     images: [
       {
         url: "https://royalexcasino.com.pk/royal-x-casino.webp",
         width: 1200,
         height: 1200,
-        alt: "Royal X Casino - Pakistan's Premier Real Money Gaming App",
+        alt: "Royal X Casino app icon: gold logo with a casino chip on a golden casino hall background",
       }
     ],
   },
@@ -172,28 +152,6 @@ export default function RootLayout({
         <Footer />
         <ScrollToTopWrapper />
         <WebVitalsTracker />
-        
-        {/* Structured data for WebSite (sitelinks searchbox signal) */}
-        <Script
-          id="website-schema"
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "WebSite",
-              "name": "Royal X Casino",
-              "url": "https://royalexcasino.com.pk",
-              "potentialAction": {
-                "@type": "SearchAction",
-                "target": {
-                  "@type": "EntryPoint",
-                  "urlTemplate": "https://royalexcasino.com.pk/?s={search_term_string}"
-                },
-                "query-input": "required name=search_term_string"
-              }
-            })
-          }}
-        />
       </body>
     </html>
   );

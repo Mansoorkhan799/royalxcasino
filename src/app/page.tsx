@@ -13,7 +13,7 @@ import TableOfContentsAccordion from "@/components/TableOfContentsAccordion";
 export const metadata: Metadata = {
   title: "Royal X Casino APK Pakistan | Download 2026 | Real Money",
   description:
-    "Royal X Casino APK for Android: 200+ Teen Patti, slot and fishing games, EasyPaisa and JazzCash payments, bonuses, VIP levels and an honest safety review for Pakistan.",
+    "Royal X Casino APK for Android: 200+ Teen Patti, slot and fishing games, EasyPaisa and JazzCash payments, bonuses, VIP levels and an honest safety review.",
   keywords: [
     "Royal X Casino",
     "Royal X Casino APK",
@@ -755,11 +755,7 @@ export default function Home() {
             the login screen and a reset code is sent by SMS to the registered number. If the account locks after
             repeated wrong attempts, contact live chat from the login screen. Common sign-in errors and their fixes are covered
             in our{" "}
-            <Link href="/how-to-login-royal-x-casino" className="text-accent hover:underline">login guide</Link> and the{" "}
-            <Link href="/blog/royal-x-casino-login-problems-solutions" className="text-accent hover:underline">
-              login problems troubleshooter
-            </Link>
-            .
+            <Link href="/how-to-login-royal-x-casino" className="text-accent hover:underline">login guide</Link>.
           </p>
           <div className="bg-[#0A1029] rounded-lg p-4 border border-gray-700">
             <h3 className="font-bold text-accent mb-1">Tip</h3>
