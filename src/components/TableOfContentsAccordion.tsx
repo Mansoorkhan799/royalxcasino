@@ -4,20 +4,21 @@ import { useState } from "react";
 import Link from "next/link";
 
 const TOC_LINKS = [
-  { href: "#overview", label: "Overview" },
+  { href: "#overview", label: "App overview" },
   { href: "#what-is-royal-x-casino", label: "What is Royal X Casino Pakistan?" },
-  { href: "#key-features", label: "Key Features" },
-  { href: "#games-available", label: "Games Available" },
-  { href: "#app-screenshots", label: "Royal X Casino App Screenshots" },
-  { href: "#how-to-download", label: "How to Download & Install" },
-  { href: "#how-to-register", label: "How to Register" },
-  { href: "#deposit-withdraw", label: "Deposit & Withdrawal Guide" },
-  { href: "#how-to-earn", label: "How to Play & Earn Money" },
-  { href: "#tips-tricks", label: "Tips & Tricks to Win" },
-  { href: "#security", label: "Security & Safety" },
-  { href: "#pros-cons", label: "Pros & Cons" },
-  { href: "#user-reviews", label: "User Reviews" },
-  { href: "#faqs", label: "Frequently Asked Questions" },
+  { href: "#key-features", label: "Key features" },
+  { href: "#games-available", label: "Complete games list" },
+  { href: "#app-screenshots", label: "App screenshots" },
+  { href: "#how-to-download", label: "How to download and install" },
+  { href: "#how-to-register", label: "Register and log in" },
+  { href: "#bonuses", label: "Bonuses, VIP levels and agent programme" },
+  { href: "#deposit-withdraw", label: "Deposit and withdrawal methods" },
+  { href: "#how-to-earn", label: "Ways to play and win" },
+  { href: "#tips-tricks", label: "Practical tips" },
+  { href: "#security", label: "Is Royal X Casino safe?" },
+  { href: "#pros-cons", label: "Pros and cons" },
+  { href: "#user-reviews", label: "Reviews and ratings" },
+  { href: "#faqs", label: "FAQs" },
 ];
 
 export default function TableOfContentsAccordion() {
